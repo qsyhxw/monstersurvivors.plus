@@ -3,305 +3,828 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-511JG9F2HD');
-</script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
     
     <!-- SEO Meta Tags -->
-    <title>Monster Survivors - Free Online Survival Action Game | Play Now</title>
-    <meta name="description" content="Play Monster Survivors online for free! Battle endless waves of monsters, upgrade your abilities, and become the ultimate survivor in this thrilling action-packed survival game.">
-    <meta name="keywords" content="Monster Survivors, survival game, online game, free game, action game, monster game, browser game, HTML5 game">
+    <title>Monster Survivors Wiki & Guide 2026 | Weapons, Builds & Strategies</title>
+    <meta name="description" content="Complete Monster Survivors guide with weapon tier lists, character builds, boss strategies & interactive tools. Master every aspect of the game!">
+    <meta name="keywords" content="monster survivors, guide, wiki, weapons, tier list, builds, characters, strategy, boss guide, roguelike">
     <meta name="author" content="MonsterSurvivors.plus">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://monstersurvivors.plus/">
+
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-511JG9F2HD');
+    </script>
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Monster Survivors - Free Online Survival Action Game">
-    <meta property="og:description" content="Battle endless waves of monsters and become the ultimate survivor. Play Monster Survivors free online now!">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Monster Survivors Wiki & Guide 2026 | Complete Strategy Resource">
+    <meta property="og:description" content="Master Monster Survivors with our complete weapon tier lists, character guides, and interactive build calculator.">
     <meta property="og:url" content="https://monstersurvivors.plus/">
-    <meta property="og:site_name" content="Monster Survivors">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://monstersurvivors.plus/images/og-image.jpg">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Monster Survivors - Free Online Survival Action Game">
-    <meta name="twitter:description" content="Battle endless waves of monsters and become the ultimate survivor!">
+    <meta name="twitter:title" content="Monster Survivors Wiki & Guide 2026">
+    <meta name="twitter:description" content="Complete strategy guide with weapons, builds & boss strategies">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/twitter-card.jpg">
     
-    <!-- Tailwind CSS -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Custom Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'apple-blue': '#007AFF',
-                        'apple-gray': '#8E8E93',
-                        'apple-light-gray': '#F2F2F7',
-                        'apple-dark': '#1C1C1E',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght:400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
     <style>
+        :root {
+            --primary-dark: #1a1a2e;
+            --secondary-dark: #16213e;
+            --accent-orange: #ff6b35;
+            --accent-cyan: #00d9ff;
+            --text-light: #f5f5f5;
+            --text-gray: #b8b8b8;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
         }
         
-        .game-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, #0077b6 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+        }
+        
+        .icon-box {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+            border: 2px solid rgba(0, 217, 255, 0.3);
+        }
+        
+        .accordion-content {
+            max-height: 0;
             overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: max-height 0.3s ease;
         }
         
-        .game-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        
-        @media (min-width: 768px) {
-            .game-container {
-                padding-bottom: 75%;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .game-container {
-                padding-bottom: 56.25%;
-                max-height: 600px;
-            }
+        .accordion-content.active {
+            max-height: 300px;
         }
     </style>
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Monster Survivors Wiki",
+        "url": "https://monstersurvivors.plus/",
+        "description": "Complete Monster Survivors guide with weapon tier lists, character builds, and boss strategies",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://monstersurvivors.plus/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MonsterSurvivors.plus",
+        "url": "https://monstersurvivors.plus/",
+        "logo": "https://monstersurvivors.plus/logo.png",
+        "sameAs": [
+            "https://twitter.com/monstersurvivors",
+            "https://youtube.com/@monstersurvivors"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://monstersurvivors.plus/"
+        }]
+    }
+    </script>
 </head>
-<body class="bg-apple-light-gray min-h-screen">
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <div class="font-semibold text-xl text-apple-dark">Monster Survivors</div>
-                <button onclick="toggleFullscreen()" class="bg-apple-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-200">
-                    Fullscreen
-                </button>
+<body class="antialiased">
+    
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2">
+                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
+                        <span class="text-xl font-bold" style="font-family: 'Orbitron', sans-serif;">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/weapons/" class="hover:text-cyan-400 transition">Weapons</a>
+                    <a href="/characters/" class="hover:text-cyan-400 transition">Characters</a>
+                    <a href="/builds/" class="hover:text-cyan-400 transition">Builds</a>
+                    <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+                    <a href="/tools/build-calculator/" class="hover:text-cyan-400 transition">Tools</a>
+                    <a href="/blog/" class="hover:text-cyan-400 transition">Blog</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/weapons/" class="block py-2 hover:text-cyan-400 transition">Weapons</a>
+                <a href="/characters/" class="block py-2 hover:text-cyan-400 transition">Characters</a>
+                <a href="/builds/" class="block py-2 hover:text-cyan-400 transition">Builds</a>
+                <a href="/guides/" class="block py-2 hover:text-cyan-400 transition">Guides</a>
+                <a href="/tools/build-calculator/" class="block py-2 hover:text-cyan-400 transition">Tools</a>
+                <a href="/blog/" class="block py-2 hover:text-cyan-400 transition">Blog</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
         <!-- Hero Section -->
-        <section class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-apple-dark mb-4">
-                Monster Survivors
-            </h1>
-            <p class="text-xl text-apple-gray">
-                Survive endless waves of monsters and become the ultimate champion in this thrilling action-packed adventure!
-            </p>
-        </section>
-
-        <!-- Game Section -->
-        <section class="mb-12">
-            <div class="game-container" id="gameContainer">
-                <iframe 
-                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
-                    title="Monster Survivors Game"
-                    allowfullscreen
-                    loading="lazy">
-                </iframe>
+        <section class="gradient-bg py-20 px-4 relative overflow-hidden">
+            <!-- Decorative Background Elements -->
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="absolute top-20 left-10 w-64 h-64 bg-cyan-500 rounded-full filter blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl"></div>
             </div>
-        </section>
-
-        <!-- Game Information -->
-        <section class="grid md:grid-cols-2 gap-8 mb-12">
-            <!-- How to Play -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm">
-                <h2 class="text-2xl font-semibold text-apple-dark mb-4">How to Play</h2>
-                <ul class="space-y-3 text-apple-gray">
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">•</span>
-                        Use WASD or arrow keys to move your character
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">•</span>
-                        Collect power-ups and experience orbs to level up
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">•</span>
-                        Choose upgrades wisely to enhance your abilities
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">•</span>
-                        Survive as long as possible against increasing waves
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Game Features -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm">
-                <h2 class="text-2xl font-semibold text-apple-dark mb-4">Game Features</h2>
-                <ul class="space-y-3 text-apple-gray">
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">✓</span>
-                        Endless survival gameplay with progressive difficulty
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">✓</span>
-                        Multiple character upgrades and abilities
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">✓</span>
-                        Diverse monster types with unique behaviors
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-apple-blue mr-2">✓</span>
-                        Leaderboard system to compete with players worldwide
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="bg-white rounded-2xl p-8 shadow-sm mb-12">
-            <h2 class="text-3xl font-semibold text-apple-dark mb-6">About Monster Survivors</h2>
-            <div class="prose prose-lg text-apple-gray max-w-none">
-                <p class="mb-4">
-                    Monster Survivors is an exhilarating survival action game that puts your skills to the ultimate test. 
-                    In this intense browser-based adventure, you'll face relentless hordes of monsters that grow stronger 
-                    with each passing wave. Your mission is simple yet challenging: survive as long as possible while 
-                    collecting power-ups and upgrading your abilities.
+            
+            <div class="max-w-7xl mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                    Monster Survivors Wiki & <br class="hidden md:block">
+                    <span style="color: var(--accent-orange);">Strategy Guide</span> 2026
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Master Every Build, Weapon & Character - Your Ultimate Resource for Dominating the Monster Horde
                 </p>
-                <p class="mb-4">
-                    What sets Monster Survivors apart is its perfect blend of strategic decision-making and fast-paced action. 
-                    Every level-up presents you with crucial choices that can dramatically alter your playstyle. Will you 
-                    focus on offensive power to eliminate threats quickly, or build defensive capabilities to outlast the 
-                    endless onslaught? The choice is yours, and each decision shapes your unique survival story.
-                </p>
-                <p>
-                    With its intuitive controls, smooth gameplay, and progressively challenging waves, Monster Survivors 
-                    offers endless replayability. Whether you're a casual gamer looking for quick entertainment or a 
-                    hardcore player aiming for the top of the leaderboard, this game delivers an addictive experience 
-                    that keeps you coming back for more.
-                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="/tier-list/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center space-x-2">
+                        <i class="fas fa-trophy"></i>
+                        <span>View Weapon Tier List</span>
+                    </a>
+                    <a href="/tools/build-calculator/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center space-x-2">
+                        <i class="fas fa-calculator"></i>
+                        <span>Try Build Calculator</span>
+                    </a>
+                    <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center space-x-2">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Play Now Free</span>
+                </a>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-3xl font-bold text-cyan-400">30+</div>
+                        <div class="text-sm text-gray-400">Weapons Covered</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-3xl font-bold text-orange-400">10+</div>
+                        <div class="text-sm text-gray-400">Characters</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-3xl font-bold text-cyan-400">50+</div>
+                        <div class="text-sm text-gray-400">Strategy Guides</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-3xl font-bold text-orange-400">100%</div>
+                        <div class="text-sm text-gray-400">Free Access</div>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!-- Tips Section -->
-        <section class="bg-gradient-to-r from-apple-blue to-blue-600 rounded-2xl p-8 text-white mb-12">
-            <h2 class="text-3xl font-semibold mb-6">Pro Tips for Survival</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <h3 class="font-semibold text-xl mb-2">Movement is Key</h3>
-                    <p class="opacity-90">Keep moving constantly to avoid being surrounded. Use the map edges strategically to funnel enemies.</p>
+        
+        <!-- Quick Navigation Cards -->
+        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                    <span style="color: var(--accent-cyan);">Quick Access</span> to Everything You Need
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1: Weapons Database -->
+                    <a href="/weapons/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
+                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-sword text-3xl" style="color: var(--accent-orange);"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Weapons Database</h3>
+                        <p class="text-gray-400 mb-4">Complete stats, evolution paths & tier rankings for all 30+ weapons</p>
+                        <div class="text-cyan-400 font-semibold inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 2: Characters Guide -->
+                    <a href="/characters/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
+                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-user-shield text-3xl" style="color: var(--accent-orange);"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Characters Guide</h3>
+                        <p class="text-gray-400 mb-4">Detailed guides for Guardian, Archer, Knight and all playable heroes</p>
+                        <div class="text-cyan-400 font-semibold inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 3: Build Calculator -->
+                    <a href="/tools/build-calculator/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
+                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-calculator text-3xl" style="color: var(--accent-orange);"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Build Calculator</h3>
+                        <p class="text-gray-400 mb-4">Create and optimize your perfect build with our interactive tool</p>
+                        <div class="text-cyan-400 font-semibold inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 4: Strategy Guides -->
+                    <a href="/guides/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
+                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-book-open text-3xl" style="color: var(--accent-orange);"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Strategy Guides</h3>
+                        <p class="text-gray-400 mb-4">Boss strategies, stage walkthroughs & advanced survival tips</p>
+                        <div class="text-cyan-400 font-semibold inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </a>
                 </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-2">Balance Your Upgrades</h3>
-                    <p class="opacity-90">Don't focus solely on damage. Health regeneration and movement speed are equally important for long-term survival.</p>
+            </div>
+        </section>
+        
+        <!-- Latest Guides Section -->
+        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Latest <span style="color: var(--accent-orange);">Strategy Guides</span>
+                    </h2>
+                    <a href="/guides/" class="hidden md:inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                        View All Guides <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-2">Learn Enemy Patterns</h3>
-                    <p class="opacity-90">Each monster type has unique behavior. Understanding their patterns helps you predict and avoid attacks.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Guide Card 1 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                            <i class="fas fa-trophy text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/tier-list/">Monster Survivors Weapons Tier List 2026</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">Discover the best weapons ranked from S-tier to D-tier with detailed analysis and recommended builds for each.</p>
+                            <a href="/tier-list/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Guide Card 2 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-user-shield text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/characters/guardian-guide/">Guardian Character Complete Guide</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">Master the Guardian with our comprehensive guide covering best builds, strategies, and tips for maximum survivability.</p>
+                            <a href="/characters/guardian-guide/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Guide Card 3 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                            <i class="fas fa-dragon text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/guides/stage-10-boss/">How to Beat Stage 10 Boss</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">Struggling with the Stage 10 boss? Learn the attack patterns, best strategies, and recommended builds to secure victory.</p>
+                            <a href="/guides/stage-10-boss/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Guide Card 4 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                            <i class="fas fa-seedling text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/guides/beginner-builds/">Top 5 Builds for Beginners</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">New to Monster Survivors? Start strong with these five beginner-friendly builds that guarantee early game success.</p>
+                            <a href="/guides/beginner-builds/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Guide Card 5 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
+                            <i class="fas fa-wand-magic-sparkles text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/weapons/evolution-guide/">All Weapon Evolution Paths Explained</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">Unlock legendary weapons with our complete evolution guide. Learn which combinations create the most powerful weapons.</p>
+                            <a href="/weapons/evolution-guide/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Guide Card 6 -->
+                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div class="h-48 bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center">
+                            <i class="fas fa-clock text-6xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-cyan-400 font-semibold mb-2">UPDATED: JAN 2026</div>
+                            <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
+                                <a href="/guides/30-minute-survival/">Surviving 30+ Minutes: Advanced Strategy</a>
+                            </h3>
+                            <p class="text-gray-400 mb-4">Push your limits! Expert strategies for surviving beyond 30 minutes and defeating the final boss waves.</p>
+                            <a href="/guides/30-minute-survival/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                                Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
                 </div>
-                <div>
-                    <h3 class="font-semibold text-xl mb-2">Prioritize Experience Orbs</h3>
-                    <p class="opacity-90">Leveling up quickly gives you more upgrade opportunities. Take calculated risks to collect experience orbs.</p>
+                
+                <div class="text-center mt-8 md:hidden">
+                    <a href="/guides/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                        View All Guides <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Tools Section -->
+        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                    Interactive <span style="color: var(--accent-cyan);">Tools & Resources</span>
+                </h2>
+                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Optimize your gameplay with our interactive tools designed to help you create winning strategies
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Tool 1: Build Calculator -->
+                    <div class="card-hover bg-gradient-to-br from-orange-900 to-red-900 bg-opacity-30 rounded-2xl p-8 border border-orange-700 border-opacity-50">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full bg-orange-500 bg-opacity-20 flex items-center justify-center mr-4">
+                                <i class="fas fa-calculator text-3xl" style="color: var(--accent-orange);"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Build Calculator</h3>
+                                <div class="text-orange-400 text-sm font-semibold">INTERACTIVE TOOL</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Create and test optimized character builds with our advanced calculator. Input your weapons and passive items to calculate total DPS, survivability scores, and get personalized recommendations.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-gray-400">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                DPS & Damage Calculations
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                Synergy Analysis
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                Save & Share Builds
+                            </li>
+                        </ul>
+                        <a href="/tools/build-calculator/" class="btn-primary px-6 py-3 rounded-lg font-bold inline-flex items-center">
+                            Launch Calculator <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Tool 2: Tier List Maker -->
+                    <div class="card-hover bg-gradient-to-br from-cyan-900 to-blue-900 bg-opacity-30 rounded-2xl p-8 border border-cyan-700 border-opacity-50">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500 bg-opacity-20 flex items-center justify-center mr-4">
+                                <i class="fas fa-ranking-star text-3xl" style="color: var(--accent-cyan);"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Community Tier List</h3>
+                                <div class="text-cyan-400 text-sm font-semibold">VOTE & COMPARE</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            See how the community ranks weapons and characters. Vote on your favorites and compare your opinions with thousands of other players. Updated weekly with the latest meta trends.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-gray-400">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                Real-time Community Votes
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                Meta Trend Analysis
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                Weekly Updates
+                            </li>
+                        </ul>
+                        <a href="/tier-list/" class="btn-secondary px-6 py-3 rounded-lg font-bold inline-flex items-center">
+                            View Rankings <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Game Section -->
+        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                            What is <span style="color: var(--accent-orange);">Monster Survivors</span>?
+                        </h2>
+                        
+                        <div class="space-y-4 text-gray-300">
+                            <p>
+                                <strong class="text-white">Monster Survivors</strong> is an action-packed roguelite survival game where you battle endless waves of terrifying monsters in an ever-changing apocalyptic world. Inspired by the popular "survivors-like" genre, this game combines auto-attack combat with deep strategic decision-making.
+                            </p>
+                            
+                            <p>
+                                Featuring <strong class="text-cyan-400">dynamic gameplay</strong> with character progression, weapon evolution systems, and epic boss battles, each run presents unique challenges. Choose from multiple characters with distinct abilities, unlock powerful weapons, and build devastating synergies to survive as long as possible.
+                            </p>
+                            
+                            <p>
+                                <strong class="text-white">Available on multiple platforms:</strong> Download on <span class="text-orange-400">iOS</span>, <span class="text-orange-400">Android</span>, <span class="text-orange-400">Nintendo Switch</span>, <span class="text-orange-400">PlayStation</span>, and <span class="text-orange-400">Xbox</span>. Also playable for free in your browser on various gaming platforms.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="/guides/beginner-guide/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                                <i class="fas fa-book-open mr-2"></i> Beginner's Guide
+                            </a>
+                            <a href="/characters/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                                <i class="fas fa-users mr-2"></i> View All Characters
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <!-- Placeholder for game screenshot -->
+                        <div class="rounded-2xl overflow-hidden border-4 border-cyan-500 border-opacity-50 shadow-2xl">
+                            <div class="aspect-video bg-gradient-to-br from-purple-900 via-red-900 to-orange-900 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-gamepad text-8xl text-white opacity-30 mb-4"></i>
+                                    <p class="text-gray-400 text-sm">Game Screenshot Placeholder</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating stats -->
+                        <div class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg">
+                            <div class="text-2xl font-bold">10+</div>
+                            <div class="text-xs opacity-90">Characters</div>
+                        </div>
+                        <div class="absolute -top-6 -right-6 bg-cyan-600 rounded-xl p-4 shadow-lg">
+                            <div class="text-2xl font-bold">30+</div>
+                            <div class="text-xs opacity-90">Weapons</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                    Frequently Asked <span style="color: var(--accent-cyan);">Questions</span>
+                </h2>
+                <p class="text-center text-gray-400 mb-12">
+                    Quick answers to common questions about Monster Survivors
+                </p>
+                
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
+                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                            <span class="font-bold text-lg">What platforms is Monster Survivors available on?</span>
+                            <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-400">
+                                Monster Survivors is available on iOS (App Store), Android (Google Play), Nintendo Switch, PlayStation, Xbox, and can also be played for free in web browsers on platforms like OnlineGames.io and FreezeNova. The mobile version "Monster Survivors: Last Stand" is the most popular version with millions of downloads.
+                            </p>
+                            <a href="/guides/download-guide/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                                Read full download guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
+                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                            <span class="font-bold text-lg">What are the best weapons for beginners?</span>
+                            <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-400">
+                                For beginners, we recommend starting with the <strong>Steel Sword</strong> for close-range combat or the <strong>Wooden Wand</strong> for ranged magical attacks. Both weapons are easy to use and scale well into mid-game. As you progress, prioritize getting the <strong>Lightning Staff</strong> or <strong>Boomerang</strong> for excellent crowd control. Check our tier list for complete rankings.
+                            </p>
+                            <a href="/tier-list/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                                View weapon tier list <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
+                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                            <span class="font-bold text-lg">How do I unlock new characters?</span>
+                            <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-400">
+                                Characters are unlocked by completing specific achievements and challenges. The Guardian, Archer, and Knight are available from the start. Additional characters like the Warlock and Assassin require you to reach certain stages, defeat specific bosses, or collect enough gold. Each character has unique starting weapons and passive abilities that change your playstyle.
+                            </p>
+                            <a href="/characters/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                                View all characters <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
+                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                            <span class="font-bold text-lg">Is Monster Survivors pay-to-win?</span>
+                            <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-400">
+                                The mobile version (Monster Survivors: Last Stand) does have in-app purchases and optional ads for rewards, but the game is fully playable without spending money. The web browser versions are completely free with no microtransactions. While purchasing items can speed up progression, skilled players can succeed with free-to-play strategies by focusing on optimal builds and understanding game mechanics.
+                            </p>
+                            <a href="/guides/f2p-strategy/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                                Read F2P strategy guide <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
+                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                            <span class="font-bold text-lg">How long does a typical run last?</span>
+                            <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-400">
+                                A typical run in Monster Survivors lasts between 10-30 minutes depending on your skill level and build. Beginners might survive 5-10 minutes initially, while experienced players with optimized builds can push past 30 minutes to face the final boss waves. The game progressively increases in difficulty with stronger enemies appearing every few minutes, culminating in epic boss battles every 5 stages.
+                            </p>
+                            <a href="/guides/30-minute-survival/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                                Learn survival strategies <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="py-20 px-4 gradient-bg">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    Ready to <span style="color: var(--accent-orange);">Dominate</span> the Monster Horde?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Join thousands of players using our guides and tools to master Monster Survivors
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/guides/beginner-guide/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Start with Beginner Guide
+                    </a>
+                    <a href="/tier-list/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                        <i class="fas fa-trophy mr-2"></i>
+                        Check Tier List
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-
+    
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-16">
-        <div class="container mx-auto px-4 py-8">
-            <div class="text-center text-apple-gray">
-                <p class="mb-2">© 2025 MonsterSurvivors.plus - All Rights Reserved</p>
-                <p class="text-sm">Play Monster Survivors online for free. No downloads, no registration required.</p>
+    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
+                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Your ultimate resource for Monster Survivors strategies, guides, and tools.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/weapons/" class="hover:text-cyan-400 transition">Weapons Database</a></li>
+                        <li><a href="/characters/" class="hover:text-cyan-400 transition">Characters Guide</a></li>
+                        <li><a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a></li>
+                        <li><a href="/builds/" class="hover:text-cyan-400 transition">Build Guides</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold mb-4 text-orange-400">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/guides/" class="hover:text-cyan-400 transition">Strategy Guides</a></li>
+                        <li><a href="/tools/build-calculator/" class="hover:text-cyan-400 transition">Build Calculator</a></li>
+                        <li><a href="/blog/" class="hover:text-cyan-400 transition">Blog & News</a></li>
+                        <li><a href="/faq/" class="hover:text-cyan-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
+                        <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">
+                        © 2026 MonsterSurvivors.plus - All Rights Reserved
+                    </p>
+                    <p class="text-gray-500 text-sm text-center md:text-right">
+                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors and all related assets are property of their respective owners.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript -->
+    
+    <!-- Mobile Menu Toggle Script -->
     <script>
-        function toggleFullscreen() {
-            const gameContainer = document.getElementById('gameContainer');
-            const iframe = gameContainer.querySelector('iframe');
-            
-            if (!document.fullscreenElement) {
-                if (iframe.requestFullscreen) {
-                    iframe.requestFullscreen();
-                } else if (iframe.webkitRequestFullscreen) {
-                    iframe.webkitRequestFullscreen();
-                } else if (iframe.msRequestFullscreen) {
-                    iframe.msRequestFullscreen();
-                }
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
-            }
-        }
-
-        // Smooth scroll for better UX
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Accordion functionality
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+        
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                // Toggle active state
+                content.classList.toggle('active');
+                icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+                
+                // Close other accordions
+                accordionBtns.forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        const otherContent = otherBtn.nextElementSibling;
+                        const otherIcon = otherBtn.querySelector('i');
+                        otherContent.classList.remove('active');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
     </script>
 
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "VideoGame",
-        "name": "Monster Survivors",
-        "description": "Battle endless waves of monsters and become the ultimate survivor in this thrilling action-packed survival game.",
-        "genre": ["Action", "Survival", "Arcade"],
-        "playMode": "SinglePlayer",
-        "applicationCategory": "Game",
-        "operatingSystem": "Web Browser",
-        "url": "https://monstersurvivors.plus/",
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        }
-    }
-    </script>
 </body>
-
 </html>
-
-
