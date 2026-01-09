@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Play Monster Survivors Online Free | Browser Game</title>
+    <meta name="description" content="Play Monster Survivors for free directly in your browser. No download required! Battle endless monster waves in this addictive roguelike survival game.">
+    <meta name="keywords" content="monster survivors online, play monster survivors, monster survivors free, browser game, play now">
+    <link rel="canonical" href="https://monstersurvivors.plus/play/">
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-511JG9F2HD');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Play Monster Survivors Online Free">
+    <meta property="og:description" content="Play now in your browser - no download needed!">
+    <meta property="og:url" content="https://monstersurvivors.plus/play/">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght:400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-dark: #1a1a2e;
+            --secondary-dark: #16213e;
+            --accent-orange: #ff6b35;
+            --accent-cyan: #00d9ff;
+            --text-light: #f5f5f5;
+            --text-gray: #b8b8b8;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .game-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
+            border: 3px solid var(--accent-cyan);
+        }
+        
+        .game-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            border-radius: 12px;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(0, 217, 255, 0.3);
+            border-top-color: var(--accent-cyan);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .fullscreen-btn {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(0, 217, 255, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 20;
+            transition: all 0.3s;
+            border: none;
+            font-weight: bold;
+        }
+        
+        .fullscreen-btn:hover {
+            background: var(--accent-cyan);
+            transform: scale(1.05);
+        }
+        
+        .control-card {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+            border: 2px solid rgba(0, 217, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Monster Survivors",
+        "description": "Action-packed roguelite survival game where you battle endless waves of monsters",
+        "gamePlatform": "Web Browser",
+        "genre": ["Action", "Roguelike", "Survival"],
+        "playMode": "SinglePlayer",
+        "url": "https://monstersurvivors.plus/play/"
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation (Simplified) -->
+    <nav class="bg-opacity-95 backdrop-blur-sm py-4" style="background-color: rgba(26, 26, 46, 0.95);">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
+                <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+            </a>
+            <div class="flex space-x-6">
+                <a href="/" class="hover:text-cyan-400 transition">Home</a>
+                <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+                <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="py-8 px-4">
+        <!-- Page Header -->
+        <div class="max-w-7xl mx-auto mb-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-black mb-4">
+                Play <span style="color: var(--accent-orange);">Monster Survivors</span> Online
+            </h1>
+            <p class="text-xl text-gray-300 mb-6">
+                No download required! Play directly in your browser and survive the monster horde
+            </p>
+            <div class="inline-flex items-center space-x-4 bg-orange-900 bg-opacity-30 rounded-lg px-6 py-3 border border-orange-600">
+                <i class="fas fa-info-circle text-orange-400 text-2xl"></i>
+                <div class="text-left">
+                    <div class="font-bold text-sm">Free to Play</div>
+                    <div class="text-xs text-gray-400">Works on Desktop & Mobile</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Container -->
+        <div class="max-w-7xl mx-auto mb-12">
+            <div class="game-container">
+                <div class="game-wrapper" id="gameWrapper">
+                    <!-- Loading Overlay -->
+                    <div class="loading-overlay" id="loadingOverlay">
+                        <div class="loading-spinner mb-4"></div>
+                        <p class="text-cyan-400 font-semibold">Loading Monster Survivors...</p>
+                        <p class="text-gray-400 text-sm mt-2">This may take a few moments</p>
+                    </div>
+                    
+                    <!-- Game Iframe -->
+                    <iframe 
+                        id="gameFrame"
+                        src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        loading="lazy"
+                        title="Monster Survivors Game"
+                    ></iframe>
+                    
+                    <!-- Fullscreen Button -->
+                    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">
+                        <i class="fas fa-expand"></i> Fullscreen
+                    </button>
+                </div>
+                
+                <!-- Game Status Info -->
+                <div class="mt-4 text-center text-sm text-gray-400">
+                    <i class="fas fa-check-circle text-green-400"></i> Game is running in your browser
+                    | <span id="loadStatus">Loading...</span>
+                </div>
+            </div>
+        </div>
+          
+        <!-- How to Play Section -->
+        <div class="max-w-7xl mx-auto mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Controls Card -->
+                <div class="control-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gamepad text-3xl mr-3" style="color: var(--accent-orange);"></i>
+                        <h3 class="text-xl font-bold">Controls</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-mouse text-cyan-400 mr-2"></i> <strong>Mouse:</strong> Move character</li>
+                        <li><i class="fas fa-hand-pointer text-cyan-400 mr-2"></i> <strong>Click:</strong> Select upgrades</li>
+                        <li><i class="fas fa-fire text-cyan-400 mr-2"></i> <strong>Auto-attack:</strong> Automatic</li>
+                        <li><i class="fas fa-gem text-cyan-400 mr-2"></i> <strong>Collect XP:</strong> Walk over gems</li>
+                    </ul>
+                </div>
+                
+                <!-- Objective Card -->
+                <div class="control-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bullseye text-3xl mr-3" style="color: var(--accent-orange);"></i>
+                        <h3 class="text-xl font-bold">Objective</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-heart text-red-400 mr-2"></i> Survive as long as possible</li>
+                        <li><i class="fas fa-skull-crossbones text-orange-400 mr-2"></i> Defeat endless monster waves</li>
+                        <li><i class="fas fa-level-up-alt text-cyan-400 mr-2"></i> Level up and choose upgrades</li>
+                        <li><i class="fas fa-trophy text-yellow-400 mr-2"></i> Beat boss monsters</li>
+                    </ul>
+                </div>
+                
+                <!-- Tips Card -->
+                <div class="control-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-3xl mr-3" style="color: var(--accent-orange);"></i>
+                        <h3 class="text-xl font-bold">Pro Tips</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-running text-cyan-400 mr-2"></i> Keep moving constantly</li>
+                        <li><i class="fas fa-gem text-cyan-400 mr-2"></i> Collect XP gems quickly</li>
+                        <li><i class="fas fa-sword text-cyan-400 mr-2"></i> Focus one weapon first</li>
+                        <li><i class="fas fa-shield-alt text-cyan-400 mr-2"></i> Prioritize survivability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Links Section -->
+        <div class="max-w-7xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Need Help? <span style="color: var(--accent-cyan);">Check Our Guides</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/tier-list/" class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500 transition">
+                    <i class="fas fa-trophy text-4xl mb-3" style="color: var(--accent-orange);"></i>
+                    <h3 class="text-xl font-bold mb-2">Weapon Tier List</h3>
+                    <p class="text-gray-400 text-sm">Discover the best weapons for dominating the game</p>
+                </a>
+                
+                <a href="/characters/" class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500 transition">
+                    <i class="fas fa-user-shield text-4xl mb-3" style="color: var(--accent-orange);"></i>
+                    <h3 class="text-xl font-bold mb-2">Character Guides</h3>
+                    <p class="text-gray-400 text-sm">Master every character with detailed strategies</p>
+                </a>
+                
+                <a href="/builds/" class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500 transition">
+                    <i class="fas fa-calculator text-4xl mb-3" style="color: var(--accent-orange);"></i>
+                    <h3 class="text-xl font-bold mb-2">Build Calculator</h3>
+                    <p class="text-gray-400 text-sm">Create and optimize your perfect build</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Frequently Asked <span style="color: var(--accent-cyan);">Questions</span>
+            </h2>
+            
+            <div class="space-y-4">
+                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
+                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
+                        Is this game completely free?
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Yes! Monster Survivors is completely free to play in your browser. No downloads, no registration, no hidden costs.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
+                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
+                        Does it work on mobile?
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        The browser version works best on desktop. For mobile, we recommend downloading the official Monster Survivors app from the App Store or Google Play.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
+                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
+                        Why is the game loading slowly?
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Monster Survivors is a Unity game that needs to load assets. Initial loading may take 30-60 seconds depending on your connection. Once loaded, it runs smoothly.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
+                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
+                        Can I save my progress?
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Progress in the browser version may be saved locally. For persistent progress across devices, download the official app versions.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer (Simplified) -->
+    <footer class="bg-gray-900 bg-opacity-80 py-8 px-4 mt-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-500 text-sm mb-2">
+                © 2025 MonsterSurvivors.plus - All Rights Reserved
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors and all related assets are property of their respective owners.
+            </p>
+            <div class="mt-4">
+                <a href="/" class="text-cyan-400 hover:text-cyan-300 mx-2">Home</a>
+                <a href="/privacy-policy/" class="text-cyan-400 hover:text-cyan-300 mx-2">Privacy</a>
+                <a href="/contact/" class="text-cyan-400 hover:text-cyan-300 mx-2">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Hide loading overlay when iframe loads
+        const gameFrame = document.getElementById('gameFrame');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const loadStatus = document.getElementById('loadStatus');
+        
+        gameFrame.addEventListener('load', function() {
+            setTimeout(() => {
+                loadingOverlay.style.opacity = '0';
+                loadingOverlay.style.transition = 'opacity 0.5s';
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                }, 500);
+                loadStatus.textContent = 'Ready to play!';
+                loadStatus.classList.add('text-green-400');
+            }, 1000);
+        });
+        
+        // Fullscreen function
+        function toggleFullscreen() {
+            const wrapper = document.getElementById('gameWrapper');
+            const btn = document.getElementById('fullscreenBtn');
+            
+            if (!document.fullscreenElement) {
+                wrapper.requestFullscreen().then(() => {
+                    btn.innerHTML = '<i class="fas fa-compress"></i> Exit Fullscreen';
+                }).catch(err => {
+                    alert('Error enabling fullscreen: ' + err.message);
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    btn.innerHTML = '<i class="fas fa-expand"></i> Fullscreen';
+                });
+            }
+        }
+        
+        // Listen for fullscreen changes
+        document.addEventListener('fullscreenchange', function() {
+            const btn = document.getElementById('fullscreenBtn');
+            if (!document.fullscreenElement) {
+                btn.innerHTML = '<i class="fas fa-expand"></i> Fullscreen';
+            }
+        });
+        
+        // Update load status after timeout
+        setTimeout(() => {
+            if (loadStatus.textContent === 'Loading...') {
+                loadStatus.textContent = 'Still loading... (Unity may take time)';
+            }
+        }, 10000);
+    </script>
+</body>
+</html>
