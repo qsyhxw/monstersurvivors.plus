@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -281,14 +282,22 @@
                     
                     <div class="relative">
                         <!-- Placeholder for game screenshot -->
+                        <div class="relative">
                         <div class="rounded-2xl overflow-hidden border-4 border-cyan-500 border-opacity-50 shadow-2xl">
-                            <div class="aspect-video bg-gradient-to-br from-purple-900 via-red-900 to-orange-900 flex items-center justify-center">
-                                <div class="text-center">
-                                    <i class="fas fa-gamepad text-8xl text-white opacity-30 mb-4"></i>
-                                    <p class="text-gray-400 text-sm">Browser-Based Game</p>
-                                </div>
-                            </div>
+                            <img src="https://monstersurvivors.plus/images/Game-Screenshots.png" 
+                                 alt="Monster Survivors Gameplay Screenshot - Roguelike Action" 
+                                 class="w-full h-auto block hover:scale-105 transition-transform duration-500">
                         </div>
+                        
+                        <div class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg border border-orange-400">
+                            <div class="text-2xl font-bold">Free</div>
+                            <div class="text-xs opacity-90">No Cost</div>
+                        </div>
+                        <div class="absolute -top-6 -right-6 bg-cyan-600 rounded-xl p-4 shadow-lg border border-cyan-400">
+                            <div class="text-2xl font-bold">Browser</div>
+                            <div class="text-xs opacity-90">No Download</div>
+                        </div>
+                    </div>
                         
                         <!-- Floating stats -->
                         <div class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg">
@@ -315,10 +324,11 @@
                 </p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Steel Sword -->
                     <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-orange-500">
-                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-sword text-4xl" style="color: var(--accent-orange);"></i>
+                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
+                            <img src="https://monstersurvivors.plus/images/Steel-Sword.png" 
+                                 alt="Steel Sword - Melee Weapon" 
+                                 class="w-full h-full object-contain p-2">
                         </div>
                         <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-orange);">Steel Sword</h3>
                         <p class="text-gray-300 text-center mb-6">
@@ -340,10 +350,11 @@
                         </div>
                     </div>
                     
-                    <!-- Wooden Wand -->
                     <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-cyan-500">
-                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-wand-magic-sparkles text-4xl" style="color: var(--accent-cyan);"></i>
+                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
+                            <img src="https://monstersurvivors.plus/images/Wooden-Wand.png" 
+                                 alt="Wooden Wand - Ranged Magic Weapon" 
+                                 class="w-full h-full object-contain p-2">
                         </div>
                         <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-cyan);">Wooden Wand</h3>
                         <p class="text-gray-300 text-center mb-6">
@@ -742,5 +753,6 @@
 	}
 	// ]]>
 </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"ef079b0273cd4683b6fbac435469248c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
