@@ -1,125 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Monster Survivors - Play Free Online | Strategy Guide 2026</title>
-    <meta name="description" content="Play Monster Survivors free online! Master this roguelike survival game with our complete strategy guide, weapon tips, and boss tactics. No download required.">
-    <meta name="keywords" content="monster survivors, play online, free game, browser game, roguelike, survival game, strategy guide">
+    <meta name="description"
+        content="Play Monster Survivors free online! Master this roguelike survival game with our complete strategy guide, weapon tips, and boss tactics. No download required.">
+    <meta name="keywords"
+        content="monster survivors, play online, free game, browser game, roguelike, survival game, strategy guide">
     <meta name="author" content="MonsterSurvivors.plus">
     <link rel="canonical" href="https://monstersurvivors.plus/">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
         crossorigin="anonymous"></script>
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Monster Survivors - Play Free Online | Strategy Guide">
-    <meta property="og:description" content="Play Monster Survivors free in your browser. Master survival strategies and dominate the monster horde!">
+    <meta property="og:description"
+        content="Play Monster Survivors free in your browser. Master survival strategies and dominate the monster horde!">
     <meta property="og:url" content="https://monstersurvivors.plus/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://monstersurvivors.plus/images/og-image.jpg">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Monster Survivors - Play Free Online">
     <meta name="twitter:description" content="Free browser-based survival game with roguelike elements">
     <meta name="twitter:image" content="https://monstersurvivors.plus/images/twitter-card.jpg">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.ico">
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght:400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght:400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom Styles -->
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
             --text-light: #f5f5f5;
             --text-gray: #b8b8b8;
+            --glow-orange: 0 0 30px rgba(255, 107, 53, 0.5);
+            --glow-cyan: 0 0 30px rgba(0, 217, 255, 0.5);
         }
-        
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--primary-dark);
             color: var(--text-light);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Orbitron', sans-serif;
         }
-        
+
+        /* ========== 粒子背景容器 ========== */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: float-particle 15s infinite ease-in-out;
+            opacity: 0.6;
+        }
+
+        .particle-1 {
+            width: 4px;
+            height: 4px;
+            background: var(--accent-cyan);
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .particle-2 {
+            width: 6px;
+            height: 6px;
+            background: var(--accent-orange);
+            top: 20%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .particle-3 {
+            width: 3px;
+            height: 3px;
+            background: var(--accent-purple);
+            top: 60%;
+            left: 10%;
+            animation-delay: 4s;
+        }
+
+        .particle-4 {
+            width: 5px;
+            height: 5px;
+            background: var(--accent-pink);
+            top: 80%;
+            left: 70%;
+            animation-delay: 1s;
+        }
+
+        .particle-5 {
+            width: 4px;
+            height: 4px;
+            background: var(--accent-cyan);
+            top: 40%;
+            left: 50%;
+            animation-delay: 3s;
+        }
+
+        .particle-6 {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-orange);
+            top: 70%;
+            left: 30%;
+            animation-delay: 5s;
+        }
+
+        .particle-7 {
+            width: 3px;
+            height: 3px;
+            background: var(--accent-purple);
+            top: 30%;
+            left: 90%;
+            animation-delay: 2.5s;
+        }
+
+        .particle-8 {
+            width: 5px;
+            height: 5px;
+            background: var(--accent-cyan);
+            top: 90%;
+            left: 40%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes float-particle {
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0.6;
+            }
+
+            25% {
+                transform: translateY(-30px) translateX(20px) scale(1.2);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: translateY(-60px) translateX(-10px) scale(0.8);
+                opacity: 0.4;
+            }
+
+            75% {
+                transform: translateY(-30px) translateX(-20px) scale(1.1);
+                opacity: 0.7;
+            }
+        }
+
+        /* ========== 渐变背景 ========== */
         .gradient-bg {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+            position: relative;
         }
-        
+
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(0, 217, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255, 107, 53, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 60%);
+            animation: gradient-shift 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        /* ========== 发光文字效果 ========== */
+        .glow-text-orange {
+            color: var(--accent-orange);
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5), 0 0 20px rgba(255, 107, 53, 0.3), 0 0 40px rgba(255, 107, 53, 0.2);
+        }
+
+        .glow-text-cyan {
+            color: var(--accent-cyan);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3), 0 0 40px rgba(0, 217, 255, 0.2);
+        }
+
+        /* ========== 卡片3D悬停效果 ========== */
         .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            perspective: 1000px;
         }
-        
+
         .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+            transform: translateY(-12px) rotateX(5deg);
+            box-shadow:
+                0 30px 60px rgba(0, 217, 255, 0.2),
+                0 0 40px rgba(0, 217, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
-        
+
+        /* ========== 发光边框卡片 ========== */
+        .glow-card {
+            position: relative;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+
+        .glow-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--accent-cyan), var(--accent-orange), var(--accent-purple), var(--accent-cyan));
+            background-size: 400% 400%;
+            z-index: -1;
+            border-radius: inherit;
+            animation: glow-rotate 6s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .glow-card:hover::before {
+            opacity: 1;
+        }
+
+        @keyframes glow-rotate {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ========== 按钮脉冲效果 ========== */
         .btn-primary {
             background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
         .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+            transform: scale(1.08);
+            box-shadow: var(--glow-orange), 0 10px 30px rgba(255, 107, 53, 0.4);
         }
-        
+
+        .btn-pulse {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(255, 107, 53, 0.8), 0 0 60px rgba(255, 107, 53, 0.4);
+            }
+        }
+
         .btn-secondary {
             background: linear-gradient(135deg, var(--accent-cyan) 0%, #0077b6 100%);
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        
+
         .btn-secondary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+            transform: scale(1.08);
+            box-shadow: var(--glow-cyan), 0 10px 30px rgba(0, 217, 255, 0.4);
         }
-        
+
+        /* ========== 玻璃态统计卡片 ========== */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 217, 255, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* ========== 图标盒子发光 ========== */
         .icon-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(0, 217, 255, 0.15) 100%);
+            border: 2px solid rgba(0, 217, 255, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
         }
-        
+
+        .icon-box::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-cyan));
+            opacity: 0;
+            z-index: -1;
+            filter: blur(15px);
+            transition: opacity 0.3s ease;
+        }
+
+        .icon-box:hover::after {
+            opacity: 0.6;
+        }
+
+        /* ========== 滚动入场动画 ========== */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== 武器卡片特效 ========== */
+        .weapon-card-orange {
+            position: relative;
+            border: 2px solid rgba(255, 107, 53, 0.5);
+        }
+
+        .weapon-card-orange::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(255, 107, 53, 0.2) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .weapon-card-orange:hover::before {
+            opacity: 1;
+        }
+
+        .weapon-card-cyan {
+            position: relative;
+            border: 2px solid rgba(0, 217, 255, 0.5);
+        }
+
+        .weapon-card-cyan::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(0, 217, 255, 0.2) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .weapon-card-cyan:hover::before {
+            opacity: 1;
+        }
+
+        /* ========== 攻略卡片悬浮光效 ========== */
+        .guide-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guide-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to bottom right,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0) 40%,
+                    rgba(255, 255, 255, 0.1) 50%,
+                    rgba(255, 255, 255, 0) 60%,
+                    rgba(255, 255, 255, 0) 100%);
+            transform: rotate(45deg) translateY(100%);
+            transition: transform 0.6s ease;
+        }
+
+        .guide-card:hover::after {
+            transform: rotate(45deg) translateY(-100%);
+        }
+
+        /* ========== FAQ手风琴 ========== */
         .accordion-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         .accordion-content.active {
             max-height: 300px;
         }
+
+        .accordion-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .accordion-btn::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-orange));
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-btn:hover::before {
+            transform: scaleY(1);
+        }
+
+        /* ========== 装饰性浮动元素 ========== */
+        .floating-decoration {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        /* ========== 霓虹标题效果 ========== */
+        .neon-title {
+            animation: neon-flicker 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon-flicker {
+
+            0%,
+            100% {
+                text-shadow:
+                    0 0 5px rgba(255, 107, 53, 0.8),
+                    0 0 10px rgba(255, 107, 53, 0.6),
+                    0 0 20px rgba(255, 107, 53, 0.4);
+            }
+
+            50% {
+                text-shadow:
+                    0 0 10px rgba(255, 107, 53, 1),
+                    0 0 20px rgba(255, 107, 53, 0.8),
+                    0 0 40px rgba(255, 107, 53, 0.6),
+                    0 0 80px rgba(255, 107, 53, 0.4);
+            }
+        }
+
+        /* ========== 网格背景 ========== */
+        .grid-bg {
+            background-image:
+                linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
     </style>
-    
+
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
     {
@@ -135,7 +576,7 @@
         }
     }
     </script>
-    
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -152,8 +593,9 @@
     }
     </script>
 </head>
+
 <body class="antialiased">
-    
+
     <!-- Navigation Header -->
     <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,10 +604,11 @@
                 <div class="flex items-center">
                     <a href="/" class="flex items-center space-x-2">
                         <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold" style="font-family: 'Orbitron', sans-serif;">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                        <span class="text-xl font-bold" style="font-family: 'Orbitron', sans-serif;">Monster<span
+                                style="color: var(--accent-cyan);">Survivors</span></span>
                     </a>
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex space-x-8">
                     <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
@@ -173,7 +616,7 @@
                     <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
                     <a href="/tips/" class="hover:text-cyan-400 transition">Tips & Tricks</a>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
@@ -182,7 +625,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
             <div class="px-4 pt-2 pb-4 space-y-2">
@@ -193,110 +636,153 @@
             </div>
         </div>
     </nav>
-    
+
     <main>
         <!-- Hero Section -->
-        <section class="gradient-bg py-20 px-4 relative overflow-hidden">
-            <!-- Decorative Background Elements -->
-            <div class="absolute top-0 left-0 w-full h-full opacity-10">
-                <div class="absolute top-20 left-10 w-64 h-64 bg-cyan-500 rounded-full filter blur-3xl"></div>
-                <div class="absolute bottom-20 right-10 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl"></div>
+        <section class="gradient-bg py-24 px-4 relative overflow-hidden">
+            <!-- 粒子背景 -->
+            <div class="particles-container">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+                <div class="particle particle-6"></div>
+                <div class="particle particle-7"></div>
+                <div class="particle particle-8"></div>
             </div>
-            
+
+            <!-- 装饰性光晕 -->
+            <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+                <div
+                    class="absolute top-10 left-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-[100px] animate-pulse">
+                </div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 bg-orange-500 rounded-full filter blur-[120px] animate-pulse"
+                    style="animation-delay: 1s;"></div>
+                <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500 rounded-full filter blur-[80px] animate-pulse"
+                    style="animation-delay: 2s;"></div>
+            </div>
+
             <div class="max-w-7xl mx-auto text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                <!-- 主标题 -->
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight fade-in-up">
                     Monster Survivors <br class="hidden md:block">
-                    <span style="color: var(--accent-orange);">Strategy Guide</span> & Free Game
+                    <span class="glow-text-orange neon-title">Strategy Guide</span> & Free Game
                 </h1>
-                
-                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                    Master the ultimate browser-based survival game. Play free online and learn winning strategies to dominate the monster horde!
+
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto fade-in-up"
+                    style="animation-delay: 0.1s;">
+                    Master the ultimate browser-based survival game. Play free online and learn winning strategies to
+                    <span class="glow-text-cyan">dominate</span> the monster horde!
                 </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center space-x-2">
-                        <i class="fas fa-play-circle"></i>
+
+                <!-- 行动按钮 -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in-up"
+                    style="animation-delay: 0.2s;">
+                    <a href="/play/"
+                        class="btn-primary btn-pulse px-10 py-5 rounded-xl font-bold text-xl inline-flex items-center space-x-3 shadow-2xl">
+                        <i class="fas fa-play-circle text-2xl"></i>
                         <span>Play Now Free</span>
                     </a>
-                    <a href="/guides/beginner-guide/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center space-x-2">
-                        <i class="fas fa-book-open"></i>
+                    <a href="/guides/beginner-guide/"
+                        class="btn-secondary px-10 py-5 rounded-xl font-bold text-xl inline-flex items-center space-x-3 shadow-2xl">
+                        <i class="fas fa-book-open text-2xl"></i>
                         <span>Beginner's Guide</span>
                     </a>
                 </div>
-                
-                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
-                        <div class="text-3xl font-bold text-cyan-400">100%</div>
-                        <div class="text-sm text-gray-400">Free to Play</div>
+
+                <!-- 游戏特性统计 -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto fade-in-up"
+                    style="animation-delay: 0.3s;">
+                    <div class="glass-card rounded-2xl p-6 group cursor-default">
+                        <div class="text-4xl font-black glow-text-cyan group-hover:scale-110 transition-transform">100%
+                        </div>
+                        <div class="text-sm text-gray-400 mt-2 font-medium">Free to Play</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
-                        <div class="text-3xl font-bold text-orange-400">No Download</div>
-                        <div class="text-sm text-gray-400">Browser Based</div>
+                    <div class="glass-card rounded-2xl p-6 group cursor-default">
+                        <div class="text-3xl font-black glow-text-orange group-hover:scale-110 transition-transform">No
+                            Download</div>
+                        <div class="text-sm text-gray-400 mt-2 font-medium">Browser Based</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
-                        <div class="text-3xl font-bold text-cyan-400">2 Maps</div>
-                        <div class="text-sm text-gray-400">Unique Challenges</div>
+                    <div class="glass-card rounded-2xl p-6 group cursor-default">
+                        <div class="text-4xl font-black glow-text-cyan group-hover:scale-110 transition-transform">2
+                            Maps</div>
+                        <div class="text-sm text-gray-400 mt-2 font-medium">Unique Challenges</div>
                     </div>
-                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
-                        <div class="text-3xl font-bold text-orange-400">Roguelike</div>
-                        <div class="text-sm text-gray-400">Endless Replayability</div>
+                    <div class="glass-card rounded-2xl p-6 group cursor-default">
+                        <div class="text-3xl font-black glow-text-orange group-hover:scale-110 transition-transform">
+                            Roguelike</div>
+                        <div class="text-sm text-gray-400 mt-2 font-medium">Endless Replayability</div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Game Overview Section -->
         <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
                     What is <span style="color: var(--accent-cyan);">Monster Survivors</span>?
                 </h2>
-                
+
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <div class="space-y-4 text-gray-300">
                             <p>
-                                <strong class="text-white">Monster Survivors</strong> is a free-to-play roguelike survival game developed by <strong class="text-cyan-400">FreezeNova</strong>. Battle endless waves of monsters including aggressive crabs, eerie pumpkins, flesh-eating plants, and evil bees in a thrilling browser-based experience.
+                                <strong class="text-white">Monster Survivors</strong> is a free-to-play roguelike
+                                survival game developed by <strong class="text-cyan-400">FreezeNova</strong>. Battle
+                                endless waves of monsters including aggressive crabs, eerie pumpkins, flesh-eating
+                                plants, and evil bees in a thrilling browser-based experience.
                             </p>
-                            
+
                             <p>
-                                The game features dynamic roguelike gameplay where you choose your weapon at the start, collect experience to level up, and unlock powerful upgrades. With two unique maps (Dreamy Woods and Shade Palace) and intense boss battles that shrink the play area, every run presents new challenges.
+                                The game features dynamic roguelike gameplay where you choose your weapon at the start,
+                                collect experience to level up, and unlock powerful upgrades. With two unique maps
+                                (Dreamy Woods and Shade Palace) and intense boss battles that shrink the play area,
+                                every run presents new challenges.
                             </p>
-                            
+
                             <p>
-                                <strong class="text-white">Play directly in your browser</strong> on platforms like OnlineGames.io and other gaming sites. No download required, no registration needed, completely free!
+                                <strong class="text-white">Play directly in your browser</strong> on platforms like
+                                OnlineGames.io and other gaming sites. No download required, no registration needed,
+                                completely free!
                             </p>
                         </div>
-                        
+
                         <div class="mt-8 flex flex-wrap gap-4">
-                            <a href="/play/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                            <a href="/play/"
+                                class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
                                 <i class="fas fa-play mr-2"></i> Play Now
                             </a>
-                            <a href="/guides/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                            <a href="/guides/"
+                                class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
                                 <i class="fas fa-book mr-2"></i> View All Guides
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="relative">
                         <!-- Placeholder for game screenshot -->
                         <div class="relative">
-                        <div class="rounded-2xl overflow-hidden border-4 border-cyan-500 border-opacity-50 shadow-2xl">
-                            <img src="https://monstersurvivors.plus/images/Game-Screenshots.png" 
-                                 alt="Monster Survivors Gameplay Screenshot - Roguelike Action" 
-                                 class="w-full h-auto block hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="rounded-2xl overflow-hidden border-4 border-cyan-500 border-opacity-50 shadow-2xl">
+                                <img src="https://monstersurvivors.plus/images/Game-Screenshots.png"
+                                    alt="Monster Survivors Gameplay Screenshot - Roguelike Action"
+                                    class="w-full h-auto block hover:scale-105 transition-transform duration-500">
+                            </div>
+
+                            <div
+                                class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg border border-orange-400">
+                                <div class="text-2xl font-bold">Free</div>
+                                <div class="text-xs opacity-90">No Cost</div>
+                            </div>
+                            <div
+                                class="absolute -top-6 -right-6 bg-cyan-600 rounded-xl p-4 shadow-lg border border-cyan-400">
+                                <div class="text-2xl font-bold">Browser</div>
+                                <div class="text-xs opacity-90">No Download</div>
+                            </div>
                         </div>
-                        
-                        <div class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg border border-orange-400">
-                            <div class="text-2xl font-bold">Free</div>
-                            <div class="text-xs opacity-90">No Cost</div>
-                        </div>
-                        <div class="absolute -top-6 -right-6 bg-cyan-600 rounded-xl p-4 shadow-lg border border-cyan-400">
-                            <div class="text-2xl font-bold">Browser</div>
-                            <div class="text-xs opacity-90">No Download</div>
-                        </div>
-                    </div>
-                        
+
                         <!-- Floating stats -->
                         <div class="absolute -bottom-6 -left-6 bg-orange-600 rounded-xl p-4 shadow-lg">
                             <div class="text-2xl font-bold">Free</div>
@@ -310,27 +796,30 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Weapons Section -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
+        <section class="py-20 px-4 grid-bg" style="background-color: var(--primary-dark);">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
-                    Choose Your <span style="color: var(--accent-orange);">Starting Weapon</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 fade-in-up">
+                    Choose Your <span class="glow-text-orange">Starting Weapon</span>
                 </h2>
-                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Monster Survivors offers different playstyles right from the start. Pick the weapon that matches your strategy!
+                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto fade-in-up">
+                    Monster Survivors offers different playstyles right from the start. Pick the weapon that matches
+                    your strategy!
                 </p>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-orange-500">
-                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
-                            <img src="https://monstersurvivors.plus/images/Steel-Sword.png" 
-                                 alt="Steel Sword - Melee Weapon" 
-                                 class="w-full h-full object-contain p-2">
+                    <div class="card-hover weapon-card-orange bg-gray-900 bg-opacity-50 rounded-2xl p-8 fade-in-up">
+                        <div
+                            class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
+                            <img src="https://monstersurvivors.plus/images/Steel-Sword.png"
+                                alt="Steel Sword - Melee Weapon" class="w-full h-full object-contain p-2">
                         </div>
-                        <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-orange);">Steel Sword</h3>
+                        <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-orange);">Steel Sword
+                        </h3>
                         <p class="text-gray-300 text-center mb-6">
-                            Perfect for aggressive players who like close-range combat. Slash through enemies with raw power and dominate through melee attacks.
+                            Perfect for aggressive players who like close-range combat. Slash through enemies with raw
+                            power and dominate through melee attacks.
                         </p>
                         <div class="space-y-2 text-gray-400">
                             <div class="flex items-center">
@@ -347,16 +836,18 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-cyan-500">
-                        <div class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
-                            <img src="https://monstersurvivors.plus/images/Wooden-Wand.png" 
-                                 alt="Wooden Wand - Ranged Magic Weapon" 
-                                 class="w-full h-full object-contain p-2">
+                        <div
+                            class="icon-box w-20 h-20 rounded-lg flex items-center justify-center mb-6 mx-auto overflow-hidden">
+                            <img src="https://monstersurvivors.plus/images/Wooden-Wand.png"
+                                alt="Wooden Wand - Ranged Magic Weapon" class="w-full h-full object-contain p-2">
                         </div>
-                        <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-cyan);">Wooden Wand</h3>
+                        <h3 class="text-2xl font-bold text-center mb-4" style="color: var(--accent-cyan);">Wooden Wand
+                        </h3>
                         <p class="text-gray-300 text-center mb-6">
-                            Ideal for players who prefer ranged combat. Launch magical attacks from a safe distance and kite enemies effectively.
+                            Ideal for players who prefer ranged combat. Launch magical attacks from a safe distance and
+                            kite enemies effectively.
                         </p>
                         <div class="space-y-2 text-gray-400">
                             <div class="flex items-center">
@@ -376,7 +867,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Strategy Guides Section -->
         <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
             <div class="max-w-7xl mx-auto">
@@ -384,14 +875,16 @@
                     <h2 class="text-3xl md:text-4xl font-bold">
                         Essential <span style="color: var(--accent-orange);">Strategy Guides</span>
                     </h2>
-                    <a href="/guides/" class="hidden md:inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
+                    <a href="/guides/"
+                        class="hidden md:inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
                         View All Guides <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Guide Card 1 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
                         <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
                             <i class="fas fa-seedling text-6xl text-white opacity-50"></i>
                         </div>
@@ -400,15 +893,18 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/beginner-guide/">Complete Beginner's Guide to Monster Survivors</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Start your survival journey right. Learn the basics, weapon selection, movement strategies, and how to survive your first runs.</p>
-                            <a href="/guides/beginner-guide/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Start your survival journey right. Learn the basics, weapon
+                                selection, movement strategies, and how to survive your first runs.</p>
+                            <a href="/guides/beginner-guide/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
-                    
+
                     <!-- Guide Card 2 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
                         <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
                             <i class="fas fa-crosshairs text-6xl text-white opacity-50"></i>
                         </div>
@@ -417,16 +913,20 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/weapon-choice/">Steel Sword vs Wooden Wand: Which to Choose?</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Detailed comparison of both starting weapons. Discover which playstyle suits you best and maximize your survival potential.</p>
-                            <a href="/guides/weapon-choice/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Detailed comparison of both starting weapons. Discover which
+                                playstyle suits you best and maximize your survival potential.</p>
+                            <a href="/guides/weapon-choice/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
-                    
+
                     <!-- Guide Card 3 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
-                        <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div
+                            class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
                             <i class="fas fa-dragon text-6xl text-white opacity-50"></i>
                         </div>
                         <div class="p-6">
@@ -434,15 +934,18 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/boss-battles/">How to Survive Boss Battles</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Master boss encounters when the arena shrinks. Learn attack patterns, dodging techniques, and optimal positioning.</p>
-                            <a href="/guides/boss-battles/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Master boss encounters when the arena shrinks. Learn attack
+                                patterns, dodging techniques, and optimal positioning.</p>
+                            <a href="/guides/boss-battles/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
-                    
+
                     <!-- Guide Card 4 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
                         <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
                             <i class="fas fa-map text-6xl text-white opacity-50"></i>
                         </div>
@@ -451,16 +954,20 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/maps/">Dreamy Woods & Shade Palace Map Guide</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Explore both maps, learn enemy spawn patterns, and discover the best strategies for each unique environment.</p>
-                            <a href="/guides/maps/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Explore both maps, learn enemy spawn patterns, and discover
+                                the best strategies for each unique environment.</p>
+                            <a href="/guides/maps/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
-                    
+
                     <!-- Guide Card 5 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
-                        <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                        <div
+                            class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
                             <i class="fas fa-chart-line text-6xl text-white opacity-50"></i>
                         </div>
                         <div class="p-6">
@@ -468,15 +975,18 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/upgrades/">Gold Upgrade Priority Guide</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Maximize your persistent upgrades. Learn which stats to prioritize with your hard-earned gold between runs.</p>
-                            <a href="/guides/upgrades/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Maximize your persistent upgrades. Learn which stats to
+                                prioritize with your hard-earned gold between runs.</p>
+                            <a href="/guides/upgrades/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
-                    
+
                     <!-- Guide Card 6 -->
-                    <article class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
+                    <article
+                        class="card-hover bg-gray-900 bg-opacity-50 rounded-xl overflow-hidden border border-gray-800">
                         <div class="h-48 bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center">
                             <i class="fas fa-clock text-6xl text-white opacity-50"></i>
                         </div>
@@ -485,14 +995,16 @@
                             <h3 class="text-xl font-bold mb-3 hover:text-cyan-400 transition">
                                 <a href="/guides/advanced-survival/">Advanced Survival Tactics</a>
                             </h3>
-                            <p class="text-gray-400 mb-4">Push your survival time to the limit. Master movement patterns, XP collection, and late-game strategies.</p>
-                            <a href="/guides/advanced-survival/" class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
+                            <p class="text-gray-400 mb-4">Push your survival time to the limit. Master movement
+                                patterns, XP collection, and late-game strategies.</p>
+                            <a href="/guides/advanced-survival/"
+                                class="text-orange-400 font-semibold inline-flex items-center hover:text-orange-300">
                                 Read Guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <div class="text-center mt-8 md:hidden">
                     <a href="/guides/" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold">
                         View All Guides <i class="fas fa-arrow-right ml-2"></i>
@@ -500,7 +1012,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- FAQ Section -->
         <section class="py-16 px-4" style="background-color: var(--primary-dark);">
             <div class="max-w-4xl mx-auto">
@@ -510,83 +1022,107 @@
                 <p class="text-center text-gray-400 mb-12">
                     Quick answers to common questions about Monster Survivors
                 </p>
-                
+
                 <div class="space-y-4">
                     <!-- FAQ 1 -->
                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                        <button
+                            class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
                             <span class="font-bold text-lg">Where can I play Monster Survivors?</span>
                             <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
                         </button>
                         <div class="accordion-content px-6 pb-6">
                             <p class="text-gray-400">
-                                Monster Survivors by FreezeNova can be played for free directly in your web browser on platforms like OnlineGames.io, Miniplay, and other gaming websites. No download or registration required! Simply visit one of these sites and start playing immediately.
+                                Monster Survivors by FreezeNova can be played for free directly in your web browser on
+                                platforms like OnlineGames.io, Miniplay, and other gaming websites. No download or
+                                registration required! Simply visit one of these sites and start playing immediately.
                             </p>
-                            <a href="/play/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                            <a href="/play/"
+                                class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
                                 Play now <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- FAQ 2 -->
                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                        <button
+                            class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
                             <span class="font-bold text-lg">Which weapon should I choose as a beginner?</span>
                             <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
                         </button>
                         <div class="accordion-content px-6 pb-6">
                             <p class="text-gray-400">
-                                For beginners, the <strong>Wooden Wand</strong> is often easier to start with since it allows ranged combat and safer positioning. However, if you prefer aggressive close-range gameplay, the <strong>Steel Sword</strong> can be very effective once you master movement patterns. Try both and see which playstyle you enjoy more!
+                                For beginners, the <strong>Wooden Wand</strong> is often easier to start with since it
+                                allows ranged combat and safer positioning. However, if you prefer aggressive
+                                close-range gameplay, the <strong>Steel Sword</strong> can be very effective once you
+                                master movement patterns. Try both and see which playstyle you enjoy more!
                             </p>
-                            <a href="/guides/weapon-choice/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                            <a href="/guides/weapon-choice/"
+                                class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
                                 Detailed weapon comparison <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- FAQ 3 -->
                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                        <button
+                            class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
                             <span class="font-bold text-lg">How do I control my character?</span>
                             <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
                         </button>
                         <div class="accordion-content px-6 pb-6">
                             <p class="text-gray-400">
-                                Monster Survivors uses simple mouse controls. Simply drag your mouse to move your character around the battlefield. Your character automatically attacks nearby enemies, so focus on movement and positioning. Keep moving to avoid being surrounded and to collect XP gems efficiently.
+                                Monster Survivors uses simple mouse controls. Simply drag your mouse to move your
+                                character around the battlefield. Your character automatically attacks nearby enemies,
+                                so focus on movement and positioning. Keep moving to avoid being surrounded and to
+                                collect XP gems efficiently.
                             </p>
-                            <a href="/guides/beginner-guide/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                            <a href="/guides/beginner-guide/"
+                                class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
                                 Full beginner guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- FAQ 4 -->
                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                        <button
+                            class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
                             <span class="font-bold text-lg">What are the different maps?</span>
                             <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
                         </button>
                         <div class="accordion-content px-6 pb-6">
                             <p class="text-gray-400">
-                                Monster Survivors features two unique maps. <strong>Dreamy Woods</strong> is the starting map where you begin your survival journey. <strong>Shade Palace</strong> is unlocked by progressing far enough in Dreamy Woods and presents even greater challenges with unique monster types and environmental hazards.
+                                Monster Survivors features two unique maps. <strong>Dreamy Woods</strong> is the
+                                starting map where you begin your survival journey. <strong>Shade Palace</strong> is
+                                unlocked by progressing far enough in Dreamy Woods and presents even greater challenges
+                                with unique monster types and environmental hazards.
                             </p>
-                            <a href="/guides/maps/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                            <a href="/guides/maps/"
+                                class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
                                 Map guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- FAQ 5 -->
                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
+                        <button
+                            class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
                             <span class="font-bold text-lg">How does progression work between runs?</span>
                             <i class="fas fa-chevron-down text-cyan-400 transition-transform"></i>
                         </button>
                         <div class="accordion-content px-6 pb-6">
                             <p class="text-gray-400">
-                                Monster Survivors features a persistent upgrade system. Gold coins collected during runs can be used to permanently upgrade your survivor's stats including armor, healing, damage, and health. These upgrades carry over between runs, making you progressively stronger and allowing you to survive longer each time.
+                                Monster Survivors features a persistent upgrade system. Gold coins collected during runs
+                                can be used to permanently upgrade your survivor's stats including armor, healing,
+                                damage, and health. These upgrades carry over between runs, making you progressively
+                                stronger and allowing you to survive longer each time.
                             </p>
-                            <a href="/guides/upgrades/" class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
+                            <a href="/guides/upgrades/"
+                                class="inline-flex items-center text-orange-400 hover:text-orange-300 mt-3 font-semibold">
                                 Upgrade priority guide <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -594,7 +1130,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Call to Action Section -->
         <section class="py-20 px-4 gradient-bg">
             <div class="max-w-4xl mx-auto text-center">
@@ -605,11 +1141,13 @@
                     Jump into the action now and test your survival skills in this free browser-based roguelike!
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                    <a href="/play/"
+                        class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
                         <i class="fas fa-play-circle mr-2"></i>
                         Play Now Free
                     </a>
-                    <a href="/guides/beginner-guide/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
+                    <a href="/guides/beginner-guide/"
+                        class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
                         <i class="fas fa-book-open mr-2"></i>
                         Read Beginner Guide
                     </a>
@@ -617,7 +1155,7 @@
             </div>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
         <div class="max-w-7xl mx-auto">
@@ -626,24 +1164,28 @@
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                        <span class="text-lg font-bold">Monster<span
+                                style="color: var(--accent-cyan);">Survivors</span></span>
                     </div>
                     <p class="text-gray-400 text-sm">
-                        Your ultimate guide for Monster Survivors by FreezeNova. Strategies, tips, and guides for the browser-based survival game.
+                        Your ultimate guide for Monster Survivors by FreezeNova. Strategies, tips, and guides for the
+                        browser-based survival game.
                     </p>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div>
                     <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
                         <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/guides/beginner-guide/" class="hover:text-cyan-400 transition">Beginner Guide</a></li>
-                        <li><a href="/guides/weapon-choice/" class="hover:text-cyan-400 transition">Weapon Guide</a></li>
+                        <li><a href="/guides/beginner-guide/" class="hover:text-cyan-400 transition">Beginner Guide</a>
+                        </li>
+                        <li><a href="/guides/weapon-choice/" class="hover:text-cyan-400 transition">Weapon Guide</a>
+                        </li>
                     </ul>
                 </div>
-                
+
                 <!-- Resources -->
                 <div>
                     <h3 class="font-bold mb-4 text-orange-400">Resources</h3>
@@ -654,7 +1196,7 @@
                         <li><a href="/faq/" class="hover:text-cyan-400 transition">FAQ</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Legal -->
                 <div>
                     <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
@@ -665,42 +1207,43 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <p class="text-gray-500 text-sm text-center md:text-left">
                         © 2026 MonsterSurvivors.plus - All Rights Reserved
                     </p>
                     <p class="text-gray-500 text-sm text-center md:text-right">
-                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors is developed by FreezeNova.
+                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors is developed by
+                        FreezeNova.
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <!-- Scripts -->
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Accordion functionality
         const accordionBtns = document.querySelectorAll('.accordion-btn');
-        
+
         accordionBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const content = btn.nextElementSibling;
                 const icon = btn.querySelector('i');
-                
+
                 // Toggle active state
                 content.classList.toggle('active');
                 icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
-                
+
                 // Close other accordions
                 accordionBtns.forEach(otherBtn => {
                     if (otherBtn !== btn) {
@@ -712,46 +1255,86 @@
                 });
             });
         });
-    </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"ef079b0273cd4683b6fbac435469248c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
 
+        // ========== 滚动入场动画 ==========
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 添加延迟效果
+                    const delay = entry.target.style.animationDelay || '0s';
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, parseFloat(delay) * 1000);
+                    fadeInObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // 观察所有需要动画的元素
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            fadeInObserver.observe(el);
+        });
+
+        // ========== 鼠标跟随光效（可选） ==========
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"ef079b0273cd4683b6fbac435469248c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
