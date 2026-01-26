@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:grindnstrat.com)",
+      "WebFetch(domain:www.onlinegames.io)"
+    ]
+  }
+}
