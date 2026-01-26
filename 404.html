@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Monster Survivors</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Monster Survivors guide and play free online.">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
+            --accent-orange: #ff6b35;
+            --accent-cyan: #00d9ff;
+            --accent-purple: #a855f7;
+            --text-light: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+            color: var(--text-light);
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .glow-text-orange {
+            color: var(--accent-orange);
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5), 0 0 20px rgba(255, 107, 53, 0.3);
+        }
+        
+        .glow-text-cyan {
+            color: var(--accent-cyan);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, #0077b6 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+        }
+        
+        .ghost-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-opacity-95 backdrop-blur-sm py-4" style="background-color: rgba(26, 26, 46, 0.95);">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
+                <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-cyan-400 transition">Home</a>
+                <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+                <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 404 Content -->
+    <main class="flex-grow flex items-center justify-center px-4 py-16">
+        <div class="text-center max-w-2xl">
+            <!-- Ghost Icon -->
+            <div class="ghost-animation mb-8">
+                <i class="fas fa-ghost text-9xl" style="color: var(--accent-purple); opacity: 0.8;"></i>
+            </div>
+            
+            <!-- 404 Text -->
+            <h1 class="text-8xl md:text-9xl font-black mb-4">
+                <span class="glow-text-orange">4</span>
+                <span class="glow-text-cyan">0</span>
+                <span class="glow-text-orange">4</span>
+            </h1>
+            
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                Oops! You've Been <span class="glow-text-cyan">Eliminated</span>
+            </h2>
+            
+            <p class="text-gray-400 text-lg mb-8">
+                The page you're looking for has been devoured by monsters.<br>
+                Don't worry, you can respawn at the home base!
+            </p>
+            
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="btn-primary px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center">
+                    <i class="fas fa-home mr-2"></i>
+                    Back to Home
+                </a>
+                <a href="/play/" class="btn-secondary px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center">
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Play Now
+                </a>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-500 mb-4">Or check out these pages:</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/guides/" class="text-cyan-400 hover:text-cyan-300 transition">
+                        <i class="fas fa-book mr-1"></i> Guides
+                    </a>
+                    <a href="/guides/beginner-guide.html" class="text-cyan-400 hover:text-cyan-300 transition">
+                        <i class="fas fa-seedling mr-1"></i> Beginner Guide
+                    </a>
+                    <a href="/guides/weapon-choice.html" class="text-cyan-400 hover:text-cyan-300 transition">
+                        <i class="fas fa-crosshairs mr-1"></i> Weapon Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 bg-opacity-80 py-6 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                ? 2026 MonsterSurvivors.plus - All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
