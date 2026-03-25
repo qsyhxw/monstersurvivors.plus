@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Monster Survivors Trophy Guide & Achievement Roadmap (100% Completion)</title>
+    <meta name="description"
+        content="Your ultimate 100% achievement guide for Monster Survivors. Detailed trophy roadmap, estimated time, difficulty ratings, and hero builds to unlock every trophy.">
+    <meta name="keywords"
+        content="monster survivors trophy guide, achievement guide, 100% completion, missable trophies, monster survivors roadmap, how to unlock achievements">
+    <link rel="canonical" href="https://monstersurvivors.plus/guides/trophy-guide">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <!-- Structured Data (Article & FAQ) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Monster Survivors Trophy Guide & achievements Roadmap",
+      "author": {
+        "@type": "Organization",
+        "name": "Monster Survivors Hub"
+      },
+      "description": "Comprehensive step-by-step roadmap to unlocking every achievement and trophy in Monster Survivors."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How long does it take to get 100% achievements in Monster Survivors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It takes approximately 15 to 25 hours to unlock all achievements, depending heavily on RNG weapon drops and how quickly you farm gold to unlock all characters."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are there any missable trophies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Because Monster Survivors is a roguelite arena game, every run is an independent loop. You can replay the game infinitely without worrying about missing story-based trophies."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Tailwind CSS & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-dark: #09090e;
+            --secondary-dark: #161622;
+            --accent-gold: #ffd700;
+            /* Platinum/Gold Vibe */
+            --accent-silver: #c0c0c0;
+            --accent-bronze: #cd7f32;
+            --accent-cyan: #06b6d4;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-dark);
+            color: #d1d5db;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Roadmap Panel Stats */
+        .roadmap-panel {
+            background: linear-gradient(135deg, rgba(22, 22, 34, 0.95), rgba(9, 9, 14, 0.98));
+            border: 1px solid #334155;
+            border-top: 4px solid var(--accent-gold);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .stat-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: 'Orbitron', sans-serif;
+            border: 4px solid #334155;
+            background: #0f172a;
+        }
+
+        .stat-circle.gold {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .stat-circle.cyan {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        }
+
+        /* Trophy List Items */
+        .trophy-item {
+            display: flex;
+            align-items: flex-start;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .trophy-item:hover {
+            transform: translateX(5px);
+            box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.4);
+            border-left: 4px solid var(--accent-cyan);
+        }
+
+        .trophy-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-right: 20px;
+            flex-shrink: 0;
+            background: #0f172a;
+            border: 2px solid #475569;
+        }
+
+        .icon-gold {
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .icon-silver {
+            color: var(--accent-silver);
+            border-color: var(--accent-silver);
+            background: rgba(192, 192, 192, 0.1);
+        }
+
+        .icon-bronze {
+            color: var(--accent-bronze);
+            border-color: var(--accent-bronze);
+            background: rgba(205, 127, 50, 0.1);
+        }
+
+        .solution-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Funnel Buttons inside Trophy Guides */
+        .solution-btn {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none !important;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .solution-btn:hover {
+            background: var(--accent-cyan);
+            color: #0f172a;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm border-b border-gray-800"
+        style="background-color: var(--secondary-dark);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2">
+                    <i class="fas fa-skull text-3xl" style="color: var(--accent-gold);"></i>
+                    <span class="text-xl font-bold font-orbitron text-white">Monster<span
+                            class="text-cyan-400">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/guides/" class="text-cyan-400 border-b-2 border-cyan-400 pb-1">Guides</a>
+                    <a href="/weapons-database/" class="hover:text-cyan-400 transition">Weapons</a>
+                    <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center space-x-2 text-sm text-gray-400 mb-8">
+            <a href="/" class="hover:text-cyan-400 transition">Home</a>
+            <i class="fas fa-chevron-right text-xs text-gray-600"></i>
+            <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+            <i class="fas fa-chevron-right text-xs text-gray-600"></i>
+            <span class="text-gray-200">Trophy Guide</span>
+        </nav>
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+                Monster Survivors <br><span style="color: var(--accent-gold);">100% Trophy Guide</span>
+            </h1>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Welcome to the ultimate achievement hunting roadmap. Whether you're playing on browser or mobile,
+                complete your 100% checklist with our optimized builds and strategies.
+            </p>
+        </header>
+
+        <!-- The Roadmap Panel -->
+        <section class="roadmap-panel p-6 md:p-10 mb-16">
+            <h2 class="text-2xl font-bold text-white mb-8 border-b border-gray-700 pb-3"><i
+                    class="fas fa-map text-cyan-400 mr-2"></i> Achievement Roadmap Overview</h2>
+
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+
+                <!-- Quick Stats -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <ul class="text-gray-300 space-y-4">
+                        <li class="flex items-center"><i class="fas fa-tachometer-alt w-6 text-gray-500"></i> <strong
+                                class="text-white w-40">Estimated Difficulty:</strong> 4/10</li>
+                        <li class="flex items-center"><i class="fas fa-clock w-6 text-gray-500"></i> <strong
+                                class="text-white w-40">Time to 100%:</strong> ~15-25 Hours</li>
+                        <li class="flex items-center"><i class="fas fa-exclamation-circle w-6 text-red-400"></i> <strong
+                                class="text-white w-40">Missable Trophies:</strong> None (Roguelite Loop)</li>
+                        <li class="flex items-center"><i class="fas fa-wifi w-6 text-green-400"></i> <strong
+                                class="text-white w-40">Offline Trophies:</strong> All</li>
+                    </ul>
+                </div>
+
+                <!-- Visual Circles -->
+                <div class="w-full md:w-1/2 flex justify-center gap-6">
+                    <div class="text-center">
+                        <div class="stat-circle gold mb-2">32</div>
+                        <span class="text-xs text-gray-400 uppercase font-bold tracking-widest">Total Trophies</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-circle cyan mb-2">100%</div>
+                        <span class="text-xs text-gray-400 uppercase font-bold tracking-widest">Completion</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trophy Listing Checklist (The Funnels) -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-black text-white mb-8">Phase 1: Progression & Milestones</h2>
+            <p class="text-gray-400 mb-8">These trophies will unlock naturally as you learn the game and buy upgrades.
+                Do not stress about these during your first few runs.</p>
+
+            <!-- Trophy: First Blood (Bronze) -->
+            <div class="trophy-item">
+                <div class="trophy-icon icon-bronze"><i class="fas fa-tint"></i></div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white m-0">First Blood</h3>
+                    <p class="text-sm text-gray-400 mt-1 mb-0 italic">"Defeat 1,000 Monsters."</p>
+                    <div class="solution-box">
+                        <strong>Solution:</strong> Unmissable. Simply play the game for about 10 minutes. The horde
+                        density increases significantly past Wave 3, guaranteeing this unlock early on.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trophy: Survivor (Silver) -->
+            <div class="trophy-item">
+                <div class="trophy-icon icon-silver"><i class="fas fa-shield-alt"></i></div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white m-0">True Survivor</h3>
+                    <p class="text-sm text-gray-400 mt-1 mb-0 italic">"Reach Wave 15 in any arena."</p>
+                    <div class="solution-box">
+                        <strong>Solution:</strong> This serves as the game's first major difficulty spike. Default
+                        heroes will struggle to survive the massive bullet-hell damage at Wave 15. The easiest way to
+                        cheese this trophy is to unlock the Knight hero and stack Armor.
+                        <br>
+                        <a href="/guides/best-hero.html" target="_blank" class="solution-btn shadow-sm">
+                            View The Knight "Unkillable" Build Guide <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-black text-white mb-8">Phase 2: Completionist / Grind Trophies</h2>
+            <p class="text-gray-400 mb-8">This is where the real 15+ hour grind begins. You will need exceptional gold
+                farming routes and a deep knowledge of the game's weapon synergies.</p>
+
+            <!-- Trophy: The Collector (Gold) -->
+            <div class="trophy-item">
+                <div class="trophy-icon icon-gold"><i class="fas fa-boxes"></i></div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white m-0">Armed to the Teeth</h3>
+                    <p class="text-sm text-gray-400 mt-1 mb-0 italic">"Unlock and use every single Base Weapon in the
+                        game at least once."</p>
+                    <div class="solution-box">
+                        <strong>Solution:</strong> You must purchase all basic loadouts from the main menu and use them
+                        in a run. This requires roughly 50,000+ total gold. If you aren't sure which ones you are
+                        missing, compare your inventory to our full weapon encyclopedia.
+                        <br>
+                        <a href="/weapons-database/" target="_blank"
+                            class="solution-btn border-yellow-500 text-yellow-500 hover:bg-yellow-500">
+                            Open Complete Weapons Database <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trophy: The Hidden Truth (Gold) -->
+            <div class="trophy-item">
+                <div class="trophy-icon icon-gold"><i class="fas fa-eye"></i></div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white m-0">The Hidden Truth</h3>
+                    <p class="text-sm text-gray-400 mt-1 mb-0 italic">"Successfully forge a Secret Weapon Evolution."
+                    </p>
+                    <div class="solution-box">
+                        <strong>Solution:</strong> The game does not explain how to do this. You must level a specific
+                        base weapon to Level 8, hold its perfect matching passive item, and then open a Boss Chest after
+                        Wave 10. You cannot guess these recipes; you must look them up.
+                        <br>
+                        <a href="/guides/secret-weapons.html" target="_blank"
+                            class="solution-btn border-red-500 text-red-500 hover:bg-red-500">
+                            See ALL Secret Evolution Recipes <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trophy: DPS God (Gold) -->
+            <div class="trophy-item">
+                <div class="trophy-icon icon-gold"><i class="fas fa-bolt"></i></div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white m-0">DPS God</h3>
+                    <p class="text-sm text-gray-400 mt-1 mb-0 italic">"Defeat the Final Boss in under 15 seconds."</p>
+                    <div class="solution-box">
+                        <strong>Solution:</strong> Tanking will not work for this achievement. You are mathematically
+                        required to run a pure Crit-Damage loadout. The consensus strategy is using Miyu with evolved
+                        throwing knives or crossbows.
+                        <br>
+                        <a href="/tier-list/" target="_blank" class="solution-btn">
+                            Check the Tier List for Top DPS Builds <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Final Call to Action -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 text-center mt-12 mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Stuck on your last few trophies?</h2>
+            <p class="text-gray-400 mb-6">If you keep dying while trying to farm the final few achievements, your base
+                upgrade path might be inefficient. Hop into the game and reset your stats according to our guide.</p>
+            <a href="/play/"
+                class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-black px-8 py-3 rounded-lg transition shadow-lg mr-4">
+                Play Browser Version
+            </a>
+            <a href="/guides/upgrades.html"
+                class="inline-block bg-transparent border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-900 font-bold px-8 py-3 rounded-lg transition mt-4 md:mt-0">
+                Read Upgrades Guide
+            </a>
+        </div>
+
+        <!-- SEO FAQ -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-2">Frequently Asked Questions</h2>
+
+            <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 mb-4">
+                <h3 class="text-lg font-bold text-cyan-400 mt-0 mb-2">Do web browser achievements transfer to mobile?
+                </h3>
+                <p class="text-gray-400 m-0 text-sm leading-relaxed">
+                    Generally, no. As a web HTML5 game, achievements are stored locally in your browser cache or tied to
+                    a web-specific profile. They do not automatically sync with Google Play Games or Apple Game Center
+                    unless the developer explicitly adds cloud saving in a future patch.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center mt-12 border-t border-gray-800">
+        <p class="text-gray-600 text-sm mb-2">&copy; 2026 MonsterSurvivors.plus - Independent Trophy Hunters Hub.</p>
+    </footer>
+
+</body>
+
+</html>
