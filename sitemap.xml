@@ -2,62 +2,217 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://monstersurvivors.plus/</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://monstersurvivors.plus/play/</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://monstersurvivors.plus/best-builds/</loc>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://monstersurvivors.plus/guides/</loc>
-    <lastmod>2026-01-31</lastmod>
-    <priority>0.9</priority>
+    <loc>https://monstersurvivors.plus/contact/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://monstersurvivors.plus/strategies/</loc>
-    <lastmod>2026-01-31</lastmod>
-    <priority>0.9</priority>
+    <loc>https://monstersurvivors.plus/faq/how-to-play-unblocked</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/faq/is-monster-survivors-offline</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/faq/monster-survivors-mod-apk</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://monstersurvivors.plus/guides/beginner-guide</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/guides/best-hero</loc>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://monstersurvivors.plus/guides/boss-battles</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://monstersurvivors.plus/guides/</loc>
+    <lastmod>2026-03-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://monstersurvivors.plus/guides/maps</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/guides/secret-weapons</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/guides/trophy-guide</loc>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://monstersurvivors.plus/guides/upgrades</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://monstersurvivors.plus/guides/weapon-choice</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://monstersurvivors.plus/guides/best-starting-weapons/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/guides/tips-and-tricks/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/arcanix/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/balencio/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/echo/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/knight/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/mage/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/heroes/miyu/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/play/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://monstersurvivors.plus/privacy-policy/</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/strategies/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://monstersurvivors.plus/terms/</loc>
-    <lastmod>2026-01-31</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://monstersurvivors.plus/contact/</loc>
-    <lastmod>2026-01-31</lastmod>
-    <priority>0.3</priority>
+    <loc>https://monstersurvivors.plus/tier-list/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/axe/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/chain-lightning-ring/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/crossbow-and-throwing-knife/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/fist/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/frostbite/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/holy-book-and-fire-wand/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/holy-cross/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/magic-staff/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/plasma-gun/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/rocket-launcher/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/shotgun/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/steel-sword/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monstersurvivors.plus/weapons-database/wooden-wand/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.9</priority>
   </url>
 </urlset>
