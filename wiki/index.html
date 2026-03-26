@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Monster Survivors Wiki: Complete Database, Weapons & Heroes</title>
+    <meta name="description" content="Welcome to the Monster Survivors Wiki. Explore our comprehensive database featuring all weapons, heroes, maps, tier lists, and strategies to min-max your next run.">
+    <meta name="keywords" content="monster survivors wiki, monster survivors database, monster survivors heroes, monster survivors weapons, full guide">
+    <link rel="canonical" href="https://monstersurvivors.plus/wiki/">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-511JG9F2HD');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+         crossorigin="anonymous"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1a1a2e',
+                        'secondary-dark': '#16213e',
+                        'accent-orange': '#ff6b35',
+                        'accent-cyan': '#00d9ff',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: var(--primary-dark); color: #f5f5f5; }
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+        .btn-primary { background: linear-gradient(135deg, #ff6b35 0%, #e63946 100%); transition: all 0.3s ease; }
+        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4); }
+        .card-hover { transition: all 0.3s ease; border: 2px solid rgba(0, 217, 255, 0.2); background: rgba(255, 255, 255, 0.05); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 217, 255, 0.15); border-color: var(--accent-cyan); background: rgba(0, 217, 255, 0.05); }
+        .hero-card-hover { transition: all 0.3s ease; border: 2px solid rgba(255, 107, 53, 0.2); background: rgba(255, 255, 255, 0.05); }
+        .hero-card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255, 107, 53, 0.15); border-color: var(--accent-orange); background: rgba(255, 107, 53, 0.05); }
+        .search-bar { background: rgba(255, 255, 255, 0.05); border: 2px solid rgba(0, 217, 255, 0.3); transition: all 0.3s ease; }
+        .search-bar:focus-within { border-color: var(--accent-cyan); background: rgba(255, 255, 255, 0.1); }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Monster Survivors Wiki Database",
+        "description": "Comprehensive index of all characters, weapons, and guides in Monster Survivors.",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://monstersurvivors.plus/heroes/arcanix/", "name": "Arcanix Hero" },
+            { "@type": "ListItem", "position": 2, "url": "https://monstersurvivors.plus/weapons-database/plasma-gun/", "name": "Plasma Gun Weapon" },
+            { "@type": "ListItem", "position": 3, "url": "https://monstersurvivors.plus/weapons-database/holy-cross/", "name": "Holy Cross Weapon" }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2">
+                        <i class="fas fa-skull text-3xl" style="color: #ff6b35;"></i>
+                        <span class="text-xl font-bold">Monster<span style="color: #00d9ff;">Survivors</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="/" class="hover:text-cyan-400 transition text-gray-300">Home</a>
+                    <a href="/wiki/" class="text-cyan-400">Wiki</a>
+                    <a href="/weapons-database/" class="hover:text-cyan-400 transition text-gray-300">Weapons</a>
+                    <a href="/heroes/" class="hover:text-cyan-400 transition text-gray-300">Heroes</a>
+                    <a href="/play/" class="hover:text-cyan-400 transition text-gray-300">Play Online</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight flex justify-center items-center">
+                    <i class="fas fa-book-journal-whills text-cyan-400 mr-4"></i>Monster Survivors Wiki Hub
+                </h1>
+                
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Welcome to the ultimate Community Database. Find absolute mathematical scaling properties, unlock conditions, and tier synergies right here.
+                </p>
+
+                <!-- Mock Search Bar (visually appealing conversion point) -->
+                <div class="max-w-xl mx-auto mb-10">
+                    <div class="search-bar flex rounded-xl overflow-hidden px-4 py-3">
+                        <i class="fas fa-search text-cyan-400 mr-3 mt-1"></i>
+                        <input type="text" id="wikiSearch" placeholder="Search weapons, heroes, or guides..." class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="py-16 px-4" style="background-color: #1a1a2e;">
+            <div class="max-w-6xl mx-auto">
+                
+                <!-- Weapons Hub -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
+                        <i class="fas fa-crosshairs text-cyan-400 mr-3"></i> Weapons Catalog & Evolutions
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <a href="/weapons-database/plasma-gun/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-raygun text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Plasma Gun</h3>
+                            <p class="text-sm text-gray-400">Ranged / Automated</p>
+                        </a>
+                        <a href="/weapons-database/chain-lightning-ring/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-bolt text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Lightning Ring</h3>
+                            <p class="text-sm text-gray-400">Orbital / Automated</p>
+                        </a>
+                        <a href="/weapons-database/holy-cross/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-cross text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Holy Cross</h3>
+                            <p class="text-sm text-gray-400">Orbital / Defensive</p>
+                        </a>
+                        <a href="/weapons-database/rocket-launcher/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-rocket text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Rocket Launcher</h3>
+                            <p class="text-sm text-gray-400">AoE / Explosive</p>
+                        </a>
+                        <a href="/weapons-database/steel-sword/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-khanda text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Steel Sword</h3>
+                            <p class="text-sm text-gray-400">Melee / Starting</p>
+                        </a>
+                        <a href="/weapons-database/magic-staff/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-magic text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Magic Staff</h3>
+                            <p class="text-sm text-gray-400">Ranged / Magic</p>
+                        </a>
+                        <a href="/weapons-database/wooden-wand/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
+                            <i class="fas fa-wand-magic-sparkles text-3xl mb-3 text-cyan-300"></i>
+                            <h3 class="font-bold text-lg mb-1">Wooden Wand</h3>
+                            <p class="text-sm text-gray-400">Ranged / Magic</p>
+                        </a>
+                        <a href="/weapons-database/" class="bg-gray-800 hover:bg-gray-700 transition rounded-xl p-5 flex flex-col items-center justify-center text-center border-2 border-dashed border-gray-600">
+                            <i class="fas fa-ellipsis-h text-2xl mb-2 text-gray-400"></i>
+                            <h3 class="font-bold text-gray-300">View All 13+ Weapons</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Heroes Hub -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
+                        <i class="fas fa-user-ninja text-orange-400 mr-3"></i> Heroes & Characters Index
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <a href="/heroes/arcanix/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-hat-wizard text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Arcanix</h3>
+                                <p class="text-sm text-gray-400">Early-game Spellcaster</p>
+                            </div>
+                        </a>
+                        
+                        <a href="/heroes/balencio/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-shield-halved text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Balencio</h3>
+                                <p class="text-sm text-gray-400">Balanced / High Defense</p>
+                            </div>
+                        </a>
+
+                        <a href="/heroes/echo/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-wind text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Echo</h3>
+                                <p class="text-sm text-gray-400">Swift Movement</p>
+                            </div>
+                        </a>
+
+                        <a href="/heroes/knight/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-chess-knight text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Knight</h3>
+                                <p class="text-sm text-gray-400">Heavy Melee Base</p>
+                            </div>
+                        </a>
+
+                        <a href="/heroes/mage/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-star text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Mage</h3>
+                                <p class="text-sm text-gray-400">Magic Specialist</p>
+                            </div>
+                        </a>
+
+                        <a href="/heroes/miyu/" class="hero-card-hover rounded-xl p-6 flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-cat text-2xl text-orange-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1 text-white">Miyu</h3>
+                                <p class="text-sm text-gray-400">Agile / Fast Attacks</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Guides Hub -->
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
+                        <i class="fas fa-map-location-dot text-gray-300 mr-3"></i> Game Mechanics & Tier Lists
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-700 flex justify-between items-center transition hover:bg-gray-800">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Builds & Tier List</h3>
+                                <p class="text-gray-400">Discover what dominates the current season's meta.</p>
+                            </div>
+                            <a href="/tier-list/" class="bg-white text-gray-900 font-bold px-4 py-2 rounded">Go &rarr;</a>
+                        </div>
+                        
+                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-700 flex justify-between items-center transition hover:bg-gray-800">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Beginner Guides</h3>
+                                <p class="text-gray-400">Master kiting, farming, and survival mechanics.</p>
+                            </div>
+                            <a href="/guides/beginner-guide.html" class="bg-white text-gray-900 font-bold px-4 py-2 rounded">Go &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 MonsterSurvivors.plus. This is a Community-driven comprehensive Wiki and Database.
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('wikiSearch');
+            // Select all interactive cards inside the grid layouts
+            const items = document.querySelectorAll('.grid > a, .grid > div');
+            
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase().trim();
+                
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    item.style.display = text.includes(term) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
