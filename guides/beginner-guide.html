@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
-    <title>Monster Survivors Beginner Guide 2026 | Complete Strategy for New Players</title>
-    <meta name="description" content="Master Monster Survivors with our comprehensive beginner guide. Learn controls, weapon choices, XP mechanics, boss strategies and survival tips to dominate the game.">
-    <meta name="keywords" content="monster survivors beginner guide, monster survivors tips, how to play monster survivors, monster survivors tutorial, roguelike survival guide">
+    <title>Monster Survivors Beginner Guide (First 30 Minutes) | 2026 Core Mechanics</title>
+    <meta name="description"
+        content="Master your first runs in Monster Survivors. Learn simple controls, XP gathering logic, and the mechanics required to survive your initial 30 minutes in game.">
+    <meta name="keywords"
+        content="monster survivors beginner guide, monster survivors tips, how to play monster survivors, monster survivors tutorial, early game survival strategy">
     <link rel="canonical" href="https://monstersurvivors.plus/guides/beginner-guide">
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
+
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-         crossorigin="anonymous"></script>
-    
+        crossorigin="anonymous"></script>
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Beginner Guide 2026">
-    <meta property="og:description" content="Complete beginner's guide with weapon selection, survival strategies, and XP mechanics">
-    <meta property="og:url" content="https://monstersurvivors.plus/guides/beginner-guide/">
+    <meta property="og:title" content="Monster Survivors Beginner Survival Guide">
+    <meta property="og:description"
+        content="Learn exactly how to clear the early waves in our focused Monster Survivors starting guide.">
+    <meta property="og:url" content="https://monstersurvivors.plus/guides/beginner-guide">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -50,13 +54,15 @@
             }
         }
     </script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --primary-dark: #1a1a2e;
@@ -66,134 +72,39 @@
             --text-light: #f5f5f5;
             --text-gray: #b8b8b8;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--primary-dark);
             color: var(--text-light);
+            scroll-behavior: smooth;
         }
-        
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Orbitron', sans-serif;
         }
-        
+
         .gradient-bg {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
         }
-        
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        .cta-hover {
+            transition: all 0.3s ease;
         }
-        
-        .card-hover:hover {
+
+        .cta-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
-        }
-        
-        .btn-secondary {
-            background: linear-gradient(135deg, var(--accent-cyan) 0%, #0077b6 100%);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-secondary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
-        }
-        
-        .icon-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
-        }
-        
-        .weapon-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(0, 217, 255, 0.3);
-            backdrop-filter: blur(10px);
-        }
-        
-        .enemy-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin: 4px;
-        }
-        
-        .pro-tip-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(0, 217, 255, 0.15) 100%);
-            border-left: 4px solid var(--accent-orange);
-            padding: 16px;
-            margin: 20px 0;
-            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+            border-color: var(--accent-orange);
         }
     </style>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "Monster Survivors Beginner Guide 2026 - Complete Strategy for New Players",
-        "description": "Comprehensive beginner's guide covering controls, weapon selection, XP mechanics, boss battles, and survival strategies for Monster Survivors",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://monstersurvivors.plus/logo.png"
-            }
-        },
-        "datePublished": "2026-01-12",
-        "dateModified": "2026-01-12",
-        "about": {
-            "@type": "VideoGame",
-            "name": "Monster Survivors",
-            "gamePlatform": "Web Browser",
-            "genre": ["Roguelike", "Action", "Survival"]
-        }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://monstersurvivors.plus/"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Guides",
-            "item": "https://monstersurvivors.plus/guides/"
-        },{
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Beginner Guide",
-            "item": "https://monstersurvivors.plus/guides/beginner-guide/"
-        }]
-    }
-    </script>
 </head>
+
 <body>
-    
+
     <!-- Navigation Header -->
     <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,1053 +112,251 @@
                 <div class="flex items-center">
                     <a href="/" class="flex items-center space-x-2">
                         <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                        <span class="text-xl font-bold">Monster<span
+                                style="color: var(--accent-cyan);">Survivors</span></span>
                     </a>
                 </div>
-                
+
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="text-cyan-400">Guides</a>
-                    <a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a>
-                    <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
+                    <a href="/guides/" class="text-cyan-400 font-bold">Guides</a>
+                    <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+                    <a href="/weapons-database/" class="hover:text-cyan-400 transition">Weapons</a>
                 </div>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
-            <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="/" class="block py-2 hover:text-cyan-400 transition">Home</a>
-                <a href="/guides/" class="block py-2 text-cyan-400">Guides</a>
-                <a href="/strategies/" class="block py-2 hover:text-cyan-400 transition">Strategies</a>
-                <a href="/play/" class="block py-2 hover:text-cyan-400 transition">Play Online</a>
             </div>
         </div>
     </nav>
-    
+
     <main>
         <!-- Breadcrumb -->
         <div class="max-w-7xl mx-auto px-4 py-4">
             <div class="flex items-center space-x-2 text-sm text-gray-400">
                 <a href="/" class="hover:text-cyan-400 transition">Home</a>
                 <i class="fas fa-chevron-right text-xs"></i>
-                <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+                <a href="/guides/" class="hover:text-cyan-400 transition">Guides Hub</a>
                 <i class="fas fa-chevron-right text-xs"></i>
                 <span class="text-cyan-400">Beginner Guide</span>
             </div>
         </div>
-        
+
         <!-- Hero Section -->
         <section class="gradient-bg py-12 px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-block bg-orange-900 bg-opacity-30 rounded-lg px-4 py-2 mb-4 border border-orange-600">
-                    <span class="text-orange-400 font-semibold text-sm">UPDATED: JANUARY 2026</span>
-                </div>
-                
                 <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Monster Survivors <span style="color: var(--accent-orange);">Beginner Guide</span>
+                    Monster Survivors: <span style="color: var(--accent-orange);">The Beginner's Handbook</span>
                 </h1>
-                
+
                 <p class="text-xl text-gray-300 mb-8">
-                    Master the fundamentals of Monster Survivors with this comprehensive beginner's guide covering controls, weapon selection, XP mechanics, boss strategies, and essential survival tips
+                    Everything you must know to survive your very first 30 minutes in the game. From learning how to
+                    control your survivor, to efficiently routing XP gems.
                 </p>
-                
-                <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <a href="/play/" class="btn-primary px-6 py-3 rounded-lg font-bold inline-flex items-center">
-                        <i class="fas fa-play mr-2"></i> Play Now Free
-                    </a>
-                    <a href="/guides/" class="btn-secondary px-6 py-3 rounded-lg font-bold inline-flex items-center">
-                        <i class="fas fa-book-open mr-2"></i> More Guides
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Table of Contents -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                    <h2 class="text-2xl font-bold mb-6 flex items-center">
-                        <i class="fas fa-list-ul mr-3" style="color: var(--accent-orange);"></i>
-                        Table of Contents
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <a href="#what-is-monster-survivors" class="text-cyan-400 hover:text-cyan-300 transition">1. What is Monster Survivors?</a>
-                        <a href="#basic-controls" class="text-cyan-400 hover:text-cyan-300 transition">2. Basic Controls</a>
-                        <a href="#weapon-selection" class="text-cyan-400 hover:text-cyan-300 transition">3. Choosing Your Starting Weapon</a>
-                        <a href="#enemy-types" class="text-cyan-400 hover:text-cyan-300 transition">4. Enemy Types</a>
-                        <a href="#xp-system" class="text-cyan-400 hover:text-cyan-300 transition">5. XP and Leveling System</a>
-                        <a href="#gold-upgrades" class="text-cyan-400 hover:text-cyan-300 transition">6. Gold and Persistent Upgrades</a>
-                        <a href="#boss-battles" class="text-cyan-400 hover:text-cyan-300 transition">7. Boss Battle Mechanics</a>
-                        <a href="#maps" class="text-cyan-400 hover:text-cyan-300 transition">8. Understanding the Maps</a>
-                        <a href="#survival-strategies" class="text-cyan-400 hover:text-cyan-300 transition">9. Essential Survival Strategies</a>
-                        <a href="#common-mistakes" class="text-cyan-400 hover:text-cyan-300 transition">10. Common Beginner Mistakes</a>
+
+                <!-- NEW EARLY DEPARTURE ALERT BANNER -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 border-l-4 border-yellow-500 rounded-lg p-6 mb-8 text-left shadow-lg">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 text-2xl mt-1"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-yellow-500">Notice for Advanced Players</h3>
+                            <p class="text-gray-300 mt-2 text-sm leading-relaxed">
+                                This guide is restricted purely to fundamental day-1 progression mechanics. If you
+                                already understand how to move and pick up gems, you are in the wrong place! Discover
+                                the <a href="/guides/weapon-combos.html"
+                                    class="text-cyan-400 hover:text-white underline font-bold">Best Weapon Combos
+                                    here</a>, or visit our <a href="/tier-list/index.html"
+                                    class="text-orange-400 hover:text-white underline font-bold">Tier List Hub</a> to
+                                view the latest current meta.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Main Content -->
         <section class="py-16 px-4" style="background-color: var(--primary-dark);">
             <div class="max-w-4xl mx-auto">
-                
-                <!-- Section 1: What is Monster Survivors -->
-                <article id="what-is-monster-survivors" class="mb-16">
+
+                <!-- Section 1: Intro -->
+                <article class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">1</span>
+                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4"
+                            style="background: var(--accent-orange);">1</span>
                         What is Monster Survivors?
                     </h2>
-                    
-                    <div class="prose prose-invert max-w-none">
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Monster Survivors is a free-to-play roguelite survival game developed by FreezeNova that you can play directly in your web browser without any downloads or registration. The game combines intense action with strategic decision-making as you battle endless waves of increasingly difficult monsters.
+                    <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-4">
+                        <p>
+                            Monster Survivors is a free-to-play roguelite bullet-heaven game. You control a survivor who
+                            automatically attacks nearby enemies while you focus exclusively on movement and
+                            positioning.
                         </p>
-                        
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            The core gameplay loop is straightforward but addictive. You control a survivor who automatically attacks nearby enemies while you focus on movement and positioning. As you defeat monsters, they drop experience gems that you must collect to level up and unlock powerful upgrades. The challenge comes from managing the chaos of monster waves while optimizing your character build through smart upgrade choices.
+                        <p>
+                            The core gameplay loop is straightforward but addictive. Your character auto-attacks,
+                            monsters die and drop experience gems. You pick those gems up, level up, and become powerful
+                            enough to endure longer.
                         </p>
-                        
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            What makes Monster Survivors unique is its roguelite structure. Each run starts fresh, but you can spend gold earned during gameplay to purchase permanent upgrades that carry over between runs. This meta-progression system means every attempt makes you stronger, even when you die. The longer you survive, the tougher enemies become, culminating in intense boss battles that test your skills and build optimization.
-                        </p>
-                        
-                        <div class="pro-tip-box">
-                            <div class="flex items-start">
-                                <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                                <div>
-                                    <h4 class="font-bold mb-2">Key Genre Note</h4>
-                                    <p class="text-gray-300 text-sm">
-                                        Monster Survivors follows the "survivors-like" or "bullet heaven" genre popularized by games like Vampire Survivors. If you enjoy games where you face overwhelming odds through smart positioning and build optimization, you'll feel right at home.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </article>
-                
+
                 <!-- Section 2: Basic Controls -->
-                <article id="basic-controls" class="mb-16">
+                <article class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">2</span>
+                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4"
+                            style="background: var(--accent-orange);">2</span>
                         Basic Controls
                     </h2>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
                             <div class="flex items-center mb-4">
                                 <i class="fas fa-mouse text-3xl mr-3" style="color: var(--accent-cyan);"></i>
-                                <h3 class="text-xl font-bold">Movement</h3>
+                                <h3 class="text-xl font-bold">Motion</h3>
                             </div>
                             <p class="text-gray-400">
-                                <strong class="text-white">Drag your mouse</strong> to move your character across the battlefield. Your survivor will follow your cursor's position. The further your cursor is from your character, the faster they'll move in that direction.
+                                <strong class="text-white">Drag your mouse or finger</strong> to move your character.
+                                They follow your cursor automatically.
                             </p>
                         </div>
-                        
+
                         <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
                             <div class="flex items-center mb-4">
                                 <i class="fas fa-crosshairs text-3xl mr-3" style="color: var(--accent-cyan);"></i>
-                                <h3 class="text-xl font-bold">Combat</h3>
+                                <h3 class="text-xl font-bold">Firing</h3>
                             </div>
                             <p class="text-gray-400">
-                                <strong class="text-white">Automatic attacks</strong> - Your character automatically attacks the nearest enemies. You don't need to click or press any buttons to fight. Focus entirely on positioning and dodging.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-4">
-                                <i class="fas fa-gem text-3xl mr-3" style="color: var(--accent-cyan);"></i>
-                                <h3 class="text-xl font-bold">XP Collection</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                <strong class="text-white">Walk over gems</strong> dropped by defeated enemies to collect experience points. You must actively pick them up - they won't come to you automatically.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-4">
-                                <i class="fas fa-level-up-alt text-3xl mr-3" style="color: var(--accent-cyan);"></i>
-                                <h3 class="text-xl font-bold">Level Up</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                <strong class="text-white">Click to choose</strong> upgrades when you level up. The game pauses while you make your selection, so take your time to read each option carefully.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Control Mastery Tip</h4>
-                                <p class="text-gray-300 text-sm">
-                                    Practice smooth, circular movements rather than jerky mouse motions. This helps you maintain distance from enemies while efficiently collecting XP gems. Many experienced players recommend making large loops around the battlefield.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 3: Weapon Selection (Decapitated & Redirected) -->
-                <article id="weapon-selection" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">3</span>
-                        Choosing Your Starting Weapon
-                    </h2>
-                    
-                    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-xl border border-cyan-500 text-center shadow-lg shadow-cyan-500/20">
-                        <i class="fas fa-crosshairs text-5xl text-cyan-400 mb-4"></i>
-                        <h3 class="text-2xl font-bold text-white mb-4">Content Moved: The 2026 Starting Weapon Meta</h3>
-                        <p class="text-gray-300 mb-6 text-lg">Because your first weapon dictates your entire RNG drop pool for the rest of the run, we have compiled a definitive, mathematically-tested Tier List for answering the question: <strong>"Which starting weapon is best?"</strong> (Hint: Do not pick the Dagger!)</p>
-                        
-                        <a href="/guides/best-starting-weapons/" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 px-8 rounded-lg transition text-lg w-full md:w-auto">
-                            View the Best Starting Weapons Ranked <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Section 4: Enemy Types -->
-                <article id="enemy-types" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">4</span>
-                        Enemy Types You'll Face
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        Monster Survivors throws diverse enemy types at you, each with different movement patterns and threat levels. Understanding what you're up against helps you prioritize targets and position yourself effectively.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 gap-4 mb-6">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-3">
-                                <span class="enemy-badge" style="background: rgba(220, 38, 38, 0.2); color: #fca5a5;">
-                                    <i class="fas fa-crab mr-2"></i>Aggressive
-                                </span>
-                                <h3 class="text-xl font-bold ml-2">Crabs</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                These aggressive crustaceans move in erratic patterns and can quickly surround you if you're not careful. They're particularly dangerous in groups.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-3">
-                                <span class="enemy-badge" style="background: rgba(234, 88, 12, 0.2); color: #fdba74;">
-                                    <i class="fas fa-pumpkin mr-2"></i>Eerie
-                                </span>
-                                <h3 class="text-xl font-bold ml-2">Pumpkins</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                Eerie pumpkin monsters that shamble toward you. While slower than some enemies, they often appear in large numbers during certain waves.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-3">
-                                <span class="enemy-badge" style="background: rgba(22, 163, 74, 0.2); color: #86efac;">
-                                    <i class="fas fa-seedling mr-2"></i>Dangerous
-                                </span>
-                                <h3 class="text-xl font-bold ml-2">Flesh-Eating Plants</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                Carnivorous plants that can deal significant damage. Their plant-based appearance might seem harmless, but they're among the more threatening common enemies.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-3">
-                                <span class="enemy-badge" style="background: rgba(234, 179, 8, 0.2); color: #fde047;">
-                                    <i class="fas fa-bee mr-2"></i>Swift
-                                </span>
-                                <h3 class="text-xl font-bold ml-2">Evil Bees</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                Fast-moving aerial enemies that can be difficult to track. They often swoop in from unexpected angles, making them a priority target when they appear.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center mb-3">
-                                <span class="enemy-badge" style="background: rgba(124, 58, 237, 0.2); color: #c4b5fd;">
-                                    <i class="fas fa-bug mr-2"></i>Swarming
-                                </span>
-                                <h3 class="text-xl font-bold ml-2">Various Insects</h3>
-                            </div>
-                            <p class="text-gray-400">
-                                Other insect-type enemies that appear in swarms. While individually weak, their numbers can overwhelm you if you don't maintain proper positioning.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Enemy Management Strategy</h4>
-                                <p class="text-gray-300 text-sm">
-                                    As you play, you'll notice enemies don't all spawn at once. Different monster types appear in waves that replace previous enemy types. This means you'll face one primary enemy type at a time, with the difficulty ramping up as stronger enemies rotate in. Learn to recognize which enemies are currently spawning so you can adjust your positioning accordingly.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 5: XP System -->
-                <article id="xp-system" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">5</span>
-                        XP and Leveling System
-                    </h2>
-                    
-                    <div class="bg-gradient-to-r from-orange-900 to-red-900 bg-opacity-20 rounded-xl p-6 border-2 border-orange-600 mb-8">
-                        <div class="flex items-start">
-                            <i class="fas fa-exclamation-triangle text-3xl mr-4" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Critical Rule: Active Collection Required</h3>
-                                <p class="text-gray-300">
-                                    Unlike some similar games, defeated enemies in Monster Survivors do NOT automatically give you experience. They drop experience gems that you <strong>must walk over to collect</strong>. If you stand still and fight, you'll never level up, and you'll quickly become overwhelmed by increasingly difficult enemies. Constant movement isn't just recommended - it's mandatory for survival.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4">How the System Works</h3>
-                    
-                    <div class="space-y-6 mb-8">
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: var(--accent-cyan);">
-                                <span class="font-bold">1</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Defeat Enemies</h4>
-                                <p class="text-gray-400">
-                                    Your character automatically attacks nearby monsters. When they die, they drop glowing experience gems on the battlefield.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: var(--accent-cyan);">
-                                <span class="font-bold">2</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Collect XP Gems</h4>
-                                <p class="text-gray-400">
-                                    Move your character over the dropped gems to collect them. Each gem adds to your experience bar at the top of the screen. This is why constant movement is essential - you're simultaneously dodging enemies and collecting power-ups.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: var(--accent-cyan);">
-                                <span class="font-bold">3</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Fill the XP Bar</h4>
-                                <p class="text-gray-400">
-                                    Once your experience bar fills completely, you level up. The game pauses automatically, giving you time to make your upgrade choice without pressure.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: var(--accent-cyan);">
-                                <span class="font-bold">4</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Choose Upgrades</h4>
-                                <p class="text-gray-400">
-                                    You'll be presented with multiple upgrade options. These can include improvements to your attack power, attack speed, movement speed, attack range, or durability. Choose wisely - each decision shapes your build for the rest of the run.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4">Available Upgrade Types</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-fist-raised mr-2"></i>Attack Power
-                            </h4>
-                            <p class="text-gray-400 text-sm">Increases damage dealt to enemies</p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-tachometer-alt mr-2"></i>Attack Speed
-                            </h4>
-                            <p class="text-gray-400 text-sm">Makes your attacks faster and more efficient</p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-running mr-2"></i>Movement Speed
-                            </h4>
-                            <p class="text-gray-400 text-sm">Increases how fast you move across the battlefield</p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-crosshairs mr-2"></i>Attack Range
-                            </h4>
-                            <p class="text-gray-400 text-sm">Extends how far your attacks can reach</p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-shield-alt mr-2"></i>Durability
-                            </h4>
-                            <p class="text-gray-400 text-sm">Improves your survivability and resistance to damage</p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-4 border border-gray-800">
-                            <h4 class="font-bold mb-2 text-orange-400">
-                                <i class="fas fa-arrows-alt mr-2"></i>Attack Area
-                            </h4>
-                            <p class="text-gray-400 text-sm">Makes your attacks cover a larger area</p>
-                        </div>
-                    </div>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Balanced vs. Specialized Builds</h4>
-                                <p class="text-gray-300 text-sm mb-2">
-                                    You'll often see advice to "balance your upgrades" for beginners. This means taking a bit of everything - some damage, some speed, some survivability. This approach is forgiving and works well while you're learning.
-                                </p>
-                                <p class="text-gray-300 text-sm">
-                                    However, more advanced players often specialize heavily in specific stats based on their weapon and playstyle. For example, a Steel Sword build might prioritize attack speed and durability, while a Wooden Wand build might focus on attack range and movement speed. Experiment to find what works for you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 6: Gold Upgrades -->
-                <article id="gold-upgrades" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">6</span>
-                        Gold and Persistent Upgrades
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        One of Monster Survivors' most important features is its persistent upgrade system. When you die, you don't lose everything - you keep the gold coins earned during your run and can spend them on permanent upgrades in the main menu. This meta-progression ensures every run makes you stronger, even failed attempts.
-                    </p>
-                    
-                    <div class="bg-gradient-to-r from-yellow-900 to-orange-900 bg-opacity-20 rounded-xl p-6 border-2 border-yellow-600 mb-8">
-                        <div class="flex items-start">
-                            <i class="fas fa-coins text-3xl mr-4 text-yellow-400"></i>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Why Persistent Upgrades Matter</h3>
-                                <p class="text-gray-300">
-                                    These upgrades are the key to progression. Your first few runs might only last a few minutes, but as you invest gold into permanent improvements, you'll find yourself surviving longer and reaching later stages. Don't get discouraged by early deaths - they're part of the learning process and still contribute to your long-term power growth.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4">Available Persistent Upgrades</h3>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-xl font-bold flex items-center">
-                                    <i class="fas fa-shield text-2xl mr-3" style="color: var(--accent-cyan);"></i>
-                                    Armor
-                                </h4>
-                                <span class="text-cyan-400 font-semibold">DEFENSIVE</span>
-                            </div>
-                            <p class="text-gray-400">
-                                Increases your base armor value, reducing incoming damage from all sources. Essential for melee builds that need to survive in close quarters, but beneficial for all playstyles.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-xl font-bold flex items-center">
-                                    <i class="fas fa-heart text-2xl mr-3" style="color: var(--accent-cyan);"></i>
-                                    Health
-                                </h4>
-                                <span class="text-cyan-400 font-semibold">DEFENSIVE</span>
-                            </div>
-                            <p class="text-gray-400">
-                                Boosts your maximum health pool, allowing you to take more hits before dying. A fundamental upgrade that benefits every build and playstyle.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-xl font-bold flex items-center">
-                                    <i class="fas fa-sword text-2xl mr-3" style="color: var(--accent-cyan);"></i>
-                                    Damage
-                                </h4>
-                                <span class="text-cyan-400 font-semibold">OFFENSIVE</span>
-                            </div>
-                            <p class="text-gray-400">
-                                Increases your base damage output, helping you clear enemies faster. Critical for advancing to later stages where enemies have more health.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-xl font-bold flex items-center">
-                                    <i class="fas fa-medkit text-2xl mr-3" style="color: var(--accent-cyan);"></i>
-                                    Healing
-                                </h4>
-                                <span class="text-cyan-400 font-semibold">SUSTAIN</span>
-                            </div>
-                            <p class="text-gray-400">
-                                Improves your health regeneration or healing effectiveness. This upgrade helps you recover from damage during longer runs and reduces the punishment for taking hits.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4">Unlocking Additional Characters</h3>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        In addition to stat upgrades, you can spend gold to unlock new playable characters. The game includes different character classes such as mages and warriors, each with unique stat distributions. Some characters may have higher health and damage ratios compared to your starting character, offering different strategic options for your runs.
-                    </p>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Upgrade Priority for Beginners</h4>
-                                <p class="text-gray-300 text-sm mb-2">
-                                    When starting out, focus your first gold investments on <strong class="text-orange-400">Health</strong> and <strong class="text-orange-400">Damage</strong>. These give you the most immediate impact - Health lets you learn from mistakes without dying instantly, while Damage helps you clear enemies before they overwhelm you.
-                                </p>
-                                <p class="text-gray-300 text-sm">
-                                    Once you've put a few points into both, start diversifying into Armor and Healing. The exact balance depends on your playstyle, but having at least some investment in all four categories by your 10th run will make a huge difference.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 7: Boss Battles -->
-                <article id="boss-battles" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">7</span>
-                        Boss Battle Mechanics
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        While surviving regular enemy waves is challenging, boss battles introduce a completely different level of intensity. These encounters test everything you've learned and require both mechanical skill and strategic build optimization.
-                    </p>
-                    
-                    <div class="bg-gradient-to-r from-red-900 to-purple-900 bg-opacity-20 rounded-xl p-6 border-2 border-red-600 mb-8">
-                        <div class="flex items-start">
-                            <i class="fas fa-dragon text-3xl mr-4 text-red-400"></i>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">What Makes Boss Battles Different</h3>
-                                <p class="text-gray-300 mb-3">
-                                    When a boss appears, the game fundamentally changes. The most dramatic shift is that <strong>the battlefield shrinks</strong>, forcing you into a smaller arena. This removes your primary survival tool - space to maneuver - and creates an intense one-on-one confrontation.
-                                </p>
-                                <p class="text-gray-300">
-                                    With the reduced space, dodging becomes significantly harder. You can't run away or create distance like you can with regular enemies. The restricted arena means every movement matters, and a single positioning mistake can be fatal. If you mess up, there's nowhere to escape.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4">Boss Battle Survival Strategy</h3>
-                    
-                    <div class="space-y-6 mb-8">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <h4 class="font-bold text-lg mb-3 flex items-center">
-                                <i class="fas fa-chart-line mr-2" style="color: var(--accent-orange);"></i>
-                                Prepare Before the Boss Appears
-                            </h4>
-                            <p class="text-gray-400 mb-3">
-                                Boss battles are won before they begin. During regular waves, focus on leveling up efficiently and choosing upgrades that improve your combat effectiveness. Don't save level-up choices for the boss - use them immediately to grow stronger.
-                            </p>
-                            <p class="text-gray-400">
-                                Make sure you've invested in both offensive and defensive stats. Pure damage builds might clear waves quickly but can crumble when a boss hits you repeatedly in the confined space.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <h4 class="font-bold text-lg mb-3 flex items-center">
-                                <i class="fas fa-shoe-prints mr-2" style="color: var(--accent-orange);"></i>
-                                Master Tight Movement Patterns
-                            </h4>
-                            <p class="text-gray-400 mb-3">
-                                With limited space, you can't make the large circular movements that work against regular enemies. Instead, practice making tight, controlled movements - small adjustments that keep you just out of the boss's reach.
-                            </p>
-                            <p class="text-gray-400">
-                                Think of it like dancing in a phone booth. Every inch of space matters, and smooth, precise mouse control becomes critical. Jerky or panicked movements will get you hit.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <h4 class="font-bold text-lg mb-3 flex items-center">
-                                <i class="fas fa-crosshairs mr-2" style="color: var(--accent-orange);"></i>
-                                Focus on Consistent Damage
-                            </h4>
-                            <p class="text-gray-400 mb-3">
-                                Since the boss won't die quickly, your goal is sustained, consistent damage output while staying alive. Don't get greedy trying to maximize DPS at the cost of positioning - survival is more important than slightly faster clear time.
-                            </p>
-                            <p class="text-gray-400">
-                                Your automatic attacks will keep firing as long as you're in range. Focus your mental energy on movement and dodging rather than worrying about attacking.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <h4 class="font-bold text-lg mb-3 flex items-center">
-                                <i class="fas fa-shield-alt mr-2" style="color: var(--accent-orange);"></i>
-                                Durability Becomes Critical
-                            </h4>
-                            <p class="text-gray-400">
-                                In the restricted boss arena, you will take hits. It's nearly impossible to dodge everything perfectly. This is why health, armor, and healing upgrades become exponentially more valuable during boss fights.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Learning from Boss Defeats</h4>
-                                <p class="text-gray-300 text-sm mb-2">
-                                    Don't be discouraged if you die to your first several bosses. Boss fights require practice to learn the timing and spacing. Pay attention to how much health you had when entering the fight and what upgrades you'd chosen.
-                                </p>
-                                <p class="text-gray-300 text-sm">
-                                    If you're consistently dying to bosses, it's a signal to invest more heavily in defensive stats (both in persistent upgrades and during-run level-ups). A boss kill where you end with 10% health is better than a loss where you dealt 90% of its health but couldn't finish the job.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 8: Maps -->
-                <article id="maps" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">8</span>
-                        Understanding the Maps
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-8">
-                        Monster Survivors features different maps that you'll progress through as you survive longer and meet certain conditions. Each map introduces new environmental challenges and enemy compositions.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 gap-8 mb-8">
-                        <!-- Dreamy Woods -->
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                            <div class="flex items-center mb-6">
-                                <div class="w-16 h-16 rounded-lg flex items-center justify-center mr-4" style="background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);">
-                                    <i class="fas fa-tree text-3xl text-white"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold">Dreamy Woods</h3>
-                                    <span class="text-green-400 text-sm font-semibold">STAGE 1 - STARTING MAP</span>
-                                </div>
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <h4 class="font-bold mb-2">Overview</h4>
-                                    <p class="text-gray-400">
-                                        Dreamy Woods is where every run begins. This forest-themed battlefield serves as your introduction to the game's mechanics and enemy types. While it starts relatively manageable, the difficulty ramps up significantly the longer you survive.
-                                    </p>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="font-bold mb-2">Enemy Types Present</h4>
-                                    <p class="text-gray-400 mb-2">
-                                        You'll encounter the full variety of basic enemy types in Dreamy Woods, including crabs, pumpkins, flesh-eating plants, bees, and various insects. The enemy composition changes in waves, with different types cycling in and out as you progress.
-                                    </p>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="font-bold mb-2">Strategy Notes</h4>
-                                    <p class="text-gray-400">
-                                        Use Dreamy Woods to learn enemy patterns and test different upgrade paths. The early stages are forgiving enough to experiment, while later stages provide serious challenge. Your goal should be to survive long enough to unlock the next map.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shade Palace -->
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                            <div class="flex items-center mb-6">
-                                <div class="w-16 h-16 rounded-lg flex items-center justify-center mr-4" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);">
-                                    <i class="fas fa-castle text-3xl text-white"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold">Shade Palace</h3>
-                                    <span class="text-purple-400 text-sm font-semibold">STAGE 2 - UNLOCKABLE</span>
-                                </div>
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <h4 class="font-bold mb-2">Overview</h4>
-                                    <p class="text-gray-400">
-                                        Shade Palace is the second map, unlocked by progressing far enough through Dreamy Woods. This darker, more ominous environment represents a significant step up in difficulty with tougher enemies and more aggressive waves.
-                                    </p>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="font-bold mb-2">Unlock Requirement</h4>
-                                    <p class="text-gray-400">
-                                        The game describes the unlock condition as "advancing far enough in Dreamy Woods," which typically means surviving for an extended duration or reaching a certain stage threshold. The exact trigger isn't explicitly defined, but players generally reach it naturally through successful runs.
-                                    </p>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="font-bold mb-2">What to Expect</h4>
-                                    <p class="text-gray-400">
-                                        Shade Palace introduces greater threats compared to Dreamy Woods. Enemy health pools are higher, attacks hit harder, and the overall pace is more intense. Make sure you've invested in persistent upgrades before attempting extended runs here.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="pro-tip-box">
-                        <div class="flex items-start">
-                            <i class="fas fa-lightbulb text-2xl mr-3" style="color: var(--accent-orange);"></i>
-                            <div>
-                                <h4 class="font-bold mb-2">Map Progression Strategy</h4>
-                                <p class="text-gray-300 text-sm mb-2">
-                                    Don't rush to unlock Shade Palace. Spend time mastering Dreamy Woods first - practice your positioning, test different weapon choices, and build up your persistent upgrades. Shade Palace will always be there when you're ready.
-                                </p>
-                                <p class="text-gray-300 text-sm">
-                                    Some players prefer to "farm" Dreamy Woods for gold by repeatedly running until they die, using those coins to boost their stats before tackling harder content. This is a perfectly valid strategy, especially for beginners.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Section 9: Survival Strategies -->
-                <article id="survival-strategies" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">9</span>
-                        Essential Survival Strategies
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-8">
-                        Now that you understand the individual mechanics, let's discuss overarching strategies that will dramatically improve your survival time. These are the tactics that separate players who die in 3 minutes from those who consistently reach 15+ minute runs.
-                    </p>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-orange-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-circle-notch mr-3" style="color: var(--accent-orange);"></i>
-                                Never Stop Moving
-                            </h3>
-                            <p class="text-gray-400 mb-3">
-                                This is the #1 rule of Monster Survivors and cannot be overstated. Constant movement serves two critical purposes: dodging enemy attacks and collecting XP gems. Standing still for even a second puts you at massive risk.
-                            </p>
-                            <p class="text-gray-400">
-                                The most effective movement pattern is making large, smooth circles around the battlefield. This keeps enemies chasing you in a predictable cluster while allowing you to sweep up XP gems efficiently. Think of yourself as a vacuum cleaner, constantly circling the arena and collecting everything in your path.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-cyan-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-bullseye mr-3" style="color: var(--accent-cyan);"></i>
-                                Prioritize XP Collection
-                            </h3>
-                            <p class="text-gray-400 mb-3">
-                                Leveling up is more important than raw damage output. A well-upgraded character at level 10 will outperform a poorly-upgraded character at level 7 every time. This means you should actively path toward XP gem clusters, even if it means taking a slightly riskier route.
-                            </p>
-                            <p class="text-gray-400">
-                                However, use common sense. Don't run into the middle of a massive enemy swarm just to grab a single gem. The key is finding the balance between aggressive XP collection and safe positioning. With practice, you'll develop an intuition for when it's safe to push for gems.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-purple-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-layer-group mr-3" style="color: var(--accent-purple);"></i>
-                                Manage Enemy Clusters
-                            </h3>
-                            <p class="text-gray-400 mb-3">
-                                Enemies spawn around the map edges and move toward you. If you kite properly, you can funnel all enemies into a single trailing group behind you. This is ideal because it means you're only dealing with threats from one direction.
-                            </p>
-                            <p class="text-gray-400">
-                                Avoid getting surrounded at all costs. If enemies are coming from multiple angles, your positioning has failed. Use your movement to collect scattered enemy groups into one manageable horde, then keep that horde chasing you in circles.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-green-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-balance-scale mr-3" style="color: var(--accent-green);"></i>
-                                Balance Offense and Defense
-                            </h3>
-                            <p class="text-gray-400 mb-3">
-                                New players often over-invest in damage upgrades while ignoring defensive stats. This leads to runs that feel strong initially but collapse suddenly when enemy difficulty spikes or a boss appears.
-                            </p>
-                            <p class="text-gray-400">
-                                A good rule of thumb: for every two offensive upgrades (damage, attack speed, range), take at least one defensive upgrade (health, armor, movement speed). This keeps you resilient enough to survive mistakes while still clearing enemies efficiently.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-red-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-chart-line mr-3" style="color: var(--accent-red);"></i>
-                                Recognize Difficulty Spikes
-                            </h3>
-                            <p class="text-gray-400 mb-3">
-                                The game progressively increases in difficulty as time passes. Enemies get faster, tougher, and more numerous. You need to level up faster than the difficulty curve, which means aggressive XP collection early in the run.
-                            </p>
-                            <p class="text-gray-400">
-                                If you notice enemies are taking too long to kill or you're losing health faster than expected, it's a sign you're falling behind the curve. This often happens around the 5-10 minute mark. Focus on surviving and collecting XP rather than playing aggressively until you level up a few times.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border-l-4 border-yellow-600">
-                            <h3 class="text-xl font-bold mb-3 flex items-center">
-                                <i class="fas fa-brain mr-3" style="color: var(--accent-yellow);"></i>
-                                Learn Enemy Wave Patterns
-                            </h3>
-                            <p class="text-gray-400">
-                                Different enemy types spawn in distinct waves that last 1-2 minutes before transitioning to new enemy types. Learning these patterns helps you anticipate what's coming next and adjust your strategy accordingly. For example, when you see swarms of insects, you know slower but tankier enemies might follow soon.
+                                <strong class="text-white">Automatic.</strong> You do not need to click to shoot.
+                                Period. Focus entirely on weaving through gaps in the enemy herd.
                             </p>
                         </div>
                     </div>
                 </article>
-                
-                <!-- Section 10: Common Mistakes -->
-                <article id="common-mistakes" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4" style="background: var(--accent-orange);">10</span>
-                        Common Beginner Mistakes to Avoid
-                    </h2>
-                    
-                    <p class="text-gray-300 leading-relaxed mb-8">
-                        Learning what NOT to do is just as important as learning optimal strategies. Here are the most common mistakes that hold new players back, along with how to fix them.
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Standing Still While Fighting</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> Your character attacks automatically, so some players think they can just stand in place and fight. This gets you killed quickly.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> Never stop moving. Your attacks happen automatically regardless of movement, so there's no downside to constantly circling the battlefield. Movement is survival.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Ignoring XP Gems</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> Focusing only on killing enemies while ignoring the dropped XP gems. This means you're fighting without leveling up, making survival impossible.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> Make XP collection your primary goal. Your movement pattern should naturally sweep up gems as you kite enemies. Treat gems as more important than enemy kills.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Random Upgrade Selection</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> Clicking upgrades without reading them or having a plan, leading to unfocused builds that lack identity.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> Take your time when the level-up screen appears. Read each option and think about your current needs. Are you taking too much damage? Choose defensive stats. Killing enemies too slowly? Take offensive stats.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Neglecting Persistent Upgrades</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> Dying multiple times without spending the accumulated gold on permanent upgrades in the main menu.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> After every death, visit the main menu and spend your gold. Even small permanent upgrades compound quickly. A player with 10 levels of persistent upgrades will crush a player with zero upgrades, even if the latter is more skilled.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Panicking Under Pressure</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> When the screen fills with enemies or a boss appears, newer players often panic and make jerky, random movements that get them killed.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> Stay calm and maintain your circular movement pattern even when things look hopeless. Panic causes mistakes. Smooth, controlled movements even in chaos will save you far more often than frantic dodging.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-red-900 bg-opacity-20 rounded-xl p-6 border border-red-700">
-                            <div class="flex items-start">
-                                <i class="fas fa-times-circle text-2xl mr-4 text-red-400"></i>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Giving Up Too Early</h3>
-                                    <p class="text-gray-400 mb-2">
-                                        <strong>The Problem:</strong> Getting frustrated after a few short runs and abandoning the game before the meta-progression kicks in.
-                                    </p>
-                                    <p class="text-gray-400">
-                                        <strong>The Fix:</strong> Understand that Monster Survivors is designed around gradual improvement. Your first runs will be short - that's expected. Keep playing, keep upgrading, and you'll see dramatic progress within 10-15 runs. The game truly opens up once you have several persistent upgrade levels.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Conclusion Section -->
+
+                <!-- Section 3: XP Routing -->
                 <article class="mb-16">
-                    <div class="bg-gradient-to-r from-orange-900 to-cyan-900 bg-opacity-30 rounded-xl p-8 border-2 border-orange-600">
-                        <h2 class="text-3xl font-bold mb-4">Ready to Survive?</h2>
-                        <p class="text-gray-300 mb-6">
-                            You now have all the foundational knowledge needed to start your Monster Survivors journey. Remember that mastery comes from practice - every death teaches you something about enemy patterns, upgrade priorities, or positioning strategies. Don't be discouraged by early failures; they're part of the learning process.
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4"
+                            style="background: var(--accent-orange);">3</span>
+                        The Mandatory XP System
+                    </h2>
+
+                    <div
+                        class="bg-gradient-to-r from-orange-900 to-red-900 bg-opacity-20 rounded-xl p-6 border border-red-600 mb-8 border-l-8">
+                        <h3 class="text-xl font-bold mb-2 text-white">Critical Mistake: Standing Still</h3>
+                        <p class="text-gray-300">
+                            Unlike tower defense games, defeated enemies do NOT automatically deposit experience into
+                            your account. They drop gems onto the ground. If you stand completely stationary and "camp a
+                            corner", your level will remain at Level 1, and eventually, the enemy difficulty will vastly
+                            outscale you. Constant movement to sweep up dropped gems is mandatory.
                         </p>
-                        <p class="text-gray-300 mb-6">
-                            The key to long-term success is consistent improvement through both mechanical skill (movement and positioning) and strategic thinking (upgrade choices and build planning). Every run makes you better, and every gold coin earned makes your next attempt stronger.
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="/play/" class="btn-primary px-6 py-3 rounded-lg font-bold inline-flex items-center">
-                                <i class="fas fa-play mr-2"></i> Start Playing Now
-                            </a>
-                            <a href="/guides/" class="btn-secondary px-6 py-3 rounded-lg font-bold inline-flex items-center">
-                                <i class="fas fa-book-open mr-2"></i> More Advanced Guides
-                            </a>
-                        </div>
                     </div>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        Once your experience bar at the top of the monitor fills completely, you will level up. The game
+                        pauses dynamically, allowing you an unlimited amount of time to select a weapon or passive stat
+                        upgrade.
+                    </p>
                 </article>
-                
-                <!-- Related Guides -->
-                <section class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8">Related Guides</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <a href="/guides/weapon-choice/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <i class="fas fa-sword text-3xl mb-3" style="color: var(--accent-orange);"></i>
-                            <h3 class="text-xl font-bold mb-2">Steel Sword vs Wooden Wand</h3>
-                            <p class="text-gray-400 text-sm">Deep dive comparison of starting weapons</p>
-                        </a>
-                        
-                        <a href="/guides/boss-battles/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <i class="fas fa-dragon text-3xl mb-3" style="color: var(--accent-orange);"></i>
-                            <h3 class="text-xl font-bold mb-2">Boss Battle Strategies</h3>
-                            <p class="text-gray-400 text-sm">Advanced tactics for defeating bosses</p>
-                        </a>
-                        
-                        <a href="/guides/maps/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                            <i class="fas fa-map text-3xl mb-3" style="color: var(--accent-orange);"></i>
-                            <h3 class="text-xl font-bold mb-2">Complete Maps Guide</h3>
-                            <p class="text-gray-400 text-sm">Strategies for Dreamy Woods and Shade Palace</p>
-                        </a>
-                    </div>
-                </section>
-                
+
+                <!-- Section 4: Gold & Death -->
+                <article class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4"
+                            style="background: var(--accent-orange);">4</span>
+                        What Happens When You Die? (Gold Upgrades)
+                    </h2>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Because this is a "Roguelite", you are expected to die constantly in your first few hours.
+                        However, every coin you hoovered up during a failed run transfers safely into your permanent
+                        pocket structure.
+                    </p>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Before your next run, you can spend this gold to permanently upgrade your survivor's Base
+                        Health, Base Damage, or unlock shiny new Characters (like Echo and Arcanix). Do not be afraid to
+                        fail.
+                    </p>
+                </article>
+
+                <!-- Section 5: The First Boss -->
+                <article class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="w-10 h-10 rounded-lg flex items-center justify-center mr-4"
+                            style="background: var(--accent-orange);">5</span>
+                        Your First Boss Threshold (The Arena Cage)
+                    </h2>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        When you reach specific chronological thresholds in an area, the game will warn you of an
+                        impending Boss encounter. The most jarring mechanic for a beginner occurs here: <strong>the
+                            massive open world map is forcibly shrunken by barricades.</strong>
+                    </p>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        You can no longer run away endlessly. The game tests your previously built strength by caging
+                        you in tight quarters with a giant monster. If you haven't been gathering enough XP and ranking
+                        up Damage abilities prior to the cage descending, you will not have the pure output necessary to
+                        burst it down.
+                    </p>
+                </article>
+
             </div>
         </section>
-        
+
+        <!-- MASSIVE FUNNEL CTA SECTION -->
+        <section class="py-16 px-4"
+            style="background-color: var(--secondary-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="max-w-4xl mx-auto">
+                <a href="/guides/weapon-combos.html" class="block">
+                    <div
+                        class="cta-hover bg-gradient-to-br from-indigo-800 to-purple-900 bg-opacity-70 border-2 border-indigo-500 rounded-2xl p-10 text-center relative overflow-hidden backdrop-blur-md">
+                        <!-- BG Glow Effect -->
+                        <div
+                            class="absolute top-[-50%] left-[-50%] w-full h-full bg-cyan-500 opacity-20 filter blur-[100px] rounded-full pointer-events-none">
+                        </div>
+
+                        <div class="relative z-10">
+                            <span
+                                class="inline-block bg-orange-600 text-white font-bold py-1 px-4 rounded-full text-sm uppercase tracking-wider mb-6">Take
+                                The Next Step</span>
+                            <h2 class="text-3xl md:text-5xl font-black text-white mb-6">Ready to Advance?</h2>
+                            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                                You now understand how to move, collect XP, and spend Gold. But randomly clicking stat
+                                upgrades will only carry you so far. It's time to learn how to create invincible
+                                synergies.
+                            </p>
+                            <span
+                                class="inline-flex items-center justify-center bg-cyan-500 text-gray-900 text-xl font-bold px-8 py-4 rounded-xl shadow-lg shadow-cyan-500/50">
+                                View The Weapon Combos Guide <i class="fas fa-arrow-right ml-3"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
     </main>
-    
+
     <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        Your ultimate resource for Monster Survivors strategies, guides, and tools.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
-                        <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Guides</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/guides/weapon-choice.html" class="hover:text-cyan-400 transition">Weapon Guide</a></li>
-                        <li><a href="/guides/boss-battles.html" class="hover:text-cyan-400 transition">Boss Battles</a></li>
-                        <li><a href="/guides/upgrades.html" class="hover:text-cyan-400 transition">Upgrade Guide</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
-                        <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-gray-500 text-sm">
-                        © 2026 MonsterSurvivors.plus - All Rights Reserved
-                    </p>
-                    <p class="text-gray-500 text-sm text-center md:text-right">
-                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors is developed by FreezeNova.
-                    </p>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 mt-8">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
+                <p class="text-gray-500 text-sm">
+                    © 2026 MonsterSurvivors.plus - All Rights Reserved <br>
+                    <span class="text-xs">Disclaimer: This is an independent fan database. The game is developed by
+                        FreezeNova.</span>
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/guides/" class="text-gray-500 hover:text-cyan-400 text-sm">Guides Hub</a>
+                    <a href="/tier-list/" class="text-gray-500 hover:text-cyan-400 text-sm">Tier Lists</a>
+                    <a href="/privacy-policy/" class="text-gray-500 hover:text-cyan-400 text-sm">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-    
 </body>
+
 </html>
