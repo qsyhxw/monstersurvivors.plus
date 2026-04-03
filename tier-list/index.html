@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Monster Survivors Tier List 2026: Best Heroes & Weapons Ranked</title>
-    <meta name="description" content="Discover the best characters and starting weapons in our Monster Survivors Tier List. Master the meta with our top-ranked heroes like Echo and Arcanix.">
-    <meta name="keywords" content="monster survivors tier list, monster survivors best weapons tier list, monster survivors best hero, monster survivors meta, best starting weapon">
+    <title>Monster Survivors Tier List Hub (2026 Meta)</title>
+    <meta name="description" content="Welcome to the ultimate Monster Survivors Tier List Hub. Find our updated rankings for the best weapons, unlockable heroes, and ultimate meta strategies.">
+    <meta name="keywords" content="monster survivors tier list, monster survivors best weapons tier list, monster survivors best hero, monster survivors meta">
     <link rel="canonical" href="https://monstersurvivors.plus/tier-list/">
     
     <!-- Google Analytics -->
@@ -23,10 +23,10 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Tier List: Heroes & Weapons Ranked">
-    <meta property="og:description" content="Find out which heroes and weapons dominate the current meta in Monster Survivors.">
+    <meta property="og:title" content="Monster Survivors Tier List Hub: Guides & Rankings">
+    <meta property="og:description" content="Explore our split meta rankings. Find out which heroes and weapons dominate the current 2026 patch in Monster Survivors.">
     <meta property="og:url" content="https://monstersurvivors.plus/tier-list/">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
     
     <!-- Tailwind CSS -->
@@ -40,9 +40,6 @@
                         'secondary-dark': '#16213e',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
-                        'tier-s': '#ff4b4b',
-                        'tier-a': '#ff904f',
-                        'tier-b': '#fcd53f',
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
@@ -73,6 +70,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--primary-dark);
             color: var(--text-light);
+            scroll-behavior: smooth;
         }
         
         h1, h2, h3 {
@@ -80,98 +78,25 @@
         }
         
         .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s ease;
         }
         
         .card-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
+            border-color: var(--accent-cyan);
         }
-        
-        .tier-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 0.5rem;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 900;
-            font-size: 1.5rem;
-            margin-right: 1rem;
-            flex-shrink: 0;
-        }
-        
-        .bg-tier-s { background: linear-gradient(135deg, #ff4b4b 0%, #c92a2a 100%); color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
-        .bg-tier-a { background: linear-gradient(135deg, #ff904f 0%, #d97706 100%); color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
-        .bg-tier-b { background: linear-gradient(135deg, #fcd53f 0%, #b45309 100%); color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
-        
-        .tier-row {
-            display: flex;
-            align-items: stretch;
-            background: rgba(15, 23, 42, 0.6);
-            border-radius: 0.75rem;
-            border: 1px solid rgba(255,255,255,0.05);
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        
-        .tier-grade {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            font-size: 2.5rem;
-            font-weight: 900;
-            font-family: 'Orbitron', sans-serif;
-        }
-        
-        .tier-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        
-        .entity-card {
-            background: rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            text-align: center;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
+
+        .hero-hover {
             transition: all 0.3s ease;
         }
-        
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+
+        .hero-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
+            border-color: var(--accent-orange);
         }
     </style>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Monster Survivors Tier List: Best Heroes & Weapons Ranked",
-        "description": "Discover the best characters and starting weapons in our Monster Survivors Tier List.",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "datePublished": "2026-03-25",
-        "dateModified": "2026-03-25"
-    }
-    </script>
 </head>
 <body>
     
@@ -189,8 +114,9 @@
                 
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="text-cyan-400">Guides</a>
-                    <a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a>
+                    <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
+                    <a href="/tier-list/" class="text-cyan-400 font-bold">Tier List</a>
+                    <a href="/weapons-database/" class="hover:text-cyan-400 transition">Weapons</a>
                     <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
                 </div>
             </div>
@@ -203,9 +129,7 @@
             <nav class="text-sm text-gray-400">
                 <a href="/" class="hover:text-cyan-400">Home</a>
                 <span class="mx-2">/</span>
-                <a href="/guides/" class="hover:text-cyan-400">Guides</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Tier List</span>
+                <span class="text-gray-300">Tier List Hub</span>
             </nav>
         </div>
         
@@ -213,200 +137,93 @@
         <section class="py-12 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
             <div class="max-w-7xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Monster Survivors <span style="color: var(--accent-orange);">Tier List</span>: <br>
-                    <span style="color: var(--accent-cyan);">Heroes & Weapons Ranked</span>
+                    Monster Survivors <span style="color: var(--accent-orange);">Tier List</span> Hub<br>
+                    <span style="color: var(--accent-cyan); font-size: 0.8em;">(2026 Meta Analysis)</span>
                 </h1>
-                <p class="text-xl text-gray-300 mb-4 max-w-3xl mx-auto">
-                    Stop wasting resources. Find out exactly which characters to unlock and which weapons to prioritize for your next run.
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Welcome to the central tracking hub for all current meta trends. Dive into our highly specialized ranking trackers to determine the absolute strongest loadouts.
                 </p>
                 <div class="inline-flex items-center space-x-2 bg-gray-800 bg-opacity-50 rounded-lg px-4 py-2 border border-gray-600">
-                    <i class="fas fa-hammer text-gray-400"></i>
-                    <span class="text-sm">Current Meta Update (2026)</span>
+                    <i class="fas fa-history text-cyan-400 -spin-hover"></i>
+                    <span class="text-sm">Consensus Patch Data — Last Reviewed: 2026</span>
                 </div>
+            </div>
+        </section>
+        
+        <!-- Split Hub Links Section -->
+        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Weapon Tier List Link -->
+                <a href="/tier-list/weapons.html" class="block w-full h-full">
+                    <div class="card-hover bg-gray-900 bg-opacity-70 border border-gray-700 rounded-2xl p-8 h-full flex flex-col items-center text-center">
+                        <div class="bg-cyan-900 bg-opacity-30 p-4 rounded-full mb-6">
+                            <i class="fas fa-khanda text-5xl text-cyan-400"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">Best Weapons Tier List</h2>
+                        <p class="text-gray-400 mb-6 flex-grow">
+                            Stop wasting materials on weak armaments. Find out exactly which weapons boast the highest DPS scaling, the best crowd control features, and are S-Tier mandatory for surviving past wave 20.
+                        </p>
+                        <span class="inline-block bg-cyan-600 text-white font-bold py-2 px-6 rounded-lg uppercase tracking-wide">View Weapons Ranking &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Hero Tier List Link -->
+                <a href="/tier-list/heroes.html" class="block w-full h-full">
+                    <div class="hero-hover bg-gray-900 bg-opacity-70 border border-gray-700 rounded-2xl p-8 h-full flex flex-col items-center text-center">
+                        <div class="bg-orange-900 bg-opacity-30 p-4 rounded-full mb-6">
+                            <i class="fas fa-user-shield text-5xl text-orange-400"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">Best Heroes Tier List</h2>
+                        <p class="text-gray-400 mb-6 flex-grow">
+                            Not all survivors are born equal. Learn which unlockable heroes have the strongest foundational stats, the best starting weapons, and the passive abilities necessary to push infinite limits.
+                        </p>
+                        <span class="inline-block bg-orange-600 text-white font-bold py-2 px-6 rounded-lg uppercase tracking-wide">View Heroes Ranking &rarr;</span>
+                    </div>
+                </a>
+
             </div>
         </section>
         
         <!-- Intro & Criteria -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-gray-700">
+        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-gray-800 bg-opacity-40 rounded-2xl p-8 border border-gray-700">
                     <h2 class="text-2xl font-bold mb-4 flex items-center">
                         <i class="fas fa-info-circle mr-3" style="color: var(--accent-cyan);"></i>
-                        What to Know About the Current Meta
+                        Why Did We Split The Tier Lists?
                     </h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        As FreezeNova's Monster Survivors meta has deepened in late 2025 and 2026, comparing heroes directly against weapons or lumping them into a single massive chart causes immense confusion.
+                    </p>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        In FreezeNova's Monster Survivors, your success deeply relies on your starting hero and the weapons you acquire during your run. While skill and movement are crucial, some characters and gear completely outclass others when pushing for late-game waves and boss fights. Our tier list ranks entities based on raw damage output, survivability, and crowd-control utility.
+                        An S-Tier Hero might natively carry an S-Tier Weapon, but understanding why a hero’s <em>passive</em> makes them great is profoundly different from analyzing why a <em>weapon's hit-box</em> is effective. Thus, we have built targeted tier hubs to allow you to study exactly the data you need. 
                     </p>
                     
-                    <h3 class="text-xl font-bold mb-3 text-cyan-400">Ranking Criteria</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
-                        <li><strong>Damage Scaling:</strong> How well the hero/weapon performs against late-game bosses.</li>
-                        <li><strong>Survivability & Utility:</strong> Movement speed advantages, crowd control (like freezing), and ease of use.</li>
-                        <li><strong>Synergy:</strong> How well starting weapons naturally evolve and interact with core passive upgrades.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Hero Tier List -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-                    Monster Survivors <span style="color: var(--accent-orange);">Hero Tier List</span>
-                </h2>
-                
-                <!-- S Tier Heroes -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-s">S</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-red-500">
-                            <h4 class="font-bold text-lg text-white mb-1">Echo</h4>
-                            <p class="text-xs text-gray-400 mb-2">The Damage Dealer</p>
-                            <p class="text-sm text-gray-300">Unmatched for late-game boss rounds (Wave 20+). Exceptional when combined with legendary plasma guns and high critical stats.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-red-500">
-                            <h4 class="font-bold text-lg text-white mb-1">Arcanix</h4>
-                            <p class="text-xs text-gray-400 mb-2">The Area Mage</p>
-                            <p class="text-sm text-gray-300">Her exclusive Wand access and level 5 slowing aura provide the ultimate crowd-control synergy for surviving massive hordes.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- A Tier Heroes -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-a">A</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-orange-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Knight</h4>
-                            <p class="text-xs text-gray-400 mb-2">The Balanced Starter</p>
-                            <p class="text-sm text-gray-300">Starts with a Short Sword and +10% movement speed. Highly dependable for beginners trying to outmaneuver early game swarms.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-orange-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Mage</h4>
-                            <p class="text-xs text-gray-400 mb-2">The Classic Caster</p>
-                            <p class="text-sm text-gray-300">Comes with a Magic Staff and +15% area damage. Excellent alternative to Arcanix for solid AoE (Area of Effect) bursts.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- B Tier Heroes -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-b">B</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-yellow-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Balencio</h4>
-                            <p class="text-xs text-gray-400 mb-2">Survivalist</p>
-                            <p class="text-sm text-gray-300">Good for pure parkour and evasion, but falls behind S-Tier heroes in raw damage against elite enemies.</p>
-                        </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Need Strategy Instead?</h3>
+                    <p class="text-gray-400 mb-4">If you already know who is best, jump straight into how to combine them:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/guides/weapon-combos.html" class="text-orange-400 hover:text-white border border-orange-500 rounded px-4 py-2 text-sm font-bold transition">Weapon Synergy Guide</a>
+                        <a href="/guides/weapon-evolution.html" class="text-cyan-400 hover:text-white border border-cyan-500 rounded px-4 py-2 text-sm font-bold transition">Gear Merging Explained</a>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Weapon Tier List -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
-                    Best <span style="color: var(--accent-cyan);">Weapons Tier List</span>
-                </h2>
-                
-                <!-- SEO Intercept Banner: Best Weapons Guide -->
-                <div class="bg-gradient-to-r from-cyan-900 to-blue-900 border border-cyan-500 rounded-xl p-6 shadow-xl mb-12 flex flex-col md:flex-row items-center justify-between group">
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-2"><i class="fas fa-book-open text-cyan-400 mr-2"></i> Stop dying at Wave 20!</h3>
-                        <p class="text-cyan-100 text-sm">Want a deep dive into exactly <em>why</em> the Plasma Gun and Axe are S-Tier? Read our comprehensive breakdown of the top 4 meta weapons.</p>
-                    </div>
-                    <a href="/guides/best-weapons.html" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg shrink-0 flex items-center">
-                        Read the Best Weapons Guide <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                </div>
-                
-                <!-- S Tier Weapons -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-s">S</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-red-500">
-                            <h4 class="font-bold text-lg text-white mb-1">Plasma Gun</h4>
-                            <p class="text-sm text-gray-300 mt-2">Arguably the best late-game weapon. Its wide-area damage at legendary levels obliterates mobs and bosses alike.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-red-500">
-                            <h4 class="font-bold text-lg text-white mb-1">Axe</h4>
-                            <p class="text-sm text-gray-300 mt-2">Swirls around the player continuously. It provides a massive protective barrier of damage, shining brightest in tight situations.</p>
-                            <a href="/guides/weapon-choice.html" class="text-xs text-cyan-400 hover:underline mt-2 inline-block">Compare starting weapons</a>
-                        </div>
-                        <div class="entity-card border-t-2 border-red-500">
-                            <h4 class="font-bold text-lg text-white mb-1">Wand (Arcanix Exclusive)</h4>
-                            <p class="text-sm text-gray-300 mt-2">Incredible DPS and scaling frequency. It single-handedly makes Arcanix an S-tier character.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- A Tier Weapons -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-a">A</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-orange-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Chain Lightning</h4>
-                            <p class="text-sm text-gray-300 mt-2">Hits multiple enemies simultaneously. Absolute lifesaver for early to mid-game crowd control.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-orange-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Shotgun</h4>
-                            <p class="text-sm text-gray-300 mt-2">Devastating close-range burst damage, great for making sudden escapes through dense packs.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-orange-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Holy Cross / Holy Sword</h4>
-                            <p class="text-sm text-gray-300 mt-2">Excellent rotational area coverage, serving as a reliable backbone for many winning builds.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- B Tier Weapons -->
-                <div class="tier-row">
-                    <div class="tier-grade bg-tier-b">B</div>
-                    <div class="tier-content">
-                        <div class="entity-card border-t-2 border-yellow-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Steel Sword / Short Sword</h4>
-                            <p class="text-sm text-gray-300 mt-2">Solid baseline damage, but requires you to get dangerously close to enemies. Can be evolved into better weapons.</p>
-                        </div>
-                        <div class="entity-card border-t-2 border-yellow-400">
-                            <h4 class="font-bold text-lg text-white mb-1">Frostbite & Ice Dagger</h4>
-                            <p class="text-sm text-gray-300 mt-2">Great for slowing features, but lacks the pure damage needed to clear out waves quickly in late game.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQs -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked <span style="color: var(--accent-orange);">Questions</span></h2>
-                <div class="space-y-6 text-gray-300">
-                    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-gray-700">
-                        <h3 class="text-xl font-bold text-white mb-2">How do I unlock S-Tier heroes like Echo or Arcanix?</h3>
-                        <p>Heroes in Monster Survivors are typically unlocked by collecting Hero Shards during your runs or spending accumulated in-game gold. Focus on surviving longer to maximize resource gains.</p>
-                    </div>
-                    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-gray-700">
-                        <h3 class="text-xl font-bold text-white mb-2">Are D-tier and C-tier weapons completely useless?</h3>
-                        <p>Not necessarily. While they fall off heavily in late-game boss fights, situational weapons like the Shuriken can still provide useful knockback in the first 5 minutes. However, we advise against investing heavy upgrades into them.</p>
-                        <p class="mt-2 text-cyan-400"><a href="/guides/upgrades.html" class="hover:underline">Learn more about the best weapon upgrades here.</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
     
     <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
         <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 mt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
                 <p class="text-gray-500 text-sm">
-                    © 2026 MonsterSurvivors.plus - All Rights Reserved
+                    © 2026 MonsterSurvivors.plus - All Rights Reserved <br>
+                    <span class="text-xs">Disclaimer: This is an independent fan database. The game is developed by FreezeNova.</span>
                 </p>
-                <div class="flex space-x-4">
-                    <a href="/guides/" class="text-gray-500 hover:text-cyan-400 text-sm">Return to Guides</a>
-                    <a href="/guides/beginner-guide.html" class="text-gray-500 hover:text-cyan-400 text-sm">Beginner Guide</a>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/guides/" class="text-gray-500 hover:text-cyan-400 text-sm">Game Guides</a>
+                    <a href="/weapons-database/" class="text-gray-500 hover:text-cyan-400 text-sm">Weapons</a>
+                    <a href="/privacy-policy/" class="text-gray-500 hover:text-cyan-400 text-sm">Privacy Policy</a>
                 </div>
             </div>
         </div>
