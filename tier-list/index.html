@@ -3,230 +3,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Monster Survivors Tier List Hub (2026 Meta)</title>
-    <meta name="description" content="Welcome to the ultimate Monster Survivors Tier List Hub. Find our updated rankings for the best weapons, unlockable heroes, and ultimate meta strategies.">
-    <meta name="keywords" content="monster survivors tier list, monster survivors best weapons tier list, monster survivors best hero, monster survivors meta">
+    <title>Monster Survivors App Tier List: Builds &amp; Weapons (2026)</title>
+    <meta name="description" content="Monster Survivors App tier list ranking builds, weapons, hero choices, gear stats and skills for progression, bosses, horde maps and resource farming.">
+    <meta name="keywords" content="monster survivors tier list, monster survivors app tier list, best build, best weapons, best hero, gear stats, skills">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/tier-list/">
-    
-    <!-- Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Tier List Hub: Guides & Rankings">
-    <meta property="og:description" content="Explore our split meta rankings. Find out which heroes and weapons dominate the current 2026 patch in Monster Survivors.">
+
+    <meta property="og:title" content="Monster Survivors App Tier List (2026)">
+    <meta property="og:description" content="Compare App builds, weapons, hero profiles and stat priorities without mixing in browser-game advice.">
     <meta property="og:url" content="https://monstersurvivors.plus/tier-list/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
-    <!-- Tailwind CSS -->
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg">
+    <meta property="article:modified_time" content="2026-06-24T00:00:00+08:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors App Tier List">
+    <meta name="twitter:description" content="Build, weapon, hero-profile and stat rankings for the VOODOO App.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 30px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 30px rgba(255,107,53,.28)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
-            --text-gray: #b8b8b8;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
-            scroll-behavior: smooth;
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .gradient-bg {
+            background:
+                radial-gradient(circle at 13% 18%, rgba(0,217,255,.14), transparent 32%),
+                radial-gradient(circle at 86% 20%, rgba(255,107,53,.15), transparent 30%),
+                radial-gradient(circle at 52% 96%, rgba(168,85,247,.12), transparent 34%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+        }
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
+        }
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.93), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.2);
+            border-radius: 1rem;
+            backdrop-filter: blur(8px);
+        }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .tier-table { width: 100%; border-collapse: collapse; min-width: 850px; }
+        .tier-table th, .tier-table td {
+            padding: .95rem 1rem;
+            border-bottom: 1px solid rgba(75,85,99,.55);
+            text-align: left;
+            vertical-align: top;
+        }
+        .tier-table th {
+            color: #9befff;
+            background: rgba(15,23,41,.98);
             font-family: 'Orbitron', sans-serif;
+            font-size: .72rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            white-space: nowrap;
         }
-        
-        .card-hover {
-            transition: all 0.3s ease;
+        .tier-table tr:last-child td { border-bottom: 0; }
+        .tier-table tbody tr:hover { background: rgba(0,217,255,.045); }
+        .tier-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            border-radius: .8rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
         }
-        
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
-            border-color: var(--accent-cyan);
+        .tier-s { color: #fecdd3; border: 1px solid rgba(251,113,133,.72); background: linear-gradient(135deg, rgba(239,68,68,.22), rgba(249,115,22,.2)); }
+        .tier-a { color: #fde68a; border: 1px solid rgba(247,201,72,.62); background: rgba(247,201,72,.14); }
+        .tier-b { color: #d8b4fe; border: 1px solid rgba(168,85,247,.58); background: rgba(168,85,247,.14); }
+        .tier-c { color: #bfdbfe; border: 1px solid rgba(59,130,246,.55); background: rgba(59,130,246,.12); }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: .23rem .6rem;
+            margin: .12rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(0,217,255,.3);
+            background: rgba(0,217,255,.09);
+            color: #b6f3ff;
+            font-size: .72rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
-
-        .hero-hover {
-            transition: all 0.3s ease;
+        .rank-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
         }
-
-        .hero-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.15);
-            border-color: var(--accent-orange);
+        .rank-card::after {
+            content: '';
+            position: absolute;
+            right: -4rem;
+            bottom: -4rem;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 9999px;
+            background: radial-gradient(circle, rgba(0,217,255,.1), transparent 68%);
+            pointer-events: none;
         }
+        .rank-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0,217,255,.55);
+            box-shadow: 0 16px 32px rgba(0,217,255,.1);
+        }
+        .check-item, .warning-item { position: relative; padding-left: 1.7rem; }
+        .check-item::before, .warning-item::before {
+            position: absolute;
+            left: 0;
+            top: .08rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .check-item::before { content: '\f00c'; color: var(--accent-cyan); }
+        .warning-item::before { content: '\f071'; color: #fb7185; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
     </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://monstersurvivors.plus/tier-list/#webpage",
+        "url": "https://monstersurvivors.plus/tier-list/",
+        "name": "Monster Survivors App Tier List",
+        "description": "An App ranking hub for builds, weapons, hero choices, gear stats and skill priorities.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://monstersurvivors.plus/#website",
+            "name": "MonsterSurvivors.plus",
+            "url": "https://monstersurvivors.plus/"
+        },
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Monster Survivors",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Android, Windows",
+            "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
+        },
+        "dateModified": "2026-06-24",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Monster Survivors App Overall Tier List",
+        "numberOfItems": 5,
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Balancio Gunslinger Build"},
+            {"@type": "ListItem", "position": 2, "name": "Plasma Beam"},
+            {"@type": "ListItem", "position": 3, "name": "Chain Lightning"},
+            {"@type": "ListItem", "position": 4, "name": "Shotgun"},
+            {"@type": "ListItem", "position": 5, "name": "Broad Permanent Power"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is S tier in the Monster Survivors App?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For general progression, the Balancio Gunslinger build, Plasma Beam, Chain Lightning, Shotgun, Damage and Attack Speed are the safest S-tier priorities. Specialist maps can change the order."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who is the best hero in the Monster Survivors App?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Balancio is the safest named general recommendation because the visible Swift and Gunslinger upgrade path supports Speed and Attack Speed. A developed specialist hero can rank higher for a matching boss, horde or survival map."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can an A-tier weapon outperform an S-tier weapon?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Weapon level, rank, unlocked bonuses and the missing role in the current loadout can outweigh a base-tier difference."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does this tier list cover Play Online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. This page covers the VOODOO App with package games.rivvy.monstersurvivors. Play Online is a separate browser game."
+                }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "App Tier List", "item": "https://monstersurvivors.plus/tier-list/"}
+        ]
+    }
+    </script>
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
-                </div>
-                
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
-                    <a href="/tier-list/" class="text-cyan-400 font-bold">Tier List</a>
-                    <a href="/weapons-database/" class="hover:text-cyan-400 transition">Weapons</a>
+                    <a href="/guides/" class="hover:text-cyan-400 transition">App Guides</a>
+                    <a href="/tier-list/" class="text-cyan-400">Tier List</a>
+                    <a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a>
                     <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
                 </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/" class="block py-2">Home</a>
+                <a href="/guides/" class="block py-2">App Guides</a>
+                <a href="/tier-list/" class="block py-2 text-cyan-400">Tier List</a>
+                <a href="/best-builds/" class="block py-2">Best Builds</a>
+                <a href="/play/" class="block py-2">Play Online</a>
             </div>
         </div>
     </nav>
-    
+
     <main>
-        <!-- Breadcrumb -->
         <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="text-sm text-gray-400">
+            <nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm text-gray-400">
                 <a href="/" class="hover:text-cyan-400">Home</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Tier List Hub</span>
+                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                <span class="text-cyan-400">App Tier List</span>
             </nav>
         </div>
-        
-        <!-- Hero Section -->
-        <section class="py-12 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-7xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Monster Survivors <span style="color: var(--accent-orange);">Tier List</span> Hub<br>
-                    <span style="color: var(--accent-cyan); font-size: 0.8em;">(2026 Meta Analysis)</span>
-                </h1>
-                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                    Welcome to the central tracking hub for all current meta trends. Dive into our highly specialized ranking trackers to determine the absolute strongest loadouts.
-                </p>
-                <div class="inline-flex items-center space-x-2 bg-gray-800 bg-opacity-50 rounded-lg px-4 py-2 border border-gray-600">
-                    <i class="fas fa-history text-cyan-400 -spin-hover"></i>
-                    <span class="text-sm">Consensus Patch Data — Last Reviewed: 2026</span>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Split Hub Links Section -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Weapon Tier List Link -->
-                <a href="/tier-list/weapons.html" class="block w-full h-full">
-                    <div class="card-hover bg-gray-900 bg-opacity-70 border border-gray-700 rounded-2xl p-8 h-full flex flex-col items-center text-center">
-                        <div class="bg-cyan-900 bg-opacity-30 p-4 rounded-full mb-6">
-                            <i class="fas fa-khanda text-5xl text-cyan-400"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold text-white mb-4">Best Weapons Tier List</h2>
-                        <p class="text-gray-400 mb-6 flex-grow">
-                            Stop wasting materials on weak armaments. Find out exactly which weapons boast the highest DPS scaling, the best crowd control features, and are S-Tier mandatory for surviving past wave 20.
-                        </p>
-                        <span class="inline-block bg-cyan-600 text-white font-bold py-2 px-6 rounded-lg uppercase tracking-wide">View Weapons Ranking &rarr;</span>
-                    </div>
-                </a>
 
-                <!-- Hero Tier List Link -->
-                <a href="/tier-list/heroes.html" class="block w-full h-full">
-                    <div class="hero-hover bg-gray-900 bg-opacity-70 border border-gray-700 rounded-2xl p-8 h-full flex flex-col items-center text-center">
-                        <div class="bg-orange-900 bg-opacity-30 p-4 rounded-full mb-6">
-                            <i class="fas fa-user-shield text-5xl text-orange-400"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold text-white mb-4">Best Heroes Tier List</h2>
-                        <p class="text-gray-400 mb-6 flex-grow">
-                            Not all survivors are born equal. Learn which unlockable heroes have the strongest foundational stats, the best starting weapons, and the passive abilities necessary to push infinite limits.
-                        </p>
-                        <span class="inline-block bg-orange-600 text-white font-bold py-2 px-6 rounded-lg uppercase tracking-wide">View Heroes Ranking &rarr;</span>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-        
-        <!-- Intro & Criteria -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-5xl mx-auto">
-                <div class="bg-gray-800 bg-opacity-40 rounded-2xl p-8 border border-gray-700">
-                    <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-info-circle mr-3" style="color: var(--accent-cyan);"></i>
-                        Why Did We Split The Tier Lists?
-                    </h2>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        As FreezeNova's Monster Survivors meta has deepened in late 2025 and 2026, comparing heroes directly against weapons or lumping them into a single massive chart causes immense confusion.
+        <section class="gradient-bg px-4 pt-10 pb-14">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-yellow-200 bg-yellow-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-yellow-700 mb-5">
+                        <i class="fab fa-android" aria-hidden="true"></i>VOODOO APP TIER LIST · UPDATED JUNE 24, 2026
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5">
+                        Monster Survivors App
+                        <span style="color:var(--accent-orange)">Tier List</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-7">
+                        Rank complete builds first, weapon roles second and individual stats third. A high-rank item or developed hero can move above its default tier.
                     </p>
-                    <p class="text-gray-300 mb-6 leading-relaxed">
-                        An S-Tier Hero might natively carry an S-Tier Weapon, but understanding why a hero’s <em>passive</em> makes them great is profoundly different from analyzing why a <em>weapon's hit-box</em> is effective. Thus, we have built targeted tier hubs to allow you to study exactly the data you need. 
-                    </p>
-                    
-                    <h3 class="text-xl font-bold mb-3 text-white">Need Strategy Instead?</h3>
-                    <p class="text-gray-400 mb-4">If you already know who is best, jump straight into how to combine them:</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="/guides/weapon-combos.html" class="text-orange-400 hover:text-white border border-orange-500 rounded px-4 py-2 text-sm font-bold transition">Weapon Synergy Guide</a>
-                        <a href="/guides/weapon-evolution.html" class="text-cyan-400 hover:text-white border border-cyan-500 rounded px-4 py-2 text-sm font-bold transition">Gear Merging Explained</a>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#overall" class="bg-gradient-to-r from-orange-600 to-red-600 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-ranking-star mr-2" aria-hidden="true"></i>View Overall Ranking
+                        </a>
+                        <a href="#weapons" class="border border-cyan-500 text-cyan-200 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-gun mr-2" aria-hidden="true"></i>Weapon Tiers
+                        </a>
                     </div>
                 </div>
+                <figure class="glass-panel p-3 max-w-md mx-auto shadow-glow-cyan">
+                    <img src="/images/guides/monster-survivors-app-weapons.jpg"
+                        alt="Monster Survivors App weapon screen showing weapon levels and ranks"
+                        width="444" height="592" class="w-full rounded-xl border border-gray-700" loading="eager">
+                    <figcaption class="text-xs text-gray-400 px-2 pt-3 pb-1">
+                        The App tracks persistent weapon levels and ranks, so investment can move an A-tier choice above a new S-tier unlock.
+                    </figcaption>
+                </figure>
             </div>
         </section>
-        
+
+        <article class="px-4 py-14" style="background-color:var(--secondary-dark)">
+            <div class="max-w-6xl mx-auto">
+                <aside class="bg-red-950 bg-opacity-25 border border-red-700 rounded-xl p-6 mb-14">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-code-branch text-2xl text-red-300 mt-1" aria-hidden="true"></i>
+                        <div>
+                            <h2 class="text-xl font-bold text-red-100 mb-2">App Ranking, Not the Browser Game</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                This page covers <strong class="text-white">Monster Survivors by VOODOO</strong>,
+                                package <code class="text-cyan-300 text-sm">games.rivvy.monstersurvivors</code>.
+                                FreezeNova heroes, Wooden Wand, Axe and browser map rankings do not apply here.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section id="overall" class="mb-16">
+                    <div class="max-w-3xl mb-7">
+                        <p class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Overall App Tier List at a Glance</h2>
+                        <p class="text-gray-400 text-lg">
+                            This first table ranks choices for general account progression. Specialist farming, boss and first-clear maps can move a choice by one or more tiers.
+                        </p>
+                    </div>
+                    <div class="panel table-scroll shadow-glow-cyan">
+                        <table class="tier-table">
+                            <thead>
+                                <tr><th>Tier</th><th>Builds</th><th>Weapons</th><th>Stats / Investment</th><th>Why</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="tier-badge tier-s">S</span></td>
+                                    <td><strong class="text-orange-300">Balancio Gunslinger</strong></td>
+                                    <td>Plasma Beam, Chain Lightning, Shotgun</td>
+                                    <td>Damage, Attack Speed, broad permanent power</td>
+                                    <td class="text-gray-300">Useful on the widest range of maps and solves the most common crowd, close-pressure and scaling problems.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-badge tier-a">A</span></td>
+                                    <td>Horde Clearer, Boss Hunter, Safe Progression</td>
+                                    <td>Sniper, Pistol, Shuriken</td>
+                                    <td>Speed, Range, Crit, Dodge</td>
+                                    <td class="text-gray-300">Strong when the build and map activate their specialist role; slightly less universal.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-badge tier-b">B</span></td>
+                                    <td>XP &amp; Resource build during a push</td>
+                                    <td>Blaster, Fist, Tempest Relic</td>
+                                    <td>Max HP, HP Restore, Armor/Shield</td>
+                                    <td class="text-gray-300">Can be correct with investment or a matching stage, but usually needs a clear reason.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tier-badge tier-c">C</span></td>
+                                    <td>Redundant five-weapon setups</td>
+                                    <td>Any new low-rank weapon chosen only for its tier label</td>
+                                    <td>XP Gain, Pickup Range and Luck during a hard progression wall</td>
+                                    <td class="text-gray-300">These choices trade away the damage, coverage or durability needed to pass the current gate.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="builds" class="mb-16">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Complete setup ranking</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">Build Tier List</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="rank-card panel p-6 border-t-4 border-rose-500">
+                            <div class="flex items-center justify-between gap-4 mb-4"><span class="tier-badge tier-s">S</span><span class="tag">GENERAL PROGRESSION</span></div>
+                            <h3 class="text-xl font-bold mb-3">Balancio Gunslinger</h3>
+                            <p class="text-gray-400 mb-4">Pistol + Shotgun + Plasma Beam or Chain Lightning, backed by Attack Speed, Damage, Range and Speed.</p>
+                            <p class="text-sm text-gray-300"><strong>Why S:</strong> Balancio's visible Swift and Gunslinger path supports movement and firing speed without demanding a narrow map condition.</p>
+                        </div>
+                        <div class="rank-card panel p-6 border-t-4 border-yellow-500">
+                            <div class="flex items-center justify-between gap-4 mb-4"><span class="tier-badge tier-a">A</span><span class="tag">SPECIALISTS</span></div>
+                            <h3 class="text-xl font-bold mb-3">Horde, Boss &amp; Safe Builds</h3>
+                            <p class="text-gray-400 mb-4">Each can outperform the S-tier general build when the map matches its crowd, focused-damage or survival job.</p>
+                            <p class="text-sm text-gray-300"><strong>Why A:</strong> excellent at one problem, but less efficient when that problem is absent.</p>
+                        </div>
+                        <div class="rank-card panel p-6 border-t-4 border-purple-500">
+                            <div class="flex items-center justify-between gap-4 mb-4"><span class="tier-badge tier-b">B</span><span class="tag">FARMING ONLY</span></div>
+                            <h3 class="text-xl font-bold mb-3">XP &amp; Resource Build</h3>
+                            <p class="text-gray-400 mb-4">Chain Lightning and Plasma Beam with XP Gain, Pickup Range, Luck and Speed on repeatable content.</p>
+                            <p class="text-sm text-gray-300"><strong>Why B for pushing:</strong> economy stats lose value when a boss or wave is already stopping progression. It becomes S-tier for safe farming.</p>
+                        </div>
+                        <div class="rank-card panel p-6 border-t-4 border-blue-500">
+                            <div class="flex items-center justify-between gap-4 mb-4"><span class="tier-badge tier-c">C</span><span class="tag">NO ROLE PLAN</span></div>
+                            <h3 class="text-xl font-bold mb-3">Redundant Loadout</h3>
+                            <p class="text-gray-400 mb-4">Three crowd weapons with no boss answer, or several focused weapons with no way to control normal enemies.</p>
+                            <p class="text-sm text-gray-300"><strong>Why C:</strong> strong individual cards cannot compensate for a missing loadout job.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <a href="/best-builds/" class="inline-flex items-center bg-gradient-to-r from-orange-600 to-red-600 px-6 py-3 rounded-lg font-bold">Open Complete Build Tables <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </section>
+
+                <section id="weapons" class="mb-16">
+                    <div class="max-w-3xl mb-7">
+                        <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Persistent weapon ranking</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Weapon Tier List</h2>
+                        <p class="text-gray-400 text-lg">Rank is based on general role coverage. Current weapon level and rank are the first tie-breakers.</p>
+                    </div>
+                    <div class="panel table-scroll">
+                        <table class="tier-table">
+                            <thead><tr><th>Tier</th><th>Weapons</th><th>Best Job</th><th>Moves Up When</th><th>Moves Down When</th></tr></thead>
+                            <tbody>
+                                <tr><td><span class="tier-badge tier-s">S</span></td><td><strong class="text-cyan-300">Plasma Beam</strong>, <strong class="text-yellow-300">Chain Lightning</strong>, <strong class="text-orange-300">Shotgun</strong></td><td>Crowd lanes, scattered targets, close burst</td><td class="text-gray-300">The loadout lacks their specific job and the card is reasonably developed.</td><td class="text-gray-300">A much higher-rank weapon already fills the same role.</td></tr>
+                                <tr><td><span class="tier-badge tier-a">A</span></td><td>Sniper, Pistol, Shuriken</td><td>Boss focus, reliable baseline, ranged flex</td><td class="text-gray-300">Bosses survive, or existing investment makes the card immediately stronger.</td><td class="text-gray-300">Normal enemies are already closing every safe lane.</td></tr>
+                                <tr><td><span class="tier-badge tier-b">B</span></td><td>Blaster, Fist, Tempest Relic</td><td>Investment-dependent flex, close combat, specialist utility</td><td class="text-gray-300">The weapon has a rank advantage or completes a missing role.</td><td class="text-gray-300">It requires abandoning a developed main weapon or forces unsafe positioning.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-6 text-center"><a href="/guides/best-weapons" class="text-cyan-300 font-bold">See every weapon, loadout package and upgrade tie-breaker →</a></div>
+                </section>
+
+                <section id="heroes" class="mb-16">
+                    <div class="grid lg:grid-cols-[.85fr_1.15fr] gap-8 items-start">
+                        <div class="lg:sticky lg:top-24">
+                            <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Hero ranking rule</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-4">Hero Tier Depends on Development and Role</h2>
+                            <p class="text-gray-400 text-lg leading-relaxed mb-5">
+                                The App's hero cards have unique upgrades. A complete public roster with stable current values is not shown on the store listing, so rank the card visible on your account instead of copying an old character list.
+                            </p>
+                            <div class="panel p-5 border-l-4 border-yellow-500"><p class="text-sm text-gray-300"><strong class="text-yellow-200">Safest named pick:</strong> Balancio for general progression.</p></div>
+                        </div>
+                        <div class="panel table-scroll">
+                            <table class="tier-table" style="min-width:760px">
+                                <thead><tr><th>Tier</th><th>Hero Profile</th><th>Example / Test</th><th>Use Case</th></tr></thead>
+                                <tbody>
+                                    <tr><td><span class="tier-badge tier-s">S</span></td><td>Developed general hero with broad Speed and Attack Speed value</td><td><strong class="text-orange-300">Balancio</strong> with Swift and Gunslinger</td><td class="text-gray-300">Unknown maps, first clears and everyday progression.</td></tr>
+                                    <tr><td><span class="tier-badge tier-a">A</span></td><td>Developed specialist whose current card directly matches the map</td><td>Offense, resilience or focused-damage profile</td><td class="text-gray-300">Boss, horde or survival stage where the trait is active.</td></tr>
+                                    <tr><td><span class="tier-badge tier-b">B</span></td><td>Useful hero with low current upgrades or an incomplete weapon plan</td><td>Promising card without the resources to support it</td><td class="text-gray-300">Secondary build after the primary account route is stable.</td></tr>
+                                    <tr><td><span class="tier-badge tier-c">C</span></td><td>Fresh unlock selected only because it looks rare</td><td>No matching weapons, stats or map role</td><td class="text-gray-300">Avoid during a progression wall.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="stats" class="mb-16">
+                    <p class="text-green-300 font-bold uppercase tracking-widest text-sm mb-3">Gear and skill priority</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Stat Tier List for General Progression</h2>
+                    <div class="panel table-scroll">
+                        <table class="tier-table">
+                            <thead><tr><th>Tier</th><th>Stats</th><th>Best Use</th><th>Context That Changes the Tier</th></tr></thead>
+                            <tbody>
+                                <tr><td><span class="tier-badge tier-s">S</span></td><td><strong>Damage, Attack Speed</strong></td><td class="text-gray-300">General clear speed, crowd control through faster kills and boss scaling.</td><td class="text-gray-300">Move one down only when damage is already comfortable and survival is the sole failure.</td></tr>
+                                <tr><td><span class="tier-badge tier-a">A</span></td><td><strong>Speed, Range, Crit Chance, Crit Damage, Dodge</strong></td><td class="text-gray-300">Movement safety, ranged builds and boss-focused damage.</td><td class="text-gray-300">Crit rises to S on Boss Hunter; Speed and Range rise on obstacle maps.</td></tr>
+                                <tr><td><span class="tier-badge tier-b">B</span></td><td><strong>Max HP, HP Restore, Armor, Max Shield, Shield Regen</strong></td><td class="text-gray-300">Difficult first clears and maps where normal mistakes create a damage chain.</td><td class="text-gray-300">Rise to A or S when one hit or projectile pressure is the current wall.</td></tr>
+                                <tr><td><span class="tier-badge tier-c">C</span></td><td><strong>XP Gain, Pickup Range, Luck</strong> during a hard push</td><td class="text-gray-300">Safe repeat farming and account growth.</td><td class="text-gray-300">Rise to S on an easy repeatable map; stay low while a boss or wave blocks progress.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <p class="text-yellow-300 font-bold uppercase tracking-widest text-sm mb-3">Tier movement</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">What Changes a Tier?</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="rank-card panel p-5"><i class="fas fa-chart-line text-2xl text-cyan-300 mb-3"></i><h3 class="font-bold mb-2">Current rank</h3><p class="text-sm text-gray-400">A developed A-tier weapon can beat a fresh S-tier unlock.</p></div>
+                        <div class="rank-card panel p-5"><i class="fas fa-map text-2xl text-green-300 mb-3"></i><h3 class="font-bold mb-2">Map layout</h3><p class="text-sm text-gray-400">Obstacles raise Speed and Range; dense maps raise coverage.</p></div>
+                        <div class="rank-card panel p-5"><i class="fas fa-skull-crossbones text-2xl text-red-300 mb-3"></i><h3 class="font-bold mb-2">Failure point</h3><p class="text-sm text-gray-400">Boss damage, crowd pressure and survival require different S-tier answers.</p></div>
+                        <div class="rank-card panel p-5"><i class="fas fa-user-shield text-2xl text-purple-300 mb-3"></i><h3 class="font-bold mb-2">Hero synergy</h3><p class="text-sm text-gray-400">A hero's current upgrade card can raise the matching weapon or stat.</p></div>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <p class="text-rose-300 font-bold uppercase tracking-widest text-sm mb-3">Avoid tier-list traps</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">Common Ranking Mistakes</h2>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Treating the tier as a damage formula</h3><p class="text-gray-400">Tier combines role coverage, safety and investment value. It is not a fixed DPS measurement.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Ignoring weapon level and rank</h3><p class="text-gray-400">Persistent upgrades can outweigh a theoretical base-tier advantage.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Using one list on every map</h3><p class="text-gray-400">Boss, horde, obstacle and farming stages change what deserves S tier.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Mixing App and browser rankings</h3><p class="text-gray-400">The two games use different weapons, heroes and progression systems.</p></div>
+                    </div>
+                </section>
+
+                <aside class="bg-cyan-950 bg-opacity-25 border border-cyan-700 rounded-xl p-6 mb-16">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-rotate text-2xl text-cyan-300 mt-1" aria-hidden="true"></i>
+                        <div>
+                            <h2 class="text-xl font-bold text-cyan-100 mb-2">Version Note</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                The official Google Play listing was updated June 12, 2026 and confirms unique character skills, character progression, bosses and rare loot.
+                                Weapon levels, hero cards and gear values can change, so compare the current in-game preview before making an expensive switch.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section id="faq" class="mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Monster Survivors App Tier List FAQ</h2>
+                    <div class="space-y-4">
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What is S tier for general progression?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Balancio Gunslinger, Plasma Beam, Chain Lightning, Shotgun, Damage and Attack Speed are the safest universal priorities. A specialist can move above them on the right map.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Who is the best hero?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Balancio is the safest named general choice because Swift and Gunslinger support broadly useful Speed and Attack Speed. A developed specialist may be better for a matching boss, horde or survival stage.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Can an A-tier weapon be better than S tier?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Yes. Current level, rank, unlocked bonuses and the missing role in the loadout can outweigh the default tier.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where can I see full build details?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Use Best Builds for hero, weapons, gear, skills and maps; Best Weapons for weapon packages; and App Upgrades for permanent resources.</p></details>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3">Turn the Tier Into a Working Setup</h2>
+                    <p class="text-gray-400 mb-7">The detailed guides explain when each ranking applies.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <a href="/best-builds/" class="rank-card panel p-5"><i class="fas fa-cubes-stacked text-2xl text-orange-300 mb-3"></i><h3 class="font-bold mb-2">Best Builds</h3><p class="text-sm text-gray-400">Complete hero, weapon, gear, skill and map setups.</p></a>
+                        <a href="/guides/best-weapons" class="rank-card panel p-5"><i class="fas fa-gun text-2xl text-cyan-300 mb-3"></i><h3 class="font-bold mb-2">Best Weapons</h3><p class="text-sm text-gray-400">Full weapon roles, replacements and upgrade rules.</p></a>
+                        <a href="/guides/upgrades" class="rank-card panel p-5"><i class="fas fa-arrow-up-right-dots text-2xl text-yellow-300 mb-3"></i><h3 class="font-bold mb-2">App Upgrades</h3><p class="text-sm text-gray-400">Permanent power, Gilded Cores and gear enhancement.</p></a>
+                    </div>
+                </section>
+            </div>
+        </article>
     </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 mt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
-                <p class="text-gray-500 text-sm">
-                    © 2026 MonsterSurvivors.plus - All Rights Reserved <br>
-                    <span class="text-xs">Disclaimer: This is an independent fan database. The game is developed by FreezeNova.</span>
-                </p>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="/guides/" class="text-gray-500 hover:text-cyan-400 text-sm">Game Guides</a>
-                    <a href="/weapons-database/" class="text-gray-500 hover:text-cyan-400 text-sm">Weapons</a>
-                    <a href="/privacy-policy/" class="text-gray-500 hover:text-cyan-400 text-sm">Privacy Policy</a>
-                </div>
+
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div><div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div><p class="text-gray-400 text-sm">Practical rankings for the Monster Survivors App.</p></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Rankings</h3><ul class="space-y-2 text-gray-400"><li><a href="/tier-list/">App Tier List</a></li><li><a href="/guides/best-weapons">Best Weapons</a></li><li><a href="/best-builds/">Best Builds</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Progression</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/upgrades">App Upgrades</a></li><li><a href="/guides/">App Guides</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">More</h3><ul class="space-y-2 text-gray-400"><li><a href="/play/">Separate Browser Game</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm"><strong>Disclaimer:</strong> Fan-made guide. Game assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                const target = href && href !== '#' ? document.querySelector(href) : null;
+                if (target) {
+                    event.preventDefault();
+                    history.replaceState(null, '', href);
+                    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({top: Math.max(0, top), behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
 </body>
 </html>
