@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Monster Survivors Upgrades Guide (2026): Best Priority &amp; Gold Spending</title>
-    <meta name="description" content="Best Monster Survivors upgrade order, exact Gold costs, level effects, and spending advice for Damage, Health, Armor, Healing, and Revive.">
-    <meta name="keywords" content="monster survivors upgrades, monster survivors upgrade priority, monster survivors gold spending, damage health armor healing revive">
+    <title>Monster Survivors Upgrades Guide: Cores &amp; Gear (2026)</title>
+    <meta name="description" content="Best upgrade priorities for Gilded Cores, permanent progression and gear enhancement in VOODOO's Monster Survivors App.">
+    <meta name="keywords" content="monster survivors upgrades, monster survivors gilded cores, monster survivors gear upgrade, permanent upgrades, app progression">
     <meta name="author" content="MonsterSurvivors.plus">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/guides/upgrades">
@@ -22,17 +22,15 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
         crossorigin="anonymous"></script>
 
-    <meta property="og:title" content="Monster Survivors Upgrades Guide (2026)">
-    <meta property="og:description" content="See the best permanent upgrade order, exact Gold costs, and when to buy Damage, Health, Armor, Healing, and Revive.">
+    <meta property="og:title" content="Monster Survivors App Upgrades: Gilded Cores &amp; Gear">
+    <meta property="og:description" content="Choose the right permanent upgrade, protect scarce Gilded Cores and strengthen gear without wasting valuable materials.">
     <meta property="og:url" content="https://monstersurvivors.plus/guides/upgrades">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
     <meta property="article:modified_time" content="2026-06-24T00:00:00+08:00">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Monster Survivors Upgrades Guide (2026)">
-    <meta name="twitter:description" content="Exact costs, level effects, and a practical Gold spending route for all five permanent upgrades.">
-    <meta name="twitter:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Monster Survivors App Upgrades Guide">
+    <meta name="twitter:description" content="A practical priority route for permanent progression, Gilded Cores and equipment upgrades.">
 
     <link rel="icon" type="image/png" href="/favicon.ico">
 
@@ -47,14 +45,16 @@
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
                         'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948',
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
                         'inter': ['Inter', 'sans-serif'],
                     },
                     boxShadow: {
-                        'glow-orange': '0 0 30px rgba(255, 107, 53, 0.35)',
-                        'glow-cyan': '0 0 30px rgba(0, 217, 255, 0.25)',
+                        'glow-orange': '0 0 30px rgba(255, 107, 53, 0.32)',
+                        'glow-cyan': '0 0 30px rgba(0, 217, 255, 0.22)',
+                        'glow-gold': '0 0 34px rgba(247, 201, 72, 0.18)',
                     }
                 }
             }
@@ -73,11 +73,14 @@
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
             --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
             --text-light: #f5f5f5;
             --text-gray: #b8b8b8;
         }
 
         * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -92,15 +95,23 @@
 
         .gradient-bg {
             background:
-                radial-gradient(circle at 15% 20%, rgba(0, 217, 255, 0.12), transparent 34%),
-                radial-gradient(circle at 85% 25%, rgba(255, 107, 53, 0.14), transparent 32%),
+                radial-gradient(circle at 14% 18%, rgba(0, 217, 255, 0.13), transparent 32%),
+                radial-gradient(circle at 84% 24%, rgba(247, 201, 72, 0.14), transparent 30%),
+                radial-gradient(circle at 54% 95%, rgba(168, 85, 247, 0.12), transparent 35%),
                 linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
 
         .panel {
-            background: rgba(17, 24, 39, 0.72);
+            background: rgba(17, 24, 39, 0.76);
             border: 1px solid rgba(75, 85, 99, 0.72);
             border-radius: 1rem;
+        }
+
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(15, 23, 41, 0.72));
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 1rem;
+            backdrop-filter: blur(8px);
         }
 
         .table-scroll {
@@ -111,12 +122,12 @@
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 720px;
+            min-width: 760px;
         }
 
         .data-table th,
         .data-table td {
-            padding: 0.9rem 1rem;
+            padding: 0.95rem 1rem;
             border-bottom: 1px solid rgba(75, 85, 99, 0.55);
             text-align: left;
             vertical-align: top;
@@ -124,7 +135,7 @@
 
         .data-table th {
             color: #9befff;
-            background: rgba(15, 23, 41, 0.95);
+            background: rgba(15, 23, 41, 0.98);
             font-family: 'Orbitron', sans-serif;
             font-size: 0.75rem;
             letter-spacing: 0.04em;
@@ -142,19 +153,71 @@
             width: 2rem;
             height: 2rem;
             border-radius: 9999px;
-            background: rgba(255, 107, 53, 0.16);
-            border: 1px solid rgba(255, 107, 53, 0.6);
-            color: #ffb18f;
+            background: rgba(247, 201, 72, 0.14);
+            border: 1px solid rgba(247, 201, 72, 0.58);
+            color: #ffe69a;
             font-weight: 800;
         }
 
-        .stage-pill {
-            display: inline-block;
-            padding: 0.25rem 0.65rem;
+        .system-line {
+            position: relative;
+        }
+
+        .system-line::after {
+            content: '';
+            position: absolute;
+            left: 1.7rem;
+            top: 4.2rem;
+            bottom: -2rem;
+            width: 1px;
+            background: linear-gradient(to bottom, rgba(0, 217, 255, 0.5), rgba(168, 85, 247, 0.12));
+        }
+
+        .system-line:last-child::after { display: none; }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            width: 2.25rem;
+            height: 2.25rem;
             border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            white-space: nowrap;
+            background: rgba(0, 217, 255, 0.12);
+            border: 1px solid rgba(0, 217, 255, 0.5);
+            color: #9befff;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+        }
+
+        .check-item {
+            position: relative;
+            padding-left: 1.75rem;
+        }
+
+        .check-item::before {
+            content: '\f00c';
+            position: absolute;
+            left: 0;
+            top: 0.1rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--accent-cyan);
+        }
+
+        .stop-item {
+            position: relative;
+            padding-left: 1.75rem;
+        }
+
+        .stop-item::before {
+            content: '\f05e';
+            position: absolute;
+            left: 0;
+            top: 0.1rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #fb7185;
         }
 
         .card-hover {
@@ -171,7 +234,11 @@
         details[open] .faq-chevron { transform: rotate(180deg); }
         .faq-chevron { transition: transform 0.2s ease; }
 
-        :target { scroll-margin-top: 5rem; }
+        :target { scroll-margin-top: 5.5rem; }
+
+        @media (max-width: 640px) {
+            .system-line::after { left: 1.45rem; }
+        }
     </style>
 
     <script type="application/ld+json">
@@ -180,13 +247,20 @@
         "@type": "WebPage",
         "@id": "https://monstersurvivors.plus/guides/upgrades#webpage",
         "url": "https://monstersurvivors.plus/guides/upgrades",
-        "name": "Monster Survivors Upgrades Guide (2026): Best Priority & Gold Spending",
-        "description": "Best Monster Survivors upgrade order, exact Gold costs, level effects, and spending advice for all five permanent upgrades.",
+        "name": "Monster Survivors Upgrades Guide: Cores & Gear (2026)",
+        "description": "A practical upgrade priority guide for permanent progression, Gilded Cores and gear enhancement in the VOODOO Monster Survivors App.",
         "isPartOf": {
             "@type": "WebSite",
             "@id": "https://monstersurvivors.plus/#website",
             "name": "MonsterSurvivors.plus",
             "url": "https://monstersurvivors.plus/"
+        },
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Monster Survivors",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Android, Windows",
+            "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
         },
         "dateModified": "2026-06-24",
         "inLanguage": "en"
@@ -200,23 +274,19 @@
         "mainEntityOfPage": {
             "@id": "https://monstersurvivors.plus/guides/upgrades#webpage"
         },
-        "headline": "Monster Survivors Upgrades Guide (2026): Best Priority & Gold Spending",
-        "description": "A current guide to permanent upgrade priority, Gold costs, level effects, and spending stages in Monster Survivors.",
+        "headline": "Monster Survivors App Upgrades Guide: Gilded Cores & Gear",
+        "description": "Choose the best permanent upgrade, decide when to spend Gilded Cores and strengthen equipment without wasting scarce materials.",
         "author": {
             "@type": "Organization",
             "name": "MonsterSurvivors.plus"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "MonsterSurvivors.plus",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://monstersurvivors.plus/logo.png"
-            }
+            "name": "MonsterSurvivors.plus"
         },
-        "image": "https://monstersurvivors.plus/images/Game-Screenshots.png",
         "datePublished": "2026-01-12",
-        "dateModified": "2026-06-24"
+        "dateModified": "2026-06-24",
+        "inLanguage": "en"
     }
     </script>
 
@@ -224,39 +294,39 @@
     {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "How to spend Gold on Monster Survivors upgrades",
-        "description": "A balanced purchase route for the current five permanent upgrades.",
-        "totalTime": "PT2M",
+        "name": "How to choose your next Monster Survivors App upgrade",
+        "description": "A five-step method for choosing between permanent progression, Gilded Core spending and equipment enhancement.",
+        "totalTime": "PT3M",
         "step": [
             {
                 "@type": "HowToStep",
                 "position": 1,
-                "name": "Buy Damage level 1",
-                "text": "Spend 200 Gold on Damage to set the base damage multiplier to 1.25x."
+                "name": "Confirm the App version",
+                "text": "Use this route for the VOODOO App with package name games.rivvy.monstersurvivors, not the separate browser game."
             },
             {
                 "@type": "HowToStep",
                 "position": 2,
-                "name": "Buy Health level 1",
-                "text": "Spend 200 Gold on Health to raise the Health upgrade value to 100."
+                "name": "Identify the current bottleneck",
+                "text": "Decide whether your progress is limited by clear speed, survivability, a locked permanent benefit or weak equipment."
             },
             {
                 "@type": "HowToStep",
                 "position": 3,
-                "name": "Buy Armor level 1",
-                "text": "Spend 200 Gold on Armor to lower the incoming damage multiplier to 0.90x."
+                "name": "Prefer broad permanent value",
+                "text": "Choose an upgrade that helps most future runs before investing heavily in a temporary or easily replaced item."
             },
             {
                 "@type": "HowToStep",
                 "position": 4,
-                "name": "Add second levels and Healing",
-                "text": "Buy Damage level 2, Health level 2, Armor level 2, and Healing level 1 according to the reason your runs end."
+                "name": "Protect scarce materials",
+                "text": "Spend Gilded Cores only when the preview shows a meaningful permanent gain or a direct answer to your progression wall."
             },
             {
                 "@type": "HowToStep",
                 "position": 5,
-                "name": "Buy Revive for late-run consistency",
-                "text": "Spend 1,000 Gold on Revive once your core Damage, Health, and Armor upgrades are established."
+                "name": "Enhance a keeper",
+                "text": "Lock the gear you plan to keep, check the result preview and use only confirmed spare pieces or materials."
             }
         ]
     }
@@ -269,34 +339,34 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is the best first upgrade in Monster Survivors?",
+                "name": "What should I upgrade first in the Monster Survivors App?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Damage level 1 is the best general first purchase. It costs 200 Gold and sets the damage multiplier to 1.25x. Health level 1 and Armor level 1 are the next balanced purchases."
+                    "text": "Start with a permanent improvement that helps most runs and fixes your current bottleneck. Clear speed is the best general first target; add enough survivability to stop one mistake from ending a run, then invest in equipment you expect to keep."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How much Gold does it cost to max all permanent upgrades?",
+                "name": "Should I spend Gilded Cores immediately?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The four multi-level upgrades each cost 3,600 Gold to max, and Revive costs 1,000 Gold. The full total is 15,400 Gold in the current browser build."
+                    "text": "No. Spend them when the in-game preview shows a meaningful permanent benefit, a useful unlock or a direct answer to the wall blocking your progress. Save them when the gain is marginal or the target is likely to be replaced."
                 }
             },
             {
                 "@type": "Question",
-                "name": "When should I buy Revive?",
+                "name": "Should permanent upgrades or gear come first?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Buy Revive after the first or second levels of your core stats. It is most useful when you already reach dangerous late-run sections; it is less efficient when low damage or low durability ends runs early."
+                    "text": "Broad permanent value usually comes first because it helps more runs. Gear becomes the better spend when the item is a clear keeper and the enhancement directly improves the loadout you use to push progression."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is Healing the same as Health?",
+                "name": "Is this the same upgrade system as the online browser version?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Health changes the maximum-health upgrade value, while Healing changes the amount restored by food healing. Buy Health for a larger damage buffer and Healing when food pickups are not restoring enough."
+                    "text": "No. This page covers the VOODOO App, package games.rivvy.monstersurvivors. The site's Play Online page hosts a separate browser game with a different progression system."
                 }
             }
         ]
@@ -323,19 +393,19 @@
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "Upgrades Guide",
+                "name": "App Upgrades",
                 "item": "https://monstersurvivors.plus/guides/upgrades"
             }
         ]
     }
     </script>
 </head>
-<body>
-    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(10, 10, 26, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
-                    <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
+                    <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);" aria-hidden="true"></i>
                     <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
                 </a>
 
@@ -347,7 +417,7 @@
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
-                    <i class="fas fa-bars text-2xl"></i>
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -369,412 +439,562 @@
                 <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
                 <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
                 <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                <span class="text-cyan-400">Upgrades</span>
+                <span class="text-cyan-400">App Upgrades</span>
             </nav>
         </div>
 
-        <section class="gradient-bg px-4 pt-8 pb-12">
+        <section class="gradient-bg px-4 pt-10 pb-14">
             <div class="max-w-6xl mx-auto">
-                <div class="max-w-4xl mx-auto text-center mb-8">
-                    <span class="inline-block text-xs font-bold text-orange-300 bg-orange-950 bg-opacity-70 px-3 py-1 rounded-full border border-orange-700 mb-4">
-                        CURRENT BROWSER BUILD · UPDATED JUNE 24, 2026
-                    </span>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5">
-                        Monster Survivors Upgrades Guide (2026):
-                        <span style="color: var(--accent-orange);">Best Priority &amp; Gold Spending</span>
-                    </h1>
-                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed">
-                        Buy <strong class="text-white">Damage I → Health I → Armor I</strong> for the strongest balanced start.
-                        Add Healing when recovery is the problem, and save Revive for runs that already reach the dangerous late section.
-                    </p>
-                </div>
-
-                <div class="panel shadow-glow-cyan overflow-hidden" aria-labelledby="priority-table-title">
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-5 py-4 border-b border-gray-700">
-                        <div>
-                            <h2 id="priority-table-title" class="text-xl font-bold">Upgrade Priority at a Glance</h2>
-                            <p class="text-sm text-gray-400 mt-1">General order; use the “buy when” column to correct your actual weakness.</p>
+                <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-9 items-center">
+                    <div>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold text-yellow-200 bg-yellow-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-yellow-700 mb-5">
+                            <i class="fab fa-android" aria-hidden="true"></i>
+                            VOODOO APP GUIDE · REVIEWED JUNE 24, 2026
+                        </span>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5">
+                            Monster Survivors App Upgrades:
+                            <span style="color: var(--accent-gold);">Gilded Cores &amp; Gear</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-7">
+                            Build a permanent foundation first, spend scarce Gilded Cores only on meaningful progression,
+                            and enhance equipment only after you know the piece is worth keeping.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="#priority" class="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center transition">
+                                <i class="fas fa-arrow-up-right-dots mr-2" aria-hidden="true"></i>See Upgrade Priority
+                            </a>
+                            <a href="#core-check" class="border border-cyan-500 text-cyan-200 hover:bg-cyan-950 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center transition">
+                                <i class="fas fa-gem mr-2" aria-hidden="true"></i>Core Spending Check
+                            </a>
                         </div>
-                        <a href="#gold-route" class="text-sm font-bold text-cyan-400 hover:text-cyan-300">
-                            View full spending route <i class="fas fa-arrow-down ml-1" aria-hidden="true"></i>
-                        </a>
                     </div>
-                    <div class="table-scroll">
+
+                    <aside class="glass-panel p-6 shadow-glow-gold">
+                        <div class="flex items-start gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500 bg-opacity-15 border border-purple-400 border-opacity-40 flex items-center justify-center flex-none">
+                                <i class="fas fa-mobile-screen-button text-2xl text-purple-300" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-purple-300 font-bold mb-1">Version check</p>
+                                <h2 class="text-xl font-bold">This page is for the App</h2>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed mb-5">
+                            Use this guide for <strong class="text-white">Monster Survivors by VOODOO</strong>,
+                            package <code class="text-cyan-300 text-sm">games.rivvy.monstersurvivors</code>.
+                        </p>
+                        <div class="bg-red-950 bg-opacity-30 border border-red-700 rounded-lg p-4">
+                            <p class="text-sm text-red-100 leading-relaxed">
+                                <strong>Not the browser build:</strong> the site's Play Online game has a different upgrade menu and currency loop.
+                                Do not use its old Gold costs for this App.
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <article class="px-4 py-14" style="background-color: var(--secondary-dark);">
+            <div class="max-w-6xl mx-auto">
+                <section id="priority" class="mb-16">
+                    <div class="max-w-3xl mb-7">
+                        <p class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Best Upgrade Priority at a Glance</h2>
+                        <p class="text-gray-400 text-lg">
+                            The best next purchase is the one that improves many future runs and removes the wall you are hitting now.
+                            Use this order as the default, then adjust with the “buy when” column.
+                        </p>
+                    </div>
+
+                    <div class="panel shadow-glow-cyan table-scroll">
                         <table class="data-table">
                             <thead>
                                 <tr>
                                     <th>Priority</th>
-                                    <th>Upgrade</th>
-                                    <th>First Cost</th>
-                                    <th>Best Stage</th>
+                                    <th>Investment</th>
                                     <th>Buy When</th>
+                                    <th>Hold When</th>
+                                    <th>Value Horizon</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><span class="rank-badge">1</span></td>
-                                    <td><strong class="text-orange-300">Damage</strong><br><span class="text-sm text-gray-400">1.25× at level 1</span></td>
-                                    <td class="font-bold text-yellow-300">200 Gold</td>
-                                    <td><span class="stage-pill bg-green-900 text-green-200">First purchase</span></td>
-                                    <td class="text-gray-300">Enemies stay alive too long or the screen fills before you can clear space.</td>
+                                    <td><strong class="text-orange-300">Broad permanent power</strong><br><span class="text-sm text-gray-400">Account or survivor progression used in most runs</span></td>
+                                    <td class="text-gray-300">The gain improves your main loadout and is not tied to a replaceable item.</td>
+                                    <td class="text-gray-300">The benefit is tiny or only applies to content you are not playing.</td>
+                                    <td><span class="text-green-300 font-bold">Longest</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="rank-badge">2</span></td>
-                                    <td><strong class="text-red-300">Health</strong><br><span class="text-sm text-gray-400">Value 100 at level 1</span></td>
-                                    <td class="font-bold text-yellow-300">200 Gold</td>
-                                    <td><span class="stage-pill bg-green-900 text-green-200">First 600 Gold</span></td>
-                                    <td class="text-gray-300">One mistake removes too much of your health bar or you die before recovery matters.</td>
+                                    <td><strong class="text-red-300">Clear-speed bottleneck</strong><br><span class="text-sm text-gray-400">Damage, attack output or a key offensive unlock</span></td>
+                                    <td class="text-gray-300">Enemies survive long enough to close every safe lane or bosses outlast your build.</td>
+                                    <td class="text-gray-300">You already kill comfortably but one mistake ends the run.</td>
+                                    <td><span class="text-green-300 font-bold">High</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="rank-badge">3</span></td>
-                                    <td><strong class="text-cyan-300">Armor</strong><br><span class="text-sm text-gray-400">0.90× damage taken at level 1</span></td>
-                                    <td class="font-bold text-yellow-300">200 Gold</td>
-                                    <td><span class="stage-pill bg-green-900 text-green-200">First 600 Gold</span></td>
-                                    <td class="text-gray-300">Repeated contact damage is ending otherwise stable runs.</td>
+                                    <td><strong class="text-cyan-300">Enough survivability</strong><br><span class="text-sm text-gray-400">Health, mitigation, recovery or control that prevents a quick loss</span></td>
+                                    <td class="text-gray-300">A normal hit starts an unrecoverable damage chain or burst damage ends good runs.</td>
+                                    <td class="text-gray-300">You survive safely but cannot clear the wave or boss.</td>
+                                    <td><span class="text-green-300 font-bold">High</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="rank-badge">4</span></td>
-                                    <td><strong class="text-green-300">Healing</strong><br><span class="text-sm text-gray-400">20 healing at level 1</span></td>
-                                    <td class="font-bold text-yellow-300">200 Gold</td>
-                                    <td><span class="stage-pill bg-blue-900 text-blue-200">Early–mid</span></td>
-                                    <td class="text-gray-300">Food appears, but each pickup restores too little to recover from chip damage.</td>
+                                    <td><strong class="text-purple-300">Keeper gear</strong><br><span class="text-sm text-gray-400">A piece that fits your main build and is unlikely to be replaced soon</span></td>
+                                    <td class="text-gray-300">The item has a useful effect and the preview gives an immediate, measurable gain.</td>
+                                    <td class="text-gray-300">A better rarity, effect or slot replacement is close.</td>
+                                    <td><span class="text-yellow-300 font-bold">Medium</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="rank-badge">5</span></td>
-                                    <td><strong class="text-purple-300">Revive</strong><br><span class="text-sm text-gray-400">One-time unlock</span></td>
-                                    <td class="font-bold text-yellow-300">1,000 Gold</td>
-                                    <td><span class="stage-pill bg-purple-900 text-purple-200">Mid–late</span></td>
-                                    <td class="text-gray-300">Your build already reaches late danger and one extra chance can preserve a strong run.</td>
+                                    <td><strong class="text-gray-200">Second builds and luxury upgrades</strong><br><span class="text-sm text-gray-400">Alternate heroes, spare sets and small efficiency gains</span></td>
+                                    <td class="text-gray-300">Your main progression build is stable and the upgrade opens a real second use case.</td>
+                                    <td class="text-gray-300">Your primary build still has a clear unresolved weakness.</td>
+                                    <td><span class="text-orange-300 font-bold">Lowest first</span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <article class="px-4 py-12">
-            <div class="max-w-5xl mx-auto">
-                <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-14" aria-label="Quick facts">
-                    <div class="panel p-6">
-                        <i class="fas fa-coins text-3xl text-yellow-300 mb-4" aria-hidden="true"></i>
-                        <h2 class="text-lg font-bold mb-2">15,400 Gold Total</h2>
-                        <p class="text-gray-400 text-sm leading-relaxed">It costs 14,400 Gold to max Armor, Damage, Healing, and Health, plus 1,000 Gold for Revive.</p>
-                    </div>
-                    <div class="panel p-6">
-                        <i class="fas fa-layer-group text-3xl text-cyan-300 mb-4" aria-hidden="true"></i>
-                        <h2 class="text-lg font-bold mb-2">Five Upgrades Only</h2>
-                        <p class="text-gray-400 text-sm leading-relaxed">The current permanent menu contains Armor, Damage, Healing, Health, and Revive—not movement speed, XP, or pickup range.</p>
-                    </div>
-                    <div class="panel p-6">
-                        <i class="fas fa-rotate text-3xl text-orange-300 mb-4" aria-hidden="true"></i>
-                        <h2 class="text-lg font-bold mb-2">Gold Persists After Defeat</h2>
-                        <p class="text-gray-400 text-sm leading-relaxed">A failed run still moves progression forward because collected Gold can be spent on these permanent stat upgrades.</p>
+                <section id="systems" class="mb-16">
+                    <div class="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
+                        <div class="lg:sticky lg:top-24">
+                            <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Know what persists</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-4">The Three Upgrade Layers</h2>
+                            <p class="text-gray-400 leading-relaxed mb-5">
+                                The App has more than one long-term decision. Separate these layers before spending so a temporary gear boost
+                                does not consume resources needed for broader progression.
+                            </p>
+                            <div class="panel p-5 border-l-4 border-yellow-500">
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    <strong class="text-yellow-200">Simple rule:</strong> the broader the benefit and the harder it is to replace,
+                                    the earlier it belongs in your upgrade order.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div class="system-line flex gap-5">
+                                <div class="w-14 h-14 rounded-xl bg-orange-500 bg-opacity-15 border border-orange-400 border-opacity-40 flex items-center justify-center flex-none z-10">
+                                    <i class="fas fa-infinity text-2xl text-orange-300" aria-hidden="true"></i>
+                                </div>
+                                <div class="panel p-6 flex-1">
+                                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                        <h3 class="text-xl font-bold">1. Permanent Progression</h3>
+                                        <span class="text-xs font-bold text-green-200 bg-green-950 px-3 py-1 rounded-full border border-green-700">BUY BROAD VALUE FIRST</span>
+                                    </div>
+                                    <p class="text-gray-400 leading-relaxed mb-4">
+                                        These gains carry into later attempts through account or survivor progression.
+                                        Prioritize the benefit that helps your most-used hero and loadout across the widest range of stages.
+                                    </p>
+                                    <ul class="grid sm:grid-cols-2 gap-3 text-sm text-gray-300">
+                                        <li class="check-item">Improves many future runs</li>
+                                        <li class="check-item">Cannot be replaced by a random drop</li>
+                                        <li class="check-item">Fixes clear speed or survival</li>
+                                        <li class="check-item">Supports your main progression route</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="system-line flex gap-5">
+                                <div class="w-14 h-14 rounded-xl bg-yellow-500 bg-opacity-15 border border-yellow-400 border-opacity-40 flex items-center justify-center flex-none z-10">
+                                    <i class="fas fa-gem text-2xl text-yellow-300" aria-hidden="true"></i>
+                                </div>
+                                <div class="panel p-6 flex-1">
+                                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                        <h3 class="text-xl font-bold">2. Gilded Core Spending</h3>
+                                        <span class="text-xs font-bold text-yellow-200 bg-yellow-950 px-3 py-1 rounded-full border border-yellow-700">USE A SPENDING GATE</span>
+                                    </div>
+                                    <p class="text-gray-400 leading-relaxed mb-4">
+                                        Treat Gilded Cores as a scarce progression resource, not a notification to clear immediately.
+                                        Read the result preview and spend only when the gain is permanent, useful now and difficult to replace.
+                                    </p>
+                                    <a href="#core-check" class="inline-flex items-center text-cyan-300 hover:text-white font-bold text-sm">
+                                        Run the three-question Core check <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="system-line flex gap-5">
+                                <div class="w-14 h-14 rounded-xl bg-purple-500 bg-opacity-15 border border-purple-400 border-opacity-40 flex items-center justify-center flex-none z-10">
+                                    <i class="fas fa-shield-halved text-2xl text-purple-300" aria-hidden="true"></i>
+                                </div>
+                                <div class="panel p-6 flex-1">
+                                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                        <h3 class="text-xl font-bold">3. Gear Enhancement</h3>
+                                        <span class="text-xs font-bold text-purple-200 bg-purple-950 px-3 py-1 rounded-full border border-purple-700">ENHANCE KEEPERS</span>
+                                    </div>
+                                    <p class="text-gray-400 leading-relaxed mb-4">
+                                        Equipment power is attached to a specific piece. That can be excellent value when the item fits your build,
+                                        but poor value when the slot is about to be replaced. Protect useful duplicates and check every enhancement or merge preview.
+                                    </p>
+                                    <a href="#gear-route" class="inline-flex items-center text-cyan-300 hover:text-white font-bold text-sm">
+                                        Follow the safe gear workflow <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <section id="costs" class="mb-16">
-                    <div class="flex items-center gap-4 mb-5">
-                        <div class="w-12 h-12 rounded-xl bg-orange-950 border border-orange-700 flex items-center justify-center">
-                            <i class="fas fa-table-list text-xl text-orange-300" aria-hidden="true"></i>
+                <section id="core-check" class="mb-16">
+                    <div class="max-w-3xl mb-8">
+                        <p class="text-yellow-300 font-bold uppercase tracking-widest text-sm mb-3">Protect scarce currency</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">When Should You Spend Gilded Cores?</h2>
+                        <p class="text-gray-400 text-lg">
+                            Spend only when all three answers below are “yes.” If one answer is unclear, close the screen and keep the Cores.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-5 mb-8">
+                        <div class="glass-panel p-6 border-t-4 border-yellow-500">
+                            <span class="step-number mb-4">1</span>
+                            <h3 class="text-lg font-bold mb-3">Is the gain persistent?</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                Prefer a benefit that remains useful in later runs rather than a short-lived convenience or replaceable item.
+                            </p>
                         </div>
-                        <div>
-                            <h2 class="text-2xl sm:text-3xl font-bold">Exact Upgrade Costs and Level Effects</h2>
-                            <p class="text-gray-400 mt-1">Values below match the public browser build available on June 24, 2026.</p>
+                        <div class="glass-panel p-6 border-t-4 border-yellow-500">
+                            <span class="step-number mb-4">2</span>
+                            <h3 class="text-lg font-bold mb-3">Does it fix today's wall?</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                The upgrade should solve a real problem: slow clears, fragile runs, a useful unlock or a missing build function.
+                            </p>
+                        </div>
+                        <div class="glass-panel p-6 border-t-4 border-yellow-500">
+                            <span class="step-number mb-4">3</span>
+                            <h3 class="text-lg font-bold mb-3">Is the result clear?</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                The current App preview should show what changes. Do not spend from memory of an older menu or another game version.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="panel table-scroll mb-6">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Upgrade</th>
-                                    <th>Level 1</th>
-                                    <th>Level 2</th>
-                                    <th>Level 3</th>
-                                    <th>Level 4</th>
-                                    <th>Max Cost</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong class="text-cyan-300">Armor</strong></td>
-                                    <td>200 Gold<br><span class="text-sm text-gray-400">0.90× taken</span></td>
-                                    <td>400 Gold<br><span class="text-sm text-gray-400">0.80× taken</span></td>
-                                    <td>1,000 Gold<br><span class="text-sm text-gray-400">0.70× taken</span></td>
-                                    <td>2,000 Gold<br><span class="text-sm text-gray-400">0.60× taken</span></td>
-                                    <td class="font-bold text-yellow-300">3,600</td>
-                                </tr>
-                                <tr>
-                                    <td><strong class="text-orange-300">Damage</strong></td>
-                                    <td>200 Gold<br><span class="text-sm text-gray-400">1.25× damage</span></td>
-                                    <td>400 Gold<br><span class="text-sm text-gray-400">1.50× damage</span></td>
-                                    <td>1,000 Gold<br><span class="text-sm text-gray-400">1.75× damage</span></td>
-                                    <td>2,000 Gold<br><span class="text-sm text-gray-400">2.00× damage</span></td>
-                                    <td class="font-bold text-yellow-300">3,600</td>
-                                </tr>
-                                <tr>
-                                    <td><strong class="text-green-300">Healing</strong></td>
-                                    <td>200 Gold<br><span class="text-sm text-gray-400">20 healing</span></td>
-                                    <td>400 Gold<br><span class="text-sm text-gray-400">30 healing</span></td>
-                                    <td>1,000 Gold<br><span class="text-sm text-gray-400">40 healing</span></td>
-                                    <td>2,000 Gold<br><span class="text-sm text-gray-400">50 healing</span></td>
-                                    <td class="font-bold text-yellow-300">3,600</td>
-                                </tr>
-                                <tr>
-                                    <td><strong class="text-red-300">Health</strong></td>
-                                    <td>200 Gold<br><span class="text-sm text-gray-400">100 health value</span></td>
-                                    <td>400 Gold<br><span class="text-sm text-gray-400">200 health value</span></td>
-                                    <td>1,000 Gold<br><span class="text-sm text-gray-400">300 health value</span></td>
-                                    <td>2,000 Gold<br><span class="text-sm text-gray-400">400 health value</span></td>
-                                    <td class="font-bold text-yellow-300">3,600</td>
-                                </tr>
-                                <tr>
-                                    <td><strong class="text-purple-300">Revive</strong></td>
-                                    <td>1,000 Gold<br><span class="text-sm text-gray-400">Unlock</span></td>
-                                    <td class="text-gray-500">—</td>
-                                    <td class="text-gray-500">—</td>
-                                    <td class="text-gray-500">—</td>
-                                    <td class="font-bold text-yellow-300">1,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <aside class="bg-cyan-950 bg-opacity-40 border border-cyan-700 rounded-xl p-5 text-sm text-gray-300 leading-relaxed">
-                        <strong class="text-cyan-200">How to read Armor:</strong>
-                        0.90× means the player takes 90% of the unmodified hit, or 10% less damage. At level 4, 0.60× means 40% less damage.
-                        The displayed percentages are derived directly from the stored multipliers.
-                    </aside>
-                </section>
-
-                <section id="gold-route" class="mb-16">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-yellow-950 border border-yellow-700 flex items-center justify-center">
-                            <i class="fas fa-route text-xl text-yellow-300" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl sm:text-3xl font-bold">Best Gold Spending Route by Stage</h2>
-                            <p class="text-gray-400 mt-1">A balanced route that buys cheap efficiency before 1,000- and 2,000-Gold tiers.</p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-5">
+                    <div class="grid md:grid-cols-2 gap-6">
                         <div class="panel p-6 border-l-4 border-green-500">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                                <h3 class="text-xl font-bold text-green-300">Stage 1: First 600 Gold</h3>
-                                <span class="text-sm font-bold text-yellow-300">Spend: 600</span>
-                            </div>
-                            <ol class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong>1. Damage I</strong><br><span class="text-sm text-gray-400">200 Gold · 1.25× damage</span></li>
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong>2. Health I</strong><br><span class="text-sm text-gray-400">200 Gold · 100 value</span></li>
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong>3. Armor I</strong><br><span class="text-sm text-gray-400">200 Gold · 0.90× taken</span></li>
-                            </ol>
-                            <p class="text-gray-300 mt-4 leading-relaxed">
-                                This trio improves clear speed and effective durability immediately. If contact damage is not a problem but food recovery is, swap Armor I and Healing I.
-                            </p>
-                        </div>
-
-                        <div class="panel p-6 border-l-4 border-cyan-500">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                                <h3 class="text-xl font-bold text-cyan-300">Stage 2: Build a Stable Core</h3>
-                                <span class="text-sm font-bold text-yellow-300">Next spend: 1,400</span>
-                            </div>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Buy <strong>Damage II, Health II, Armor II, and Healing I</strong>. Each second level costs 400 Gold; Healing I costs 200.
-                                At this point your stats cover all four repeatable failure points: slow kills, small health buffer, contact damage, and weak recovery.
-                            </p>
-                            <div class="bg-black bg-opacity-25 rounded-lg p-4 text-sm text-gray-400">
-                                Running total: <strong class="text-white">2,000 Gold</strong> from a fresh save.
-                            </div>
-                        </div>
-
-                        <div class="panel p-6 border-l-4 border-purple-500">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                                <h3 class="text-xl font-bold text-purple-300">Stage 3: Choose the 1,000-Gold Purchases</h3>
-                                <span class="text-sm font-bold text-yellow-300">Mid-game decisions</span>
-                            </div>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Do not automatically buy all expensive tiers in menu order. Start with the upgrade that addresses the way your good runs end:
-                            </p>
-                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong class="text-orange-300">Damage III:</strong> best when enemy density overwhelms you.</li>
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong class="text-red-300">Health III:</strong> best when a heavy hit ends a healthy run.</li>
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong class="text-cyan-300">Armor III:</strong> best when repeated smaller hits drain you.</li>
-                                <li class="bg-black bg-opacity-25 rounded-lg p-4"><strong class="text-purple-300">Revive:</strong> best when the run is already strong enough to continue after one death.</li>
+                            <h3 class="text-xl font-bold text-green-300 mb-4"><i class="fas fa-circle-check mr-2" aria-hidden="true"></i>Spend now</h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="check-item">The benefit helps your main hero or most-used build.</li>
+                                <li class="check-item">It unlocks a meaningful permanent effect or progression step.</li>
+                                <li class="check-item">The next stage repeatedly exposes the exact weakness it fixes.</li>
+                                <li class="check-item">You understand the cost and the result shown on screen.</li>
                             </ul>
                         </div>
 
-                        <div class="panel p-6 border-l-4 border-orange-500">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                                <h3 class="text-xl font-bold text-orange-300">Stage 4: Finish the 2,000-Gold Tiers</h3>
-                                <span class="text-sm font-bold text-yellow-300">Late progression</span>
-                            </div>
-                            <p class="text-gray-300 leading-relaxed">
-                                Max Damage first for faster clears, then Health or Armor based on whether burst hits or repeated contact is more dangerous.
-                                Max Healing last unless food recovery is central to your survival. Each final tier costs 2,000 Gold, so a targeted purchase is better than saving without a reason.
-                            </p>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-xl font-bold text-rose-300 mb-4"><i class="fas fa-hand mr-2" aria-hidden="true"></i>Save instead</h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="stop-item">You are spending only to remove an upgrade notification.</li>
+                                <li class="stop-item">The target is a temporary piece or unused secondary build.</li>
+                                <li class="stop-item">The gain is marginal while a major unlock is within reach.</li>
+                                <li class="stop-item">The guide you followed shows different menus, developers or currencies.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
 
-                <section id="decision-table" class="mb-16">
-                    <h2 class="text-2xl sm:text-3xl font-bold mb-3">Which Upgrade Should You Buy Next?</h2>
-                    <p class="text-gray-400 mb-6">Use the cause of death—not a fixed tier list—to break ties between upgrades at the same cost.</p>
+                <section id="gear-route" class="mb-16">
+                    <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+                        <div>
+                            <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Equipment workflow</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-4">How to Strengthen Gear Without Regretting It</h2>
+                            <p class="text-gray-400 text-lg mb-8">
+                                The safest route is selection first, enhancement second. Do not pour materials into every red dot in the inventory.
+                            </p>
+
+                            <ol class="space-y-5">
+                                <li class="panel p-5 flex gap-4">
+                                    <span class="step-number">1</span>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Lock your current keepers</h3>
+                                        <p class="text-gray-400">Protect the pieces used by your main build and any strong alternate piece you may need later.</p>
+                                    </div>
+                                </li>
+                                <li class="panel p-5 flex gap-4">
+                                    <span class="step-number">2</span>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Compare the effect, not only the number</h3>
+                                        <p class="text-gray-400">A higher score is not automatically better if the existing piece has a more useful effect for your hero, weapon or stage.</p>
+                                    </div>
+                                </li>
+                                <li class="panel p-5 flex gap-4">
+                                    <span class="step-number">3</span>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Choose one bottleneck slot</h3>
+                                        <p class="text-gray-400">Improve the piece that directly increases damage, survival or build function instead of spreading materials evenly across every slot.</p>
+                                    </div>
+                                </li>
+                                <li class="panel p-5 flex gap-4">
+                                    <span class="step-number">4</span>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Read the enhancement or merge preview</h3>
+                                        <p class="text-gray-400">Confirm the output piece, consumed items and displayed stat change before accepting. The current screen is the source of truth.</p>
+                                    </div>
+                                </li>
+                                <li class="panel p-5 flex gap-4">
+                                    <span class="step-number">5</span>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Test before the next expensive step</h3>
+                                        <p class="text-gray-400">Run the stage that blocked you. If the upgrade solved the problem, keep building; if not, diagnose the next bottleneck before spending again.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <aside class="panel p-6 lg:sticky lg:top-24">
+                            <h3 class="text-xl font-bold mb-5 text-yellow-200">Before You Use Gear as Material</h3>
+                            <ul class="space-y-4 text-gray-300 mb-6">
+                                <li class="check-item">It is not equipped by your main build.</li>
+                                <li class="check-item">It is not your best copy of a useful effect.</li>
+                                <li class="check-item">It is not reserved for a second hero or boss setup.</li>
+                                <li class="check-item">The result preview names the output you actually want.</li>
+                                <li class="check-item">You have checked whether the action can be reversed.</li>
+                            </ul>
+                            <div class="bg-red-950 bg-opacity-30 border border-red-700 rounded-lg p-4">
+                                <p class="text-sm text-red-100 leading-relaxed">
+                                    <strong>Stop if the preview is ambiguous.</strong> A missed stage is recoverable; consuming a valuable piece may not be.
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+
+                <section id="diagnosis" class="mb-16">
+                    <div class="max-w-3xl mb-7">
+                        <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Spend by failure point</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">What Should You Upgrade Next?</h2>
+                        <p class="text-gray-400 text-lg">Use the way your last serious run failed. That is more useful than keeping every stat and item at the same level.</p>
+                    </div>
 
                     <div class="panel table-scroll">
                         <table class="data-table">
                             <thead>
                                 <tr>
-                                    <th>What Ends the Run?</th>
-                                    <th>Buy Next</th>
+                                    <th>What Is Blocking You?</th>
+                                    <th>Best Next Investment</th>
                                     <th>Why It Fits</th>
-                                    <th>Do Not Prioritize Yet</th>
+                                    <th>Do Not Rush</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Enemies remain alive and close every escape lane</td>
-                                    <td><strong class="text-orange-300">Damage</strong></td>
-                                    <td>Faster kills reduce active threats and create room.</td>
-                                    <td>Revive, if the same crowded screen will kill you again.</td>
+                                    <td>Normal enemies remain alive and crowd every escape lane</td>
+                                    <td><strong class="text-orange-300">Broad offense or main damage gear</strong></td>
+                                    <td class="text-gray-300">Faster removal lowers pressure before defense is tested.</td>
+                                    <td class="text-gray-300">A luxury defensive sidegrade that does not improve clear speed.</td>
                                 </tr>
                                 <tr>
-                                    <td>A single heavy hit removes most of the bar</td>
-                                    <td><strong class="text-red-300">Health</strong></td>
-                                    <td>A larger maximum-health value gives more burst tolerance.</td>
-                                    <td>Healing, if you cannot survive long enough to reach food.</td>
+                                    <td>A normal mistake removes most of your health</td>
+                                    <td><strong class="text-cyan-300">Survivability or recovery</strong></td>
+                                    <td class="text-gray-300">You need enough room to correct positioning and continue the run.</td>
+                                    <td class="text-gray-300">More offense if your current damage already clears safely.</td>
                                 </tr>
                                 <tr>
-                                    <td>Several small collisions slowly drain the bar</td>
-                                    <td><strong class="text-cyan-300">Armor</strong></td>
-                                    <td>Each incoming hit is multiplied by a lower value.</td>
-                                    <td>Revive before fixing the repeated damage pattern.</td>
+                                    <td>The boss survives, but regular waves are comfortable</td>
+                                    <td><strong class="text-red-300">Single-target output or boss-focused keeper gear</strong></td>
+                                    <td class="text-gray-300">This targets the actual damage check without rebuilding the entire account.</td>
+                                    <td class="text-gray-300">General farming bonuses that do not help the boss attempt.</td>
                                 </tr>
                                 <tr>
-                                    <td>Food drops, but recovery cannot catch up</td>
-                                    <td><strong class="text-green-300">Healing</strong></td>
-                                    <td>Each food heal becomes more valuable.</td>
-                                    <td>More Health alone; a bigger bar does not improve refill size.</td>
+                                    <td>Your gear changes every few rewards</td>
+                                    <td><strong class="text-yellow-300">Save materials; favor permanent progression</strong></td>
+                                    <td class="text-gray-300">Heavy item investment loses value when the slot is still unstable.</td>
+                                    <td class="text-gray-300">Deep enhancement on a piece likely to be replaced.</td>
                                 </tr>
                                 <tr>
-                                    <td>A strong late run ends to one mistake</td>
-                                    <td><strong class="text-purple-300">Revive</strong></td>
-                                    <td>An extra chance has value when the existing build is already viable.</td>
-                                    <td>Revive on weak early runs with unresolved damage or durability.</td>
+                                    <td>You cannot name the problem</td>
+                                    <td><strong class="text-purple-300">Run once and observe</strong></td>
+                                    <td class="text-gray-300">A diagnosis costs less than an unfocused Core or gear purchase.</td>
+                                    <td class="text-gray-300">Any expensive upgrade made only because it is available.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
 
+                <section id="stages" class="mb-16">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Account-stage route</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">How Priorities Change as You Progress</h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <article class="panel p-6 border-t-4 border-green-500">
+                            <span class="text-xs font-bold text-green-200 uppercase tracking-widest">Early account</span>
+                            <h3 class="text-xl font-bold mt-2 mb-4">Build one reliable path</h3>
+                            <ol class="space-y-3 text-sm text-gray-300">
+                                <li><strong class="text-white">1.</strong> Broad permanent value</li>
+                                <li><strong class="text-white">2.</strong> Main hero and loadout function</li>
+                                <li><strong class="text-white">3.</strong> Minimum survival needed to learn stages</li>
+                                <li><strong class="text-white">4.</strong> Light gear investment only</li>
+                            </ol>
+                        </article>
+
+                        <article class="panel p-6 border-t-4 border-yellow-500">
+                            <span class="text-xs font-bold text-yellow-200 uppercase tracking-widest">Mid progression</span>
+                            <h3 class="text-xl font-bold mt-2 mb-4">Break the current wall</h3>
+                            <ol class="space-y-3 text-sm text-gray-300">
+                                <li><strong class="text-white">1.</strong> Diagnose clear, boss or survival failure</li>
+                                <li><strong class="text-white">2.</strong> Use Cores on the matching permanent gain</li>
+                                <li><strong class="text-white">3.</strong> Enhance proven keeper gear</li>
+                                <li><strong class="text-white">4.</strong> Re-test before spending again</li>
+                            </ol>
+                        </article>
+
+                        <article class="panel p-6 border-t-4 border-purple-500">
+                            <span class="text-xs font-bold text-purple-200 uppercase tracking-widest">Late optimization</span>
+                            <h3 class="text-xl font-bold mt-2 mb-4">Improve efficiency and depth</h3>
+                            <ol class="space-y-3 text-sm text-gray-300">
+                                <li><strong class="text-white">1.</strong> Finish high-impact permanent gains</li>
+                                <li><strong class="text-white">2.</strong> Refine gear effects and synergy</li>
+                                <li><strong class="text-white">3.</strong> Build a real second use case</li>
+                                <li><strong class="text-white">4.</strong> Add farming or comfort upgrades last</li>
+                            </ol>
+                        </article>
+                    </div>
+                </section>
+
                 <section id="mistakes" class="mb-16">
-                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Common Gold-Wasting Mistakes</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="panel p-6 border-l-4 border-red-500">
-                            <h3 class="text-lg font-bold text-red-300 mb-3">Saving 1,000 Gold before buying any stats</h3>
-                            <p class="text-gray-400 leading-relaxed">Three 200-Gold purchases give Damage I, Health I, and Armor I for only 600 Gold. That foundation usually helps more runs than rushing Revive from an unupgraded start.</p>
+                    <p class="text-rose-300 font-bold uppercase tracking-widest text-sm mb-3">Avoid wasted progress</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">Common Upgrade Mistakes</h2>
+
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Using browser Gold advice in the App</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                The VOODOO App and the online browser game are separate products. Their currencies, menus and progression advice are not interchangeable.
+                            </p>
                         </div>
-                        <div class="panel p-6 border-l-4 border-red-500">
-                            <h3 class="text-lg font-bold text-red-300 mb-3">Treating Health and Healing as the same upgrade</h3>
-                            <p class="text-gray-400 leading-relaxed">Health changes the size of the health pool; Healing changes food recovery. Buy the one connected to the actual problem.</p>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Keeping every slot equally upgraded</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Equal levels look tidy but often delay the one offensive or defensive upgrade that would actually move you forward.
+                            </p>
                         </div>
-                        <div class="panel p-6 border-l-4 border-red-500">
-                            <h3 class="text-lg font-bold text-red-300 mb-3">Buying expensive tiers in menu order</h3>
-                            <p class="text-gray-400 leading-relaxed">At levels 3 and 4, every repeatable upgrade costs 1,000 or 2,000 Gold. Pick by failure point rather than keeping every row equal.</p>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Enhancing a piece because it is new</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                New rarity or a larger score does not guarantee better build value. Compare effects and replacement risk first.
+                            </p>
                         </div>
-                        <div class="panel p-6 border-l-4 border-red-500">
-                            <h3 class="text-lg font-bold text-red-300 mb-3">Following advice for a different release</h3>
-                            <p class="text-gray-400 leading-relaxed">The FreezeNova browser build uses Gold and the five upgrades listed here. A guide discussing Gilded Cores or a different upgrade menu may refer to another game or release.</p>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Spending Cores without a target</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                A scarce resource should buy a clear outcome. Save it when you cannot explain how the purchase changes your next run.
+                            </p>
+                        </div>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Using every duplicate as fodder</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                A duplicate may support a later merge, another hero or a different boss setup. Protect useful effects before cleaning inventory.
+                            </p>
+                        </div>
+                        <div class="panel p-6 border-l-4 border-rose-500">
+                            <h3 class="text-lg font-bold text-rose-300 mb-3">Copying an old cost table</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                App rewards and prices can move between updates. Use the cost and result shown in your current upgrade screen.
+                            </p>
                         </div>
                     </div>
                 </section>
 
-                <aside class="bg-yellow-950 bg-opacity-35 border border-yellow-600 rounded-xl p-6 mb-16">
+                <aside class="bg-cyan-950 bg-opacity-25 border border-cyan-700 rounded-xl p-6 mb-16">
                     <div class="flex items-start gap-4">
-                        <i class="fas fa-circle-question text-2xl text-yellow-300 mt-1" aria-hidden="true"></i>
+                        <i class="fas fa-code-branch text-2xl text-cyan-300 mt-1" aria-hidden="true"></i>
                         <div>
-                            <h2 class="text-xl font-bold text-yellow-200 mb-2">Looking for Gilded Cores?</h2>
+                            <h2 class="text-xl font-bold text-cyan-100 mb-2">Version Note</h2>
                             <p class="text-gray-300 leading-relaxed">
-                                The public FreezeNova browser build uses Gold for permanent progression.
-                                Read the <a href="/guides/gilded-cores/" class="text-cyan-400 hover:text-cyan-300 underline font-bold">Gilded Cores version check</a>
-                                before following material-farming instructions from another Monster Survivors release.
+                                This guide covers the VOODOO App listed under package <code class="text-cyan-300 text-sm">games.rivvy.monstersurvivors</code>.
+                                The official store listing was updated on June 12, 2026 and describes character progression, unique abilities, boss rewards and rare loot.
+                                Exact Core costs and gear results can change, so the current in-game preview should decide the final spend.
                             </p>
                         </div>
                     </div>
                 </aside>
 
                 <section id="faq" class="mb-16">
-                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Monster Survivors Upgrade FAQ</h2>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Monster Survivors App Upgrade FAQ</h2>
                     <div class="space-y-4">
                         <details class="panel p-6">
                             <summary class="font-bold text-lg cursor-pointer hover:text-cyan-300 flex justify-between gap-4">
-                                What is the best first upgrade?
+                                What is the best first upgrade in the App?
                                 <i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i>
                             </summary>
                             <p class="text-gray-400 mt-4 leading-relaxed">
-                                Damage I is the best general first buy: it costs 200 Gold and sets the damage multiplier to 1.25×.
-                                Follow with Health I and Armor I for a balanced first 600 Gold. If survivability is clearly the only issue, Health I can come first without derailing the route.
+                                Choose a permanent gain that helps most runs. Clear speed is the best general first target because removing enemies also reduces incoming pressure.
+                                Add enough survivability to stop one mistake from ending a good run, then invest more heavily in keeper gear.
                             </p>
                         </details>
 
                         <details class="panel p-6">
                             <summary class="font-bold text-lg cursor-pointer hover:text-cyan-300 flex justify-between gap-4">
-                                How much Gold is needed to max everything?
+                                Should I spend Gilded Cores as soon as I get them?
                                 <i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i>
                             </summary>
                             <p class="text-gray-400 mt-4 leading-relaxed">
-                                Armor, Damage, Healing, and Health each cost 3,600 Gold to max: 200 + 400 + 1,000 + 2,000.
-                                Revive costs 1,000 Gold once. The full permanent-upgrade total is 15,400 Gold.
+                                No. Spend when the preview shows a meaningful permanent benefit, useful unlock or direct answer to the wall blocking progress.
+                                Save when the gain is marginal, the target is replaceable or you are only reacting to a notification.
                             </p>
                         </details>
 
                         <details class="panel p-6">
                             <summary class="font-bold text-lg cursor-pointer hover:text-cyan-300 flex justify-between gap-4">
-                                Should I buy Revive as soon as I reach 1,000 Gold?
+                                Should permanent upgrades or equipment come first?
                                 <i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i>
                             </summary>
                             <p class="text-gray-400 mt-4 leading-relaxed">
-                                Usually no. Revive is strongest when your run is already capable of reaching a dangerous late section.
-                                If weak damage or low durability causes early deaths, spend the same Gold on several lower-level core upgrades first.
+                                Broad permanent value usually comes first because it helps more runs and cannot be replaced by a drop.
+                                Equipment becomes the better spend when the piece is a clear keeper and its effect directly supports your main loadout.
                             </p>
                         </details>
 
                         <details class="panel p-6">
                             <summary class="font-bold text-lg cursor-pointer hover:text-cyan-300 flex justify-between gap-4">
-                                Is Healing worth buying early?
+                                How do I avoid wasting gear materials?
                                 <i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i>
                             </summary>
                             <p class="text-gray-400 mt-4 leading-relaxed">
-                                Healing I is a good early-to-mid purchase for 200 Gold when food pickups are present but restore too little.
-                                It should not replace Health when a single hit can kill you before recovery becomes relevant.
+                                Lock current keepers, preserve useful duplicates, compare effects instead of score alone and read the complete output preview before enhancing or merging.
+                                Stop if the consumed items or resulting piece are unclear.
+                            </p>
+                        </details>
+
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer hover:text-cyan-300 flex justify-between gap-4">
+                                Is this the same system as Play Online?
+                                <i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i>
+                            </summary>
+                            <p class="text-gray-400 mt-4 leading-relaxed">
+                                No. This page covers the VOODOO App. The site's Play Online page hosts a separate browser game,
+                                so its Gold upgrade order and costs should not be applied to Gilded Cores or App equipment.
                             </p>
                         </details>
                     </div>
                 </section>
 
                 <section aria-labelledby="related-guides-title">
-                    <h2 id="related-guides-title" class="text-2xl sm:text-3xl font-bold mb-6">Use Your Upgrades in a Better Run</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                        <a href="/best-builds/" class="card-hover panel p-5">
-                            <i class="fas fa-wand-magic-sparkles text-2xl text-orange-300 mb-3" aria-hidden="true"></i>
-                            <h3 class="font-bold mb-2">Best Builds</h3>
-                            <p class="text-sm text-gray-400">Turn stronger base stats into a coherent run build.</p>
-                        </a>
+                    <h2 id="related-guides-title" class="text-2xl sm:text-3xl font-bold mb-3">Plan the Rest of Your App Build</h2>
+                    <p class="text-gray-400 mb-7">Choose the next guide based on the part of your loadout you are deciding now.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
                         <a href="/guides/best-gear-set.html" class="card-hover panel p-5">
-                            <i class="fas fa-shield-halved text-2xl text-cyan-300 mb-3" aria-hidden="true"></i>
+                            <i class="fas fa-shield-halved text-2xl text-purple-300 mb-3" aria-hidden="true"></i>
                             <h3 class="font-bold mb-2">Best Gear Set</h3>
-                            <p class="text-sm text-gray-400">Compare gear choices after fixing permanent stats.</p>
+                            <p class="text-sm text-gray-400">Compare equipment before committing enhancement materials.</p>
                         </a>
-                        <a href="/guides/weapon-choice.html" class="card-hover panel p-5">
-                            <i class="fas fa-khanda text-2xl text-purple-300 mb-3" aria-hidden="true"></i>
-                            <h3 class="font-bold mb-2">Weapon Choice</h3>
-                            <p class="text-sm text-gray-400">Pick a starting weapon that matches your next run.</p>
+                        <a href="/best-builds/" class="card-hover panel p-5">
+                            <i class="fas fa-cubes-stacked text-2xl text-orange-300 mb-3" aria-hidden="true"></i>
+                            <h3 class="font-bold mb-2">Best Builds</h3>
+                            <p class="text-sm text-gray-400">Match your hero, weapons, gear and skills into one plan.</p>
                         </a>
-                        <a href="/wiki/" class="card-hover panel p-5">
-                            <i class="fas fa-book text-2xl text-green-300 mb-3" aria-hidden="true"></i>
-                            <h3 class="font-bold mb-2">Monster Survivors Wiki</h3>
-                            <p class="text-sm text-gray-400">Browse the site's broader mechanics and guide index.</p>
+                        <a href="/guides/best-weapons.html" class="card-hover panel p-5">
+                            <i class="fas fa-khanda text-2xl text-red-300 mb-3" aria-hidden="true"></i>
+                            <h3 class="font-bold mb-2">Best Weapons</h3>
+                            <p class="text-sm text-gray-400">Find the offensive role your next upgrade should support.</p>
+                        </a>
+                        <a href="/heroes/" class="card-hover panel p-5">
+                            <i class="fas fa-user-shield text-2xl text-cyan-300 mb-3" aria-hidden="true"></i>
+                            <h3 class="font-bold mb-2">Heroes</h3>
+                            <p class="text-sm text-gray-400">Choose which survivor deserves your long-term resources.</p>
                         </a>
                     </div>
                 </section>
@@ -783,16 +1003,16 @@
 
         <section class="gradient-bg py-14 px-4 border-t border-gray-800">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">Spend the First 600 Gold, Then Fix the Failure Point</h2>
+                <h2 class="text-3xl font-bold mb-4">Make the Next Upgrade Solve One Real Problem</h2>
                 <p class="text-gray-300 text-lg mb-7">
-                    Damage I, Health I, and Armor I create the baseline. After that, let the way your runs end decide the next purchase.
+                    Permanent value first, Gilded Cores with a clear target, and deep gear investment only for pieces you intend to keep.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/play/" class="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition transform hover:scale-105">
-                        <i class="fas fa-play-circle mr-2" aria-hidden="true"></i>Play Monster Survivors
+                    <a href="#diagnosis" class="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-stethoscope mr-2" aria-hidden="true"></i>Diagnose Your Bottleneck
                     </a>
-                    <a href="/guides/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition transform hover:scale-105">
-                        <i class="fas fa-book-open mr-2" aria-hidden="true"></i>Browse Guides
+                    <a href="/guides/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-book-open mr-2" aria-hidden="true"></i>Browse App Guides
                     </a>
                 </div>
             </div>
@@ -807,32 +1027,32 @@
                         <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);" aria-hidden="true"></i>
                         <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
                     </div>
-                    <p class="text-gray-400 text-sm">Practical Monster Survivors guides, builds, and progression help.</p>
+                    <p class="text-gray-400 text-sm">Practical Monster Survivors App guides, builds and progression help.</p>
                 </div>
 
                 <div>
                     <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
                         <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">More Guides</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/guides/beginner-guide.html" class="hover:text-cyan-400 transition">Beginner Guide</a></li>
                         <li><a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a></li>
-                        <li><a href="/guides/best-gear-set.html" class="hover:text-cyan-400 transition">Best Gear Set</a></li>
+                        <li><a href="/heroes/" class="hover:text-cyan-400 transition">Heroes</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
+                    <h3 class="font-bold mb-4 text-orange-400">Progression</h3>
                     <ul class="space-y-2 text-gray-400">
+                        <li><a href="/guides/upgrades" class="hover:text-cyan-400 transition">App Upgrades</a></li>
+                        <li><a href="/guides/best-gear-set.html" class="hover:text-cyan-400 transition">Best Gear Set</a></li>
+                        <li><a href="/guides/best-weapons.html" class="hover:text-cyan-400 transition">Best Weapons</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4 text-orange-400">More</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/play/" class="hover:text-cyan-400 transition">Separate Browser Game</a></li>
                         <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
                         <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
                     </ul>
                 </div>
@@ -865,6 +1085,7 @@
                     const target = document.querySelector(href);
                     if (target) {
                         event.preventDefault();
+                        history.replaceState(null, '', href);
                         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 }
