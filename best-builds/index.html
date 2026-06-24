@@ -3,305 +3,663 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Best Builds in Monster Survivors (Upgrades & Gear Sets) 2026</title>
-    <meta name="description" content="Discover the top builds for Monster Survivors. Master the best gear sets like Striker, essential weapon combinations, and core upgrades to clear any wave.">
-    <meta name="keywords" content="monster survivors best build, monster survivors best gear set, monster upgrade, monster survivors build guide, striker set, cursed helmet, weapon merge">
+    <title>Monster Survivors Best Builds: Heroes, Gear &amp; Maps</title>
+    <meta name="description" content="Complete Monster Survivors App builds combining heroes, weapons, gear stats, skill priorities and map types for progression, bosses, farming and survival.">
+    <meta name="keywords" content="monster survivors best build, monster survivors app builds, balancio build, best weapons, gear stats, skills, maps">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/best-builds/">
-    
-    <!-- Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Best Builds in Monster Survivors: Upgrades & Gear Sets">
-    <meta property="og:description" content="Learn the most overpowered character builds, gear combinations, and skill upgrade paths for Monster Survivors.">
+
+    <meta property="og:title" content="Monster Survivors App Best Builds">
+    <meta property="og:description" content="Match heroes, weapons, equipment stats, skills and map layouts into complete App builds.">
     <meta property="og:url" content="https://monstersurvivors.plus/best-builds/">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
-    <!-- Tailwind CSS -->
+    <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+    <meta property="article:modified_time" content="2026-06-24T00:00:00+08:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors App Best Builds">
+    <meta name="twitter:description" content="Five complete builds for general progression, crowds, bosses, safe pushing and farming.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 30px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 30px rgba(255,107,53,.28)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
+            background: var(--primary-dark);
+            color: #f5f5f5;
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
-            font-family: 'Orbitron', sans-serif;
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .gradient-bg {
+            background:
+                radial-gradient(circle at 12% 18%, rgba(0,217,255,.14), transparent 32%),
+                radial-gradient(circle at 86% 20%, rgba(255,107,53,.15), transparent 30%),
+                radial-gradient(circle at 52% 96%, rgba(168,85,247,.12), transparent 34%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
-        
-        .build-card {
-            background: rgba(22, 33, 62, 0.8);
-            border: 1px solid rgba(0, 217, 255, 0.2);
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
             border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
         }
-        
-        .build-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.15);
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.93), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.2);
+            border-radius: 1rem;
+            backdrop-filter: blur(8px);
         }
-
-        .stat-badge {
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .data-table { width: 100%; border-collapse: collapse; min-width: 1050px; }
+        .data-table th, .data-table td {
+            padding: .95rem 1rem;
+            border-bottom: 1px solid rgba(75,85,99,.55);
+            text-align: left;
+            vertical-align: top;
+        }
+        .data-table th {
+            color: #9befff;
+            background: rgba(15,23,41,.98);
+            font-family: 'Orbitron', sans-serif;
+            font-size: .72rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .data-table tr:last-child td { border-bottom: 0; }
+        .data-table tbody tr:hover { background: rgba(0,217,255,.045); }
+        .tag {
             display: inline-flex;
             align-items: center;
-            padding: 0.25rem 0.75rem;
-            background: rgba(255, 107, 53, 0.1);
-            color: var(--accent-orange);
-            border: 1px solid var(--accent-orange);
-            border-radius: 999px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin: 0.25rem;
+            padding: .22rem .58rem;
+            margin: .12rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(0,217,255,.3);
+            background: rgba(0,217,255,.09);
+            color: #b6f3ff;
+            font-size: .72rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
+        .build-card { position: relative; overflow: hidden; }
+        .build-card::after {
+            content: '';
+            position: absolute;
+            right: -4rem;
+            bottom: -4rem;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 9999px;
+            background: radial-gradient(circle, rgba(0,217,255,.1), transparent 68%);
+            pointer-events: none;
+        }
+        .build-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            border-radius: .85rem;
+            background: rgba(255,107,53,.16);
+            border: 1px solid rgba(255,107,53,.58);
+            color: #ffc3aa;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+        }
+        .stat-box {
+            background: rgba(3,7,18,.34);
+            border: 1px solid rgba(75,85,99,.55);
+            border-radius: .75rem;
+            padding: .9rem;
+        }
+        .check-item, .warning-item { position: relative; padding-left: 1.7rem; }
+        .check-item::before, .warning-item::before {
+            position: absolute;
+            left: 0;
+            top: .08rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .check-item::before { content: '\f00c'; color: var(--accent-cyan); }
+        .warning-item::before { content: '\f071'; color: #fb7185; }
+        .card-hover { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0,217,255,.55);
+            box-shadow: 0 16px 32px rgba(0,217,255,.1);
+        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
     </style>
-    
-    <!-- Structured Data -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/best-builds/#webpage",
+        "url": "https://monstersurvivors.plus/best-builds/",
+        "name": "Monster Survivors Best Builds: Heroes, Gear & Maps",
+        "description": "Complete App builds combining heroes, weapons, equipment stats, skill priorities and map types.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://monstersurvivors.plus/#website",
+            "name": "MonsterSurvivors.plus",
+            "url": "https://monstersurvivors.plus/"
+        },
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Monster Survivors",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Android, Windows",
+            "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
+        },
+        "dateModified": "2026-06-24",
+        "inLanguage": "en"
+    }
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Best Builds in Monster Survivors (Upgrades & Gear Sets)",
-        "description": "Comprehensive guide on weapon combinations, gear sets, and skill routes in Monster Survivors.",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
+        "mainEntityOfPage": {"@id": "https://monstersurvivors.plus/best-builds/#webpage"},
+        "headline": "Monster Survivors App Best Builds",
+        "description": "Five complete builds for general progression, crowds, bosses, safe pushing and resource growth.",
+        "image": "https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg",
+        "author": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "publisher": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
         "datePublished": "2026-03-25",
-        "dateModified": "2026-03-25"
+        "dateModified": "2026-06-24",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Monster Survivors App Builds",
+        "numberOfItems": 5,
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Balancio Gunslinger Build"},
+            {"@type": "ListItem", "position": 2, "name": "Horde Clear Build"},
+            {"@type": "ListItem", "position": 3, "name": "Boss Hunter Build"},
+            {"@type": "ListItem", "position": 4, "name": "Safe Progression Build"},
+            {"@type": "ListItem", "position": 5, "name": "XP and Resource Build"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to assemble a Monster Survivors App build",
+        "step": [
+            {"@type": "HowToStep", "position": 1, "name": "Choose the map goal", "text": "Decide whether the next run is a general push, dense horde stage, boss attempt, safe first clear or resource run."},
+            {"@type": "HowToStep", "position": 2, "name": "Choose the hero role", "text": "Use the hero card and current upgrades to select offense, speed, resilience or resource utility."},
+            {"@type": "HowToStep", "position": 3, "name": "Cover three weapon jobs", "text": "Include crowd coverage, focused damage and a flex or protection weapon."},
+            {"@type": "HowToStep", "position": 4, "name": "Match gear and skills", "text": "Prioritize the equipment stats and skill upgrades that support the build's main job."},
+            {"@type": "HowToStep", "position": 5, "name": "Correct the failed run", "text": "Change only the layer responsible for the failure instead of rebuilding every slot."}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best general build in the Monster Survivors App?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Balancio with Pistol, Shotgun and a crowd weapon such as Plasma Beam or Chain Lightning is a strong general route. Prioritize Attack Speed, Damage, Speed and enough survivability for the current map."}
+            },
+            {
+                "@type": "Question",
+                "name": "Which stats matter most for an App build?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Damage and Attack Speed drive clear speed; Range and Speed improve safety; Crit supports boss damage; Max HP, Dodge, Armor, Shield and HP Restore support difficult first clears."}
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use the same build on every map?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. Dense horde maps reward coverage, boss stages need focused damage, obstacle-heavy maps value Speed and Range, and unknown maps benefit from a safer balanced setup."}
+            },
+            {
+                "@type": "Question",
+                "name": "Does this build guide cover the browser game?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. This page covers the VOODOO App with package games.rivvy.monstersurvivors. The site's Play Online game has different heroes, weapons, upgrades and maps."}
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://monstersurvivors.plus/guides/"},
+            {"@type": "ListItem", "position": 3, "name": "App Best Builds", "item": "https://monstersurvivors.plus/best-builds/"}
+        ]
     }
     </script>
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
-                </div>
-                
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="hover:text-cyan-400 transition">Home</a>
                     <a href="/guides/" class="text-cyan-400">Guides</a>
-                    <a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a>
+                    <a href="/heroes/" class="hover:text-cyan-400 transition">Heroes</a>
+                    <a href="/guides/best-weapons" class="hover:text-cyan-400 transition">Weapons</a>
                     <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
                 </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/" class="block py-2">Home</a>
+                <a href="/guides/" class="block py-2 text-cyan-400">Guides</a>
+                <a href="/heroes/" class="block py-2">Heroes</a>
+                <a href="/guides/best-weapons" class="block py-2">Weapons</a>
+                <a href="/play/" class="block py-2">Play Online</a>
             </div>
         </div>
     </nav>
-    
+
     <main>
-        <!-- Breadcrumb -->
         <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="text-sm text-gray-400">
+            <nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm text-gray-400">
                 <a href="/" class="hover:text-cyan-400">Home</a>
-                <span class="mx-2">/</span>
+                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
                 <a href="/guides/" class="hover:text-cyan-400">Guides</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Best Builds</span>
+                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                <span class="text-cyan-400">App Best Builds</span>
             </nav>
         </div>
-        
-        <!-- Hero Section -->
-        <section class="py-12 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-7xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Best Builds in Monster Survivors:<br>
-                    <span style="color: var(--accent-orange);">Upgrades & Gear Sets</span>
-                </h1>
-                <p class="text-xl text-gray-300 mb-4 max-w-3xl mx-auto">
-                    Wiping on wave 20? Your build is probably unoptimized. Learn the synergy between gear sets, passive upgrades, and hero selections to clear the hardest waves.
-                </p>
-                <div class="inline-flex items-center space-x-2 bg-gray-800 bg-opacity-50 rounded-lg px-4 py-2 border border-gray-600">
-                    <i class="fas fa-cogs text-gray-400"></i>
-                    <span class="text-sm">Strategy Guide (2026 Meta)</span>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Synergy Section -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
-                    <i class="fas fa-link text-cyan-400 mr-2"></i> Synergy: Combining Hero Abilities with Core Upgrades
-                </h2>
-                <div class="text-gray-300 space-y-4 mb-8">
-                    <p>In FreezeNova's Monster Survivors, a "build" isn't just about picking the weapon with the highest damage. It is a carefully curated combination of your <strong>Starting Hero</strong>, your <strong>Weapon Evolutions</strong>, and your crucial <strong>Passive Upgrades</strong>. </p>
-                    <p class="bg-yellow-900 bg-opacity-20 border-l-4 border-yellow-400 rounded-r-lg p-4">
-                        Found a build that requires <strong>Gilded Cores</strong>? Check whether it matches the FreezeNova browser game before grinding.
-                        Our <a href="/guides/gilded-cores/" class="text-cyan-400 hover:underline font-bold">Gilded Cores guide</a>
-                        explains the version difference and the Gold-based upgrade path used here.
-                    </p>
-                    
-                    <h3 class="text-xl font-bold text-white mt-6 mb-2">The Importance of the Scavenger Skill</h3>
-                    <p>One of the most defining mechanics of a high-tier build is mastering the <strong>Scavenger</strong> skill. If obtained early and leveled up to level 5, this skill grants you an incredible <strong>1% more damage for every 10 materials held</strong>. This forces a completely different playstyle: hoarding materials rather than spending them recklessly. To support this, you absolutely must prioritize <strong>Movement</strong> upgrades so you can safely herd huge packs of enemies and kite them without getting overwhelmed.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Builds Container -->
-        <section class="py-12 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-10">
-                    <span style="color: var(--accent-orange);">Top Output</span> Builds
-                </h2>
-                
-                <!-- Build 1 -->
-                <div class="build-card relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-cyan-600 font-bold px-4 py-1 rounded-bl-lg">METAKILLER</div>
-                    <h2 class="text-2xl font-bold mb-4 text-cyan-400">Top Build 1: The AoE Wave Clearer (Farming Focus)</h2>
-                    <p class="text-gray-300 mb-6">Designed to wipe out enormous dense maps (like Dreamy Woods) by filling the screen with projectiles and continuous area damage. Essential for gold farming.</p>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <h3 class="font-bold text-lg mb-2 text-white"><i class="fas fa-magic mr-2"></i>Recommended Hero & Weapon</h3>
-                            <ul class="list-disc list-inside text-gray-300 space-y-1 ml-2">
-                                <li><strong>Hero:</strong> Arcanix (for Wand access and slowing aura)</li>
-                                <li><strong>Core Weapon:</strong> Wand + Plasma Gun (Legendary)</li>
-                                <li><strong>Secondary:</strong> Axe (to swirl around and protect your proximity)</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2 text-white"><i class="fas fa-arrow-up mr-2"></i>Core Upgrade Priority</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="stat-badge">Attack Speed</span>
-                                <span class="stat-badge">Area Expansion</span>
-                                <span class="stat-badge">Scavenger (Lvl 5)</span>
-                                <span class="stat-badge">Movement Speed</span>
-                            </div>
-                            <p class="text-sm text-gray-400 mt-3">Balance your skill selection. Avoid spreading upgrades thin; pushing core skills to max level exponentializes your power.</p>
-                        </div>
+        <section class="gradient-bg px-4 pt-10 pb-14">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.12fr_.88fr] gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-yellow-200 bg-yellow-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-yellow-700 mb-5">
+                        <i class="fab fa-android" aria-hidden="true"></i>VOODOO APP BUILDS · UPDATED JUNE 24, 2026
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5">
+                        Monster Survivors App Best Builds:
+                        <span style="color:var(--accent-orange)">Hero + Weapons + Gear + Skills + Map</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-7">
+                        Start with the map goal, give every weapon a job, and make gear and skill upgrades support the same plan.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#build-table" class="bg-gradient-to-r from-orange-600 to-red-600 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-table-list mr-2" aria-hidden="true"></i>Compare All Builds
+                        </a>
+                        <a href="#complete-builds" class="border border-cyan-500 text-cyan-200 px-6 py-3.5 rounded-lg font-bold inline-flex items-center justify-center">
+                            <i class="fas fa-cubes-stacked mr-2" aria-hidden="true"></i>Open Build Cards
+                        </a>
                     </div>
                 </div>
+                <figure class="glass-panel p-3 max-w-md mx-auto shadow-glow-orange">
+                    <img src="/images/guides/monster-survivors-app-heroes-builds.jpg"
+                        alt="Monster Survivors App hero screen showing hero traits and equipped gear"
+                        width="444" height="592" class="w-full rounded-xl border border-gray-700" loading="eager">
+                    <figcaption class="text-xs text-gray-400 px-2 pt-3 pb-1">
+                        Hero traits, equipped gear, persistent weapon ranks and map layout all change the correct build.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-                <!-- Build 2 -->
-                <div class="build-card relative overflow-hidden flex flex-col">
-                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Top Build 2: The Boss Melter (High Single-Target)</h2>
-                    <p class="text-gray-300 mb-6">When waves hit 20+, elite enemies and bosses will shrug off weak AoE. This build focuses on insane burst damage and critical strikes to delete targets instantly.</p>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
+        <article class="px-4 py-14" style="background-color:var(--secondary-dark)">
+            <div class="max-w-6xl mx-auto">
+                <aside class="bg-red-950 bg-opacity-25 border border-red-700 rounded-xl p-6 mb-14">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-code-branch text-2xl text-red-300 mt-1" aria-hidden="true"></i>
                         <div>
-                            <h3 class="font-bold text-lg mb-2 text-white"><i class="fas fa-user-ninja mr-2"></i>Recommended Hero Setup</h3>
-                            <ul class="list-disc list-inside text-gray-300 space-y-1 ml-2">
-                                <li><strong>Hero:</strong> Echo (Best late-game scaling)</li>
-                                <li><strong>Core Weapon:</strong> Sword (Stacking Crit Damage)</li>
-                                <li><strong>Utility:</strong> Frostbite (To freeze the bosses in place)</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2 text-white"><i class="fas fa-shield-alt mr-2"></i>Equipment/Gear Strategy</h3>
-                            <p class="text-gray-300 text-sm mb-2">This build relies heavily on the <strong>Striker Set</strong>.</p>
-                            <ul class="list-disc list-inside text-gray-300 space-y-1 ml-2 text-sm">
-                                <li><strong>Strike Gloves:</strong> Essential for generating raw instakill potential on crits.</li>
-                                <li><strong>Cursed Helmet:</strong> Provides the necessary dodge bonus to survive close-quarters.</li>
-                            </ul>
-                            <div class="mt-4">
-                                <a href="/guides/best-gear-set.html" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 uppercase tracking-wide flex items-center bg-gray-800 inline-block px-3 py-2 rounded-lg border border-gray-700 w-fit">
-                                    <i class="fas fa-khanda mr-2"></i> Read the full Gear Set tier list guide &rarr;
-                                </a>
-                            </div>
+                            <h2 class="text-xl font-bold text-red-100 mb-2">This Is the VOODOO App Build Guide</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                Use this page for package <code class="text-cyan-300 text-sm">games.rivvy.monstersurvivors</code>.
+                                Arcanix, Echo, Wooden Wand, Axe, Dreamy Woods and browser Gold routes belong to a different Monster Survivors game.
+                            </p>
                         </div>
                     </div>
-                </div>
+                </aside>
 
-                <!-- Budget Build -->
-                <div class="build-card border-gray-600 bg-gray-900 bg-opacity-60">
-                    <h2 class="text-2xl font-bold mb-4">Best Budget Builds (Early Game Focus)</h2>
-                    <h3 class="text-xl font-bold text-gray-300 mb-2">Thriving with Low Resources</h3>
-                    <p class="text-gray-400 leading-relaxed mb-4">
-                        If you're a new player lacking legendary gear, your best bet is surviving through utility. Equip the <strong>Seeker Set</strong>, which grants extra cubes at the start of each round, giving you an immediate level advantage. Focus entirely on ranged weapons like the <strong>Wooden Wand</strong> or <strong>Chain Lightning</strong> (exceptional for early crowd control). Add <strong>Lifesteal</strong> upgrades only when pressure becomes unmanageable, though be warned: Lifesteal falls off hard in very late waves.
-                    </p>
-                    <a href="/guides/weapon-choice.html" class="text-cyan-400 hover:text-orange-400 underline text-sm font-bold">Confused on Starting Weapons? Read our Weapon Choice Guide</a>
-                </div>
+                <section id="build-table" class="mb-16">
+                    <div class="max-w-3xl mb-7">
+                        <p class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Complete App Build Table</h2>
+                        <p class="text-gray-400 text-lg">
+                            The hero labels below use names and trait cards visible in the App. For unnamed heroes, match the trait shown on your current hero card before investing.
+                        </p>
+                    </div>
+                    <div class="panel table-scroll shadow-glow-cyan">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Build</th>
+                                    <th>Hero Target</th>
+                                    <th>Weapons</th>
+                                    <th>Gear Stats</th>
+                                    <th>Skill Priority</th>
+                                    <th>Best Map Use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong class="text-orange-300">Balancio Gunslinger</strong><br><span class="text-xs text-gray-400">Best general route</span></td>
+                                    <td>Balancio with Swift and Gunslinger upgrades</td>
+                                    <td>Pistol + Shotgun + Plasma Beam or Chain Lightning</td>
+                                    <td>Attack Speed → Damage → Range → Speed/Dodge</td>
+                                    <td>Gunslinger → Swift → Damage → Range → HP Restore</td>
+                                    <td>Frightful Foothills, first clears, unknown layouts</td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="text-cyan-300">Horde Clearer</strong><br><span class="text-xs text-gray-400">Maximum coverage</span></td>
+                                    <td>Pulse Overload or another ranged/offense hero card</td>
+                                    <td>Plasma Beam + Chain Lightning + Shuriken; Sniper flex</td>
+                                    <td>Attack Speed → Range → Damage → Pickup Range</td>
+                                    <td>Attack Speed → Damage → Range → Speed</td>
+                                    <td>Dense horde maps and open layouts with enemies from several directions</td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="text-red-300">Boss Hunter</strong><br><span class="text-xs text-gray-400">Focused damage</span></td>
+                                    <td>Sixth Sense or another damage-focused hero card</td>
+                                    <td>Sniper + Shotgun + Pistol; one Plasma Beam coverage slot</td>
+                                    <td>Crit Chance → Crit Damage → Damage → Attack Speed/Dodge</td>
+                                    <td>Damage → Crit → Attack Speed → Speed</td>
+                                    <td>Boss stages and runs where one durable enemy is the wall</td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="text-green-300">Safe Progression</strong><br><span class="text-xs text-gray-400">First-clear consistency</span></td>
+                                    <td>Resilience or Absorb hero card</td>
+                                    <td>Plasma Beam + Chain Lightning + Pistol or Shotgun</td>
+                                    <td>Max HP → Dodge → Armor/Shield → HP Restore</td>
+                                    <td>Survival stat → Damage → Speed → Recovery</td>
+                                    <td>Obstacle-heavy maps, projectile pressure and unfamiliar stages</td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="text-purple-300">XP &amp; Resource</strong><br><span class="text-xs text-gray-400">Account growth</span></td>
+                                    <td>Natural Lure or a utility-focused hero card</td>
+                                    <td>Chain Lightning + Plasma Beam + Pistol or Shuriken</td>
+                                    <td>XP Gain → Pickup Range → Luck/Speed → baseline Damage</td>
+                                    <td>XP Gain → Pickup Range → Speed → Damage</td>
+                                    <td>Earlier repeatable maps; avoid using it for a difficult boss push</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <div class="grid lg:grid-cols-[.82fr_1.18fr] gap-8 items-start">
+                        <div class="lg:sticky lg:top-24">
+                            <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Build anatomy</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-4">What Makes a Complete Build?</h2>
+                            <p class="text-gray-400 text-lg leading-relaxed mb-5">
+                                A weapon list is not a build. The five layers must answer the same problem.
+                            </p>
+                            <div class="panel p-5 border-l-4 border-yellow-500">
+                                <p class="text-sm text-gray-300"><strong class="text-yellow-200">Rule:</strong> change one layer after a failed run, not all five.</p>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="panel p-5"><i class="fas fa-user-shield text-2xl text-orange-300 mb-3"></i><h3 class="font-bold mb-2">Hero</h3><p class="text-sm text-gray-400">Provides the starting trait, upgrade path and risk profile.</p></div>
+                            <div class="panel p-5"><i class="fas fa-gun text-2xl text-cyan-300 mb-3"></i><h3 class="font-bold mb-2">Weapons</h3><p class="text-sm text-gray-400">Cover crowds, focused targets and one flex or protection role.</p></div>
+                            <div class="panel p-5"><i class="fas fa-shield-halved text-2xl text-purple-300 mb-3"></i><h3 class="font-bold mb-2">Gear</h3><p class="text-sm text-gray-400">Raises the stats that make the weapon plan work; item effect matters more than a fashionable set name.</p></div>
+                            <div class="panel p-5"><i class="fas fa-arrow-up-right-dots text-2xl text-yellow-300 mb-3"></i><h3 class="font-bold mb-2">Skills</h3><p class="text-sm text-gray-400">Fix the current bottleneck instead of spreading levels across unrelated stats.</p></div>
+                            <div class="panel p-5 sm:col-span-2"><i class="fas fa-map text-2xl text-green-300 mb-3"></i><h3 class="font-bold mb-2">Map</h3><p class="text-sm text-gray-400">Determines whether coverage, range, speed, burst or durability deserves the final slot.</p></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="complete-builds" class="mb-16">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Full setups</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">Five App Builds and Their Replacements</h2>
+                    <div class="space-y-7">
+                        <article class="build-card panel p-6 border-l-4 border-orange-500">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-5"><div class="flex gap-4"><span class="build-number">1</span><div><h3 class="text-xl sm:text-2xl font-bold">Balancio Gunslinger</h3><p class="text-orange-300 text-sm font-bold">Best all-purpose progression build</p></div></div><span class="tag">LOWEST SETUP RISK</span></div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+                                <div class="stat-box"><strong class="text-white">Hero</strong><p class="text-gray-400 mt-2">Balancio. Swift adds Speed and Gunslinger adds Attack Speed in the visible App upgrade path.</p></div>
+                                <div class="stat-box"><strong class="text-white">Weapons</strong><p class="text-gray-400 mt-2">Pistol + Shotgun + Plasma Beam. Swap Chain Lightning for Plasma when scattered enemies are the problem.</p></div>
+                                <div class="stat-box"><strong class="text-white">Gear</strong><p class="text-gray-400 mt-2">Attack Speed, Damage and Range first; add Dodge or HP Restore when mistakes chain into a loss.</p></div>
+                                <div class="stat-box"><strong class="text-white">Skills</strong><p class="text-gray-400 mt-2">Gunslinger → Swift → Damage → Range. Do not overbuy recovery while clear speed is weak.</p></div>
+                                <div class="stat-box"><strong class="text-white">Map</strong><p class="text-gray-400 mt-2">Frightful Foothills and general first clears. Replace Shotgun with Sniper for a boss wall.</p></div>
+                            </div>
+                        </article>
+
+                        <article class="build-card panel p-6 border-l-4 border-cyan-500">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-5"><div class="flex gap-4"><span class="build-number">2</span><div><h3 class="text-xl sm:text-2xl font-bold">Horde Clearer</h3><p class="text-cyan-300 text-sm font-bold">Best when the screen fills faster than you kill</p></div></div><span class="tag">DENSE MAPS</span></div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+                                <div class="stat-box"><strong>Hero</strong><p class="text-gray-400 mt-2">Use a ranged/offense card such as Pulse Overload, then confirm the current card effect before spending.</p></div>
+                                <div class="stat-box"><strong>Weapons</strong><p class="text-gray-400 mt-2">Plasma Beam + Chain Lightning + Shuriken. Keep Sniper or Shotgun as the focused slot.</p></div>
+                                <div class="stat-box"><strong>Gear</strong><p class="text-gray-400 mt-2">Attack Speed, Range and Damage; Pickup Range is useful only after the damage baseline is stable.</p></div>
+                                <div class="stat-box"><strong>Skills</strong><p class="text-gray-400 mt-2">Attack Speed → Damage → Range → Speed. Avoid filling every slot with another crowd weapon.</p></div>
+                                <div class="stat-box"><strong>Map</strong><p class="text-gray-400 mt-2">Open or dense horde layouts. Add Speed for obstacle routes and Sniper for a boss finish.</p></div>
+                            </div>
+                        </article>
+
+                        <article class="build-card panel p-6 border-l-4 border-red-500">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-5"><div class="flex gap-4"><span class="build-number">3</span><div><h3 class="text-xl sm:text-2xl font-bold">Boss Hunter</h3><p class="text-red-300 text-sm font-bold">Best when regular waves are easy but the boss survives</p></div></div><span class="tag">FOCUSED DAMAGE</span></div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+                                <div class="stat-box"><strong>Hero</strong><p class="text-gray-400 mt-2">Choose a damage-focused card such as Sixth Sense; use the current description to confirm its benefit.</p></div>
+                                <div class="stat-box"><strong>Weapons</strong><p class="text-gray-400 mt-2">Sniper + Shotgun + Pistol. Keep one Plasma Beam slot so normal enemies do not close the arena.</p></div>
+                                <div class="stat-box"><strong>Gear</strong><p class="text-gray-400 mt-2">Crit Chance, Crit Damage, Damage and Attack Speed; add Dodge if close burst is unsafe.</p></div>
+                                <div class="stat-box"><strong>Skills</strong><p class="text-gray-400 mt-2">Damage → Crit → Attack Speed → Speed. Drop a luxury stat for survivability if one hit ends the attempt.</p></div>
+                                <div class="stat-box"><strong>Map</strong><p class="text-gray-400 mt-2">Boss stages. Replace Shotgun with Chain Lightning when the fight also produces heavy crowd pressure.</p></div>
+                            </div>
+                        </article>
+
+                        <article class="build-card panel p-6 border-l-4 border-green-500">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-5"><div class="flex gap-4"><span class="build-number">4</span><div><h3 class="text-xl sm:text-2xl font-bold">Safe Progression</h3><p class="text-green-300 text-sm font-bold">Best for unfamiliar maps and difficult first clears</p></div></div><span class="tag">CONSISTENCY</span></div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+                                <div class="stat-box"><strong>Hero</strong><p class="text-gray-400 mt-2">Use a Resilience or Absorb card and read the current effect before choosing between health and shield gear.</p></div>
+                                <div class="stat-box"><strong>Weapons</strong><p class="text-gray-400 mt-2">Plasma Beam + Chain Lightning + reliable Pistol. Add Shotgun only when close threats remain the failure.</p></div>
+                                <div class="stat-box"><strong>Gear</strong><p class="text-gray-400 mt-2">Max HP, Dodge, Armor or Shield, then HP Restore. Keep enough Damage to prevent endless crowd growth.</p></div>
+                                <div class="stat-box"><strong>Skills</strong><p class="text-gray-400 mt-2">One survival upgrade → Damage → Speed → Recovery. Do not stack defense after the run is already safe.</p></div>
+                                <div class="stat-box"><strong>Map</strong><p class="text-gray-400 mt-2">Obstacle-heavy, projectile-heavy or unknown stages. Shift one defensive slot to Crit after the first clear.</p></div>
+                            </div>
+                        </article>
+
+                        <article class="build-card panel p-6 border-l-4 border-purple-500">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-5"><div class="flex gap-4"><span class="build-number">5</span><div><h3 class="text-xl sm:text-2xl font-bold">XP &amp; Resource Growth</h3><p class="text-purple-300 text-sm font-bold">Best for repeatable content, not a progression wall</p></div></div><span class="tag">ACCOUNT GROWTH</span></div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
+                                <div class="stat-box"><strong>Hero</strong><p class="text-gray-400 mt-2">Choose Natural Lure or another utility card only after checking the current card text.</p></div>
+                                <div class="stat-box"><strong>Weapons</strong><p class="text-gray-400 mt-2">Chain Lightning + Plasma Beam + Pistol or Shuriken for low-risk coverage.</p></div>
+                                <div class="stat-box"><strong>Gear</strong><p class="text-gray-400 mt-2">XP Gain, Pickup Range, Luck and Speed after a minimum Damage and Attack Speed baseline.</p></div>
+                                <div class="stat-box"><strong>Skills</strong><p class="text-gray-400 mt-2">XP Gain → Pickup Range → Speed → Damage. Stop adding economy if waves begin to outscale you.</p></div>
+                                <div class="stat-box"><strong>Map</strong><p class="text-gray-400 mt-2">Earlier repeatable maps such as Frightful Foothills. Switch to Boss Hunter when pushing a hard gate.</p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="map-fit" class="mb-16">
+                    <p class="text-green-300 font-bold uppercase tracking-widest text-sm mb-3">Map adjustment</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Choose the Build by Map Layout</h2>
+                    <div class="panel table-scroll">
+                        <table class="data-table" style="min-width:820px">
+                            <thead><tr><th>Map Situation</th><th>Best Build</th><th>Add</th><th>Remove or Delay</th></tr></thead>
+                            <tbody>
+                                <tr><td>Frightful Foothills / early progression</td><td class="text-orange-300 font-bold">Balancio Gunslinger</td><td>Balanced coverage and Speed</td><td>Deep Crit or economy investment</td></tr>
+                                <tr><td>Dense open horde map</td><td class="text-cyan-300 font-bold">Horde Clearer</td><td>Plasma Beam, Chain Lightning, Range</td><td>Redundant single-target slots</td></tr>
+                                <tr><td>Boss or elite damage gate</td><td class="text-red-300 font-bold">Boss Hunter</td><td>Sniper, Crit, focused Damage</td><td>Third crowd weapon</td></tr>
+                                <tr><td>Obstacle or parkour-heavy layout</td><td class="text-green-300 font-bold">Safe Progression</td><td>Speed, Range, Dodge</td><td>Close-range commitment</td></tr>
+                                <tr><td>Known easy repeatable stage</td><td class="text-purple-300 font-bold">XP &amp; Resource</td><td>XP Gain, Pickup Range, Luck</td><td>Extra defense that does not improve consistency</td></tr>
+                                <tr><td>Unknown new map</td><td class="text-green-300 font-bold">Safe Progression → adapt</td><td>One coverage, one focused and one survival answer</td><td>Specialist build before learning the layout</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <div class="panel p-6">
+                            <h2 class="text-2xl font-bold mb-5">Fix the Build That Failed</h2>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="check-item"><strong>Crowded out:</strong> add Plasma Beam, Chain Lightning, Range or Attack Speed.</li>
+                                <li class="check-item"><strong>Boss survives:</strong> add Sniper, Crit or focused Damage; remove a duplicate coverage weapon.</li>
+                                <li class="check-item"><strong>One hit ends the run:</strong> add Max HP, Dodge, Armor/Shield or HP Restore.</li>
+                                <li class="check-item"><strong>Cannot collect safely:</strong> add Speed, Pickup Range or ranged coverage.</li>
+                                <li class="check-item"><strong>Build never comes online:</strong> reduce economy and upgrade the current main weapon.</li>
+                            </ul>
+                        </div>
+                        <div class="panel p-6 border-l-4 border-yellow-500">
+                            <h2 class="text-2xl font-bold mb-5">Resource Order Before a Hard Push</h2>
+                            <ol class="space-y-4 text-gray-300">
+                                <li><strong class="text-yellow-200">1. Permanent baseline:</strong> enough broad power to make the run viable.</li>
+                                <li><strong class="text-yellow-200">2. Main weapon:</strong> upgrade the crowd or focused weapon used in most attempts.</li>
+                                <li><strong class="text-yellow-200">3. Keeper gear:</strong> invest in stats that support the chosen build.</li>
+                                <li><strong class="text-yellow-200">4. Specialist hero:</strong> deepen the hero only after the build has a clear use case.</li>
+                                <li><strong class="text-yellow-200">5. Second build:</strong> create it after the primary push setup is stable.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mistakes" class="mb-16">
+                    <p class="text-rose-300 font-bold uppercase tracking-widest text-sm mb-3">Avoid broken synergies</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-8">Common App Build Mistakes</h2>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Copying browser characters and maps</h3><p class="text-gray-400">The VOODOO App uses a different roster, weapon list and progression loop.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Calling three weapons a build</h3><p class="text-gray-400">Hero traits, gear stats, skills and map layout determine whether the weapons can perform their jobs.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Using every slot for crowd clear</h3><p class="text-gray-400">The setup feels strong until a boss or elite exposes the missing focused-damage role.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Forcing an unconfirmed gear set</h3><p class="text-gray-400">Choose the item effect and stats shown in the current Gear screen instead of sacrificing keepers for a name.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Ranking stats without the map</h3><p class="text-gray-400">Range, Speed, Crit and durability change value when obstacles, projectiles or bosses change.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Building a second setup too early</h3><p class="text-gray-400">Splitting weapon, hero and gear resources can leave both builds unable to pass the current wall.</p></div>
+                    </div>
+                </section>
+
+                <aside class="bg-cyan-950 bg-opacity-25 border border-cyan-700 rounded-xl p-6 mb-16">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-rotate text-2xl text-cyan-300 mt-1" aria-hidden="true"></i>
+                        <div>
+                            <h2 class="text-xl font-bold text-cyan-100 mb-2">Version Note</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                The official App listing was updated June 12, 2026 and confirms character progression, unique abilities, boss fights and rare loot.
+                                Hero card effects, weapon levels, gear results and prices can change; use the current in-game preview for the final choice.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section id="faq" class="mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Monster Survivors App Build FAQ</h2>
+                    <div class="space-y-4">
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What is the best general build?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Balancio with Pistol, Shotgun and Plasma Beam or Chain Lightning is the safest general route. Prioritize Attack Speed, Damage, Speed and only enough survivability to stop normal mistakes from ending the run.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Which stats should gear provide?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Use Damage and Attack Speed for general clear, Range and Speed for safety, Crit for bosses, and Max HP, Dodge, Armor, Shield or HP Restore for difficult first clears.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Should I use one build on every map?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">No. Dense maps reward coverage, bosses need focused damage, obstacle layouts increase the value of Speed and Range, and unknown maps should be approached with a safer balanced setup.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">When should I switch away from an XP build?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">Switch when enemies begin to outscale the build, a boss becomes the gate or economy stats force you to remove a required damage or survival slot.</p></details>
+                        <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Does this guide cover Play Online?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1"></i></summary><p class="text-gray-400 mt-4">No. This page covers the VOODOO App. The site's online game is a separate title with different builds.</p></details>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3">Build the Next Layer</h2>
+                    <p class="text-gray-400 mb-7">Use the guide that matches the decision currently blocking the setup.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <a href="/guides/best-weapons" class="card-hover panel p-5"><i class="fas fa-gun text-2xl text-cyan-300 mb-3"></i><h3 class="font-bold mb-2">App Best Weapons</h3><p class="text-sm text-gray-400">Choose crowd, boss and flex weapon roles.</p></a>
+                        <a href="/guides/upgrades" class="card-hover panel p-5"><i class="fas fa-arrow-up-right-dots text-2xl text-yellow-300 mb-3"></i><h3 class="font-bold mb-2">App Upgrades</h3><p class="text-sm text-gray-400">Decide between permanent power, Cores and keeper gear.</p></a>
+                        <a href="/heroes/" class="card-hover panel p-5"><i class="fas fa-user-shield text-2xl text-orange-300 mb-3"></i><h3 class="font-bold mb-2">Heroes</h3><p class="text-sm text-gray-400">Compare the survivor cards available on your account.</p></a>
+                    </div>
+                </section>
             </div>
-        </section>
-
-        <!-- Gear System FAQ -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-6 text-center text-white">Monster Upgrade & Gear Merge Systems</h2>
-                <div class="bg-gray-800 bg-opacity-60 p-6 rounded-xl border border-gray-700">
-                    <h3 class="text-xl font-bold text-cyan-400 mb-2">How do I create Legendary Gear?</h3>
-                    <p class="text-gray-300 mb-4">
-                        To craft a legendary item, you must merge <strong>six purple items of the exact same type</strong> (for example, six chest pieces). They do not all have to be from the exact same named set! The critical rule is: <strong>The very first item you select in the merge menu determines the foundation of the item that receives the Legendary enhancement.</strong>
-                    </p>
-                    <a href="/tier-list/index.html" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-6 rounded transition">Check Our Tier List Here</a>
-                </div>
-            </div>
-        </section>
-
+        </article>
     </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 mt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <p class="text-gray-500 text-sm">
-                    © 2026 MonsterSurvivors.plus - All Rights Reserved
-                </p>
-                <div class="flex space-x-4">
-                    <a href="/guides/" class="text-gray-500 hover:text-cyan-400 text-sm">Return to Guides</a>
-                    <a href="/tier-list/" class="text-gray-500 hover:text-cyan-400 text-sm">Tier List</a>
-                </div>
+
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div><div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div><p class="text-gray-400 text-sm">Practical App builds and progression help.</p></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Build Guides</h3><ul class="space-y-2 text-gray-400"><li><a href="/best-builds/">Best Builds</a></li><li><a href="/guides/best-weapons">Best Weapons</a></li><li><a href="/heroes/">Heroes</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Progression</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/upgrades">App Upgrades</a></li><li><a href="/guides/">All Guides</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">More</h3><ul class="space-y-2 text-gray-400"><li><a href="/play/">Separate Browser Game</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm"><strong>Disclaimer:</strong> Fan-made guide. Game assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                const target = href && href !== '#' ? document.querySelector(href) : null;
+                if (target) {
+                    event.preventDefault();
+                    history.replaceState(null, '', href);
+                    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({top: Math.max(0, top), behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
 </body>
 </html>
