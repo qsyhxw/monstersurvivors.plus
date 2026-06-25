@@ -3,734 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Maps Guide 2026 - Dreamy Woods & Shade Palace | Monster Survivors</title>
-    <meta name="description" content="Complete guide to Monster Survivors maps including Dreamy Woods and Shade Palace. Learn map mechanics, unlock conditions, enemy types, and strategic differences.">
-    <meta name="keywords" content="monster survivors, maps, dreamy woods, shade palace, map guide, unlock maps, enemy types, stage guide">
-    <link rel="canonical" href="https://monstersurvivors.plus/guides/maps">
-    
-    <!-- Google Analytics -->
+
+    <title>Maps Version Note | Monster Survivors</title>
+    <meta name="description" content="Dreamy Woods and Shade Palace map advice belongs to the separate browser version. Compare Monster Survivors versions before using App map or build guides.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <link rel="canonical" href="https://monstersurvivors.plus/versions/">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-         crossorigin="anonymous"></script>
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Maps Complete Guide">
-    <meta property="og:description" content="Master every map in Monster Survivors with detailed strategies and enemy breakdowns">
-    <meta property="og:url" content="https://monstersurvivors.plus/guides/maps/">
+
+    <meta property="og:title" content="Monster Survivors Maps Version Note">
+    <meta property="og:description" content="Dreamy Woods and Shade Palace map advice is browser-version content. Compare versions before applying map or build advice.">
+    <meta property="og:url" content="https://monstersurvivors.plus/guides/maps">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
-    <!-- Tailwind CSS -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors Maps Version Note">
+    <meta name="twitter:description" content="Map advice depends on whether you play the VOODOO App or the separate browser version.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 34px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 34px rgba(255,107,53,.25)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
-            --text-gray: #b8b8b8;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
-            font-family: 'Orbitron', sans-serif;
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 13% 19%, rgba(0,217,255,.16), transparent 31%),
+                radial-gradient(circle at 84% 23%, rgba(255,107,53,.17), transparent 31%),
+                radial-gradient(circle at 53% 100%, rgba(168,85,247,.13), transparent 36%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
-        
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
         }
-        
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+        .route-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
         }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
-            transition: all 0.3s ease;
+        .route-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,217,255,.52);
+            box-shadow: 0 18px 38px rgba(0,217,255,.09);
         }
-        
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        .tag {
+            display: inline-flex;
+            padding: .25rem .65rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .04em;
         }
-        
-        .icon-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
+        .check-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f00c';
+            color: var(--accent-cyan);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-        
-        .map-dreamy {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);
-            border: 2px solid rgba(34, 197, 94, 0.3);
+        .warn-item { position: relative; padding-left: 1.75rem; }
+        .warn-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f071';
+            color: var(--accent-orange);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-        
-        .map-shade {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-            border: 2px solid rgba(139, 92, 246, 0.3);
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);
-            border: 2px solid rgba(34, 197, 94, 0.3);
-        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
     </style>
-    
-    <!-- Structured Data -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Monster Survivors Maps Complete Guide - Dreamy Woods & Shade Palace",
-        "description": "Comprehensive guide to all maps in Monster Survivors",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://monstersurvivors.plus/logo.png"
-            }
-        },
-        "datePublished": "2026-01-12",
-        "dateModified": "2026-01-12"
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/guides/maps#webpage",
+        "url": "https://monstersurvivors.plus/guides/maps",
+        "name": "Maps Version Note",
+        "description": "A version note explaining that Dreamy Woods and Shade Palace map advice belongs to the separate browser version, with links to the version comparison, browser play page and App guide hub.",
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
     }
     </script>
-    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://monstersurvivors.plus/"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Guides",
-            "item": "https://monstersurvivors.plus/guides/"
-        },{
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Maps Guide",
-            "item": "https://monstersurvivors.plus/guides/maps/"
-        }]
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Versions", "item": "https://monstersurvivors.plus/versions/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Are Dreamy Woods and Shade Palace App map guides?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. Treat Dreamy Woods and Shade Palace advice on this site as browser-version content unless your App screen clearly matches it."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should I go if I want the browser map experience?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use the Play Online page for the separate browser version."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should App players go for progression help?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use App Guides, Best Builds, Best Weapons and Upgrades for VOODOO App progression decisions."}
+            }
+        ]
     }
     </script>
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/versions/" class="hover:text-cyan-400 transition">Versions</a>
+                    <a href="/play/" class="text-gray-400 hover:text-cyan-400 transition">Play Online</a>
+                    <a href="/guides/" class="hover:text-cyan-400 transition">App Guides</a>
                 </div>
-                
-                <div class="hidden md:flex space-x-8">
-                    <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="text-cyan-400">Guides</a>
-                    <a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a>
-                    <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
-                </div>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
             <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="/" class="block py-2 hover:text-cyan-400 transition">Home</a>
-                <a href="/guides/" class="block py-2 text-cyan-400">Guides</a>
-                <a href="/strategies/" class="block py-2 hover:text-cyan-400 transition">Strategies</a>
-                <a href="/play/" class="block py-2 hover:text-cyan-400 transition">Play Online</a>
+                <a href="/versions/" class="block py-2">Versions</a>
+                <a href="/play/" class="block py-2 text-gray-400">Play Online</a>
+                <a href="/guides/" class="block py-2">App Guides</a>
             </div>
         </div>
     </nav>
-    
+
     <main>
-        <!-- Breadcrumb -->
-        <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="text-sm text-gray-400">
-                <a href="/" class="hover:text-cyan-400">Home</a>
-                <span class="mx-2">/</span>
-                <a href="/guides/" class="hover:text-cyan-400">Guides</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Maps Guide</span>
-            </nav>
-        </div>
-        
-        <!-- Hero Section -->
-        <section class="py-12 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-7xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Monster Survivors <span style="color: var(--accent-orange);">Maps</span> Complete Guide
+        <section class="hero-bg px-4 pt-14 pb-16 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-orange-100 bg-orange-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-orange-700 mb-5">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>VERSION NOTE
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                    Dreamy Woods and Shade Palace Are <span class="text-orange-300">Browser-Version</span> Map Advice
                 </h1>
-                <p class="text-xl text-gray-300 mb-4">
-                    Master Dreamy Woods and unlock the secrets of Shade Palace with our comprehensive map breakdown
+                <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                    This old maps topic belongs to the separate browser game. Do not use it as a VOODOO App map, build or upgrade guide unless your screen clearly matches that version.
                 </p>
-                <div class="inline-flex items-center space-x-2 bg-orange-900 bg-opacity-30 rounded-lg px-4 py-2 border border-orange-600">
-                    <i class="fas fa-calendar-alt text-orange-400"></i>
-                    <span class="text-sm">Updated January 2026</span>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Maps Overview -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="bg-gradient-to-r from-green-900 to-purple-900 bg-opacity-30 rounded-2xl p-8 border border-gray-700">
-                    <div class="flex items-start">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-map text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold mb-3">Understanding Maps in Monster Survivors</h2>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Monster Survivors features distinct battlefields where your survival runs take place. Each map presents its own visual atmosphere and environmental characteristics that affect how runs feel and flow. While the core gameplay mechanics remain consistent across maps, experienced players often notice subtle differences in enemy spawn patterns, visual clarity, and overall difficulty curves that can influence build choices and strategic approaches.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                The browser version of Monster Survivors typically includes two primary maps available to players. Starting with the default map gives you a comfortable environment to learn the game's fundamentals, while the secondary map offers a different aesthetic and potentially adjusted challenge level for players seeking variety after mastering the basics. Understanding what each map offers helps you choose the right battlefield for your current skill level and preferred playstyle.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Dreamy Woods Deep Dive -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span style="color: #22c55e;">Dreamy Woods</span> - The Starting Battlefield
-                    </h2>
-                    <p class="text-gray-400 max-w-3xl mx-auto">
-                        Your first introduction to Monster Survivors takes place in this mystical forest environment
-                    </p>
-                </div>
-                
-                <div class="map-dreamy rounded-2xl p-8 mb-8">
-                    <div class="grid lg:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4 flex items-center text-green-400">
-                                <i class="fas fa-tree mr-3"></i>
-                                Visual Atmosphere & Setting
-                            </h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Dreamy Woods presents a fantasy forest environment with lush greenery and mystical overtones. The map's visual design typically features natural elements like trees, grass, and organic terrain features that create a magical woodland atmosphere. This lighter, more natural color palette makes it relatively easy to distinguish your character and enemies against the background, which is particularly helpful when you're first learning the game's visual language and need to track multiple threats simultaneously.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                The forest setting creates a medium-contrast environment where most enemy types stand out clearly without excessive visual noise. This balanced visibility contributes to Dreamy Woods being the ideal starting map for new players, as you can focus on learning mechanics and positioning without struggling to parse what's happening on screen. The natural theme also provides a less intimidating atmosphere compared to darker, more ominous environments, helping newcomers feel more comfortable as they develop their skills.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4 flex items-center text-green-400">
-                                <i class="fas fa-graduation-cap mr-3"></i>
-                                Learning Environment
-                            </h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                As the default map available from your first playthrough, Dreamy Woods serves as Monster Survivors' tutorial battlefield. The map introduces you to all core mechanics in a relatively forgiving environment where you can experiment with different weapons, practice movement techniques, and understand upgrade systems without facing overwhelming difficulty spikes. This makes it the perfect place to try new strategies, test weapon combinations, and develop fundamental survival skills that will serve you throughout your Monster Survivors journey.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                Many players continue returning to Dreamy Woods even after unlocking other maps, as its familiar environment provides a comfortable space for practice runs or testing new build ideas. The map's baseline difficulty curve allows you to focus on execution and refinement rather than simply surviving, making it valuable for players at all skill levels. Whether you're learning the basics or perfecting advanced techniques, Dreamy Woods offers a reliable foundation for improvement.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-eye text-2xl text-green-400"></i>
-                        </div>
-                        <h4 class="font-bold mb-2 text-green-400">Visual Clarity</h4>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            The natural color scheme and medium-contrast background help new players easily distinguish between their character, enemies, and environmental elements. This clear visibility reduces confusion and allows you to focus on learning mechanics rather than struggling to parse visual information.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-balance-scale text-2xl text-green-400"></i>
-                        </div>
-                        <h4 class="font-bold mb-2 text-green-400">Balanced Difficulty</h4>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Dreamy Woods provides a steady difficulty progression that introduces challenges at a manageable pace. The baseline enemy strength and spawn patterns give players time to adapt and learn without facing sudden overwhelming situations that can discourage newcomers.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-universal-access text-2xl text-green-400"></i>
-                        </div>
-                        <h4 class="font-bold mb-2 text-green-400">Universal Access</h4>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Available immediately without any unlock requirements, Dreamy Woods ensures every player can jump straight into the game. This accessibility makes it the natural choice for first-time players and a reliable fallback for experienced players testing new strategies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Shade Palace -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span style="color: #a78bfa;">Shade Palace</span> - The Advanced Challenge
-                    </h2>
-                    <p class="text-gray-400 max-w-3xl mx-auto">
-                        A darker, more mysterious environment that tests your mastered skills
-                    </p>
-                </div>
-                
-                <div class="map-shade rounded-2xl p-8 mb-8">
-                    <div class="grid lg:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4 flex items-center text-purple-400">
-                                <i class="fas fa-lock mr-3"></i>
-                                Unlocking Shade Palace
-                            </h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Shade Palace typically requires you to achieve certain milestones in Dreamy Woods before it becomes available. While specific unlock conditions can vary depending on the game version, players generally need to demonstrate basic competency by surviving for a certain duration or reaching particular progression thresholds in the default map. This unlock system ensures you have fundamental skills developed before accessing the more challenging environment.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                The unlock requirement serves as a natural skill gate, preventing new players from accidentally stumbling into a more difficult map before they're ready while giving experienced players a concrete goal to work toward. Once unlocked, Shade Palace remains permanently available, allowing you to freely choose between maps based on your mood and desired challenge level. Many players find that working toward unlocking Shade Palace provides excellent motivation during their early runs, giving them a clear objective beyond simply surviving as long as possible.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4 flex items-center text-purple-400">
-                                <i class="fas fa-moon mr-3"></i>
-                                Darker Atmosphere
-                            </h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Shade Palace presents a stark contrast to Dreamy Woods with its darker, more gothic aesthetic. The map typically features shadowy environments, purple or blue color tones, and architectural elements that create a more ominous atmosphere. This darker visual style makes the environment feel more mysterious and threatening, adding psychological weight to your survival attempts. The changed lighting and color palette also require some visual adjustment, as enemies may blend differently with the background compared to the brighter forest setting.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                The gothic palace theme creates a different mood for your runs, which many players find refreshing after spending considerable time in Dreamy Woods. Some players report that the darker environment adds tension and makes runs feel more dramatic, though this comes with the trade-off of potentially reduced visual clarity in certain situations. The atmospheric shift alone provides significant variety even before considering any mechanical differences between the maps.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800 mb-8">
-                    <h3 class="text-2xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-chart-line mr-3" style="color: var(--accent-cyan);"></i>
-                        Difficulty Considerations
-                    </h3>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Players often perceive Shade Palace as more challenging than Dreamy Woods, though the exact nature of this increased difficulty can be subtle. The darker atmosphere itself makes runs feel more intense, and any changes to enemy spawn patterns or densities contribute to a heightened sense of challenge. Some players find that certain enemy types are more difficult to spot against the darker backgrounds, requiring extra visual attention and spatial awareness to track threats effectively.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        Whether these perceived difficulty increases stem from mechanical differences or purely from the psychological impact of the darker atmosphere remains a topic of discussion among players. Regardless of the specific cause, most players agree that Shade Palace provides a fresh challenge worth tackling once you've become comfortable with the core game mechanics. The map serves as a natural progression point that tests whether you can apply your learned skills in a different environment with altered visual cues and potentially modified enemy behaviors.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(139, 92, 246, 0.2); border: 2px solid rgba(139, 92, 246, 0.5);">
-                            <i class="fas fa-trophy text-2xl text-purple-400"></i>
-                        </div>
-                        <h4 class="font-bold mb-2 text-purple-400">Achievement & Progression</h4>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Unlocking and successfully completing runs in Shade Palace provides a tangible sense of progression and achievement. The map represents a milestone that shows you've moved beyond beginner status and are ready for more advanced challenges, making it a satisfying goal for players developing their skills.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(139, 92, 246, 0.2); border: 2px solid rgba(139, 92, 246, 0.5);">
-                            <i class="fas fa-sync-alt text-2xl text-purple-400"></i>
-                        </div>
-                        <h4 class="font-bold mb-2 text-purple-400">Variety & Replayability</h4>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Having access to multiple maps significantly enhances Monster Survivors' replayability. The ability to switch between Dreamy Woods and Shade Palace based on your mood keeps the game feeling fresh and prevents the monotony that can set in when playing the same environment repeatedly over dozens of runs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Map Comparison -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-                    <span style="color: var(--accent-cyan);">Direct</span> Map Comparison
-                </h2>
-                
-                <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-green-600">
-                        <div class="flex items-center mb-6">
-                            <div class="w-16 h-16 rounded-lg flex items-center justify-center mr-4" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                                <i class="fas fa-tree text-3xl text-green-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-green-400">Dreamy Woods</h3>
-                                <p class="text-sm text-gray-400">Default Starting Map</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-bold mb-2 text-green-400">Best For:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    New players learning game mechanics, anyone testing new weapon combinations or build strategies, players who prefer higher visual clarity, and those who want a more relaxed atmosphere during their runs. The map's forgiving nature makes it ideal for practice sessions and experimentation.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-2 text-green-400">Visual Style:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    Bright natural forest environment with good contrast between characters, enemies, and background elements. The lighter color palette creates an inviting, less intimidating atmosphere that helps players stay focused on gameplay rather than fighting visual confusion.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-2 text-green-400">Skill Requirements:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    Designed to be accessible to complete beginners while still offering depth for advanced players. The baseline difficulty allows you to focus on developing fundamental skills without getting overwhelmed by excessive challenge early in your learning journey.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2 border-purple-600">
-                        <div class="flex items-center mb-6">
-                            <div class="w-16 h-16 rounded-lg flex items-center justify-center mr-4" style="background: rgba(139, 92, 246, 0.2); border: 2px solid rgba(139, 92, 246, 0.5);">
-                                <i class="fas fa-moon text-3xl text-purple-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-purple-400">Shade Palace</h3>
-                                <p class="text-sm text-gray-400">Unlockable Advanced Map</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-bold mb-2 text-purple-400">Best For:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    Players who have mastered Dreamy Woods and seek new challenges, those who prefer darker atmospheric environments, experienced players looking for variety in their runs, and anyone who enjoys the psychological intensity that comes from more ominous settings. The map rewards confident execution and adaptation.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-2 text-purple-400">Visual Style:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    Dark gothic palace aesthetic with shadowy environments and cool-toned color schemes. The dramatic atmosphere creates a more intense mood, though this comes with potentially reduced visual clarity that requires extra attention to track enemies effectively.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-2 text-purple-400">Skill Requirements:</h4>
-                                <p class="text-gray-300 text-sm leading-relaxed">
-                                    Assumes basic competency with core mechanics and comfortable execution of fundamental survival techniques. The map tests your ability to apply learned skills in a different environment with altered visual cues and potentially modified challenge parameters.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gradient-to-r from-orange-900 to-cyan-900 bg-opacity-30 rounded-2xl p-8 border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-center">Choosing Your Battlefield</h3>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The choice between Dreamy Woods and Shade Palace should be based on your current goals rather than trying to determine which map is objectively "better." When you're learning new weapons or practicing specific techniques, Dreamy Woods' familiar environment and clear visibility make it the more efficient training ground. When you want to test your mastery and experience fresh challenges, Shade Palace's different atmosphere and potentially altered difficulty provide that opportunity.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        Many experienced players alternate between maps to maintain variety in their play sessions. The environmental differences alone make each run feel somewhat fresh even when using the same build strategies. Don't feel obligated to abandon Dreamy Woods once you unlock Shade Palace—both maps have value at every skill level, and switching between them based on your mood and objectives enhances overall enjoyment of Monster Survivors.
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Enemy Types -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
-                    Understanding <span style="color: var(--accent-orange);">Enemy Types</span>
-                </h2>
-                <p class="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
-                    Monster Survivors features diverse enemy types with different behaviors, speeds, and threat levels
-                </p>
-                
-                <div class="space-y-6">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-walking mr-3" style="color: var(--accent-cyan);"></i>
-                            Basic Enemy Patterns
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Most enemies in Monster Survivors follow relatively straightforward behavioral patterns where they spawn at the edges of the playable area and move toward your character. The core challenge comes from managing large numbers of these enemies simultaneously while avoiding getting surrounded or cornered. Early in each run, enemies spawn at a manageable pace that gradually increases as time progresses, introducing more threats that require better positioning and movement to handle safely.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Enemy behavior is consistent enough that you can develop reliable strategies for handling each type once you've identified their characteristics. Fast-moving enemies require different positioning approaches than slower but more numerous variants. Some enemies move in straight lines toward you, while others may exhibit more erratic movement patterns that make them harder to predict. Learning to read these movement patterns quickly becomes second nature as you gain experience with the game.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-tachometer-alt mr-3" style="color: var(--accent-cyan);"></i>
-                            Speed Variations
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Enemy speed represents one of the most significant differentiating factors between monster types. Slower enemies are easier to avoid and kite but often appear in larger groups that can overwhelm through sheer numbers. Faster enemies spawn less frequently but pose greater individual threats since they close distance quickly and give you less reaction time to adjust your positioning. Managing the mix of fast and slow enemies simultaneously requires constant awareness and adaptive movement.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Your movement speed upgrades become particularly valuable when dealing with faster enemy variants. Without sufficient mobility, fast enemies can catch up and corner you regardless of your positioning skill. Many experienced players prioritize at least one or two movement speed upgrades specifically to maintain comfortable spacing against the quickest enemy types that appear in later stages of runs.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-shield-alt mr-3" style="color: var(--accent-cyan);"></i>
-                            Tougher Elite Variants
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            As runs progress, you'll encounter tougher elite versions of regular enemies that can absorb significantly more damage before dying. These beefier variants often have different visual indicators—such as larger size, different coloring, or special effects—that mark them as more dangerous than standard monsters. Elite enemies require sustained damage to eliminate and can become serious threats if ignored, as they'll eventually catch up and corner you while you're focused on clearing regular monsters.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Elite enemies test whether your build has sufficient damage output to handle targets that don't die instantly. Builds focused purely on area-of-effect crowd control may struggle with single tough targets, while builds with strong focused damage excel at eliminating elites quickly. The appearance of elite variants in mid-to-late game serves as a natural check on your build's effectiveness and often signals that you need to prioritize damage upgrades in upcoming level-ups.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-skull-crossbones mr-3" style="color: var(--accent-cyan);"></i>
-                            Boss Encounters
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Boss enemies represent the highest tier of threats you'll face, appearing at regular intervals throughout your run. Unlike regular enemies, bosses have unique abilities, distinctive appearances, and significantly higher health pools that require sustained engagement to defeat. Boss encounters also typically trigger the area shrink mechanic that restricts your movement space, preventing you from simply avoiding the boss indefinitely and forcing direct confrontation.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Each boss type has its own attack patterns and behavioral quirks that you'll need to learn through observation and practice. Some bosses spawn additional regular enemies during the fight, while others have special attacks or movement patterns that create specific danger zones you must avoid. Successfully defeating bosses requires applying all your fundamental skills—positioning, movement, damage optimization, and pattern recognition—under increased pressure from both the boss and the shrinking playable area. If your map or boss behavior does not match the App pages, check the <a href="/versions/" class="text-cyan-400 hover:text-cyan-300 underline">version comparison</a> before applying advice.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mt-12 tip-box rounded-xl p-8">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-brain text-2xl text-green-400"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-green-400">Adaptive Enemy Recognition</h4>
-                            <p class="text-gray-300 leading-relaxed">
-                                Developing the ability to quickly assess enemy threats becomes increasingly important as runs progress and enemy variety expands. Train yourself to immediately identify fast enemies that need priority attention versus slow enemies you can temporarily ignore. Notice which enemies are regular variants versus elite versions requiring more focus. This rapid threat assessment separates consistently successful players from those who struggle as difficulty increases. The faster you can read and react to the enemy composition around you, the better your positioning decisions become.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Map Strategy Tips -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-                    Map-Specific <span style="color: var(--accent-cyan);">Strategy Tips</span>
-                </h2>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-lightbulb mr-3" style="color: var(--accent-orange);"></i>
-                            Maximizing Dreamy Woods Success
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Use Dreamy Woods as your primary testing ground when trying new weapon combinations or unfamiliar upgrade paths. The map's forgiving nature gives you room to experiment without immediately punishing mistakes, letting you understand how different builds perform before taking them into more challenging environments. Take advantage of the clear visual design to practice advanced movement techniques like tight circling and precise kiting, as the good visibility makes it easier to execute and refine these skills.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            Don't underestimate Dreamy Woods even after becoming an experienced player. The map still provides valuable opportunities to achieve long survival times and perfect your execution. Many players set personal best records in Dreamy Woods specifically because the environment allows them to focus entirely on optimal play rather than adapting to environmental challenges.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-adjust mr-3" style="color: var(--accent-orange);"></i>
-                            Adapting to Shade Palace
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            When first transitioning to Shade Palace, allow yourself a few runs to adjust to the different visual environment before judging your performance. The darker aesthetics require some adaptation time, especially if you've spent many hours in Dreamy Woods. Consider using builds with strong automatic targeting weapons for your initial Shade Palace runs, as these require less precise enemy tracking and let you focus more on learning the map's feel.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            If you find Shade Palace's darkness genuinely hindering your ability to play effectively, don't force yourself to use it exclusively. Many successful players primarily play Dreamy Woods while occasionally visiting Shade Palace for variety. The map is meant to offer optional challenge and atmosphere variation, not to replace the default map entirely. Choose whichever environment you find most enjoyable and conducive to your preferred playstyle.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Related Guides -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12">
-                    Enhance Your <span style="color: var(--accent-cyan);">Map Mastery</span>
-                </h2>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <a href="/guides/beginner-guide/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-book-open text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Beginner's Guide</h3>
-                        <p class="text-gray-400 text-sm">Master core mechanics that apply across all maps in Monster Survivors</p>
+                <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center">
+                    <a href="/versions/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-code-branch mr-2" aria-hidden="true"></i>Compare Versions
                     </a>
-                    
-                    <a href="/versions/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-dragon text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Version Comparison</h3>
-                        <p class="text-gray-400 text-sm">Check whether your map and boss advice belongs to the App or browser version</p>
+                    <a href="/play/" class="border border-orange-600 text-orange-200 hover:border-orange-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-gamepad mr-2" aria-hidden="true"></i>Play Browser Version
                     </a>
-                    
-                    <a href="/play/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-gamepad text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Play Browser Version</h3>
-                        <p class="text-gray-400 text-sm">Open the separate browser game if this older map advice matches the version you play</p>
+                    <a href="/guides/" class="border border-green-600 text-green-200 hover:border-green-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-route mr-2" aria-hidden="true"></i>Open App Guides
                     </a>
                 </div>
             </div>
         </section>
-        
-        <!-- CTA -->
-        <section class="py-16 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    Ready to Explore <span style="color: var(--accent-orange);">Every Battlefield?</span>
-                </h2>
-                <p class="text-xl text-gray-300 mb-8">
-                    Jump into Monster Survivors and experience both Dreamy Woods and Shade Palace!
-                </p>
-                <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center">
-                    <i class="fas fa-play-circle mr-2"></i>
-                    Play Now Free
-                </a>
+
+        <section class="max-w-6xl mx-auto px-4 py-14">
+            <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+                <div class="panel p-7 border-l-4 border-orange-500">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">Do Not Mix Browser Map Names with App Progression</h2>
+                    <p class="text-gray-300 leading-relaxed mb-5">
+                        Dreamy Woods and Shade Palace are handled here as browser-version map names. App players should use App-first build, weapon and upgrade pages instead of applying old browser map advice.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="warn-item">Do not copy browser map advice into App hero, gear or upgrade decisions.</li>
+                        <li class="warn-item">Do not use Dreamy Woods or Shade Palace as App map assumptions unless your screen matches.</li>
+                        <li class="check-item">Use the version comparison when map names, weapons or progression systems differ.</li>
+                    </ul>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <a href="/versions/" class="route-card panel p-6 border-t-4 border-cyan-500">
+                        <span class="tag mb-4">NOT SURE</span>
+                        <h3 class="text-xl font-bold mb-3">My map names do not match.</h3>
+                        <p class="text-gray-400 mb-4">Compare the App and browser versions before following map or build advice.</p>
+                        <span class="text-cyan-300 font-bold text-sm">Open Version Comparison →</span>
+                    </a>
+                    <a href="/play/" class="route-card panel p-6 border-t-4 border-orange-500">
+                        <span class="tag mb-4">BROWSER</span>
+                        <h3 class="text-xl font-bold mb-3">I want the web game.</h3>
+                        <p class="text-gray-400 mb-4">Launch the separate browser version and use browser controls, loading help and online FAQs.</p>
+                        <span class="text-orange-300 font-bold text-sm">Open Play Online →</span>
+                    </a>
+                    <a href="/best-builds/" class="route-card panel p-6 border-t-4 border-green-500">
+                        <span class="tag mb-4">APP BUILD</span>
+                        <h3 class="text-xl font-bold mb-3">My App stage blocks progress.</h3>
+                        <p class="text-gray-400 mb-4">Check a working App loadout across hero, weapons, gear, skills and the current stage goal.</p>
+                        <span class="text-green-300 font-bold text-sm">Open Best Builds →</span>
+                    </a>
+                    <a href="/guides/upgrades" class="route-card panel p-6 border-t-4 border-yellow-500">
+                        <span class="tag mb-4">APP UPGRADES</span>
+                        <h3 class="text-xl font-bold mb-3">My account needs more power.</h3>
+                        <p class="text-gray-400 mb-4">Use App upgrade priorities when the problem is permanent progression, not browser map choice.</p>
+                        <span class="text-yellow-300 font-bold text-sm">Open App Upgrades →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-y border-gray-800 px-4 py-14">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">What to use instead</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-5">Choose the Page That Matches the Version</h2>
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-cyan-100">Version mismatch</h3>
+                        <p class="text-gray-400 mb-4">If names, maps, weapons or menus do not match, compare versions first.</p>
+                        <a href="/versions/" class="text-cyan-300 font-bold">Compare versions →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-green-100">App progression</h3>
+                        <p class="text-gray-400 mb-4">If an App stage stops progress, use App builds, weapons, gear and upgrade guidance.</p>
+                        <a href="/guides/" class="text-green-300 font-bold">Open App guides →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-orange-100">Browser play</h3>
+                        <p class="text-gray-400 mb-4">If you are playing in a browser frame, use the browser play page and browser FAQs.</p>
+                        <a href="/play/" class="text-orange-300 font-bold">Open Play Online →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-t border-gray-800 px-4 py-14">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Map Version Questions</h2>
+                <div class="space-y-4">
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Are Dreamy Woods and Shade Palace App maps?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Treat those names as browser-version map content on this site unless your App screen clearly shows the same map names and systems.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should browser players go?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Use the <a href="/play/" class="text-cyan-300 underline hover:text-white">Play Online</a> page for the separate browser version.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should App players go for stage or map problems?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Start with <a href="/best-builds/" class="text-cyan-300 underline hover:text-white">Best Builds</a>, then check App weapons, gear and upgrades based on the failure you are seeing.</p>
+                    </details>
+                </div>
             </div>
         </section>
     </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        Your ultimate resource for Monster Survivors strategies, guides, and tools.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
-                        <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a></li>
-                    </ul>
-                </div>
 
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Guides</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/guides/beginner-guide.html" class="hover:text-cyan-400 transition">Beginner Guide</a></li>
-                        <li><a href="/versions/" class="hover:text-cyan-400 transition">Version Comparison</a></li>
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Browser Version</a></li>
-                    </ul>
+                    <div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div>
+                    <p class="text-gray-400 text-sm">Version-safe Monster Survivors guidance for App and browser players.</p>
                 </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
-                        <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
-                    </ul>
-                </div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Correct Page</h3><ul class="space-y-2 text-gray-400"><li><a href="/versions/">Version Comparison</a></li><li><a href="/play/">Play Browser Version</a></li><li><a href="/best-builds/">App Best Builds</a></li><li><a href="/guides/upgrades">App Upgrades</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Site</h3><ul class="space-y-2 text-gray-400"><li><a href="/">Home</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-gray-500 text-sm">
-                        © 2026 MonsterSurvivors.plus - All Rights Reserved
-                    </p>
-                    <p class="text-gray-500 text-sm">
-                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors and all related assets are property of their respective owners.
-                    </p>
-                </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
     </script>
-    
 </body>
 </html>
