@@ -3,179 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Play Monster Survivors Online (Official FreezeNova Unblocked)</title>
-    <meta name="description" content="Play the official Monster Survivors game by FreezeNova directly in your browser. Free, unblocked, no downloads required. Plus, get access to our real-time strategy wiki.">
-    <meta name="keywords" content="monster survivors freezenova, play monster survivors unblocked, monster survivors official, html5 browser game, survival roguelike free">
+
+    <title>Play Monster Survivors Online (FreezeNova Browser)</title>
+    <meta name="description" content="Play the separate FreezeNova browser version of Monster Survivors online, with controls, loading help, version notes and a clear App warning.">
+    <meta name="keywords" content="monster survivors online, monster survivors freezenova, play monster survivors browser, monster survivors unblocked, monster survivors versions">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/play/">
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
 
-  gtag('config', 'G-511JG9F2HD');
-</script>
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Play Monster Survivors Online Free">
-    <meta property="og:description" content="Play now in your browser - no download needed!">
+    <meta property="og:title" content="Play Monster Survivors Online">
+    <meta property="og:description" content="Launch the separate FreezeNova browser version and check which Monster Survivors version you are playing.">
     <meta property="og:url" content="https://monstersurvivors.plus/play/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
-    <!-- Tailwind CSS -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play Monster Survivors Online">
+    <meta name="twitter:description" content="Browser play page for the separate FreezeNova version of Monster Survivors.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 34px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 34px rgba(255,107,53,.25)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
-            --text-gray: #b8b8b8;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
-            font-family: 'Orbitron', sans-serif;
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 13% 19%, rgba(0,217,255,.16), transparent 31%),
+                radial-gradient(circle at 84% 23%, rgba(255,107,53,.17), transparent 31%),
+                radial-gradient(circle at 53% 100%, rgba(168,85,247,.13), transparent 36%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
-        
-        .game-container {
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
         }
-        
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.94), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.22);
+            border-radius: 1rem;
+            backdrop-filter: blur(9px);
+        }
         .game-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            min-height: 360px;
             overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
-            border: 3px solid var(--accent-cyan);
+            border-radius: 1rem;
+            border: 3px solid rgba(0,217,255,.72);
+            box-shadow: 0 18px 45px rgba(0,217,255,.24);
+            background: #050816;
         }
-        
         .game-wrapper iframe {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
         }
-        
         .loading-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            inset: 0;
+            z-index: 10;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 10;
-            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(10,10,26,.98), rgba(15,23,41,.98));
+            transition: opacity .5s ease;
         }
-        
         .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(0, 217, 255, 0.3);
+            width: 52px;
+            height: 52px;
+            border: 4px solid rgba(0,217,255,.24);
             border-top-color: var(--accent-cyan);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
+        @keyframes spin { to { transform: rotate(360deg); } }
         .fullscreen-btn {
             position: absolute;
-            top: 16px;
-            right: 16px;
-            background: rgba(0, 217, 255, 0.9);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
+            top: 1rem;
+            right: 1rem;
             z-index: 20;
-            transition: all 0.3s;
-            border: none;
-            font-weight: bold;
+            border: 1px solid rgba(255,255,255,.22);
+            border-radius: .75rem;
+            background: rgba(0,217,255,.9);
+            color: #031018;
+            padding: .75rem 1rem;
+            font-weight: 900;
+            transition: transform .2s ease, background .2s ease;
         }
-        
         .fullscreen-btn:hover {
-            background: var(--accent-cyan);
-            transform: scale(1.05);
+            transform: translateY(-2px);
+            background: #65efff;
         }
-        
-        .control-card {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
-            border-radius: 12px;
-            padding: 20px;
+        .info-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0,217,255,.52);
+            box-shadow: 0 18px 38px rgba(0,217,255,.09);
+        }
+        .tag {
+            display: inline-flex;
+            padding: .25rem .65rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .04em;
+        }
+        .check-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f00c';
+            color: var(--accent-cyan);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .warn-item { position: relative; padding-left: 1.75rem; }
+        .warn-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f071';
+            color: var(--accent-orange);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
+        @media (max-width: 640px) {
+            .game-wrapper { min-height: 260px; }
+            .fullscreen-btn { top: .75rem; right: .75rem; padding: .6rem .8rem; }
         }
     </style>
-    
-    <!-- Structured Data -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/play/#webpage",
+        "url": "https://monstersurvivors.plus/play/",
+        "name": "Play Monster Survivors Online",
+        "description": "Browser play page for the separate FreezeNova version of Monster Survivors, with controls and version guidance.",
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
+    }
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "VideoGame",
         "name": "Monster Survivors",
-        "description": "Action-packed roguelite survival game where you battle endless waves of monsters",
+        "description": "Browser-based survival game page for playing Monster Survivors online.",
         "gamePlatform": "Web Browser",
-        "genre": ["Action", "Roguelike", "Survival"],
+        "genre": ["Action", "Survival"],
         "playMode": "SinglePlayer",
         "url": "https://monstersurvivors.plus/play/"
     }
     </script>
-
-    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Play Online", "item": "https://monstersurvivors.plus/play/"}
+        ]
+    }
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -183,315 +246,275 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Is this game completely free?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes! Monster Survivors is completely free to play in your browser. No downloads, no registration, no hidden costs."
-                }
+                "name": "Is this the VOODOO Monster Survivors App?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. This page hosts the separate browser version. App heroes, gear, Gilded Cores and permanent upgrade guides do not apply here."}
             },
             {
                 "@type": "Question",
-                "name": "Does it work on mobile?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The browser version works best on desktop. For mobile, we recommend downloading the official Monster Survivors app from the App Store or Google Play."
-                }
+                "name": "How do I control the browser game?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use WASD or arrow keys to move, click or tap upgrade choices when they appear, and use the fullscreen button if you want a larger play area."}
             },
             {
                 "@type": "Question",
-                "name": "Why is the game loading slowly?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Monster Survivors is a Unity game that needs to load assets. Initial loading may take 30-60 seconds depending on your connection. Once loaded, it runs smoothly."
-                }
+                "name": "Why does the game take time to load?",
+                "acceptedAnswer": {"@type": "Answer", "text": "The browser game loads inside an embedded frame and may need extra time on slower connections. Wait for the frame to finish loading before refreshing."}
             },
             {
                 "@type": "Question",
-                "name": "Can I save my progress?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Progress in the browser version may be saved locally. For persistent progress across devices, download the official app versions."
-                }
+                "name": "What should I do if my game looks different?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Open the version comparison page before using any guide. It explains the difference between the VOODOO App and the separate browser version."}
             }
         ]
     }
     </script>
 </head>
-<body>
-    
-    <!-- Navigation (Simplified) -->
-    <nav class="bg-opacity-95 backdrop-blur-sm py-4" style="background-color: rgba(26, 26, 46, 0.95);">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <a href="/" class="flex items-center space-x-2">
-                <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
-                <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-            </a>
-            <div class="flex space-x-6">
-                <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
-                <a href="/versions/" class="hover:text-cyan-400 transition">Versions</a>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/versions/" class="hover:text-cyan-400 transition">Versions</a>
+                    <a href="/play/" class="text-orange-300 hover:text-white transition">Play Online</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/versions/" class="block py-2">Versions</a>
+                <a href="/play/" class="block py-2 text-orange-300">Play Online</a>
             </div>
         </div>
     </nav>
-    
-    <main class="py-8 px-4">
-        <!-- Page Header -->
-        <div class="max-w-7xl mx-auto mb-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-black mb-4">
-                Play <span style="color: var(--accent-orange);">Monster Survivors</span> Online
-            </h1>
-            <p class="text-xl text-gray-300 mb-6">
-                The Official Unblocked Version by <strong class="text-white">FreezeNova</strong>. No download required!
-            </p>
-            <div class="inline-flex items-center space-x-4 bg-orange-900 bg-opacity-30 rounded-lg px-6 py-3 border border-orange-600">
-                <i class="fas fa-info-circle text-orange-400 text-2xl"></i>
-                <div class="text-left">
-                    <div class="font-bold text-sm">Free to Play</div>
-                    <div class="text-xs text-gray-400">Works on Desktop & Mobile</div>
-                </div>
-            </div>
-            <div class="mt-5 max-w-3xl mx-auto bg-gray-900 bg-opacity-70 border border-gray-700 rounded-xl p-5 text-left">
-                <div class="text-orange-300 text-xs font-bold uppercase tracking-widest mb-2">FREEZENOVA BROWSER VERSION</div>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    This page hosts the separate browser game. App heroes, gear, Gilded Cores and permanent upgrade guides do not apply here. If your game screen looks different, use the <a href="/versions/" class="text-cyan-300 underline hover:text-white">version comparison</a> first.
+
+    <main>
+        <section class="hero-bg px-4 pt-14 pb-12 border-b border-gray-800">
+            <div class="max-w-6xl mx-auto text-center">
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-orange-100 bg-orange-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-orange-700 mb-5">
+                    <i class="fas fa-gamepad" aria-hidden="true"></i>FREEZENOVA BROWSER VERSION
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                    Play <span class="text-orange-300">Monster Survivors</span> Online
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                    Launch the separate browser version, check the controls and keep App guides separate from this web-play page.
                 </p>
-            </div>
-        </div>
-        
-        <!-- Game Container -->
-        <div class="max-w-7xl mx-auto mb-12">
-            <div class="game-container">
-                <div class="game-wrapper" id="gameWrapper">
-                    <!-- Loading Overlay -->
-                    <div class="loading-overlay" id="loadingOverlay">
-                        <div class="loading-spinner mb-4"></div>
-                        <p class="text-cyan-400 font-semibold">Loading Monster Survivors...</p>
-                        <p class="text-gray-400 text-sm mt-2">This may take a few moments</p>
-                    </div>
-                    
-                    <!-- Game Iframe -->
-                    <iframe 
-                        id="gameFrame"
-                        src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
-                        allowfullscreen
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        loading="lazy"
-                        title="Monster Survivors Game"
-                    ></iframe>
-                    
-                    <!-- Fullscreen Button -->
-                    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">
-                        <i class="fas fa-expand"></i> Fullscreen
-                    </button>
-                </div>
-                
-                <!-- Game Status Info -->
-                <div class="mt-4 text-center text-sm text-gray-400">
-                    <i class="fas fa-check-circle text-green-400"></i> Game is running in your browser
-                    | <span id="loadStatus">Loading...</span>
-                </div>
-            </div>
-        </div>
-          
-        <!-- How to Play Section -->
-        <div class="max-w-7xl mx-auto mb-12">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Controls Card -->
-                <div class="control-card">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-gamepad text-3xl mr-3" style="color: var(--accent-orange);"></i>
-                        <h3 class="text-xl font-bold">Controls</h3>
-                    </div>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>
-                            <i class="fas fa-keyboard text-cyan-400 mr-2"></i> 
-                            <strong>WASD / Arrows:</strong> Move character
-                        </li>
-                        <li><i class="fas fa-hand-pointer text-cyan-400 mr-2"></i> <strong>Click:</strong> Select upgrades</li>
-                        <li><i class="fas fa-fire text-cyan-400 mr-2"></i> <strong>Auto-attack:</strong> Automatic</li>
-                        <li><i class="fas fa-gem text-cyan-400 mr-2"></i> <strong>Collect XP:</strong> Walk over gems</li>
-                    </ul>
-                </div>
-                
-                <!-- Objective Card -->
-                <div class="control-card">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-bullseye text-3xl mr-3" style="color: var(--accent-orange);"></i>
-                        <h3 class="text-xl font-bold">Objective</h3>
-                    </div>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><i class="fas fa-heart text-red-400 mr-2"></i> Survive as long as possible</li>
-                        <li><i class="fas fa-skull-crossbones text-orange-400 mr-2"></i> Defeat endless monster waves</li>
-                        <li><i class="fas fa-level-up-alt text-cyan-400 mr-2"></i> Level up and choose upgrades</li>
-                        <li><i class="fas fa-trophy text-yellow-400 mr-2"></i> Beat boss monsters</li>
-                    </ul>
-                </div>
-                
-                <!-- Tips Card -->
-                <div class="control-card">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-lightbulb text-3xl mr-3" style="color: var(--accent-orange);"></i>
-                        <h3 class="text-xl font-bold">Pro Tips</h3>
-                    </div>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><i class="fas fa-running text-cyan-400 mr-2"></i> Keep moving constantly</li>
-                        <li><i class="fas fa-gem text-cyan-400 mr-2"></i> Collect XP gems quickly</li>
-                        <li><i class="fas fa-sword text-cyan-400 mr-2"></i> Focus one weapon first</li>
-                        <li><i class="fas fa-shield-alt text-cyan-400 mr-2"></i> Prioritize survivability</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <!-- About FreezeNova & Wiki Funnel Section -->
-        <div class="max-w-7xl mx-auto mb-12">
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- SEO Content Block for FreezeNova -->
-                <article class="lg:col-span-2 bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-gray-800">
-                    <h2 class="text-2xl font-bold text-orange-400 mb-4 border-b border-gray-800 pb-2">About Monster Survivors (FreezeNova)</h2>
-                    <p class="text-gray-300 mb-4">
-                        <strong>Monster Survivors</strong> is an intense, fast-paced roguelike survival game published by the renowned HTML5 portal <strong>FreezeNova</strong>. Thrown into a chaotic post-apocalyptic arena, your objective is simple yet brutally difficult: survive infinite waves of terrifying monsters, collect experience gems, and evolve your weapons into screen-clearing arsenals of destruction.
-                    </p>
-                    <p class="text-gray-300">
-                        Unlike traditional games that require heavy downloads, this official FreezeNova version is built entirely on lightweight web technologies. This ensures you get a buttery-smooth experience natively bypassing standard network firewalls, establishing itself as the premier <em>unblocked game</em> for quick sessions.
-                    </p>
-                </article>
-
-                <!-- Funnel Links -->
-                <aside class="lg:col-span-1 space-y-4">
-                    <h3 class="text-xl font-black text-white uppercase tracking-wider mb-2 flex items-center">
-                        <i class="fas fa-book-journal-whills text-orange-500 mr-2"></i> Game Wiki
-                    </h3>
-                    
-                    <a href="/tier-list/" class="block bg-gray-800 hover:bg-gray-700 p-5 rounded-xl border border-orange-500 hover:border-orange-400 transition group relative overflow-hidden">
-                        <h4 class="text-lg font-bold text-orange-400 mb-1 z-10 relative">2026 Tier List</h4>
-                        <p class="text-xs text-gray-400 z-10 relative">Discover the absolutely broken weapon and hero combinations.</p>
-                        <i class="fas fa-trophy absolute -right-2 -bottom-4 text-6xl text-orange-400 opacity-10 group-hover:opacity-20 transition"></i>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+                    <a href="#game" class="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition shadow-glow-orange">
+                        <i class="fas fa-play mr-2" aria-hidden="true"></i>Play Now
                     </a>
-
-                    <a href="/weapons-database/" class="block bg-gray-800 hover:bg-gray-700 p-5 rounded-xl border border-cyan-500 hover:border-cyan-400 transition group relative overflow-hidden">
-                        <h4 class="text-lg font-bold text-cyan-400 mb-1 z-10 relative">Weapons Database</h4>
-                        <p class="text-xs text-gray-400 z-10 relative">Learn every evolution recipe and stat breakdown for all items.</p>
-                        <i class="fas fa-khanda absolute -right-2 -bottom-4 text-6xl text-cyan-400 opacity-10 group-hover:opacity-20 transition"></i>
+                    <a href="/versions/" class="border border-cyan-600 text-cyan-200 hover:border-cyan-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-code-branch mr-2" aria-hidden="true"></i>Compare Versions
                     </a>
+                </div>
+                <aside class="max-w-4xl mx-auto panel p-6 border-l-4 border-orange-500 text-left">
+                    <div class="flex flex-col md:flex-row gap-4 md:items-start">
+                        <i class="fas fa-triangle-exclamation text-3xl text-orange-300 mt-1" aria-hidden="true"></i>
+                        <div>
+                            <h2 class="text-xl font-bold text-orange-100 mb-2">This is not the VOODOO App.</h2>
+                            <p class="text-gray-300 leading-relaxed">
+                                This page is for the separate FreezeNova browser version. App heroes, gear, Gilded Cores, permanent upgrades and account-build guides do not apply here. If your game looks different, start with the <a href="/versions/" class="text-cyan-300 underline hover:text-white">version comparison</a>.
+                            </p>
+                        </div>
+                    </div>
                 </aside>
             </div>
-        </div>
-        
-        <!-- FAQ Section -->
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">
-                Frequently Asked <span style="color: var(--accent-cyan);">Questions</span>
-            </h2>
-            
-            <div class="space-y-4">
-                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
-                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
-                        Is this game completely free?
-                    </summary>
-                    <p class="text-gray-400 mt-3">
-                        Yes! Monster Survivors is completely free to play in your browser. No downloads, no registration, no hidden costs.
-                    </p>
-                </details>
-                
-                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
-                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
-                        Does it work on mobile?
-                    </summary>
-                    <p class="text-gray-400 mt-3">
-                        The browser version works best on desktop. For mobile, we recommend downloading the official Monster Survivors app from the App Store or Google Play.
-                    </p>
-                </details>
-                
-                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
-                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
-                        Why is the game loading slowly?
-                    </summary>
-                    <p class="text-gray-400 mt-3">
-                        Monster Survivors is a Unity game that needs to load assets. Initial loading may take 30-60 seconds depending on your connection. Once loaded, it runs smoothly.
-                    </p>
-                </details>
-                
-                <details class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 p-6">
-                    <summary class="font-bold text-lg cursor-pointer hover:text-cyan-400">
-                        Can I save my progress?
-                    </summary>
-                    <p class="text-gray-400 mt-3">
-                        Progress in the browser version may be saved locally. For persistent progress across devices, download the official app versions.
-                    </p>
-                </details>
+        </section>
+
+        <section id="game" class="max-w-7xl mx-auto px-4 py-12">
+            <div class="game-wrapper" id="gameWrapper">
+                <div class="loading-overlay" id="loadingOverlay" aria-live="polite">
+                    <div class="loading-spinner mb-4" aria-hidden="true"></div>
+                    <p class="text-cyan-300 font-bold">Loading Monster Survivors...</p>
+                    <p class="text-gray-400 text-sm mt-2">The browser frame may take a moment.</p>
+                </div>
+                <iframe
+                    id="gameFrame"
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    loading="lazy"
+                    title="Monster Survivors FreezeNova browser game">
+                </iframe>
+                <button type="button" class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">
+                    <i class="fas fa-expand mr-2" aria-hidden="true"></i>Fullscreen
+                </button>
             </div>
-        </div>
+            <div class="mt-4 text-center text-sm text-gray-400">
+                <i class="fas fa-circle-info text-cyan-300 mr-1" aria-hidden="true"></i>
+                Browser game status: <span id="loadStatus">Loading...</span>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 pb-12">
+            <div class="max-w-3xl mb-8">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Controls</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">How to Play the Browser Version</h2>
+                <p class="text-gray-400 text-lg">Use these controls for the embedded browser game only.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+                <article class="info-card panel p-6 border-t-4 border-cyan-500">
+                    <i class="fas fa-keyboard text-3xl text-cyan-300 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-3">Move</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="check-item"><strong>WASD</strong> or <strong>arrow keys</strong> move your character.</li>
+                        <li class="check-item">Keep moving to avoid being surrounded.</li>
+                    </ul>
+                </article>
+                <article class="info-card panel p-6 border-t-4 border-orange-500">
+                    <i class="fas fa-hand-pointer text-3xl text-orange-300 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-3">Choose Upgrades</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="check-item">Attacks happen automatically during the run.</li>
+                        <li class="check-item">Click or tap upgrade choices when they appear.</li>
+                    </ul>
+                </article>
+                <article class="info-card panel p-6 border-t-4 border-purple-500">
+                    <i class="fas fa-expand text-3xl text-purple-300 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-bold mb-3">Fullscreen</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="check-item">Use the fullscreen button for a larger play area.</li>
+                        <li class="check-item">Press Escape to leave fullscreen mode.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="hero-bg border-y border-gray-800 px-4 py-12">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+                <div>
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">FreezeNova version note</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">What This Page Covers</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        This page is for quick browser play. It keeps the web version separate from the VOODOO App guides so you do not copy the wrong hero, gear or upgrade advice into the wrong game.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="panel p-6 border-l-4 border-cyan-500">
+                        <h3 class="font-bold text-lg mb-4 text-cyan-100">Use this page for</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="check-item">Launching the browser game.</li>
+                            <li class="check-item">Checking keyboard and click controls.</li>
+                            <li class="check-item">Understanding loading or fullscreen behavior.</li>
+                        </ul>
+                    </div>
+                    <div class="panel p-6 border-l-4 border-orange-500">
+                        <h3 class="font-bold text-lg mb-4 text-orange-100">Do not use it for</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="warn-item">VOODOO App hero decisions.</li>
+                            <li class="warn-item">App gear, Gilded Cores or permanent upgrades.</li>
+                            <li class="warn-item">App build or account progression routes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-t border-gray-800 px-4 py-14">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Browser Version Questions</h2>
+                <div class="space-y-4">
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Is this the VOODOO Monster Survivors App?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">No. This is the separate browser version. App heroes, gear, Gilded Cores, permanent upgrades and account-build guides do not apply here.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What should I do if my game screen looks different?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Open the <a href="/versions/" class="text-cyan-300 underline hover:text-white">version comparison</a> first. It explains when to use the App guides and when to stay on browser pages.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How do I control the browser game?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Use WASD or arrow keys to move. Attacks happen automatically, and you can click or tap upgrade choices when the game offers them.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Why is the game still loading?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">The game loads inside an embedded browser frame, so slower connections or restricted networks can take extra time. Wait a moment before refreshing, and try fullscreen only after the frame responds.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <!-- Footer (Simplified) -->
-    <footer class="bg-gray-900 bg-opacity-80 py-8 px-4 mt-16">
-        <div class="max-w-7xl mx-auto text-center">
-            <p class="text-gray-500 text-sm mb-2">
-                © 2026 MonsterSurvivors.plus - All Rights Reserved
-            </p>
-            <p class="text-gray-500 text-sm">
-                <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors and all related assets are property of their respective owners.
-            </p>
-            <div class="mt-4">
-                <a href="/" class="text-cyan-400 hover:text-cyan-300 mx-2">Home</a>
-                <a href="/privacy-policy/" class="text-cyan-400 hover:text-cyan-300 mx-2">Privacy</a>
-                <a href="/contact/" class="text-cyan-400 hover:text-cyan-300 mx-2">Contact</a>
+
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div>
+                    <p class="text-gray-400 text-sm">This page hosts the separate browser version. Use the version comparison if your game looks different.</p>
+                </div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Browser Version</h3><ul class="space-y-2 text-gray-400"><li><a href="/play/">Play Online</a></li><li><a href="/versions/">Version Comparison</a></li><li><a href="/faq/how-to-play-unblocked.html">Unblocked FAQ</a></li><li><a href="/faq/is-monster-survivors-offline.html">Online / Offline FAQ</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Site</h3><ul class="space-y-2 text-gray-400"><li><a href="/">Home</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script>
-        // Hide loading overlay when iframe loads
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+
         const gameFrame = document.getElementById('gameFrame');
         const loadingOverlay = document.getElementById('loadingOverlay');
         const loadStatus = document.getElementById('loadStatus');
-        
-        gameFrame.addEventListener('load', function() {
-            setTimeout(() => {
-                loadingOverlay.style.opacity = '0';
-                loadingOverlay.style.transition = 'opacity 0.5s';
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+        if (gameFrame && loadingOverlay && loadStatus) {
+            gameFrame.addEventListener('load', () => {
                 setTimeout(() => {
-                    loadingOverlay.style.display = 'none';
-                }, 500);
-                loadStatus.textContent = 'Ready to play!';
-                loadStatus.classList.add('text-green-400');
-            }, 1000);
-        });
-        
-        // Fullscreen function
+                    loadingOverlay.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingOverlay.style.display = 'none';
+                    }, 500);
+                    loadStatus.textContent = 'Ready to play';
+                    loadStatus.classList.add('text-green-400');
+                }, 1000);
+            });
+
+            setTimeout(() => {
+                if (loadStatus.textContent === 'Loading...') {
+                    loadStatus.textContent = 'Still loading; wait for the browser frame';
+                }
+            }, 10000);
+        }
+
         function toggleFullscreen() {
             const wrapper = document.getElementById('gameWrapper');
-            const btn = document.getElementById('fullscreenBtn');
-            
+            if (!wrapper || !fullscreenBtn) return;
             if (!document.fullscreenElement) {
                 wrapper.requestFullscreen().then(() => {
-                    btn.innerHTML = '<i class="fas fa-compress"></i> Exit Fullscreen';
-                }).catch(err => {
-                    alert('Error enabling fullscreen: ' + err.message);
+                    fullscreenBtn.innerHTML = '<i class="fas fa-compress mr-2" aria-hidden="true"></i>Exit Fullscreen';
+                }).catch(() => {
+                    loadStatus.textContent = 'Fullscreen is blocked by this browser or device';
+                    loadStatus.classList.add('text-orange-300');
                 });
             } else {
                 document.exitFullscreen().then(() => {
-                    btn.innerHTML = '<i class="fas fa-expand"></i> Fullscreen';
+                    fullscreenBtn.innerHTML = '<i class="fas fa-expand mr-2" aria-hidden="true"></i>Fullscreen';
                 });
             }
         }
-        
-        // Listen for fullscreen changes
-        document.addEventListener('fullscreenchange', function() {
-            const btn = document.getElementById('fullscreenBtn');
-            if (!document.fullscreenElement) {
-                btn.innerHTML = '<i class="fas fa-expand"></i> Fullscreen';
+
+        document.addEventListener('fullscreenchange', () => {
+            if (!document.fullscreenElement && fullscreenBtn) {
+                fullscreenBtn.innerHTML = '<i class="fas fa-expand mr-2" aria-hidden="true"></i>Fullscreen';
             }
         });
-        
-        // Update load status after timeout
-        setTimeout(() => {
-            if (loadStatus.textContent === 'Loading...') {
-                loadStatus.textContent = 'Still loading... (Unity may take time)';
-            }
-        }, 10000);
     </script>
 </body>
 </html>
