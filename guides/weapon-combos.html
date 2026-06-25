@@ -3,327 +3,706 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Monster Survivors Weapon Combos & Synergy Guide (2026)</title>
-    <meta name="description" content="Discover the best weapon combos in Monster Survivors. Master weapon synergy, from the Sword + Plasma Beam to Frostbite crowd control, and dominate late-game waves.">
-    <meta name="keywords" content="monster survivors weapon combos, best weapon combo, weapon synergy, best weapon in monster survivors, sword, plasma gun, late game build">
+
+    <title>Monster Survivors Weapon Combos Guide (App, 2026)</title>
+    <meta name="description" content="Best Monster Survivors App weapon combos for general runs, bosses, hordes and farming, with role coverage, replacement rules and upgrade tie-breakers.">
+    <meta name="keywords" content="monster survivors weapon combos, best weapon combo, app loadout, plasma beam combo, chain lightning, shotgun, sniper">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/guides/weapon-combos">
-    
-    <!-- Google tag (gtag.js) -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Weapon Combos & Synergy Guide (2026)">
-    <meta property="og:description" content="Discover the best weapon combos in Monster Survivors. Master weapon synergy, from the Sword + Plasma Beam to Frostbite crowd control, and dominate late-game waves.">
+
+    <meta property="og:title" content="Monster Survivors App Weapon Combos">
+    <meta property="og:description" content="Combine crowd coverage, focused damage and a flexible safety slot without mixing in browser-game weapons.">
     <meta property="og:url" content="https://monstersurvivors.plus/guides/weapon-combos">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png"> 
-    
-    <!-- Tailwind CSS -->
+    <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg">
+    <meta property="article:modified_time" content="2026-06-25T00:00:00+08:00">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors App Weapon Combos">
+    <meta name="twitter:description" content="Role-based weapon packages for progression, bosses, hordes, safety and farming.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 30px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 30px rgba(255,107,53,.28)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
-            scroll-behavior: smooth;
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .gradient-bg {
+            background:
+                radial-gradient(circle at 13% 18%, rgba(0,217,255,.15), transparent 32%),
+                radial-gradient(circle at 86% 20%, rgba(255,107,53,.16), transparent 30%),
+                radial-gradient(circle at 52% 96%, rgba(168,85,247,.12), transparent 34%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+        }
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
+        }
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.93), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.22);
+            border-radius: 1rem;
+            backdrop-filter: blur(8px);
+        }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .combo-table {
+            width: 100%;
+            min-width: 860px;
+            border-collapse: collapse;
+        }
+        .combo-table th, .combo-table td {
+            padding: .95rem 1rem;
+            border-bottom: 1px solid rgba(75,85,99,.55);
+            text-align: left;
+            vertical-align: top;
+        }
+        .combo-table th {
+            color: #9befff;
+            background: rgba(15,23,41,.98);
             font-family: 'Orbitron', sans-serif;
+            font-size: .72rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            white-space: nowrap;
         }
-        
-        .hero-banner {
-            background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><polygon points="50,10 90,90 10,90" stroke="%23ff6b35" stroke-width="2" fill="none"/></svg>');
-            border-bottom: 2px solid var(--accent-orange);
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.15);
+        .combo-table tr:last-child td { border-bottom: 0; }
+        .combo-table tbody tr:hover { background: rgba(0,217,255,.045); }
+        .role-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: .25rem .65rem;
+            margin: .1rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(0,217,255,.3);
+            background: rgba(0,217,255,.09);
+            color: #b6f3ff;
+            font-size: .72rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
-
-        .content-card {
-            background: rgba(22, 33, 62, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 0.75rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
+        .weapon-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: .35rem .7rem;
+            border-radius: .65rem;
+            background: rgba(15,23,41,.9);
+            border: 1px solid rgba(148,163,184,.26);
+            font-size: .82rem;
+            font-weight: 700;
         }
-
-        .content-card:hover {
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 20px rgba(0, 217, 255, 0.1);
+        .combo-card, .related-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
         }
-
-        .highlight-text {
-            color: var(--accent-cyan);
-            font-weight: 600;
+        .combo-card::after, .related-card::after {
+            content: '';
+            position: absolute;
+            right: -4rem;
+            bottom: -4rem;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 9999px;
+            background: radial-gradient(circle, rgba(0,217,255,.1), transparent 68%);
+            pointer-events: none;
         }
-        
-        /* High Risk Box */
-        .risk-box {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid #ef4444;
-            padding: 1.5rem;
-            border-radius: 0 0.5rem 0.5rem 0;
-            margin-top: 2rem;
+        .combo-card:hover, .related-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0,217,255,.55);
+            box-shadow: 0 16px 32px rgba(0,217,255,.09);
         }
-
-        /* Disclaimer Box */
-        .disclaimer-box {
-            background: rgba(255, 107, 53, 0.1);
-            border: 1px dashed var(--accent-orange);
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 2rem;
+        .swap-step {
+            display: grid;
+            grid-template-columns: 2.5rem minmax(0,1fr);
+            gap: 1rem;
+            align-items: start;
         }
+        .swap-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: .8rem;
+            background: rgba(255,107,53,.16);
+            border: 1px solid rgba(255,107,53,.58);
+            color: #ffc3aa;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+        }
+        .check-item, .warning-item { position: relative; padding-left: 1.7rem; }
+        .check-item::before, .warning-item::before {
+            position: absolute;
+            left: 0;
+            top: .08rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .check-item::before { content: '\f00c'; color: var(--accent-cyan); }
+        .warning-item::before { content: '\f071'; color: #fb7185; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
     </style>
-    
-    <!-- Structured Data (Article) -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Monster Survivors Weapon Combos & Synergy Guide (2026)",
-        "description": "Learn the theory behind weapon synergy in Monster Survivors and discover the best late-game weapon combos to push through higher waves and defeat bosses.",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
+        "@id": "https://monstersurvivors.plus/guides/weapon-combos#article",
+        "headline": "Monster Survivors Weapon Combos Guide (App, 2026)",
+        "description": "Role-based weapon combinations for progression, bosses, hordes, safety and farming in the VOODOO Monster Survivors App.",
+        "mainEntityOfPage": "https://monstersurvivors.plus/guides/weapon-combos",
+        "image": "https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg",
+        "dateModified": "2026-06-25",
+        "author": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "publisher": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Monster Survivors",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Android, Windows",
+            "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
         },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://monstersurvivors.plus/images/logo.png"
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Monster Survivors App Weapon Combo Packages",
+        "numberOfItems": 6,
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "General Progression Combo"},
+            {"@type": "ListItem", "position": 2, "name": "Horde Control Combo"},
+            {"@type": "ListItem", "position": 3, "name": "Boss Pressure Combo"},
+            {"@type": "ListItem", "position": 4, "name": "Safe Progression Combo"},
+            {"@type": "ListItem", "position": 5, "name": "Resource Farming Combo"},
+            {"@type": "ListItem", "position": 6, "name": "Close-Pressure Combo"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Build a Monster Survivors App Weapon Combo",
+        "description": "Create a balanced weapon package from coverage, focused damage and a flexible final role.",
+        "step": [
+            {"@type": "HowToStep", "position": 1, "name": "Choose coverage", "text": "Start with Plasma Beam or Chain Lightning to keep normal enemies from closing every route."},
+            {"@type": "HowToStep", "position": 2, "name": "Add focused damage", "text": "Use Sniper, Shotgun or a developed Pistol to answer bosses, elites or close pressure."},
+            {"@type": "HowToStep", "position": 3, "name": "Fill the missing role", "text": "Choose the flex weapon from current rank, map layout and the exact problem that ends the run."},
+            {"@type": "HowToStep", "position": 4, "name": "Replace only the duplicate", "text": "When the build fails, keep the roles that work and replace the weapon that duplicates an already-covered job."}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best general weapon combo in Monster Survivors?",
+                "acceptedAnswer": {"@type": "Answer", "text": "A safe general core is Plasma Beam or Chain Lightning for coverage, Shotgun for close burst and Pistol as a reliable flex. Replace Shotgun with Sniper when a boss is the clear progression wall."}
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best boss weapon combo?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use Sniper with Shotgun or a developed Pistol, while keeping one Plasma Beam or Chain Lightning coverage slot so normal enemies do not block movement during the boss fight."}
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use both Plasma Beam and Chain Lightning?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use both on dense or scattered horde stages when coverage is the main problem. Remove one when the loadout lacks focused boss damage or close protection."}
+            },
+            {
+                "@type": "Question",
+                "name": "Can a lower-tier weapon belong in the best combo?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Yes. A higher-level or higher-rank weapon can be the correct flex when it fills the missing role more effectively than a fresh theoretical top-tier weapon."}
+            },
+            {
+                "@type": "Question",
+                "name": "Do weapon combos provide a hidden set bonus?",
+                "acceptedAnswer": {"@type": "Answer", "text": "This guide uses combo to mean complementary weapon roles. It does not assume an undocumented hidden bonus for equipping a particular pair."}
             }
-        },
-        "datePublished": "2026-04-02",
-        "dateModified": "2026-04-02"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "App Guides", "item": "https://monstersurvivors.plus/guides/"},
+            {"@type": "ListItem", "position": 3, "name": "Weapon Combos", "item": "https://monstersurvivors.plus/guides/weapon-combos"}
+        ]
     }
     </script>
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
-                </div>
-                
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="text-cyan-400 font-bold">Guides</a>
-                    <a href="/heroes/" class="hover:text-cyan-400 transition">Heroes</a>
-                    <a href="/weapons-database/" class="hover:text-cyan-400 transition">Weapons</a>
+                    <a href="/guides/" class="text-cyan-400">App Guides</a>
+                    <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+                    <a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a>
                     <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
                 </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/" class="block py-2">Home</a>
+                <a href="/guides/" class="block py-2 text-cyan-400">App Guides</a>
+                <a href="/tier-list/" class="block py-2">Tier List</a>
+                <a href="/best-builds/" class="block py-2">Best Builds</a>
+                <a href="/play/" class="block py-2">Play Online</a>
             </div>
         </div>
     </nav>
-    
+
     <main>
-        <!-- Breadcrumb -->
         <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="text-sm text-gray-400">
+            <nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm text-gray-400">
                 <a href="/" class="hover:text-cyan-400">Home</a>
-                <span class="mx-2">/</span>
-                <a href="/guides/" class="hover:text-cyan-400">Guides</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Weapon Combos & Synergy</span>
+                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                <a href="/guides/" class="hover:text-cyan-400">App Guides</a>
+                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                <span class="text-cyan-400">Weapon Combos</span>
             </nav>
         </div>
-        
-        <!-- Hero Banner Header -->
-        <section class="hero-banner py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-block bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">2026 Build Guide</div>
-                <h1 class="text-4xl md:text-5xl font-black mb-6 text-white leading-tight">
-                    Monster Survivors Weapon Combos & <span style="text-shadow: 0 0 20px rgba(0,217,255,0.5);" class="text-cyan-400">Synergy Guide</span> (2026)
-                </h1>
-                <p class="text-xl text-gray-300">Discover which <strong class="text-white">monster survivors weapon combos</strong> create the most devastating synergies to push high waves and melt bosses. Master your loadout today.</p>
+
+        <section class="gradient-bg px-4 pt-10 pb-14">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.12fr_.88fr] gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-cyan-200 bg-cyan-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-cyan-700 mb-5">
+                        <i class="fab fa-android" aria-hidden="true"></i> APP LOADOUT GUIDE · UPDATED JUNE 25, 2026
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5">
+                        Monster Survivors <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-orange-300">Weapon Combos</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-7">
+                        Combine one crowd answer, one focused or close answer and one flexible weapon. The best package covers different jobs instead of stacking the same kind of damage.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#combo-table" class="inline-flex items-center bg-gradient-to-r from-orange-600 to-red-600 px-6 py-3 rounded-lg font-bold shadow-glow-orange">
+                            View Combo Table <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </a>
+                        <a href="#swap-flow" class="inline-flex items-center border border-cyan-500 text-cyan-200 px-6 py-3 rounded-lg font-bold hover:bg-cyan-950 transition">
+                            Fix My Loadout
+                        </a>
+                    </div>
+                </div>
+                <figure class="glass-panel p-3 shadow-glow-cyan">
+                    <img src="/images/guides/monster-survivors-app-weapons.jpg"
+                         alt="Monster Survivors App weapon screen showing Plasma Beam, Shuriken, Sniper and Blaster"
+                         class="w-full max-h-[510px] object-contain rounded-xl"
+                         width="444" height="592">
+                    <figcaption class="text-sm text-gray-400 p-3">
+                        Persistent weapon levels and ranks can move a familiar lower-tier weapon into the correct combo.
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <!-- Guide Content -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-300">
-                
-                <p class="mb-8">
-                    In <strong>Monster Survivors</strong>, relying on just one overpowered weapon won't secure a victory in the later waves of the Shade Palace or Dreamy Woods. You need a finely-tuned loadout where each weapon complements the weaknesses of the others. Whether you're struggling to control the hordes or taking too long to kill bosses, finding the <strong>best weapon combo</strong> is the key to an effective build. 
-                </p>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2">How Weapon Synergy Works</h2>
-                <p class="mb-6">
-                    Weapon synergy in the game usually revolves around combining <strong>Area of Effect (AoE) + Crowd Control (CC) + High Single-Target DPS</strong>. For instance, you don't want four single-target weapons, because you'll get swarmed by minor mobs. Conversely, four AoE weapons will leave you dealing insufficient damage when fighting bosses.
-                </p>
-                <p class="mb-8">
-                    If you follow the 3-to-1 merge system, ensuring your synergistic weapons are also high rarity (Purple/Legendary) is essential to maximizing their potential effects.
-                </p>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Top S-Tier Weapon Combos</h2>
-                <p class="mb-8">
-                    Based on recent community meta discussions, the following combos are considered S-Tier for pushing deeply into endless waves or surviving the hardest bosses.
-                </p>
-
-                <!-- Combo 1 -->
-                <article class="content-card border-l-4 border-orange-500">
-                    <h3 class="text-2xl font-bold text-orange-400 mb-3"><i class="fas fa-fire mr-2"></i> Sword + Plasma Beam (The Meta Core)</h3>
-                    <p class="mb-4">
-                        This is universally regarded as the strongest foundation for any late-game loadout. The <a href="/weapons-database/steel-sword/" class="text-cyan-400 hover:underline">Sword</a> provides incredible close-range knockback and scaling damage to protect you from immediate threats, while the <a href="/weapons-database/plasma-gun/" class="text-cyan-400 hover:underline">Plasma Beam</a> melts massive lines of enemies from a distance.
-                    </p>
-                    <ul class="list-disc list-inside space-y-2 mb-4 ml-2">
-                        <li><strong>Primary Role:</strong> All-in-one damage and defense.</li>
-                        <li><strong>Strengths:</strong> Covers both close and long-distance engagements.</li>
-                        <li><strong>Recommended Addition:</strong> Add an explosive weapon to further disrupt enemy lines.</li>
-                    </ul>
-                </article>
-
-                <!-- Combo 2 -->
-                <article class="content-card border-l-4 border-cyan-500">
-                    <h3 class="text-2xl font-bold text-cyan-400 mb-3"><i class="fas fa-snowflake mr-2"></i> Frostbite + Rocket Launcher (Explosive Control)</h3>
-                    <p class="mb-4">
-                        When swarms get too fast, raw damage isn't always enough. Using <a href="/weapons-database/frostbite/" class="text-cyan-400 hover:underline">Frostbite (Ice Dagger)</a> allows you to freeze and clump enemies together. Once they are grouped up, the Rocket Launcher or Bouncing Bomb can unleash devastating explosive AoE damage on the immobilized pack.
-                    </p>
-                    <ul class="list-disc list-inside space-y-2 mb-4 ml-2">
-                        <li><strong>Primary Role:</strong> Maximum Crowd Control.</li>
-                        <li><strong>Strengths:</strong> Highly effective against fast, aggressive enemies.</li>
-                        <li><strong>Warning:</strong> Low single-target DPS, so ensure your other weapon slots focus on boss damage.</li>
-                    </ul>
-                </article>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2 mt-12">Best Early-Game Combos for Beginners</h2>
-                <p class="mb-4">
-                    If you're just starting and don't have Legendary items, focus on these reliable pairings:
-                </p>
-                <ul class="list-disc list-inside space-y-3 mb-8">
-                    <li><strong>Chain Lightning Ring + Axe:</strong> The Chain Lightning deals with scattered enemies passively, while the swirling Axe protects you from anything that gets too close.</li>
-                    <li><strong>Wooden Wand + Holy Cross:</strong> The Holy Cross provides a safe orbital perimeter, enabling you to use the Wand's projectiles to snipe targets from afar securely. Check our <a href="/guides/beginner-guide" class="text-cyan-400 hover:underline">Beginner's Guide</a> for more early progression tips.</li>
-                </ul>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Combos by Hero Synergy</h2>
-                <p class="mb-6">Certain heroes naturally excel with specific weapon loadouts based on their starting weapons and passives.</p>
-
-                <!-- Hero Combos -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                        <h3 class="text-xl font-bold text-purple-400 mb-2">Mage Combos</h3>
-                        <p class="mb-3 text-sm">The Mage thrives in AoE scenarios. Starting with the <a href="/weapons-database/wooden-wand/" class="text-cyan-400 hover:underline">Wand</a>, build into pure projectile synergy.</p>
-                        <p class="font-bold text-white text-sm">Best Pairing: Wand + Chain Lightning + Fire/Plasma</p>
-                    </div>
-                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                        <h3 class="text-xl font-bold text-orange-400 mb-2">Knight Combos</h3>
-                        <p class="mb-3 text-sm">Starting with a <a href="/heroes/knight/" class="text-cyan-400 hover:underline">Short Sword</a>, the Knight brings inherent physical sturdiness. Capitalize on melee interactions.</p>
-                        <p class="font-bold text-white text-sm">Best Pairing: Sword + Axe + High-Knockback Explosives</p>
-                    </div>
-                </div>
-
-                <p class="mb-8">
-                    <em>Advanced Tip:</em> The hero <a href="/heroes/arcanix/" class="text-cyan-400 hover:underline">Arcanix</a> has a passive slowing aura in later levels. Many players find that combining this inherent slow with the defensive barrier of the Axe creates an impenetrable fortress against regular mobs.
-                </p>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Weapons to Avoid Pairing</h2>
-                <p class="mb-8">
-                    Avoid committing to <strong>four purely utility weapons</strong>. Pairing Frostbite, Holy Book, and Axe together might provide a strong defensive shield, but without a high-DPS weapon like the Sword or Plasma Beam, you will be unable to kill bosses within a reasonable timeframe. Always ensure you have a dedicated boss-killing weapon in your loadout. See our <a href="/best-builds/" class="text-cyan-400 hover:underline">Best Builds</a> section for optimized loadout examples.
-                </p>
-
-                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2">FAQ: Weapon Pairings</h2>
-                <div class="space-y-4 mb-12">
-                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
-                            <span class="font-bold text-lg">What is the absolute highest damage combo?</span>
-                        </button>
-                        <div class="px-6 pb-6 text-gray-400">
-                            Currently, stacking highly-upgraded Swords alongside a Legendary Plasma Beam yields the highest consistent DPS figures, especially when facing bosses.
+        <section class="px-4 py-6">
+            <div class="max-w-6xl mx-auto">
+                <aside class="panel border-l-4 border-cyan-500 p-6">
+                    <div class="flex gap-4">
+                        <i class="fas fa-code-branch text-2xl text-cyan-300 mt-1" aria-hidden="true"></i>
+                        <div>
+                            <h2 class="text-lg font-bold mb-2">“Combo” Means Complementary Roles</h2>
+                            <p class="text-gray-300">
+                                This guide does not assume an undocumented set bonus for equipping a named pair. A strong combo works because its weapons cover crowds, focused targets, close pressure or a useful flex role together.
+                            </p>
                         </div>
                     </div>
-                     <div class="bg-gray-900 bg-opacity-50 rounded-xl border border-gray-800 overflow-hidden">
-                        <button class="accordion-btn w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 hover:bg-opacity-30 transition">
-                            <span class="font-bold text-lg">Does merging lower-tier weapons reset their synergies?</span>
-                        </button>
-                        <div class="px-6 pb-6 text-gray-400">
-                            No. Using the 3-to-1 merge system simply increases their rarity and base stats. Their fundamental synergy mechanics (like knockback or bouncing) will typically only improve exponentially at Epic and Legendary rarities.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Internal Funnel -->
-                <div class="bg-gradient-to-r from-teal-900 to-emerald-900 rounded-xl p-8 text-center shadow-lg mt-8 border border-teal-500">
-                    <h3 class="text-2xl font-bold text-white mb-4">Want More Loadout Strategies?</h3>
-                    <p class="text-teal-100 mb-6">Synergy is only half the battle. Discover which weapons reign supreme in our ranking.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="/guides/best-weapons.html" class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-3 px-6 rounded-lg transition">View Best Weapons Tier List</a>
-                    </div>
-                </div>
-
+                </aside>
             </div>
         </section>
 
+        <article class="px-4 py-12">
+            <div class="max-w-6xl mx-auto">
+                <section id="combo-table" class="mb-16">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-5">Best App Weapon Combos at a Glance</h2>
+                    <p class="text-gray-300 leading-relaxed mb-7 max-w-4xl">
+                        These are three-weapon cores, not rigid full-slot builds. Keep the core jobs intact and use any remaining choice for the current map, hero card or strongest existing weapon rank.
+                    </p>
+                    <div class="table-scroll panel">
+                        <table class="combo-table">
+                            <thead>
+                                <tr>
+                                    <th>Run Goal</th>
+                                    <th>Recommended Core</th>
+                                    <th>Jobs Covered</th>
+                                    <th>Best Flex</th>
+                                    <th>First Replacement</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>General progression</strong></td>
+                                    <td>Plasma Beam + Shotgun + Pistol</td>
+                                    <td><span class="role-pill">Coverage</span><span class="role-pill">Close burst</span><span class="role-pill">Reliable damage</span></td>
+                                    <td>Chain Lightning for scattered crowds; Sniper for a boss wall</td>
+                                    <td class="text-gray-300">Replace Pistol only when another weapon has comparable development and fills the missing role better.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Horde control</strong></td>
+                                    <td>Plasma Beam + Chain Lightning + Shuriken</td>
+                                    <td><span class="role-pill">Long lanes</span><span class="role-pill">Scattered cleanup</span><span class="role-pill">Ranged flex</span></td>
+                                    <td>Sniper or Shotgun for the focused slot</td>
+                                    <td class="text-gray-300">Remove Shuriken first when the stage becomes a boss damage check.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Boss pressure</strong></td>
+                                    <td>Sniper + Shotgun + Pistol</td>
+                                    <td><span class="role-pill">Focused damage</span><span class="role-pill">Close burst</span><span class="role-pill">Consistency</span></td>
+                                    <td>Plasma Beam or Chain Lightning is required as coverage</td>
+                                    <td class="text-gray-300">Replace the weaker focused weapon if normal enemies begin blocking movement.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Safe progression</strong></td>
+                                    <td>Plasma Beam + Chain Lightning + Pistol</td>
+                                    <td><span class="role-pill">Wide coverage</span><span class="role-pill">Cleanup</span><span class="role-pill">Low-risk baseline</span></td>
+                                    <td>Shotgun when near threats remain the problem</td>
+                                    <td class="text-gray-300">Remove one coverage weapon when bosses survive but regular waves are already safe.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Resource farming</strong></td>
+                                    <td>Chain Lightning + Plasma Beam + Pistol or Shuriken</td>
+                                    <td><span class="role-pill">Fast cleanup</span><span class="role-pill">Low-risk coverage</span><span class="role-pill">Flex</span></td>
+                                    <td>Your highest-rank reliable weapon</td>
+                                    <td class="text-gray-300">Return to a damage-focused package when the farm is no longer comfortable.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Close pressure</strong></td>
+                                    <td>Shotgun + Plasma Beam or Chain Lightning + Pistol</td>
+                                    <td><span class="role-pill">Near threats</span><span class="role-pill">Coverage</span><span class="role-pill">Consistency</span></td>
+                                    <td>Fist only when the stage and build support point-blank exposure</td>
+                                    <td class="text-gray-300">Remove Fist first when taking contact damage becomes the failure.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="packages" class="mb-16">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Combo breakdowns</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-7">Why These Weapon Packages Work</h2>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="combo-card panel p-6 border-t-4 border-orange-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Pistol</span></div>
+                            <h3 class="text-xl font-bold mb-3">Balanced Progression Core</h3>
+                            <p class="text-gray-400 mb-4">Plasma Beam keeps lanes open, Shotgun handles enemies that break through and Pistol supplies stable damage while the map is still unknown.</p>
+                            <p class="text-sm text-orange-200"><strong>Use when:</strong> learning a stage or building one dependable account route.</p>
+                        </div>
+                        <div class="combo-card panel p-6 border-t-4 border-cyan-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Shuriken</span></div>
+                            <h3 class="text-xl font-bold mb-3">Horde Coverage Core</h3>
+                            <p class="text-gray-400 mb-4">The two coverage weapons answer different enemy spacing, while Shuriken provides a ranged flex that can be replaced when a stronger focused need appears.</p>
+                            <p class="text-sm text-cyan-200"><strong>Use when:</strong> normal enemies arrive from several directions or remain scattered.</p>
+                        </div>
+                        <div class="combo-card panel p-6 border-t-4 border-red-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Sniper</span><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Pistol</span></div>
+                            <h3 class="text-xl font-bold mb-3">Focused Boss Core</h3>
+                            <p class="text-gray-400 mb-4">Sniper handles focused range, Shotgun answers close pressure and Pistol preserves consistency. The wider loadout still needs one crowd slot.</p>
+                            <p class="text-sm text-red-200"><strong>Use when:</strong> regular waves are comfortable but the boss or elite survives.</p>
+                        </div>
+                        <div class="combo-card panel p-6 border-t-4 border-green-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Pistol</span></div>
+                            <h3 class="text-xl font-bold mb-3">Safe First-Clear Core</h3>
+                            <p class="text-gray-400 mb-4">Heavy coverage reduces the number of enemies reaching the hero, while Pistol avoids relying on a specialist that may not fit the next encounter.</p>
+                            <p class="text-sm text-green-200"><strong>Use when:</strong> the map is unfamiliar or mistakes create a damage chain.</p>
+                        </div>
+                        <div class="combo-card panel p-6 border-t-4 border-purple-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Pistol / Shuriken</span></div>
+                            <h3 class="text-xl font-bold mb-3">Resource Farming Core</h3>
+                            <p class="text-gray-400 mb-4">Fast low-risk cleanup leaves room for XP Gain, Pickup Range or Luck without sacrificing the entire damage engine.</p>
+                            <p class="text-sm text-purple-200"><strong>Use when:</strong> repeating content the account already clears reliably.</p>
+                        </div>
+                        <div class="combo-card panel p-6 border-t-4 border-yellow-500">
+                            <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Coverage weapon</span><span class="weapon-chip">Reliable flex</span></div>
+                            <h3 class="text-xl font-bold mb-3">Close-Pressure Core</h3>
+                            <p class="text-gray-400 mb-4">Shotgun solves near threats, but it should not be paired with several other exposure-heavy weapons unless the map and hero can support that risk.</p>
+                            <p class="text-sm text-yellow-200"><strong>Use when:</strong> enemies repeatedly enter point-blank range before dying.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="pair-matrix" class="mb-16">
+                    <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Pairing matrix</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-5">What Each Pair Adds to the Loadout</h2>
+                    <div class="table-scroll panel">
+                        <table class="combo-table">
+                            <thead>
+                                <tr>
+                                    <th>Pair</th>
+                                    <th>Combined Job</th>
+                                    <th>Best Situation</th>
+                                    <th>Still Missing</th>
+                                    <th>Break the Pair When</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Plasma Beam + Shotgun</strong></td><td>Long-lane coverage + close burst</td><td>General progression and near-pressure maps</td><td>Focused long-range boss damage</td><td class="text-gray-300">The boss survives and close enemies are no longer a problem.</td></tr>
+                                <tr><td><strong>Plasma Beam + Sniper</strong></td><td>Crowd lanes + focused range</td><td>Boss stages with normal enemy pressure</td><td>Close protection</td><td class="text-gray-300">Enemies reach point-blank range too often.</td></tr>
+                                <tr><td><strong>Chain Lightning + Shotgun</strong></td><td>Scattered cleanup + near burst</td><td>Enemies arrive from several directions</td><td>Reliable long-range focus</td><td class="text-gray-300">The stage becomes a pure boss damage check.</td></tr>
+                                <tr><td><strong>Chain Lightning + Sniper</strong></td><td>Scattered coverage + focused damage</td><td>Open maps and mixed boss pressure</td><td>Close safety</td><td class="text-gray-300">Movement space collapses around the hero.</td></tr>
+                                <tr><td><strong>Pistol + Plasma Beam</strong></td><td>Stable baseline + broad coverage</td><td>New accounts and unknown maps</td><td>A specialist answer</td><td class="text-gray-300">A developed weapon solves the identified wall more directly.</td></tr>
+                                <tr><td><strong>Pistol + Shotgun</strong></td><td>Consistency + close protection</td><td>Early progression and tight pressure</td><td>Wide crowd coverage</td><td class="text-gray-300">Normal enemies begin filling the whole screen.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="swap-flow" class="mb-16">
+                    <p class="text-rose-300 font-bold uppercase tracking-widest text-sm mb-3">Replacement flow</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Fix the Combo Without Rebuilding Everything</h2>
+                    <div class="grid lg:grid-cols-2 gap-5">
+                        <div class="swap-step panel p-6"><span class="swap-number">1</span><div><h3 class="text-xl font-bold mb-2">Name the Failure</h3><p class="text-gray-400">Was the run ended by crowds, a boss, close threats, unsafe movement or gradual account underpower?</p></div></div>
+                        <div class="swap-step panel p-6"><span class="swap-number">2</span><div><h3 class="text-xl font-bold mb-2">Protect the Working Roles</h3><p class="text-gray-400">Do not remove the coverage weapon if it is keeping movement lanes open, or the focused weapon if it is the only boss answer.</p></div></div>
+                        <div class="swap-step panel p-6"><span class="swap-number">3</span><div><h3 class="text-xl font-bold mb-2">Remove the Duplicate</h3><p class="text-gray-400">Replace the weaker weapon among two cards doing the same job. Use current level and rank as the tie-breaker.</p></div></div>
+                        <div class="swap-step panel p-6"><span class="swap-number">4</span><div><h3 class="text-xl font-bold mb-2">Add the Missing Answer</h3><p class="text-gray-400">Choose coverage, focused damage, close protection or a developed flex according to the exact wall.</p></div></div>
+                    </div>
+                    <div class="table-scroll panel mt-6">
+                        <table class="combo-table">
+                            <thead><tr><th>Failure</th><th>Add or Strengthen</th><th>Usually Remove</th><th>Do Not Remove</th></tr></thead>
+                            <tbody>
+                                <tr><td>Crowds close every route</td><td>Plasma Beam, Chain Lightning, Attack Speed or Range</td><td>A duplicate focused or utility weapon</td><td class="text-gray-300">The only reliable close answer</td></tr>
+                                <tr><td>Boss survives</td><td>Sniper, Shotgun, Pistol, Damage or Crit</td><td>The third coverage weapon</td><td class="text-gray-300">All crowd coverage</td></tr>
+                                <tr><td>Near enemies cause deaths</td><td>Shotgun, reliable coverage or safer positioning stats</td><td>An exposure-heavy flex such as Fist</td><td class="text-gray-300">The weapon keeping outer lanes clear</td></tr>
+                                <tr><td>Build feels weak everywhere</td><td>The highest-rank broad-use weapons and permanent power</td><td>Fresh low-level specialists</td><td class="text-gray-300">Developed account investments without a clear replacement</td></tr>
+                                <tr><td>Farming run becomes unsafe</td><td>Damage, coverage and a reliable flex</td><td>Excess economy or experimental slots</td><td class="text-gray-300">The main clear engine</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="rank-rule" class="mb-16">
+                    <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-6">
+                        <div class="glass-panel p-7">
+                            <p class="text-yellow-300 font-bold uppercase tracking-widest text-sm mb-3">Upgrade tie-breaker</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-5">Keep the Developed Weapon When...</h2>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="check-item">It already fills a required crowd, focused or safety role.</li>
+                                <li class="check-item">Its current level or rank creates a clear power advantage.</li>
+                                <li class="check-item">The replacement would duplicate another weapon's job.</li>
+                                <li class="check-item">Switching would consume scarce permanent resources.</li>
+                                <li class="check-item">The run fails somewhere the new weapon does not address.</li>
+                            </ul>
+                        </div>
+                        <aside class="panel p-7 border-l-4 border-cyan-500">
+                            <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Switch check</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold mb-5">Use the New Weapon When...</h2>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="check-item">It fills the exact role missing from the combo.</li>
+                                <li class="check-item">Its current development is close enough to contribute now.</li>
+                                <li class="check-item">The outgoing weapon duplicates an existing role.</li>
+                                <li class="check-item">The map repeatedly rewards the new range or risk profile.</li>
+                                <li class="check-item">The result improves the whole package, not one isolated DPS number.</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </section>
+
+                <section id="bad-combos" class="mb-16">
+                    <p class="text-rose-300 font-bold uppercase tracking-widest text-sm mb-3">Avoid weak packages</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Weapon Combinations That Commonly Fail</h2>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Three coverage weapons and no boss answer</h3><p class="text-gray-400">The build looks excellent during normal waves and then loses to focused damage requirements.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Several focused weapons and no open lane</h3><p class="text-gray-400">Strong theoretical boss damage is useless when normal enemies block movement and contact the hero.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Shotgun plus Fist without enough safety</h3><p class="text-gray-400">Both choices can demand close exposure. Keep the package only when the hero, gear and map support that risk.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Replacing a developed Pistol for a fresh label</h3><p class="text-gray-400">A theoretical tier increase can be a real account downgrade when the new weapon has no levels or unlocked bonuses.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Farming utility during a hard push</h3><p class="text-gray-400">Economy value should not remove the damage, coverage or survival needed to pass the current gate.</p></div>
+                        <div class="panel p-6 border-l-4 border-rose-500"><h3 class="font-bold text-rose-300 mb-2">Copying browser-game pairings</h3><p class="text-gray-400">Sword, Frostbite, Axe, Wooden Wand and Holy Cross belong to separate older site content, not this App loadout.</p></div>
+                    </div>
+                </section>
+
+                <section id="checklist" class="mb-16">
+                    <div class="glass-panel p-7">
+                        <p class="text-green-300 font-bold uppercase tracking-widest text-sm mb-3">Before the next run</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-6">Weapon Combo Checklist</h2>
+                        <ul class="grid sm:grid-cols-2 gap-4 text-gray-300">
+                            <li class="check-item">At least one weapon keeps normal enemies from closing every route.</li>
+                            <li class="check-item">At least one weapon can focus elites, bosses or near threats.</li>
+                            <li class="check-item">The flex slot has a different job from the first two weapons.</li>
+                            <li class="check-item">Current levels and ranks were compared before switching.</li>
+                            <li class="check-item">The hero and gear support the combo's range and risk.</li>
+                            <li class="check-item">The package matches the map goal: push, boss, safety or farming.</li>
+                            <li class="check-item">A failed run changes only the missing role, not the whole loadout.</li>
+                            <li class="check-item">No browser-version weapon advice remains in the setup.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <aside class="panel p-6 border-l-4 border-yellow-500">
+                        <div class="flex gap-4">
+                            <i class="fas fa-rotate text-2xl text-yellow-300 mt-1" aria-hidden="true"></i>
+                            <div>
+                                <h2 class="text-xl font-bold mb-2">Version Note</h2>
+                                <p class="text-gray-400">
+                                    The official Google Play listing was updated June 12, 2026 and describes dynamic sessions that require adapting strategy. Weapon levels, ranks, available cards and effects can change, so use the current in-game preview to break close decisions between two valid combos.
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+
+                <section id="faq" class="mb-16">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">FAQ</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Monster Survivors App Weapon Combo Questions</h2>
+                    <div class="space-y-4">
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What is the best general weapon combo?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                            <p class="text-gray-400 mt-4">Use Plasma Beam or Chain Lightning for coverage, Shotgun for close burst and Pistol as the reliable flex. Replace Shotgun with Sniper when a boss becomes the clear progression wall.</p>
+                        </details>
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What is the best boss combo?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                            <p class="text-gray-400 mt-4">Use Sniper with Shotgun or a developed Pistol, while keeping Plasma Beam or Chain Lightning elsewhere in the loadout so normal enemies do not remove movement space.</p>
+                        </details>
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Should I equip both Plasma Beam and Chain Lightning?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                            <p class="text-gray-400 mt-4">Use both when dense and scattered enemies are the main threat. Remove one when regular waves are safe but bosses survive, or when close-range pressure remains uncovered.</p>
+                        </details>
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Can Pistol stay in a late-game combo?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                            <p class="text-gray-400 mt-4">Yes. A developed Pistol can remain the reliable flex until another weapon has enough investment and fills a needed role more directly.</p>
+                        </details>
+                        <details class="panel p-6">
+                            <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Do these pairings trigger a hidden combo bonus?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                            <p class="text-gray-400 mt-4">The recommendations are based on complementary roles, current investment and map fit. They do not assume an undocumented hidden set bonus.</p>
+                        </details>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="text-center mb-8">
+                        <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Complete the loadout</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-3">Use the Next Guide for the Layer You Need</h2>
+                        <p class="text-gray-400">Weapon combinations sit between individual rankings and a complete hero, gear and map build.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <a href="/guides/best-weapons" class="related-card panel p-5"><i class="fas fa-gun text-2xl text-cyan-300 mb-3" aria-hidden="true"></i><h3 class="font-bold mb-2">Best Weapons</h3><p class="text-sm text-gray-400">Compare each weapon's role, tier and upgrade value.</p></a>
+                        <a href="/best-builds/" class="related-card panel p-5"><i class="fas fa-cubes-stacked text-2xl text-orange-300 mb-3" aria-hidden="true"></i><h3 class="font-bold mb-2">Best Builds</h3><p class="text-sm text-gray-400">Add hero, equipment, skills and map direction.</p></a>
+                        <a href="/tier-list/heroes" class="related-card panel p-5"><i class="fas fa-user-shield text-2xl text-purple-300 mb-3" aria-hidden="true"></i><h3 class="font-bold mb-2">Heroes Tier List</h3><p class="text-sm text-gray-400">Match weapon distance and risk to the hero card.</p></a>
+                        <a href="/guides/upgrades" class="related-card panel p-5"><i class="fas fa-arrow-up-right-dots text-2xl text-yellow-300 mb-3" aria-hidden="true"></i><h3 class="font-bold mb-2">App Upgrades</h3><p class="text-sm text-gray-400">Plan permanent weapon, hero and gear investment.</p></a>
+                    </div>
+                </section>
+            </div>
+        </article>
     </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 mt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
-                <p class="text-gray-500 text-sm">
-                    © 2026 MonsterSurvivors.plus - All Rights Reserved <br>
-                    <span class="text-xs">Disclaimer: This is a fan-made database. Game elements belong to the original developers, FreezeNova.</span>
-                </p>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="/tier-list/" class="text-gray-500 hover:text-cyan-400 text-sm">Tier List</a>
-                    <a href="/weapons-database/" class="text-gray-500 hover:text-cyan-400 text-sm">Weapons Hub</a>
-                    <a href="/privacy-policy/" class="text-gray-500 hover:text-cyan-400 text-sm">Privacy Policy</a>
+
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div>
+                    <p class="text-gray-400 text-sm">Practical loadout guides for the Monster Survivors App.</p>
                 </div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Weapons</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/weapon-combos">Weapon Combos</a></li><li><a href="/guides/best-weapons">Best Weapons</a></li><li><a href="/tier-list/">Overall Tier List</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Builds</h3><ul class="space-y-2 text-gray-400"><li><a href="/best-builds/">Best Builds</a></li><li><a href="/tier-list/heroes">Heroes Tier List</a></li><li><a href="/guides/upgrades">App Upgrades</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">More</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/">App Guides</a></li><li><a href="/play/">Separate Browser Game</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm"><strong>Disclaimer:</strong> Fan-made guide. Game assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                const target = href && href !== '#' ? document.querySelector(href) : null;
+                if (target) {
+                    event.preventDefault();
+                    history.replaceState(null, '', href);
+                    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({top: Math.max(0, top), behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
 </body>
 </html>
