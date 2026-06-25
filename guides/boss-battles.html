@@ -1,681 +1,356 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Boss Battle Guide 2026 - Strategies & Tips | Monster Survivors</title>
-    <meta name="description" content="Master Monster Survivors boss battles with our complete guide covering spawn mechanics, movement strategies, and weapon-specific tactics for defeating every boss encounter.">
-    <meta name="keywords" content="monster survivors, boss guide, boss battles, boss strategy, boss tips, area shrink, movement guide, survival tips">
-    <link rel="canonical" href="https://monstersurvivors.plus/guides/boss-battles">
-    
-    <!-- Google Analytics -->
+
+    <title>Boss Battle Version Note | Monster Survivors</title>
+    <meta name="description" content="Boss battle advice may differ between the Monster Survivors browser version and VOODOO App. Compare versions before using build or weapon guides.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <link rel="canonical" href="https://monstersurvivors.plus/versions/">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-         crossorigin="anonymous"></script>
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Boss Battle Complete Guide">
-    <meta property="og:description" content="Learn how to defeat bosses with proven strategies and movement techniques">
-    <meta property="og:url" content="https://monstersurvivors.plus/guides/boss-battles/">
+
+    <meta property="og:title" content="Monster Survivors Boss Battle Version Note">
+    <meta property="og:description" content="Use the version comparison before applying boss, weapon or build advice across Monster Survivors versions.">
+    <meta property="og:url" content="https://monstersurvivors.plus/guides/boss-battles">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
-    
-    <!-- Tailwind CSS -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors Boss Battle Version Note">
+    <meta name="twitter:description" content="Boss battle advice depends on whether you play the VOODOO App or browser version.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
                     },
                     fontFamily: {
                         'orbitron': ['Orbitron', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 34px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 34px rgba(255,107,53,.25)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
-            --text-light: #f5f5f5;
-            --text-gray: #b8b8b8;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
         }
-        
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
-            font-family: 'Orbitron', sans-serif;
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 13% 19%, rgba(0,217,255,.16), transparent 31%),
+                radial-gradient(circle at 84% 23%, rgba(255,107,53,.17), transparent 31%),
+                radial-gradient(circle at 53% 100%, rgba(168,85,247,.13), transparent 36%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
-        
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
         }
-        
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+        .route-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
         }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
-            transition: all 0.3s ease;
+        .route-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,217,255,.52);
+            box-shadow: 0 18px 38px rgba(0,217,255,.09);
         }
-        
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        .tag {
+            display: inline-flex;
+            padding: .25rem .65rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .04em;
         }
-        
-        .icon-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
+        .check-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f00c';
+            color: var(--accent-cyan);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-        
-        .warning-box {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
-            border: 2px solid rgba(239, 68, 68, 0.3);
+        .warn-item { position: relative; padding-left: 1.75rem; }
+        .warn-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f071';
+            color: var(--accent-orange);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-        
-        .tip-box {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);
-            border: 2px solid rgba(34, 197, 94, 0.3);
-        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
     </style>
-    
-    <!-- Structured Data -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Monster Survivors Boss Battle Complete Guide",
-        "description": "Comprehensive boss battle strategies for Monster Survivors",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://monstersurvivors.plus/logo.png"
-            }
-        },
-        "datePublished": "2026-01-12",
-        "dateModified": "2026-01-12"
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/guides/boss-battles#webpage",
+        "url": "https://monstersurvivors.plus/guides/boss-battles",
+        "name": "Boss Battle Version Note",
+        "description": "A version note explaining that boss battle advice may differ between the Monster Survivors browser version and VOODOO App, with links to the version comparison, browser play page and App build guides.",
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
     }
     </script>
-    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://monstersurvivors.plus/"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Guides",
-            "item": "https://monstersurvivors.plus/guides/"
-        },{
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Boss Battle Guide",
-            "item": "https://monstersurvivors.plus/guides/boss-battles/"
-        }]
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Versions", "item": "https://monstersurvivors.plus/versions/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is this a VOODOO App boss guide?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. This page is now a version checkpoint. Use App build and weapon pages for VOODOO App progression, and use Play Online for the separate browser version."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should browser players go?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use the Play Online page for the separate browser version and browser controls."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should App players go when bosses stop progress?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use Best Builds, Best Weapons and App Upgrades to fix the loadout, weapon role or permanent progression issue that is stopping the run."}
+            }
+        ]
     }
     </script>
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/versions/" class="hover:text-cyan-400 transition">Versions</a>
+                    <a href="/play/" class="text-gray-400 hover:text-cyan-400 transition">Play Online</a>
+                    <a href="/guides/" class="hover:text-cyan-400 transition">App Guides</a>
                 </div>
-                
-                <div class="hidden md:flex space-x-8">
-                    <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                    <a href="/guides/" class="text-cyan-400">Guides</a>
-                    <a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a>
-                    <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
-                </div>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
             <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="/" class="block py-2 hover:text-cyan-400 transition">Home</a>
-                <a href="/guides/" class="block py-2 text-cyan-400">Guides</a>
-                <a href="/strategies/" class="block py-2 hover:text-cyan-400 transition">Strategies</a>
-                <a href="/play/" class="block py-2 hover:text-cyan-400 transition">Play Online</a>
+                <a href="/versions/" class="block py-2">Versions</a>
+                <a href="/play/" class="block py-2 text-gray-400">Play Online</a>
+                <a href="/guides/" class="block py-2">App Guides</a>
             </div>
         </div>
     </nav>
-    
-    <main>
-        <!-- Breadcrumb -->
-        <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="text-sm text-gray-400">
-                <a href="/" class="hover:text-cyan-400">Home</a>
-                <span class="mx-2">/</span>
-                <a href="/guides/" class="hover:text-cyan-400">Guides</a>
-                <span class="mx-2">/</span>
-                <span class="text-gray-300">Boss Battle Guide</span>
-            </nav>
-        </div>
-        
-        <!-- Hero Section -->
-        <section class="py-12 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-7xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                    Monster Survivors <span style="color: var(--accent-orange);">Boss Battle</span> Guide
-                </h1>
-                <p class="text-xl text-gray-300 mb-4">
-                    Master boss encounters with proven strategies, movement techniques, and weapon-specific tactics
-                </p>
-                <div class="inline-flex items-center space-x-2 bg-orange-900 bg-opacity-30 rounded-lg px-4 py-2 border border-orange-600">
-                    <i class="fas fa-calendar-alt text-orange-400"></i>
-                    <span class="text-sm">Updated January 2026</span>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Critical Warning -->
-        <section class="py-12 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="warning-box rounded-2xl p-8">
-                    <div class="flex items-start">
-                        <div class="w-16 h-16 rounded-lg flex items-center justify-center mr-4 flex-shrink-0" style="background: rgba(239, 68, 68, 0.2); border: 2px solid rgba(239, 68, 68, 0.5);">
-                            <i class="fas fa-exclamation-triangle text-3xl text-red-400"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold mb-3 text-red-400">Boss Encounters Are High-Stakes Moments</h2>
-                            <p class="text-gray-300 leading-relaxed">
-                                Boss battles in Monster Survivors represent the most challenging moments of any run. Unlike regular monster waves where you can recover from positioning mistakes, boss encounters combine elite enemies with restricted movement space and sustained pressure. Many promising runs end during boss fights when players underestimate the danger or fail to adapt their usual strategies. Understanding how bosses appear and preparing appropriate tactics can mean the difference between survival and game over. This guide will help you recognize boss patterns and develop the skills needed to consistently overcome these critical encounters.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Boss Spawn Mechanics -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">
-                    Understanding <span style="color: var(--accent-cyan);">Boss Spawn Mechanics</span>
-                </h2>
-                
-                <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-clock text-3xl" style="color: var(--accent-orange);"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">Periodic Boss Spawns</h3>
-                        </div>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Boss encounters occur at regular intervals throughout your Monster Survivors run, creating predictable checkpoints that test your build's effectiveness. As your run progresses, you'll notice the game periodically introducing significantly tougher enemies or enemy combinations that represent boss-level challenges. These encounters aren't random surprises but rather scheduled tests of your survival capabilities at that point in the game.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            The timing of boss appearances follows a consistent pattern, though the exact schedule can vary slightly based on game version and difficulty settings. What remains constant is that bosses arrive with enough frequency to keep pressure on your build development while giving you time between encounters to gather upgrades and strengthen your character. Learning to anticipate when the next boss is likely to appear helps you make better upgrade choices and prepare mentally for the incoming challenge.
-                        </p>
-                    </div>
-                    
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <div class="flex items-center mb-6">
-                            <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-compress-arrows-alt text-3xl" style="color: var(--accent-orange);"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold">The Area Shrink Mechanic</h3>
-                        </div>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            One of Monster Survivors' most distinctive boss mechanics is the area shrink system. When certain boss encounters begin, you'll notice the playable area starting to contract from the edges inward. This creates a visible boundary that gradually reduces the space you have available for maneuvering. The shrinking zone forces you to stay within an increasingly confined area while dealing with the boss, preventing you from simply running away to avoid danger.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            The area shrink serves multiple strategic purposes. It ensures boss fights remain intense by eliminating infinite kiting as a viable strategy, requiring you to actually engage with the boss rather than simply avoiding it indefinitely. The shrinking boundary also increases the encounter's difficulty progressively even if you successfully avoid the boss's initial attacks. As the safe zone contracts, maintaining optimal positioning becomes increasingly challenging, forcing you to make difficult decisions about when to risk damage in exchange for better attacking angles.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="tip-box rounded-xl p-8">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-lightbulb text-2xl text-green-400"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-green-400">Visual Cues for Boss Encounters</h4>
-                            <p class="text-gray-300 leading-relaxed">
-                                Pay attention to on-screen indicators and environmental changes that signal an approaching boss. Many players report seeing visual changes to the screen edges or experiencing shifts in the background music when a boss encounter begins. These cues give you a brief moment to mentally prepare and position yourself advantageously before the boss fully spawns and the area begins shrinking. Training yourself to recognize these warning signs can significantly improve your boss encounter success rate.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Universal Boss Strategies -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">
-                    Universal <span style="color: var(--accent-orange);">Boss Strategies</span>
-                </h2>
-                
-                <div class="space-y-8">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-crosshairs mr-3" style="color: var(--accent-cyan);"></i>
-                            Focus on the Boss, Not the Adds
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            During boss encounters, regular enemies often continue spawning alongside the boss itself. While your instinct might be to clear these additional monsters first, successful players typically prioritize damaging the boss directly. Regular enemies can be managed through positioning and incidental damage from your weapons' area effects, but the boss represents the primary threat that must be eliminated to end the encounter and stop the area shrink.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            This doesn't mean completely ignoring regular enemies, but rather being strategic about how you handle them. Position yourself so your attacks naturally hit both the boss and nearby monsters when possible. Use the regular enemies to your advantage by maintaining them as a buffer between you and the boss, or by collecting the experience gems they drop to potentially trigger level-ups during the fight. The key is keeping your primary attention on the boss's position and attack patterns while letting your automated weapons handle crowd control organically.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-shield-alt mr-3" style="color: var(--accent-cyan);"></i>
-                            Survivability Over Damage
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            The most common mistake players make during boss encounters is overcommitting to offensive positioning in pursuit of maximum damage. While dealing damage is obviously necessary to defeat the boss, staying alive must always be your first priority. A boss fight that takes longer because you played conservatively is still a victory, whereas a fight that ends with your death because you took unnecessary risks is always a failure regardless of how much damage you dealt.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            This defensive mindset should influence every decision during boss encounters. When you must choose between a positioning option that maximizes your damage output but increases your risk of taking hits versus a safer position that reduces your offensive potential, always default to safety unless you're certain you can execute the risky option flawlessly. Boss encounters naturally last longer than regular combat, giving you time to chip away at the boss's health gradually. Trust in the damage you're already dealing and resist the temptation to force faster results through dangerous plays.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-eye mr-3" style="color: var(--accent-cyan);"></i>
-                            Observe Before Engaging Aggressively
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            When a boss first appears, resist the urge to immediately rush toward it or establish an aggressive position. Instead, spend the first several seconds observing how the boss moves and attacks. Different bosses have different behavior patterns, attack telegraphs, and movement speeds. Some bosses charge directly at you, others move erratically or in patterns, and some have special abilities that create danger zones around them. Identifying these characteristics early lets you adapt your strategy appropriately.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            This observation phase is particularly important during your first encounter with a new boss type. Use the initial moments when the area is still relatively large to study the boss's behavior from a safe distance. Notice how it telegraphs attacks, whether it has vulnerable periods after certain moves, and how it responds to your positioning changes. This reconnaissance helps you avoid preventable damage later in the fight when the shrinking area forces closer engagement. Even experienced players benefit from a brief assessment period at the start of each boss encounter to refresh their memory of that particular boss's patterns.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-arrows-alt mr-3" style="color: var(--accent-cyan);"></i>
-                            Manage the Shrinking Zone Actively
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            As the playable area contracts during boss fights, many players make the mistake of ignoring the boundary until it becomes critically small. Effective boss fighters maintain constant awareness of the shrinking zone's current size and plan their movements accordingly. Don't wait until you're forced into uncomfortable positioning by the boundary; instead, proactively adjust your position as the zone shrinks to ensure you're always in favorable areas.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed">
-                            A useful technique is to fight near the center of the remaining safe zone rather than near its edges. This gives you maximum movement options in all directions and prevents the shrinking boundary from suddenly cutting off your escape routes. As the zone contracts, gradually migrate toward the new center while maintaining your preferred distance from the boss. This conscious zone management prevents scenarios where you find yourself trapped between the boss and the boundary with no good movement options, which often results in taking significant damage or dying.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Movement Techniques -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    Advanced <span style="color: var(--accent-cyan);">Movement Techniques</span>
-                </h2>
-                
-                <div class="grid lg:grid-cols-3 gap-8">
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-redo-alt text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-center">Circular Kiting</h3>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Circular kiting involves moving in large circles around the boss while maintaining a consistent distance. This technique works particularly well against bosses that move in predictable patterns or have slower movement speeds. By constantly circling, you create a stable geometric relationship between yourself and the boss, making it easier to predict where attacks will occur and maintain optimal spacing. The circular motion also helps you naturally avoid regular enemies while your weapons automatically attack anything that enters range. This is generally the safest and most beginner-friendly movement pattern for boss encounters.
-                        </p>
-                    </div>
-                    
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-random text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-center">Erratic Dodging</h3>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            Erratic dodging means frequently changing direction in unpredictable patterns to avoid both boss attacks and regular enemy swarms. This technique is more demanding than circular kiting but can be more effective against bosses with targeted attacks or abilities that punish predictable movement. The key is varying your movement enough to avoid becoming an easy target while still maintaining general awareness of where you are relative to the boss and zone boundary. This approach requires good spatial awareness and quick reflexes but becomes very powerful once mastered, especially when combined with movement speed upgrades.
-                        </p>
-                    </div>
-                    
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-walking text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-center">Controlled Approach</h3>
-                        <p class="text-gray-300 text-sm leading-relaxed">
-                            The controlled approach technique involves moving toward the boss in measured increments, dealing damage, then retreating before the boss can retaliate effectively. This hit-and-run style is particularly useful for melee weapon builds that need to get close but don't want to remain in danger zones for extended periods. Move in to attack when you identify safe windows, then immediately back away before the boss's counter-attacks land. This technique requires good timing and awareness of boss attack patterns but maximizes your damage while minimizing risk. It works best when combined with good observation of boss telegraphs and behaviors.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mt-12 tip-box rounded-xl p-8">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0" style="background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.5);">
-                            <i class="fas fa-running text-2xl text-green-400"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-green-400">Movement Speed Matters</h4>
-                            <p class="text-gray-300 leading-relaxed">
-                                All these movement techniques become significantly more effective when you have movement speed upgrades. If you're consistently struggling with boss encounters, consider prioritizing movement speed bonuses in your upgrade choices. Faster movement gives you more reaction time, lets you maintain safer distances more easily, and provides more options for dodging attacks. Many successful players consider movement speed one of the most valuable stats for surviving difficult boss encounters, sometimes even more important than raw damage increases.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Weapon-Specific Tactics -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    Weapon-Specific <span style="color: var(--accent-orange);">Boss Tactics</span>
-                </h2>
-                
-                <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                    <!-- Steel Sword Tactics -->
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2" style="border-color: var(--accent-orange);">
-                        <div class="flex items-center mb-6">
-                            <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                                <img src="https://monstersurvivors.plus/images/Steel-Sword.png" 
-                                    alt="Steel Sword Strategy" 
-                                    class="w-full h-full object-contain p-2">
-                            </div>
-                            <h3 class="text-2xl font-bold" style="color: var(--accent-orange);">Steel Sword Approach</h3>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Timing Your Engagements</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    Using the Steel Sword against bosses requires patience and careful timing. You need to identify safe windows when you can move close to the boss without taking excessive damage. Watch for moments when the boss has just finished an attack or is in a recovery animation, then quickly close distance to land several hits before retreating. This hit-and-run pattern maximizes your damage output while minimizing the time you spend in the boss's danger zone. Avoid the temptation to simply charge in and stay close throughout the entire fight, as sustained proximity to most bosses will quickly drain your health.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Using Regular Enemies as Cover</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    One advantage of the Steel Sword during boss fights is its ability to clear regular enemies very quickly as you move through them. Use this capability strategically by positioning regular monster groups between yourself and the boss. As you fight through the regular enemies toward the boss, your sword automatically eliminates them while you advance. This creates momentary safe zones and also generates experience gems that might trigger level-ups. The key is maintaining enough distance from the boss that you can retreat safely after pushing through the regular enemies if the situation becomes dangerous.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Positioning in the Late Shrink Phase</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    As the area contracts to its smallest size, Steel Sword users must be especially careful about positioning. The limited space means you'll inevitably end up closer to the boss than you might prefer. Focus on maintaining mobile positioning near the center of the remaining zone, constantly circling to avoid being cornered. The tight quarters actually work somewhat in your favor since the boss will always be within your weapon's range, but you must be hyper-vigilant about not getting trapped. Consider this phase a test of your movement fundamentals rather than trying to force aggressive damage windows.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Wooden Wand Tactics -->
-                    <div class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-8 border-2" style="border-color: var(--accent-cyan);">
-                        <div class="flex items-center mb-6">
-                            <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                            <img src="https://monstersurvivors.plus/images/Wooden-Wand.png" 
-                                alt="Wooden Wand Strategy" 
-                                class="w-full h-full object-contain p-2">
-                        </div>
-                            <h3 class="text-2xl font-bold" style="color: var(--accent-cyan);">Wooden Wand Approach</h3>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Maximizing Distance Early</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    The Wooden Wand's ranged advantage is most powerful during the early phases of boss encounters when the playable area is still large. Use this space to establish maximum distance from the boss while still landing your projectiles consistently. This safe distance gives you ample time to observe the boss's movement patterns and attack behaviors without immediate danger. Your projectiles will continue damaging the boss from range while you focus on positioning and dodging. Take advantage of this phase to deal as much damage as possible before the shrinking zone forces closer engagement later.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Circular Kiting Optimization</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    Wooden Wand users should master circular kiting as their primary boss fighting technique. The ranged nature of your weapon means you never need to close distance voluntarily, allowing you to maintain perfect circular patterns around the boss throughout the entire encounter. Keep the boss at the edge of your screen or just inside it, moving in smooth circles that naturally dodge both the boss's attacks and incoming regular enemies. Your projectiles automatically target the boss while you focus entirely on movement, creating a very stable and safe combat rhythm that consistently wears down boss health over time.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-bold mb-3 text-lg">Managing the Final Zone Compression</h4>
-                                <p class="text-gray-300 leading-relaxed">
-                                    When the playable area shrinks to its minimum size, Wooden Wand users lose their primary advantage of range since the boss will inevitably be close regardless of your positioning. During this phase, shift your focus to tight, controlled movements that keep you on the opposite side of the small remaining space from the boss whenever possible. Even small amounts of distance matter when space is limited. Continue moving in patterns (smaller circles or side-to-side movements) rather than stopping, as momentum makes it easier to dodge attacks. Your consistent projectile damage will eventually finish off the boss even in these cramped conditions if you can avoid taking fatal damage during the final moments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gradient-to-r from-orange-900 to-cyan-900 bg-opacity-30 rounded-2xl p-8 border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-center">Common Ground Between Both Weapons</h3>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Despite their different approaches, both Steel Sword and Wooden Wand users should focus on the same core principles during boss fights. Survival always takes priority over damage optimization. Observe boss patterns rather than button-mashing or panic-moving. Maintain awareness of the shrinking zone's current size and position. Manage regular enemies through positioning rather than making them your primary focus. And most importantly, stay patient and trust that consistent damage application will eventually defeat the boss rather than taking unnecessary risks to try to end the fight faster.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        Both weapons benefit tremendously from having appropriate upgrades before entering difficult boss encounters. Prioritize upgrades that improve your survivability and consistency rather than purely offensive bonuses. Movement speed, health increases, damage reduction, and weapon attack speed all help with boss encounters regardless of which starting weapon you chose. The specific tactics may differ between melee and ranged approaches, but the strategic thinking and core survival skills remain consistent across all weapon types.
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Preparation Tips -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
-                    Preparing for <span style="color: var(--accent-cyan);">Boss Encounters</span>
-                </h2>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-heartbeat mr-3" style="color: var(--accent-orange);"></i>
-                            Health Management
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            Try to enter boss encounters at or near full health whenever possible. If you notice you're low on health and suspect a boss is approaching based on timing, play more conservatively with regular enemies to avoid taking unnecessary damage. Some players even intentionally slow their progression slightly before expected boss spawn times to allow their health to naturally regenerate if they have healing upgrades. Starting a boss fight with low health puts you at a severe disadvantage since even small mistakes can become fatal. Managing your health between boss encounters is just as important as your performance during the encounters themselves.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-level-up-alt mr-3" style="color: var(--accent-orange);"></i>
-                            Level-Up Timing
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            Pay attention to your experience bar as you approach boss spawn times. Ideally, you want to level up either just before the boss appears or during the early stages of the boss fight. A well-timed level-up fully restores your health and gives you a new upgrade, both of which significantly improve your chances of surviving the encounter. If you're close to leveling up when a boss spawns, consider focusing more on collecting experience gems from regular enemies rather than immediately engaging the boss. The temporary health restoration and upgrade bonus are often worth the brief delay in starting your assault on the boss.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-chart-line mr-3" style="color: var(--accent-orange);"></i>
-                            Build Assessment
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            Before each boss encounter, quickly assess whether your current build has major weaknesses that might make the fight especially difficult. Are you lacking defensive upgrades? Is your damage output struggling to kill regular enemies quickly? Have you neglected movement speed improvements? Identifying these gaps helps you make better upgrade choices during the fight if you level up, and also helps you adjust your tactics accordingly. A build with high damage but low survivability requires more cautious play, while a tanky build with lower damage means accepting longer fight durations but having more room for positioning mistakes.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-800">
-                        <h3 class="text-xl font-bold mb-4 flex items-center">
-                            <i class="fas fa-brain mr-3" style="color: var(--accent-orange);"></i>
-                            Mental Preparation
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            Boss encounters are high-pressure situations that can trigger panic responses if you're not mentally prepared. Before engaging, take a brief moment to remind yourself of your core strategy and movement plan. Consciously decide to stay calm and execute your technique rather than reacting frantically. Many boss fight failures occur not because the boss is too difficult, but because players panic and abandon their strategy, leading to poor positioning and preventable damage. Maintaining composure throughout the encounter dramatically improves your survival chances. If you do make a mistake, refocus immediately rather than letting frustration compound your problems.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Related Content -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12">
-                    Level Up Your <span style="color: var(--accent-cyan);">Boss Fighting Skills</span>
-                </h2>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <a href="/guides/beginner-guide/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-book-open text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Beginner's Guide</h3>
-                        <p class="text-gray-400 text-sm">Master core mechanics and fundamentals before taking on challenging boss encounters</p>
-                    </a>
-                    
-                    <a href="/versions/" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-swords text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Version Comparison</h3>
-                        <p class="text-gray-400 text-sm">Check whether you should use App guides or browser-version notes before applying weapon advice</p>
-                    </a>
 
-                    <a href="/guides/upgrades.html" class="card-hover bg-gray-900 bg-opacity-50 rounded-xl p-6 border border-gray-800 hover:border-cyan-500">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-hammer text-3xl" style="color: var(--accent-orange);"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Upgrade Guide</h3>
-                        <p class="text-gray-400 text-sm">Optimize your upgrades for maximum boss encounter success</p>
+    <main>
+        <section class="hero-bg px-4 pt-14 pb-16 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-orange-100 bg-orange-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-orange-700 mb-5">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>VERSION NOTE
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                    Boss Battle Advice Depends on Your <span class="text-orange-300">Monster Survivors Version</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                    This old boss-battle topic can mix browser mechanics with App progression. Check your version before using boss, weapon or build advice.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center">
+                    <a href="/versions/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-code-branch mr-2" aria-hidden="true"></i>Compare Versions
+                    </a>
+                    <a href="/play/" class="border border-orange-600 text-orange-200 hover:border-orange-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-gamepad mr-2" aria-hidden="true"></i>Play Browser Version
+                    </a>
+                    <a href="/best-builds/" class="border border-green-600 text-green-200 hover:border-green-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-cubes-stacked mr-2" aria-hidden="true"></i>App Best Builds
                     </a>
                 </div>
             </div>
         </section>
-        
-        <!-- CTA -->
-        <section class="py-16 px-4" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    Ready to Master <span style="color: var(--accent-orange);">Boss Encounters?</span>
-                </h2>
-                <p class="text-xl text-gray-300 mb-8">
-                    Practice these strategies in-game and develop your boss fighting skills!
-                </p>
-                <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center">
-                    <i class="fas fa-play-circle mr-2"></i>
-                    Play Monster Survivors Now
-                </a>
+
+        <section class="max-w-6xl mx-auto px-4 py-14">
+            <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+                <div class="panel p-7 border-l-4 border-orange-500">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">Do Not Apply Old Boss Advice Across Versions</h2>
+                    <p class="text-gray-300 leading-relaxed mb-5">
+                        Boss behavior, weapon roles and upgrade priorities can change depending on whether you are playing the separate browser game or building a VOODOO App account. Use this page as a checkpoint, not as a detailed boss route.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="warn-item">Do not copy browser-only boss tactics into App gear, hero or upgrade decisions.</li>
+                        <li class="warn-item">Do not follow old Steel Sword or Wooden Wand boss advice for App weapon rankings.</li>
+                        <li class="check-item">Use App build and weapon pages when a VOODOO App boss or stage blocks progression.</li>
+                    </ul>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <a href="/versions/" class="route-card panel p-6 border-t-4 border-cyan-500">
+                        <span class="tag mb-4">NOT SURE</span>
+                        <h3 class="text-xl font-bold mb-3">My boss screen looks different.</h3>
+                        <p class="text-gray-400 mb-4">Compare the App and browser versions before following boss or weapon advice.</p>
+                        <span class="text-cyan-300 font-bold text-sm">Open Version Comparison →</span>
+                    </a>
+                    <a href="/play/" class="route-card panel p-6 border-t-4 border-orange-500">
+                        <span class="tag mb-4">BROWSER</span>
+                        <h3 class="text-xl font-bold mb-3">I want the web game.</h3>
+                        <p class="text-gray-400 mb-4">Launch the separate browser version and use browser controls, loading help and online FAQs.</p>
+                        <span class="text-orange-300 font-bold text-sm">Open Play Online →</span>
+                    </a>
+                    <a href="/best-builds/" class="route-card panel p-6 border-t-4 border-green-500">
+                        <span class="tag mb-4">APP BUILD</span>
+                        <h3 class="text-xl font-bold mb-3">My App build fails at bosses.</h3>
+                        <p class="text-gray-400 mb-4">Check hero, weapon roles, gear stats and map goals as one loadout.</p>
+                        <span class="text-green-300 font-bold text-sm">Open Best Builds →</span>
+                    </a>
+                    <a href="/guides/best-weapons" class="route-card panel p-6 border-t-4 border-purple-500">
+                        <span class="tag mb-4">APP WEAPONS</span>
+                        <h3 class="text-xl font-bold mb-3">My boss damage is too low.</h3>
+                        <p class="text-gray-400 mb-4">Use App weapon roles instead of old browser weapon tactics.</p>
+                        <span class="text-purple-300 font-bold text-sm">Open App Best Weapons →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-y border-gray-800 px-4 py-14">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">What to use instead</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-5">Choose the Page That Matches the Problem</h2>
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-cyan-100">Version mismatch</h3>
+                        <p class="text-gray-400 mb-4">If names, maps, weapons or boss behavior do not match, compare versions first.</p>
+                        <a href="/versions/" class="text-cyan-300 font-bold">Compare versions →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-green-100">App progression wall</h3>
+                        <p class="text-gray-400 mb-4">If the App run fails at bosses, fix the loadout direction before changing one part.</p>
+                        <a href="/best-builds/" class="text-green-300 font-bold">Open App builds →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-orange-100">Browser play</h3>
+                        <p class="text-gray-400 mb-4">If you are playing in a browser frame, stay on browser pages and controls.</p>
+                        <a href="/play/" class="text-orange-300 font-bold">Open Play Online →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-t border-gray-800 px-4 py-14">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Boss Battle Version Questions</h2>
+                <div class="space-y-4">
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Should App players use this as a boss guide?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">No. Use App Best Builds, Best Weapons and Upgrades when App bosses or stages block progression.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should browser players go?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Use the <a href="/play/" class="text-cyan-300 underline hover:text-white">Play Online</a> page for the separate browser version.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How do I know which boss advice applies?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Start with the <a href="/versions/" class="text-cyan-300 underline hover:text-white">version comparison</a>. Then use App pages or browser pages according to the version you are actually playing.</p>
+                    </details>
+                </div>
             </div>
         </section>
     </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);"></i>
-                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        Your ultimate resource for Monster Survivors strategies, guides, and tools.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
-                        <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a></li>
-                    </ul>
-                </div>
 
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Guides</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/guides/beginner-guide.html" class="hover:text-cyan-400 transition">Beginner Guide</a></li>
-                        <li><a href="/versions/" class="hover:text-cyan-400 transition">Version Comparison</a></li>
-                        <li><a href="/guides/upgrades.html" class="hover:text-cyan-400 transition">Upgrade Guide</a></li>
-                    </ul>
+                    <div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div>
+                    <p class="text-gray-400 text-sm">Version-safe Monster Survivors guidance for App and browser players.</p>
                 </div>
-                
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
-                        <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
-                    </ul>
-                </div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Correct Page</h3><ul class="space-y-2 text-gray-400"><li><a href="/versions/">Version Comparison</a></li><li><a href="/play/">Play Browser Version</a></li><li><a href="/best-builds/">App Best Builds</a></li><li><a href="/guides/best-weapons">App Best Weapons</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Site</h3><ul class="space-y-2 text-gray-400"><li><a href="/">Home</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-gray-500 text-sm">
-                        © 2026 MonsterSurvivors.plus - All Rights Reserved
-                    </p>
-                    <p class="text-gray-500 text-sm">
-                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors and all related assets are property of their respective owners.
-                    </p>
-                </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
     </script>
-
 </body>
 </html>
