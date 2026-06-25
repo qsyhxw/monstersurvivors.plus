@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monster Survivors Versions: App vs Browser Game</title>
+    <meta name="description" content="Compare the VOODOO Monster Survivors App with the separate FreezeNova browser version, then choose the right guides, builds, weapons and play page.">
+    <meta name="keywords" content="monster survivors versions, monster survivors app vs browser, monster survivors freezenova, voodoo monster survivors, monster survivors app guide">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://monstersurvivors.plus/versions/">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Monster Survivors Versions: App vs Browser Game">
+    <meta property="og:description" content="Check whether you are playing the VOODOO App or the separate FreezeNova browser version before following builds, weapons or upgrade guides.">
+    <meta property="og:url" content="https://monstersurvivors.plus/versions/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors App vs Browser Version">
+    <meta name="twitter:description" content="Use the right Monster Survivors guides by checking which version you are playing.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
+                        'accent-orange': '#ff6b35',
+                        'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 34px rgba(0,217,255,.22)',
+                        'glow-orange': '0 0 34px rgba(255,107,53,.25)',
+                        'glow-gold': '0 0 34px rgba(247,201,72,.16)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
+            --accent-orange: #ff6b35;
+            --accent-cyan: #00d9ff;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 13% 19%, rgba(0,217,255,.16), transparent 31%),
+                radial-gradient(circle at 84% 23%, rgba(255,107,53,.17), transparent 31%),
+                radial-gradient(circle at 53% 100%, rgba(168,85,247,.13), transparent 36%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+        }
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
+        }
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.94), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.22);
+            border-radius: 1rem;
+            backdrop-filter: blur(9px);
+        }
+        .guide-card, .route-card, .version-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
+        }
+        .guide-card:hover, .route-card:hover, .version-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,217,255,.52);
+            box-shadow: 0 18px 38px rgba(0,217,255,.09);
+        }
+        .number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: .75rem;
+            background: rgba(0,217,255,.1);
+            border: 1px solid rgba(0,217,255,.38);
+            color: #b6f3ff;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+        }
+        .tag {
+            display: inline-flex;
+            padding: .25rem .65rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .04em;
+        }
+        .check-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f00c';
+            color: var(--accent-cyan);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .warn-item { position: relative; padding-left: 1.75rem; }
+        .warn-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f071';
+            color: var(--accent-orange);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+        .comparison-table th {
+            color: #e5faff;
+            font-size: .78rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            background: rgba(0,217,255,.08);
+        }
+        .comparison-table th, .comparison-table td {
+            border-bottom: 1px solid rgba(75,85,99,.72);
+            padding: 1rem;
+            vertical-align: top;
+        }
+        .comparison-table tr:last-child td { border-bottom: 0; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/versions/#webpage",
+        "url": "https://monstersurvivors.plus/versions/",
+        "name": "Monster Survivors Versions: App vs Browser Game",
+        "description": "A version comparison page that helps players choose the correct Monster Survivors App guides or the separate browser play page.",
+        "isPartOf": {"@id": "https://monstersurvivors.plus/#website"},
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "https://monstersurvivors.plus/versions/#article",
+        "headline": "Monster Survivors App vs Browser Version",
+        "description": "Compare the VOODOO Monster Survivors App with the separate FreezeNova browser version before using builds, weapons, gear or upgrade advice.",
+        "author": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "publisher": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "mainEntityOfPage": {"@id": "https://monstersurvivors.plus/versions/#webpage"},
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://monstersurvivors.plus/versions/#voodoo-app",
+        "name": "Monster Survivors",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Android",
+        "author": {"@type": "Organization", "name": "VOODOO"},
+        "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Versions", "item": "https://monstersurvivors.plus/versions/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Are the VOODOO App and the browser game the same Monster Survivors?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No. This site treats the VOODOO App and the separate browser game as different versions. App guides cover package games.rivvy.monstersurvivors. The Play Online page is for the browser version."}
+            },
+            {
+                "@type": "Question",
+                "name": "Which guides should I use for heroes, gear, Gilded Cores and upgrades?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use the App guides if your game has the VOODOO App progression, including heroes, gear, Gilded Cores or permanent upgrade decisions."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should I go if I only want to play in a browser?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use the Play Online page for the separate browser version. The App build, gear and upgrade pages do not apply to that browser game."}
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/guides/" class="hover:text-cyan-400 transition">App Guides</a>
+                    <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+                    <a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a>
+                    <a href="/guides/best-weapons" class="hover:text-cyan-400 transition">Weapons</a>
+                    <a href="/play/" class="text-gray-400 hover:text-cyan-400 transition">Play Online</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/guides/" class="block py-2">App Guides</a>
+                <a href="/tier-list/" class="block py-2">Tier List</a>
+                <a href="/best-builds/" class="block py-2">Best Builds</a>
+                <a href="/guides/best-weapons" class="block py-2">Weapons</a>
+                <a href="/play/" class="block py-2 text-gray-400">Play Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-bg px-4 pt-14 pb-16 border-b border-gray-800">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-cyan-100 bg-cyan-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-cyan-700 mb-5">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>VERSION CHECK · UPDATED JUNE 25, 2026
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                        Monster Survivors <span class="text-cyan-300">App vs Browser</span> Version
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+                        Check which Monster Survivors you are playing before following a build, weapon, hero, gear or upgrade guide. The VOODOO App and the FreezeNova browser version use different routes.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 mb-7">
+                        <a href="#quick-check" class="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition shadow-glow-orange">
+                            <i class="fas fa-list-check mr-2" aria-hidden="true"></i>Check My Version
+                        </a>
+                        <a href="/guides/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                            <i class="fas fa-route mr-2" aria-hidden="true"></i>Browse App Guides
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-400">
+                        <span><i class="fas fa-check text-cyan-300 mr-2" aria-hidden="true"></i>Stops mixed-version advice</span>
+                        <span><i class="fas fa-check text-cyan-300 mr-2" aria-hidden="true"></i>Routes you to the right page</span>
+                        <span><i class="fas fa-check text-cyan-300 mr-2" aria-hidden="true"></i>Works before you start a guide</span>
+                    </div>
+                </div>
+                <div class="glass-panel p-6 shadow-glow-cyan">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-4">Quick answer</p>
+                    <div class="space-y-5">
+                        <div class="panel p-5 border-l-4 border-green-500">
+                            <h2 class="text-xl font-bold mb-2">Use App guides if you play the VOODOO App.</h2>
+                            <p class="text-gray-400">Look for package <code class="text-cyan-200">games.rivvy.monstersurvivors</code>, App-style heroes, gear, Gilded Cores or permanent upgrades.</p>
+                        </div>
+                        <div class="panel p-5 border-l-4 border-orange-500">
+                            <h2 class="text-xl font-bold mb-2">Use Play Online if you opened the browser game.</h2>
+                            <p class="text-gray-400">The FreezeNova browser version has its own controls, run flow and local browser experience. App builds and gear advice do not apply there.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-check" class="max-w-6xl mx-auto px-4 py-14">
+            <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 items-start">
+                <div>
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Fast version check</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Which Screen Are You Looking At?</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">Use the first matching clue. If two clues conflict, follow the entry point: installed App or browser page.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-5">
+                    <article class="version-card panel p-6 border-t-4 border-green-500">
+                        <div class="flex items-center justify-between gap-3 mb-5">
+                            <span class="tag">VOODOO APP</span>
+                            <i class="fab fa-android text-3xl text-green-300" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">You probably have the App if...</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="check-item">You installed it from an app store page.</li>
+                            <li class="check-item">The package shown is <code class="text-cyan-200">games.rivvy.monstersurvivors</code>.</li>
+                            <li class="check-item">Your problem is about heroes, gear, Gilded Cores, permanent upgrades or account progression.</li>
+                            <li class="check-item">You need a complete build route across hero, weapon, equipment and skills.</li>
+                        </ul>
+                    </article>
+                    <article class="version-card panel p-6 border-t-4 border-orange-500">
+                        <div class="flex items-center justify-between gap-3 mb-5">
+                            <span class="tag">BROWSER VERSION</span>
+                            <i class="fas fa-gamepad text-3xl text-orange-300" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">You probably have the browser game if...</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="check-item">You launched it from the site's <a href="/play/" class="text-cyan-300 underline hover:text-white">Play Online</a> page.</li>
+                            <li class="check-item">You are using browser controls such as WASD, arrows and click-to-select upgrades.</li>
+                            <li class="check-item">You want a quick no-download session in a web page.</li>
+                            <li class="check-item">Your question is about online play, unblocked access or browser loading.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-y border-gray-800 px-4 py-14">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-3xl mb-8">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Comparison table</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Do Not Mix These Two Routes</h2>
+                    <p class="text-gray-400 text-lg">Names that look familiar can still belong to different systems. Choose the column that matches your game before applying any advice.</p>
+                </div>
+                <div class="panel overflow-x-auto">
+                    <table class="comparison-table w-full min-w-[760px] text-left">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>VOODOO App</th>
+                                <th>FreezeNova browser version</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="font-bold text-white">Best entry point</td>
+                                <td>Use the App guide hub when you are building a long-term account.</td>
+                                <td>Use the Play Online page when you want to launch the browser game.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-white">Main questions</td>
+                                <td>Builds, heroes, weapon roles, gear stats, Gilded Cores and permanent upgrades.</td>
+                                <td>Controls, loading, unblocked access, browser play and quick run basics.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-white">Guide pages to use</td>
+                                <td><a href="/guides/" class="text-cyan-300 underline hover:text-white">App Guides</a>, <a href="/best-builds/" class="text-cyan-300 underline hover:text-white">Best Builds</a>, <a href="/tier-list/" class="text-cyan-300 underline hover:text-white">Tier List</a>, <a href="/guides/upgrades" class="text-cyan-300 underline hover:text-white">Upgrades</a>.</td>
+                                <td><a href="/play/" class="text-orange-300 underline hover:text-white">Play Online</a>, <a href="/faq/how-to-play-unblocked.html" class="text-orange-300 underline hover:text-white">Unblocked FAQ</a>, <a href="/faq/is-monster-survivors-offline.html" class="text-orange-300 underline hover:text-white">Online / Offline FAQ</a>.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-white">Advice to avoid</td>
+                                <td>Do not import browser-only weapon, map or evolution routes into the App.</td>
+                                <td>Do not use App hero, gear, Gilded Core or permanent upgrade pages for the browser game.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-white">Best next action</td>
+                                <td>Open the guide for the decision in front of you: build, weapon, hero, gear or resource spend.</td>
+                                <td>Launch the game, check controls and use browser FAQs if loading or access fails.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 py-14">
+            <div class="max-w-3xl mb-8">
+                <p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Decision matrix</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Open the Right Page Next</h2>
+                <p class="text-gray-400 text-lg">Pick the line that sounds most like your current problem.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <a href="/guides/beginner-guide" class="guide-card panel p-6 border-t-4 border-green-500">
+                    <span class="number mb-4">1</span>
+                    <h3 class="text-xl font-bold mb-3">I just started the App.</h3>
+                    <p class="text-gray-400 mb-4">Use a safe first route before spending scarce resources or chasing a tier label.</p>
+                    <span class="text-green-300 font-bold text-sm">Open Beginner Guide →</span>
+                </a>
+                <a href="/best-builds/" class="guide-card panel p-6 border-t-4 border-orange-500">
+                    <span class="number mb-4">2</span>
+                    <h3 class="text-xl font-bold mb-3">I need a full App build.</h3>
+                    <p class="text-gray-400 mb-4">Connect hero, weapons, gear, skills and map goal into one working loadout.</p>
+                    <span class="text-orange-300 font-bold text-sm">Open Best Builds →</span>
+                </a>
+                <a href="/guides/best-weapons" class="guide-card panel p-6 border-t-4 border-cyan-500">
+                    <span class="number mb-4">3</span>
+                    <h3 class="text-xl font-bold mb-3">My App weapon choice feels wrong.</h3>
+                    <p class="text-gray-400 mb-4">Check whether you need crowd coverage, focused damage, close protection or a flex role.</p>
+                    <span class="text-cyan-300 font-bold text-sm">Open Best Weapons →</span>
+                </a>
+                <a href="/guides/gilded-cores/" class="guide-card panel p-6 border-t-4 border-yellow-400">
+                    <span class="number mb-4">4</span>
+                    <h3 class="text-xl font-bold mb-3">I am about to spend Gilded Cores.</h3>
+                    <p class="text-gray-400 mb-4">Pause and check whether the spend improves your main route or only a temporary side plan.</p>
+                    <span class="text-yellow-200 font-bold text-sm">Open Gilded Cores →</span>
+                </a>
+                <a href="/play/" class="guide-card panel p-6 border-t-4 border-gray-500">
+                    <span class="number mb-4">5</span>
+                    <h3 class="text-xl font-bold mb-3">I only want the browser game.</h3>
+                    <p class="text-gray-400 mb-4">Launch the separate web version and use the short controls or browser FAQs.</p>
+                    <span class="text-gray-200 font-bold text-sm">Open Play Online →</span>
+                </a>
+                <a href="/faq/how-to-play-unblocked.html" class="guide-card panel p-6 border-t-4 border-rose-500">
+                    <span class="number mb-4">6</span>
+                    <h3 class="text-xl font-bold mb-3">The browser game is blocked.</h3>
+                    <p class="text-gray-400 mb-4">Use the unblocked FAQ instead of trying App build fixes on a browser access issue.</p>
+                    <span class="text-rose-300 font-bold text-sm">Open Unblocked FAQ →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="hero-bg border-y border-gray-800 px-4 py-14">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+                <div class="panel p-7 border-l-4 border-orange-500">
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Warning</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">Stop Before Copying a Build Across Versions</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        A weapon name, hero name or upgrade idea can look useful while still belonging to the wrong version. If the screen, progression system or entry point does not match, switch guides before spending resources.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-cyan-100">Safe for App guides</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="check-item">Build planning for a long-term App account.</li>
+                            <li class="check-item">Hero, gear and weapon-role decisions.</li>
+                            <li class="check-item">Gilded Core and permanent upgrade choices.</li>
+                        </ul>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-orange-100">Keep on browser pages</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="warn-item">WASD, arrow-key and iframe loading issues.</li>
+                            <li class="warn-item">Unblocked access and online play questions.</li>
+                            <li class="warn-item">Browser-only weapon or map routes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-4 py-14">
+            <div class="panel p-7 md:p-9">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Version note for guides</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-5">If Your Game Looks Different, Come Back Here</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                    App pages on this site are written for the VOODOO Monster Survivors App. The separate browser game has a smaller web-play focus, so App heroes, gear, Gilded Cores and permanent account routes should not be used as browser instructions.
+                </p>
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <a href="/guides/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-5 py-4 rounded-lg font-bold text-center">App Guides</a>
+                    <a href="/play/" class="border border-gray-600 hover:border-cyan-500 text-gray-200 px-5 py-4 rounded-lg font-bold text-center">Play Online</a>
+                    <a href="https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors" target="_blank" rel="noopener nofollow" class="border border-green-600 text-green-200 hover:border-green-400 px-5 py-4 rounded-lg font-bold text-center">Google Play Listing</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-t border-gray-800 px-4 py-14">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Version Questions</h2>
+                <div class="space-y-4">
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Are the App and browser version the same game?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">No. Treat them as separate versions. App guides on this site cover the VOODOO App and package games.rivvy.monstersurvivors. The Play Online page is for the separate browser version.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Which version are the build and tier list pages for?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">The current build, tier list, best weapons, best gear, Gilded Cores and upgrades pages are App-first pages. Use them when your question is about App account progression.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where do I go for the browser game?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Use <a href="/play/" class="text-cyan-300 underline hover:text-white">Play Online</a>. If the page is blocked or loading poorly, use the unblocked and online/offline FAQs instead of App progression guides.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Can I use browser weapon advice in the App?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Only use advice when the game screen and system match. Browser-only weapon routes, map routes or evolution advice should not be applied to App gear, hero or resource decisions.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div>
+                    <p class="text-gray-400 text-sm">Practical builds and progression guides for the Monster Survivors App.</p>
+                </div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Start Here</h3><ul class="space-y-2 text-gray-400"><li><a href="/versions/">Version Comparison</a></li><li><a href="/guides/beginner-guide">Beginner Guide</a></li><li><a href="/best-builds/">Best Builds</a></li><li><a href="/guides/">App Guides</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Progression</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/best-weapons">Best Weapons</a></li><li><a href="/guides/best-gear-set">Best Gear</a></li><li><a href="/guides/gilded-cores/">Gilded Cores</a></li><li><a href="/guides/upgrades">App Upgrades</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">More</h3><ul class="space-y-2 text-gray-400"><li><a href="/play/">Separate Browser Game</a></li><li><a href="/faq/how-to-play-unblocked.html">Unblocked FAQ</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+    </script>
+</body>
+</html>

@@ -39,6 +39,7 @@ https://monstersurvivors.plus/terms/
 https://monstersurvivors.plus/tier-list/
 https://monstersurvivors.plus/tier-list/heroes
 https://monstersurvivors.plus/tier-list/weapons
+https://monstersurvivors.plus/versions/
 https://monstersurvivors.plus/weapons-database/
 https://monstersurvivors.plus/weapons-database/axe/
 https://monstersurvivors.plus/weapons-database/chain-lightning-ring/

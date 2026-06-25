@@ -41,6 +41,7 @@ D:\Antigravity\monstersurvivors.plus\terms\index.html
 D:\Antigravity\monstersurvivors.plus\tier-list\heroes.html
 D:\Antigravity\monstersurvivors.plus\tier-list\index.html
 D:\Antigravity\monstersurvivors.plus\tier-list\weapons.html
+D:\Antigravity\monstersurvivors.plus\versions\index.html
 D:\Antigravity\monstersurvivors.plus\weapons-database\index.html
 D:\Antigravity\monstersurvivors.plus\weapons-database\monster-survivors-voodoo-weapons-guide.html
 D:\Antigravity\monstersurvivors.plus\weapons-database\axe\index.html
