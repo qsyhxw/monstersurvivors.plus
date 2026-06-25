@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags (Title: 50-60 chars, Description: 150-160 chars) -->
-    <title>Monster Survivors Strategy Guide 2026 | Tips & Tactics</title>
-    <meta name="description" content="Master Monster Survivors with proven strategies. Learn movement tactics, weapon choices, boss battle tips, and upgrade priorities to survive longer.">
-    <meta name="keywords" content="monster survivors strategy, monster survivors tips, survival tactics, boss battle guide, roguelike strategy, FreezeNova game">
-    <link rel="canonical" href="https://monstersurvivors.plus/guides/tips-and-tricks/">
-    <meta http-equiv="refresh" content="0; url=/guides/tips-and-tricks/">
+    <title>Monster Survivors Strategy Page Moved</title>
+    <meta name="description" content="The old broad Monster Survivors strategy page has been split into App guides, Best Builds, version comparison, and the separate browser play page.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <link rel="canonical" href="https://monstersurvivors.plus/guides/">
 
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-         crossorigin="anonymous"></script>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Monster Survivors Strategy Guide 2026 | Tips & Tactics">
-    <meta property="og:description" content="Master Monster Survivors with proven strategies for movement, weapons, bosses, and upgrades.">
+    <meta property="og:title" content="Monster Survivors Strategy Page Moved">
+    <meta property="og:description" content="Choose the right Monster Survivors page for App builds, upgrades, tier lists, version comparison, or browser play.">
     <meta property="og:url" content="https://monstersurvivors.plus/strategies/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Monster Survivors Strategy Guide 2026">
-    <meta name="twitter:description" content="Proven strategies to survive longer in Monster Survivors by FreezeNova.">
-
-    <!-- Favicon -->
+    <meta name="twitter:title" content="Monster Survivors Strategy Page Moved">
+    <meta name="twitter:description" content="Use the correct App or browser page before following Monster Survivors strategy advice.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/Game-Screenshots.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
+                        'accent-orange': '#ff6b35',
+                        'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -56,764 +63,329 @@
             --accent-orange: #ff6b35;
             --accent-cyan: #00d9ff;
             --accent-purple: #a855f7;
-            --text-light: #f5f5f5;
-            --text-gray: #b8b8b8;
+            --accent-gold: #f7c948;
         }
-
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
+            color: #f5f5f5;
+            background: var(--primary-dark);
+            overflow-x: hidden;
         }
-
-        h1, h2, h3, h4 {
-            font-family: 'Orbitron', sans-serif;
+        h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
+        a { transition: color .2s ease, border-color .2s ease, background-color .2s ease, transform .2s ease; }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 12% 20%, rgba(0,217,255,.16), transparent 30%),
+                radial-gradient(circle at 86% 18%, rgba(255,107,53,.17), transparent 29%),
+                radial-gradient(circle at 52% 100%, rgba(168,85,247,.13), transparent 37%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
         }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+        .panel {
+            background: rgba(17,24,39,.77);
+            border: 1px solid rgba(75,85,99,.72);
+            border-radius: 1rem;
         }
-
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .route-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
         }
-
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+        .route-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,217,255,.52);
+            box-shadow: 0 18px 38px rgba(0,217,255,.09);
         }
-
-        .glow-text-orange {
-            color: var(--accent-orange);
-            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5), 0 0 20px rgba(255, 107, 53, 0.3);
+        .tag {
+            display: inline-flex;
+            padding: .25rem .65rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .04em;
         }
-
-        .glow-text-cyan {
+        .check-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f00c';
             color: var(--accent-cyan);
-            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63946 100%);
-            transition: all 0.3s ease;
+        .warn-item { position: relative; padding-left: 1.75rem; }
+        .warn-item::before {
+            position: absolute;
+            left: 0;
+            top: .1rem;
+            content: '\f071';
+            color: var(--accent-orange);
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
         }
-
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
-        }
-
-        .btn-secondary {
-            background: linear-gradient(135deg, var(--accent-cyan) 0%, #0077b6 100%);
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
-        }
-
-        .strategy-card {
-            background: rgba(15, 23, 42, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-        }
-
-        .tip-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(0, 217, 255, 0.15) 100%);
-            border-left: 4px solid var(--accent-orange);
-        }
-
-        .warning-box {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid #ef4444;
-        }
-
-        .icon-box {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border: 2px solid rgba(0, 217, 255, 0.3);
-        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
     </style>
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Monster Survivors Strategy Guide 2026 - Tips & Tactics",
-        "description": "Master Monster Survivors with proven strategies for movement, weapon selection, boss battles, and upgrade priorities.",
-        "author": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "MonsterSurvivors.plus"
-        },
-        "datePublished": "2026-01-26",
-        "dateModified": "2026-01-26",
-        "about": {
-            "@type": "VideoGame",
-            "name": "Monster Survivors",
-            "gamePlatform": "Web Browser",
-            "genre": ["Roguelike", "Action", "Survival"],
-            "author": {
-                "@type": "Organization",
-                "name": "FreezeNova"
-            }
-        }
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/strategies/#webpage",
+        "url": "https://monstersurvivors.plus/strategies/",
+        "name": "Monster Survivors Strategy Page Moved",
+        "description": "A version-safe routing page that sends Monster Survivors players to App guides, Best Builds, the version comparison, or the separate browser play page.",
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
     }
     </script>
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://monstersurvivors.plus/"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Strategies",
-            "item": "https://monstersurvivors.plus/strategies/"
-        }]
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "App Guides", "item": "https://monstersurvivors.plus/guides/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Where did the Monster Survivors strategy guide go?",
+                "acceptedAnswer": {"@type": "Answer", "text": "The old broad strategy page has been split into App guides, Best Builds, Tier List, Upgrades, and a separate browser play page."}
+            },
+            {
+                "@type": "Question",
+                "name": "Which page should App players use?",
+                "acceptedAnswer": {"@type": "Answer", "text": "App players should start with App Guides or Best Builds, then use weapons, upgrades, heroes and tier lists for the specific decision they are making."}
+            },
+            {
+                "@type": "Question",
+                "name": "Where should browser players go?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Browser players should use the Play Online page for the separate FreezeNova browser version and the version comparison if the game screen looks different."}
+            }
+        ]
     }
     </script>
 </head>
 <body class="antialiased">
-
-    <!-- Navigation Header -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(10, 10, 26, 0.95);">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: var(--accent-orange);" aria-hidden="true"></i>
-                        <span class="text-xl font-bold" style="font-family: 'Orbitron', sans-serif;">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
-                    </a>
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/guides/" class="text-cyan-400">App Guides</a>
+                    <a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a>
+                    <a href="/versions/" class="hover:text-cyan-400 transition">Versions</a>
+                    <a href="/play/" class="text-gray-400 hover:text-cyan-400 transition">Play Online</a>
                 </div>
-
-                <div class="hidden md:flex space-x-8">
-                    <a href="/guides/" class="hover:text-cyan-400 transition">Guides</a>
-                    <a href="/strategies/" class="text-cyan-400">Strategies</a>
-                    <a href="/play/" class="hover:text-cyan-400 transition">Play Online</a>
-                </div>
-
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-                        <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
             <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="/guides/" class="block py-2 hover:text-cyan-400 transition">Guides</a>
-                <a href="/strategies/" class="block py-2 text-cyan-400">Strategies</a>
-                <a href="/play/" class="block py-2 hover:text-cyan-400 transition">Play Online</a>
+                <a href="/guides/" class="block py-2 text-cyan-400">App Guides</a>
+                <a href="/best-builds/" class="block py-2">Best Builds</a>
+                <a href="/versions/" class="block py-2">Versions</a>
+                <a href="/play/" class="block py-2 text-gray-400">Play Online</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- Breadcrumb -->
-        <div class="max-w-7xl mx-auto px-4 py-4">
-            <nav class="flex items-center space-x-2 text-sm text-gray-400" aria-label="Breadcrumb">
-                <a href="/" class="hover:text-cyan-400 transition">Home</a>
-                <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                <span class="text-cyan-400">Strategies</span>
-            </nav>
-        </div>
-
-        <!-- DECAPITATION REDIRECT BANNER -->
-        <section class="py-12 px-4 bg-red-900 border-b-4 border-red-500">
-            <div class="max-w-4xl mx-auto text-center">
-                <i class="fas fa-exclamation-triangle text-5xl text-yellow-400 mb-4"></i>
-                <h1 class="text-3xl font-bold text-white mb-4">The General Strategy Guide Has Been Restructured</h1>
-                <p class="text-xl text-gray-200 mb-6">You are viewing our old 2024 general strategy page. To better serve players with accurate meta data, we have split this broad article into highly focused, rigorous guides.</p>
-                <div class="flex flex-col md:flex-row gap-4 justify-center mt-8">
-                    <a href="/guides/tips-and-tricks/" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 px-6 rounded-lg text-lg shadow-lg transition w-full md:w-auto">
-                        <i class="fas fa-list-ol mr-2 text-2xl align-middle"></i> 👉 TOP 10 ADVANCED TIPS & TRICKS 👈
-                    </a>
-                    <a href="/guides/best-starting-weapons/" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 px-6 rounded-lg text-lg shadow-lg transition w-full md:w-auto">
-                        <i class="fas fa-crosshairs mr-2 text-2xl align-middle"></i> 👉 BEST STARTING WEAPONS TIER LIST 👈
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Hero Section -->
-        <section class="gradient-bg py-16 px-4 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
-                <div class="absolute top-10 left-10 w-64 h-64 bg-cyan-500 rounded-full filter blur-[80px] animate-pulse"></div>
-                <div class="absolute bottom-10 right-10 w-80 h-80 bg-orange-500 rounded-full filter blur-[100px] animate-pulse" style="animation-delay: 1s;"></div>
-            </div>
-
-            <div class="max-w-7xl mx-auto text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                    Monster Survivors <br class="hidden md:block">
-                    <span class="glow-text-orange">Strategy Guide</span>
+        <section class="hero-bg px-4 pt-14 pb-16 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-cyan-100 bg-cyan-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-cyan-700 mb-5">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>STRATEGY ROUTE · APP AND BROWSER ADVICE ARE SEPARATE
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                    The General Strategy Page Has Been <span class="text-cyan-300">Split by Version</span>
                 </h1>
-
-                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                    Proven tactics to survive longer, defeat bosses, and master the battlefield in this roguelike survival game by FreezeNova
+                <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                    This old broad strategy page mixed advice that now belongs on different pages. Choose the route that matches your Monster Survivors version and the problem you are trying to solve.
                 </p>
-
-                <div class="flex flex-wrap justify-center gap-4 text-sm mb-8">
-                    <div class="flex items-center space-x-2 bg-gray-900 bg-opacity-50 px-4 py-2 rounded-lg border border-cyan-600">
-                        <i class="fas fa-gamepad text-cyan-400" aria-hidden="true"></i>
-                        <span>Browser-Based</span>
-                    </div>
-                    <div class="flex items-center space-x-2 bg-gray-900 bg-opacity-50 px-4 py-2 rounded-lg border border-orange-600">
-                        <i class="fas fa-infinity text-orange-400" aria-hidden="true"></i>
-                        <span>Roguelike Gameplay</span>
-                    </div>
-                    <div class="flex items-center space-x-2 bg-gray-900 bg-opacity-50 px-4 py-2 rounded-lg border border-green-600">
-                        <i class="fas fa-check-circle text-green-400" aria-hidden="true"></i>
-                        <span>100% Free</span>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#core-strategies" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
-                        <i class="fas fa-chess mr-2" aria-hidden="true"></i>
-                        View Strategies
+                <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center">
+                    <a href="/guides/" class="bg-gradient-to-r from-cyan-700 to-blue-700 hover:from-cyan-600 hover:to-blue-600 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-route mr-2" aria-hidden="true"></i>Browse App Guides
                     </a>
-                    <a href="/play/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
-                        <i class="fas fa-play-circle mr-2" aria-hidden="true"></i>
-                        Play Now Free
+                    <a href="/best-builds/" class="border border-green-600 text-green-200 hover:border-green-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-layer-group mr-2" aria-hidden="true"></i>View Best Builds
+                    </a>
+                    <a href="/versions/" class="border border-orange-600 text-orange-200 hover:border-orange-400 px-7 py-4 rounded-lg font-bold inline-flex items-center justify-center transition">
+                        <i class="fas fa-code-branch mr-2" aria-hidden="true"></i>Compare Versions
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Core Strategies Section -->
-        <section id="core-strategies" class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span class="glow-text-cyan">Core</span> Survival Strategies
-                    </h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        These fundamental tactics form the foundation of successful Monster Survivors gameplay
+        <section class="max-w-6xl mx-auto px-4 py-14">
+            <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+                <div class="panel p-7 border-l-4 border-cyan-500">
+                    <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">Use a Specific Guide Instead of One Generic Strategy Page</h2>
+                    <p class="text-gray-300 leading-relaxed mb-5">
+                        If you are playing the VOODOO App, use App builds, weapons, upgrades, heroes and tier lists. If you are playing in a browser frame, use the browser play page and browser FAQ.
                     </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="warn-item">Do not copy old browser weapon or boss advice into App hero, gear or upgrade decisions.</li>
+                        <li class="warn-item">Do not use a generic strategy article when your issue is a build, upgrade or version mismatch.</li>
+                        <li class="check-item">Use the version comparison when your screen, weapons or progression menus look different.</li>
+                    </ul>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Strategy 1: Circle Kiting -->
-                    <article class="strategy-card rounded-xl p-6 card-hover">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-circle-notch text-3xl text-cyan-400" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--accent-orange);">Circle Kiting Movement</h3>
-                        <p class="text-gray-300 mb-4">
-                            Move in large circular patterns around the battlefield. This keeps enemies trailing behind you in a predictable line, making them easier to manage while you collect XP gems.
-                        </p>
-                        <div class="tip-box rounded-lg p-4">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-lightbulb text-orange-400 mr-2" aria-hidden="true"></i>
-                                <strong>Pro Tip:</strong> Never stand still. Constant movement is essential for survival.
-                            </p>
-                        </div>
-                    </article>
-
-                    <!-- Strategy 2: XP Collection -->
-                    <article class="strategy-card rounded-xl p-6 card-hover">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-gem text-3xl text-cyan-400" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--accent-orange);">Active XP Collection</h3>
-                        <p class="text-gray-300 mb-4">
-                            Killing enemies does not automatically grant experience. You must physically collect the dropped XP gems by walking over them. Prioritize gem collection while staying mobile.
-                        </p>
-                        <div class="warning-box rounded-lg p-4">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-exclamation-triangle text-red-400 mr-2" aria-hidden="true"></i>
-                                <strong>Warning:</strong> Ignoring gem collection will leave you underpowered against later waves.
-                            </p>
-                        </div>
-                    </article>
-
-                    <!-- Strategy 3: Weapon Focus -->
-                    <article class="strategy-card rounded-xl p-6 card-hover">
-                        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-crosshairs text-3xl text-cyan-400" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--accent-orange);">Single Weapon Focus</h3>
-                        <p class="text-gray-300 mb-4">
-                            When leveling up, prioritize upgrading one primary weapon before diversifying. A fully upgraded weapon is more effective than multiple weak ones in the early game.
-                        </p>
-                        <div class="tip-box rounded-lg p-4">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-lightbulb text-orange-400 mr-2" aria-hidden="true"></i>
-                                <strong>Pro Tip:</strong> Choose upgrades that complement your starting weapon's playstyle.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Weapon Strategies Section -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span class="glow-text-orange">Starting Weapon</span> Strategies
-                    </h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        Each starting weapon requires a different tactical approach
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-                    <!-- Steel Sword Strategy -->
-                    <article class="strategy-card rounded-xl overflow-hidden">
-                        <div class="h-4 bg-gradient-to-r from-orange-600 to-red-600"></div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-4">
-                                <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mr-4">
-                                    <i class="fas fa-sword text-2xl text-orange-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold" style="color: var(--accent-orange);">Steel Sword</h3>
-                                    <p class="text-sm text-gray-400">Melee Combat Strategy</p>
-                                </div>
-                            </div>
-
-                            <p class="text-gray-300 mb-4">
-                                The Steel Sword excels at dealing high damage in close quarters. This weapon rewards aggressive players who can manage enemy positioning.
-                            </p>
-
-                            <h4 class="font-bold text-cyan-400 mb-2">Recommended Tactics:</h4>
-                            <ul class="space-y-2 text-gray-300 mb-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Use hit-and-run attacks: engage briefly, then retreat</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Prioritize health and armor upgrades for survivability</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Group enemies together before engaging for efficient damage</span>
-                                </li>
-                            </ul>
-
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
-                                <p class="text-sm text-gray-400">
-                                    <strong class="text-orange-400">Best For:</strong> Players who enjoy aggressive, high-risk gameplay
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Wooden Wand Strategy -->
-                    <article class="strategy-card rounded-xl overflow-hidden">
-                        <div class="h-4 bg-gradient-to-r from-cyan-600 to-blue-600"></div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-4">
-                                <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mr-4">
-                                    <i class="fas fa-wand-magic-sparkles text-2xl text-cyan-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold" style="color: var(--accent-cyan);">Wooden Wand</h3>
-                                    <p class="text-sm text-gray-400">Ranged Combat Strategy</p>
-                                </div>
-                            </div>
-
-                            <p class="text-gray-300 mb-4">
-                                The Wooden Wand allows you to attack enemies from a safe distance with magical projectiles. This weapon suits players who prefer tactical positioning.
-                            </p>
-
-                            <h4 class="font-bold text-cyan-400 mb-2">Recommended Tactics:</h4>
-                            <ul class="space-y-2 text-gray-300 mb-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Maintain distance and kite enemies in circular patterns</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Focus on damage and attack speed upgrades</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-green-400 mr-2 mt-1" aria-hidden="true"></i>
-                                    <span>Use open space to your advantage before boss fights</span>
-                                </li>
-                            </ul>
-
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
-                                <p class="text-sm text-gray-400">
-                                    <strong class="text-cyan-400">Best For:</strong> Beginners and players who prefer safer, methodical gameplay
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Boss Battle Strategies -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span class="glow-text-cyan">Boss Battle</span> Strategies
-                    </h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        When a boss appears, the battlefield shrinks. Here's how to survive these intense encounters
-                    </p>
-                </div>
-
-                <div class="max-w-4xl mx-auto">
-                    <div class="strategy-card rounded-xl p-8">
-                        <div class="flex items-center mb-6">
-                            <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-dragon text-3xl text-purple-400" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold" style="color: var(--accent-purple);">Boss Fight Mechanics</h3>
-                                <p class="text-gray-400">Understanding the shrinking arena</p>
-                            </div>
-                        </div>
-
-                        <p class="text-gray-300 mb-6">
-                            Boss battles in Monster Survivors are intense one-on-one confrontations. When a boss spawns, the play area contracts, forcing you into close combat with limited escape routes.
-                        </p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
-                                <h4 class="font-bold text-green-400 mb-2">
-                                    <i class="fas fa-check mr-2" aria-hidden="true"></i>Do:
-                                </h4>
-                                <ul class="space-y-2 text-gray-300 text-sm">
-                                    <li>Keep moving in tight circles</li>
-                                    <li>Watch for attack patterns</li>
-                                    <li>Save health pickups for boss fights</li>
-                                    <li>Position near arena edges for escape routes</li>
-                                </ul>
-                            </div>
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
-                                <h4 class="font-bold text-red-400 mb-2">
-                                    <i class="fas fa-times mr-2" aria-hidden="true"></i>Don't:
-                                </h4>
-                                <ul class="space-y-2 text-gray-300 text-sm">
-                                    <li>Stand still even for a moment</li>
-                                    <li>Get cornered against the shrinking boundary</li>
-                                    <li>Panic and move erratically</li>
-                                    <li>Ignore boss spawn warnings</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="tip-box rounded-lg p-4">
-                            <p class="text-gray-300">
-                                <i class="fas fa-lightbulb text-orange-400 mr-2" aria-hidden="true"></i>
-                                <strong>Key Insight:</strong> Defeating a boss returns you to the normal map size. The pressure is temporary - focus on survival first, damage second.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Permanent Upgrades Section -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        <span class="glow-text-orange">Permanent Upgrade</span> Priority
-                    </h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        Gold collected during runs can be spent on persistent upgrades in the main menu
-                    </p>
-                </div>
-
-                <div class="max-w-4xl mx-auto">
-                    <div class="strategy-card rounded-xl p-8">
-                        <p class="text-gray-300 mb-6">
-                            Unlike in-run upgrades, these permanent stat boosts carry over between sessions. Invest your gold wisely to make each new run stronger from the start.
-                        </p>
-
-                        <h3 class="text-xl font-bold mb-4 text-cyan-400">Available Permanent Upgrades:</h3>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex items-center">
-                                <div class="w-12 h-12 rounded-lg bg-red-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                    <i class="fas fa-heart text-xl text-red-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-red-400">Health</h4>
-                                    <p class="text-sm text-gray-400">Increases maximum HP</p>
-                                </div>
-                            </div>
-
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex items-center">
-                                <div class="w-12 h-12 rounded-lg bg-blue-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                    <i class="fas fa-shield-halved text-xl text-blue-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-blue-400">Armor</h4>
-                                    <p class="text-sm text-gray-400">Reduces incoming damage</p>
-                                </div>
-                            </div>
-
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex items-center">
-                                <div class="w-12 h-12 rounded-lg bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                    <i class="fas fa-bolt text-xl text-orange-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-orange-400">Damage</h4>
-                                    <p class="text-sm text-gray-400">Increases attack power</p>
-                                </div>
-                            </div>
-
-                            <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex items-center">
-                                <div class="w-12 h-12 rounded-lg bg-green-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                    <i class="fas fa-plus text-xl text-green-400" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-green-400">Healing</h4>
-                                    <p class="text-sm text-gray-400">Improves HP recovery</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tip-box rounded-lg p-4">
-                            <h4 class="font-bold text-orange-400 mb-2">Recommended Priority Order:</h4>
-                            <p class="text-gray-300">
-                                For beginners, consider prioritizing <strong>Health</strong> and <strong>Armor</strong> first for survivability. As you improve, shift focus to <strong>Damage</strong> for faster clears. <strong>Healing</strong> becomes more valuable in longer runs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enemy Types Overview -->
-        <section class="py-16 px-4" style="background-color: var(--secondary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        Know Your <span class="glow-text-cyan">Enemies</span>
-                    </h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        Understand the monsters you'll face on the battlefield
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                    <div class="strategy-card rounded-xl p-6 text-center card-hover">
-                        <div class="text-4xl mb-3">🦀</div>
-                        <h3 class="font-bold text-orange-400">Crabs</h3>
-                        <p class="text-sm text-gray-400 mt-2">Aggressive melee attackers</p>
-                    </div>
-
-                    <div class="strategy-card rounded-xl p-6 text-center card-hover">
-                        <div class="text-4xl mb-3">🎃</div>
-                        <h3 class="font-bold text-orange-400">Pumpkins</h3>
-                        <p class="text-sm text-gray-400 mt-2">Eerie, persistent enemies</p>
-                    </div>
-
-                    <div class="strategy-card rounded-xl p-6 text-center card-hover">
-                        <div class="text-4xl mb-3">🌿</div>
-                        <h3 class="font-bold text-green-400">Plants</h3>
-                        <p class="text-sm text-gray-400 mt-2">Flesh-eating flora</p>
-                    </div>
-
-                    <div class="strategy-card rounded-xl p-6 text-center card-hover">
-                        <div class="text-4xl mb-3">🐝</div>
-                        <h3 class="font-bold text-yellow-400">Bees</h3>
-                        <p class="text-sm text-gray-400 mt-2">Fast-moving swarmers</p>
-                    </div>
-                </div>
-
-                <p class="text-center text-gray-500 text-sm mt-6">
-                    Enemy variety increases as you progress through waves
-                </p>
-            </div>
-        </section>
-
-        <!-- Quick Tips Summary -->
-        <section class="py-16 px-4" style="background-color: var(--primary-dark);">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        Quick <span class="glow-text-orange">Tips</span> Summary
-                    </h2>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">1</span>
-                        </div>
-                        <p class="text-gray-300">Move constantly - standing still leads to death</p>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">2</span>
-                        </div>
-                        <p class="text-gray-300">Collect XP gems actively - kills alone don't grant experience</p>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">3</span>
-                        </div>
-                        <p class="text-gray-300">Use large circular movements to manage enemy groups</p>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">4</span>
-                        </div>
-                        <p class="text-gray-300">Max one weapon first before diversifying</p>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">5</span>
-                        </div>
-                        <p class="text-gray-300">Invest gold in permanent upgrades between runs</p>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
-                            <span class="font-bold text-sm">6</span>
-                        </div>
-                        <p class="text-gray-300">Prepare for shrinking arenas during boss fights</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="py-20 px-4 gradient-bg">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">
-                    Ready to <span class="glow-text-orange">Survive</span>?
-                </h2>
-                <p class="text-xl text-gray-300 mb-8">
-                    Put these strategies to the test in Monster Survivors - completely free in your browser
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/play/" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
-                        <i class="fas fa-play-circle mr-2" aria-hidden="true"></i>
-                        Play Now Free
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <a href="/guides/" class="route-card panel p-6 border-t-4 border-cyan-500">
+                        <span class="tag mb-4">VOODOO APP</span>
+                        <h3 class="text-xl font-bold mb-3">I need App guidance.</h3>
+                        <p class="text-gray-400 mb-4">Start with the App guide hub for progression, weapons, gear, heroes and upgrades.</p>
+                        <span class="text-cyan-300 font-bold text-sm">Open App Guides →</span>
                     </a>
-                    <a href="/guides/" class="btn-secondary px-8 py-4 rounded-lg font-bold text-lg inline-flex items-center justify-center">
-                        <i class="fas fa-book-open mr-2" aria-hidden="true"></i>
-                        Read More Guides
+                    <a href="/best-builds/" class="route-card panel p-6 border-t-4 border-green-500">
+                        <span class="tag mb-4">APP BUILDS</span>
+                        <h3 class="text-xl font-bold mb-3">My run keeps failing.</h3>
+                        <p class="text-gray-400 mb-4">Use a build page when you need a hero, weapon, gear and skill setup that works together.</p>
+                        <span class="text-green-300 font-bold text-sm">Open Best Builds →</span>
                     </a>
+                    <a href="/tier-list/" class="route-card panel p-6 border-t-4 border-purple-500">
+                        <span class="tag mb-4">APP RANKINGS</span>
+                        <h3 class="text-xl font-bold mb-3">I need a quick priority.</h3>
+                        <p class="text-gray-400 mb-4">Use tier lists when you are choosing between heroes, weapons or account options.</p>
+                        <span class="text-purple-300 font-bold text-sm">Open Tier List →</span>
+                    </a>
+                    <a href="/guides/upgrades" class="route-card panel p-6 border-t-4 border-yellow-500">
+                        <span class="tag mb-4">APP UPGRADES</span>
+                        <h3 class="text-xl font-bold mb-3">My account needs power.</h3>
+                        <p class="text-gray-400 mb-4">Use upgrade priorities for Gilded Cores, permanent progression and gear enhancement.</p>
+                        <span class="text-yellow-300 font-bold text-sm">Open Upgrades →</span>
+                    </a>
+                    <a href="/versions/" class="route-card panel p-6 border-t-4 border-orange-500">
+                        <span class="tag mb-4">NOT SURE</span>
+                        <h3 class="text-xl font-bold mb-3">My game looks different.</h3>
+                        <p class="text-gray-400 mb-4">Compare the VOODOO App and the separate FreezeNova browser game before applying advice.</p>
+                        <span class="text-orange-300 font-bold text-sm">Compare Versions →</span>
+                    </a>
+                    <a href="/play/" class="route-card panel p-6 border-t-4 border-gray-500">
+                        <span class="tag mb-4">BROWSER</span>
+                        <h3 class="text-xl font-bold mb-3">I want the web game.</h3>
+                        <p class="text-gray-400 mb-4">Launch the separate browser version and use its short controls and browser FAQs.</p>
+                        <span class="text-gray-200 font-bold text-sm">Open Play Online →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-y border-gray-800 px-4 py-14">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Which route fits?</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-5">Pick the Page by Player Task</h2>
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-cyan-100">Version mismatch</h3>
+                        <p class="text-gray-400 mb-4">If names, weapons, maps or menus do not match, compare versions first.</p>
+                        <a href="/versions/" class="text-cyan-300 font-bold">Compare versions →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-green-100">App progression</h3>
+                        <p class="text-gray-400 mb-4">If an App stage or boss blocks progress, use App builds and upgrade pages.</p>
+                        <a href="/best-builds/" class="text-green-300 font-bold">Open best builds →</a>
+                    </div>
+                    <div class="panel p-6">
+                        <h3 class="font-bold text-lg mb-4 text-orange-100">Browser play</h3>
+                        <p class="text-gray-400 mb-4">If you are playing in a browser frame, use the browser play page and browser FAQs.</p>
+                        <a href="/play/" class="text-orange-300 font-bold">Open Play Online →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-t border-gray-800 px-4 py-14">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Strategy Page Questions</h2>
+                <div class="space-y-4">
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Is this still a long strategy guide?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">No. This page now points you to the right guide by version and task, because App and browser advice should not be mixed.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should VOODOO App players start?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Start with <a href="/guides/" class="text-cyan-300 underline hover:text-white">App Guides</a> or <a href="/best-builds/" class="text-cyan-300 underline hover:text-white">Best Builds</a>, then move to weapons, upgrades or tier lists based on the decision you need to make.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should browser players go?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Use the <a href="/play/" class="text-cyan-300 underline hover:text-white">Play Online</a> page for the separate FreezeNova browser version.</p>
+                    </details>
+                    <details class="panel p-6">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What if I do not know which version I have?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary>
+                        <p class="text-gray-400 mt-4">Open the <a href="/versions/" class="text-cyan-300 underline hover:text-white">version comparison</a>. It explains when to use App guides and when to use browser pages.</p>
+                    </details>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 bg-opacity-80 py-12 px-4">
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-skull text-2xl" style="color: var(--accent-orange);" aria-hidden="true"></i>
-                        <span class="text-lg font-bold">Monster<span style="color: var(--accent-cyan);">Survivors</span></span>
+                        <i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                        <span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
                     </div>
-                    <p class="text-gray-400 text-sm">
-                        Your ultimate guide for Monster Survivors by FreezeNova. Strategies, tips, and guides for the browser-based survival game.
-                    </p>
+                    <p class="text-gray-400 text-sm">Version-safe Monster Survivors guidance for App and browser players.</p>
                 </div>
-
                 <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Quick Links</h3>
+                    <h3 class="font-bold mb-4 text-orange-400">App Routes</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="/play/" class="hover:text-cyan-400 transition">Play Online</a></li>
-                        <li><a href="/guides/" class="hover:text-cyan-400 transition">All Guides</a></li>
-                        <li><a href="/strategies/" class="hover:text-cyan-400 transition">Strategies</a></li>
+                        <li><a href="/guides/">App Guides</a></li>
+                        <li><a href="/best-builds/">Best Builds</a></li>
+                        <li><a href="/tier-list/">Tier List</a></li>
+                        <li><a href="/guides/upgrades">App Upgrades</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Guides</h3>
+                    <h3 class="font-bold mb-4 text-orange-400">Version Help</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="/guides/beginner-guide.html" class="hover:text-cyan-400 transition">Beginner Guide</a></li>
-                        <li><a href="/guides/weapon-choice.html" class="hover:text-cyan-400 transition">Weapon Guide</a></li>
-                        <li><a href="/guides/boss-battles.html" class="hover:text-cyan-400 transition">Boss Battles</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold mb-4 text-orange-400">Legal</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="/privacy-policy/" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="hover:text-cyan-400 transition">Terms of Service</a></li>
-                        <li><a href="/contact/" class="hover:text-cyan-400 transition">Contact Us</a></li>
+                        <li><a href="/versions/">Version Comparison</a></li>
+                        <li><a href="/play/">Separate Browser Game</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-gray-500 text-sm text-center md:text-left">
-                        &copy; 2026 MonsterSurvivors.plus - All Rights Reserved
-                    </p>
-                    <p class="text-gray-500 text-sm text-center md:text-right">
-                        <strong>Disclaimer:</strong> This is a fan-made guide. Monster Survivors is developed by FreezeNova.
-                    </p>
-                </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4">
+                <p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p>
+                <p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
-                const isExpanded = mobileMenu.classList.contains('hidden');
-                mobileMenu.classList.toggle('hidden');
-                mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                }
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
             });
         }
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
     </script>
 </body>
 </html>
