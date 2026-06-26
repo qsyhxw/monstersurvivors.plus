@@ -3,303 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Monster Survivors Wiki: Complete Database, Weapons & Heroes</title>
-    <meta name="description" content="Welcome to the Monster Survivors Wiki. Explore our comprehensive database featuring all weapons, heroes, maps, tier lists, and strategies to min-max your next run.">
-    <meta name="keywords" content="monster survivors wiki, monster survivors database, monster survivors heroes, monster survivors weapons, full guide">
+    <title>Monster Survivors Wiki (2026): App Guides &amp; Builds</title>
+    <meta name="description" content="Monster Survivors App wiki for heroes, weapons, builds, gear, upgrades, Gilded Cores, beginner help and version-safe progression.">
+    <meta name="keywords" content="monster survivors wiki, monster survivors app wiki, heroes, weapons, builds, gear, upgrades">
+    <meta name="author" content="MonsterSurvivors.plus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/wiki/">
-    
-    <!-- Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-511JG9F2HD');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-511JG9F2HD');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-         crossorigin="anonymous"></script>
-    
-    <!-- Tailwind CSS -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Monster Survivors App Wiki (2026)">
+    <meta property="og:description" content="Find the right App guide for heroes, weapons, builds, gear, upgrades and Gilded Cores.">
+    <meta property="og:url" content="https://monstersurvivors.plus/wiki/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+    <meta property="article:modified_time" content="2026-06-25T00:00:00+08:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors App Wiki">
+    <meta name="twitter:description" content="Heroes, weapons, builds, gear and progression help for the VOODOO App.">
+    <meta name="twitter:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1a1a2e',
-                        'secondary-dark': '#16213e',
+                        'primary-dark': '#0a0a1a',
+                        'secondary-dark': '#0f1729',
                         'accent-orange': '#ff6b35',
                         'accent-cyan': '#00d9ff',
+                        'accent-purple': '#a855f7',
+                        'accent-gold': '#f7c948'
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 34px rgba(0,217,255,.2)',
+                        'glow-orange': '0 0 34px rgba(255,107,53,.2)'
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: var(--primary-dark); color: #f5f5f5; }
+        :root {
+            --primary-dark: #0a0a1a;
+            --secondary-dark: #0f1729;
+            --accent-orange: #ff6b35;
+            --accent-cyan: #00d9ff;
+            --accent-purple: #a855f7;
+            --accent-gold: #f7c948;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: 'Inter', sans-serif; color: #f5f5f5; background: var(--primary-dark); overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
-        .btn-primary { background: linear-gradient(135deg, #ff6b35 0%, #e63946 100%); transition: all 0.3s ease; }
-        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4); }
-        .card-hover { transition: all 0.3s ease; border: 2px solid rgba(0, 217, 255, 0.2); background: rgba(255, 255, 255, 0.05); }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 217, 255, 0.15); border-color: var(--accent-cyan); background: rgba(0, 217, 255, 0.05); }
-        .hero-card-hover { transition: all 0.3s ease; border: 2px solid rgba(255, 107, 53, 0.2); background: rgba(255, 255, 255, 0.05); }
-        .hero-card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255, 107, 53, 0.15); border-color: var(--accent-orange); background: rgba(255, 107, 53, 0.05); }
-        .search-bar { background: rgba(255, 255, 255, 0.05); border: 2px solid rgba(0, 217, 255, 0.3); transition: all 0.3s ease; }
-        .search-bar:focus-within { border-color: var(--accent-cyan); background: rgba(255, 255, 255, 0.1); }
+        .hero-bg {
+            background:
+                radial-gradient(circle at 13% 18%, rgba(0,217,255,.16), transparent 31%),
+                radial-gradient(circle at 84% 20%, rgba(255,107,53,.17), transparent 31%),
+                radial-gradient(circle at 52% 100%, rgba(168,85,247,.13), transparent 36%),
+                linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0f1729 100%);
+        }
+        .panel { background: rgba(17,24,39,.78); border: 1px solid rgba(75,85,99,.72); border-radius: 1rem; }
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(17,24,39,.94), rgba(15,23,41,.75));
+            border: 1px solid rgba(0,217,255,.23);
+            border-radius: 1rem;
+            backdrop-filter: blur(9px);
+        }
+        .wiki-card, .route-card { position: relative; overflow: hidden; transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease; }
+        .wiki-card:hover, .route-card:hover { transform: translateY(-4px); border-color: rgba(0,217,255,.55); box-shadow: 0 16px 34px rgba(0,217,255,.09); }
+        .search-shell { background: rgba(10,10,26,.72); border: 1px solid rgba(0,217,255,.42); border-radius: .85rem; }
+        .search-shell:focus-within { border-color: rgba(0,217,255,.9); box-shadow: 0 0 0 3px rgba(0,217,255,.09); }
+        .tag {
+            display: inline-flex; padding: .25rem .65rem; border-radius: 9999px;
+            background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.14);
+            color: #d1d5db; font-size: .7rem; font-weight: 800; letter-spacing: .04em;
+        }
+        .stat-pill {
+            display: inline-flex; margin: .12rem .18rem .12rem 0; padding: .24rem .6rem;
+            border-radius: 9999px; background: rgba(0,217,255,.08); border: 1px solid rgba(0,217,255,.28);
+            color: #b6f3ff; font-size: .75rem; font-weight: 700; white-space: nowrap;
+        }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .wiki-table { width: 100%; min-width: 760px; border-collapse: collapse; }
+        .wiki-table th, .wiki-table td { padding: .95rem 1rem; border-bottom: 1px solid rgba(75,85,99,.55); text-align: left; vertical-align: top; }
+        .wiki-table th {
+            color: #9befff; background: rgba(15,23,41,.98); font-family: 'Orbitron', sans-serif;
+            font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap;
+        }
+        .wiki-table tr:last-child td { border-bottom: 0; }
+        .check-item, .warn-item { position: relative; padding-left: 1.75rem; }
+        .check-item::before, .warn-item::before { position: absolute; left: 0; top: .1rem; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+        .check-item::before { content: '\f00c'; color: var(--accent-cyan); }
+        .warn-item::before { content: '\f071'; color: #fb7185; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform .2s ease; }
+        :target { scroll-margin-top: 5.5rem; }
     </style>
 
-    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://monstersurvivors.plus/wiki/#webpage",
+        "url": "https://monstersurvivors.plus/wiki/",
+        "name": "Monster Survivors Wiki (2026): App Guides & Builds",
+        "description": "An App-first reference hub for heroes, weapons, builds, gear, upgrades, Gilded Cores and version-safe progression.",
+        "isPartOf": {"@id": "https://monstersurvivors.plus/#website"},
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Monster Survivors",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Android, Windows",
+            "author": {"@type": "Organization", "name": "VOODOO"},
+            "sameAs": "https://play.google.com/store/apps/details?id=games.rivvy.monstersurvivors"
+        },
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {"@id": "https://monstersurvivors.plus/wiki/#webpage"},
+        "headline": "Monster Survivors App Wiki",
+        "description": "Find App guides for heroes, weapons, builds, gear, upgrades, Gilded Cores and beginner progression.",
+        "image": "https://monstersurvivors.plus/images/guides/monster-survivors-app-heroes-builds.jpg",
+        "author": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "publisher": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
+        "datePublished": "2026-01-12",
+        "dateModified": "2026-06-25",
+        "inLanguage": "en"
+    }
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Monster Survivors Wiki Database",
-        "description": "Comprehensive index of all characters, weapons, and guides in Monster Survivors.",
+        "name": "Monster Survivors App Wiki Topics",
+        "numberOfItems": 9,
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "url": "https://monstersurvivors.plus/heroes/arcanix/", "name": "Arcanix Hero" },
-            { "@type": "ListItem", "position": 2, "url": "https://monstersurvivors.plus/weapons-database/plasma-gun/", "name": "Plasma Gun Weapon" },
-            { "@type": "ListItem", "position": 3, "url": "https://monstersurvivors.plus/weapons-database/holy-cross/", "name": "Holy Cross Weapon" }
+            {"@type": "ListItem", "position": 1, "name": "Beginner Guide", "url": "https://monstersurvivors.plus/guides/beginner-guide"},
+            {"@type": "ListItem", "position": 2, "name": "Best Builds", "url": "https://monstersurvivors.plus/best-builds/"},
+            {"@type": "ListItem", "position": 3, "name": "Heroes Tier List", "url": "https://monstersurvivors.plus/tier-list/heroes"},
+            {"@type": "ListItem", "position": 4, "name": "Best Weapons", "url": "https://monstersurvivors.plus/guides/best-weapons"},
+            {"@type": "ListItem", "position": 5, "name": "Weapon Combos", "url": "https://monstersurvivors.plus/guides/weapon-combos"},
+            {"@type": "ListItem", "position": 6, "name": "Best Gear Set", "url": "https://monstersurvivors.plus/guides/best-gear-set"},
+            {"@type": "ListItem", "position": 7, "name": "App Upgrades", "url": "https://monstersurvivors.plus/guides/upgrades"},
+            {"@type": "ListItem", "position": 8, "name": "Gilded Cores", "url": "https://monstersurvivors.plus/guides/gilded-cores/"},
+            {"@type": "ListItem", "position": 9, "name": "App Tier List", "url": "https://monstersurvivors.plus/tier-list/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Which Monster Survivors game does this wiki cover?", "acceptedAnswer": {"@type": "Answer", "text": "This wiki covers the Monster Survivors App published by VOODOO under package games.rivvy.monstersurvivors. The Play Online page hosts a separate FreezeNova browser game."}},
+            {"@type": "Question", "name": "Where should a new Monster Survivors player start?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the Beginner Guide, choose one developed hero and balanced weapon package, then use the upgrades and gear guides when permanent spending becomes relevant."}},
+            {"@type": "Question", "name": "Does the wiki list exact drop rates and upgrade costs?", "acceptedAnswer": {"@type": "Answer", "text": "No fixed public table is presented as universal. Rewards, prices and menus can change, so exact decisions should use the current App preview."}},
+            {"@type": "Question", "name": "Where can I compare heroes and weapons?", "acceptedAnswer": {"@type": "Answer", "text": "Use the Heroes Tier List for hero investment, Best Weapons for weapon roles, and Best Builds when the hero, weapons, equipment, skills and map need to work together."}}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://monstersurvivors.plus/"},
+            {"@type": "ListItem", "position": 2, "name": "Monster Survivors Wiki", "item": "https://monstersurvivors.plus/wiki/"}
         ]
     }
     </script>
 </head>
-<body>
-
-    <!-- Navigation Header -->
-    <nav class="sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm" style="background-color: rgba(26, 26, 46, 0.95);">
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 border-b border-gray-800 bg-opacity-95 backdrop-blur-sm" style="background-color:rgba(26,26,46,.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-2">
-                        <i class="fas fa-skull text-3xl" style="color: #ff6b35;"></i>
-                        <span class="text-xl font-bold">Monster<span style="color: #00d9ff;">Survivors</span></span>
-                    </a>
-                </div>
-                
-                <div class="hidden md:flex space-x-8 text-sm font-semibold">
-                    <a href="/" class="hover:text-cyan-400 transition text-gray-300">Home</a>
+                <a href="/" class="flex items-center space-x-2" aria-label="Monster Survivors home">
+                    <i class="fas fa-skull text-3xl" style="color:var(--accent-orange)" aria-hidden="true"></i>
+                    <span class="text-xl font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/guides/" class="hover:text-cyan-400 transition">App Guides</a>
                     <a href="/wiki/" class="text-cyan-400">Wiki</a>
-                    <a href="/weapons-database/" class="hover:text-cyan-400 transition text-gray-300">Weapons</a>
-                    <a href="/heroes/" class="hover:text-cyan-400 transition text-gray-300">Heroes</a>
-                    <a href="/play/" class="hover:text-cyan-400 transition text-gray-300">Play Online</a>
+                    <a href="/tier-list/" class="hover:text-cyan-400 transition">Tier List</a>
+                    <a href="/best-builds/" class="hover:text-cyan-400 transition">Best Builds</a>
+                    <a href="/play/" class="text-gray-400 hover:text-cyan-400 transition">Play Online</a>
                 </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><i class="fas fa-bars text-2xl" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/guides/" class="block py-2">App Guides</a>
+                <a href="/wiki/" class="block py-2 text-cyan-400">Wiki</a>
+                <a href="/tier-list/" class="block py-2">Tier List</a>
+                <a href="/best-builds/" class="block py-2">Best Builds</a>
+                <a href="/play/" class="block py-2 text-gray-400">Play Online</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="gradient-bg py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight flex justify-center items-center">
-                    <i class="fas fa-book-journal-whills text-cyan-400 mr-4"></i>Monster Survivors Wiki Hub
-                </h1>
-                
-                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Welcome to the ultimate Community Database. Find absolute mathematical scaling properties, unlock conditions, and tier synergies right here.
-                </p>
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm text-gray-400">
+                <a href="/" class="hover:text-cyan-400">Home</a><i class="fas fa-chevron-right text-xs" aria-hidden="true"></i><span class="text-cyan-300">Wiki</span>
+            </nav>
+        </div>
 
-                <!-- Mock Search Bar (visually appealing conversion point) -->
-                <div class="max-w-xl mx-auto mb-10">
-                    <div class="search-bar flex rounded-xl overflow-hidden px-4 py-3">
-                        <i class="fas fa-search text-cyan-400 mr-3 mt-1"></i>
-                        <input type="text" id="wikiSearch" placeholder="Search weapons, heroes, or guides..." class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500">
+        <section class="hero-bg px-4 pt-10 pb-16 border-b border-gray-800">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold text-green-200 bg-green-950 bg-opacity-70 px-3 py-1.5 rounded-full border border-green-700 mb-5"><i class="fab fa-android" aria-hidden="true"></i>VOODOO APP WIKI · UPDATED JUNE 25, 2026</span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">Monster Survivors <span class="text-cyan-300">Wiki</span></h1>
+                    <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-7">Find practical App answers for heroes, weapons, builds, gear, upgrades and Gilded Cores—without mixing in the separate browser game's mechanics.</p>
+                    <div class="search-shell flex items-center px-4 py-3 mb-4 max-w-2xl">
+                        <i class="fas fa-search text-cyan-300 mr-3" aria-hidden="true"></i>
+                        <label for="wiki-search" class="sr-only">Search wiki topics</label>
+                        <input id="wiki-search" type="search" placeholder="Search builds, heroes, weapons, gear, upgrades..." class="bg-transparent text-white w-full focus:outline-none placeholder-gray-500" autocomplete="off">
+                        <button id="clear-search" type="button" class="hidden text-gray-400 hover:text-white ml-3" aria-label="Clear wiki search"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+                    </div>
+                    <p id="search-status" class="text-sm text-gray-400" aria-live="polite">Search the topic cards below.</p>
+                </div>
+                <figure class="glass-panel p-3 shadow-glow-cyan">
+                    <img src="/images/guides/monster-survivors-app-heroes-builds.jpg" alt="Monster Survivors App hero screen with equipment and hero ability cards" class="w-full max-h-[570px] object-contain rounded-xl" width="444" height="592">
+                    <figcaption class="text-sm text-gray-400 p-3">App progression connects hero development, named abilities, equipment, currencies and the build used for the current stage.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <aside class="max-w-6xl mx-auto px-4 mt-8">
+            <div class="bg-cyan-950 bg-opacity-25 border border-cyan-700 rounded-xl p-6 flex flex-col md:flex-row md:items-center gap-5">
+                <div class="flex items-start gap-4 flex-1">
+                    <i class="fas fa-code-branch text-2xl text-cyan-300 mt-1" aria-hidden="true"></i>
+                    <div><h2 class="text-xl font-bold text-cyan-100 mb-2">Check Your Version First</h2><p class="text-gray-300 leading-relaxed">This Wiki covers Monster Survivors published by VOODOO under package <strong>games.rivvy.monstersurvivors</strong>. If your game uses the FreezeNova browser interface, use the version comparison instead.</p></div>
+                </div>
+                <a href="/versions/" class="bg-cyan-700 hover:bg-cyan-600 px-5 py-3 rounded-lg font-bold inline-flex items-center justify-center whitespace-nowrap">Compare Versions</a>
+            </div>
+        </aside>
+
+        <section id="wiki-index" class="max-w-7xl mx-auto px-4 py-16">
+            <div class="max-w-3xl mb-9"><p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Wiki index</p><h2 class="text-3xl sm:text-4xl font-bold mb-4">Choose the System You Need</h2><p class="text-gray-400 text-lg">Each entry opens an existing App guide with a specific job.</p></div>
+            <div id="wiki-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/guides/beginner-guide" class="wiki-card panel p-7 border-t-4 border-green-500" data-wiki-item="beginner new player first account early game starting route progression">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-route text-3xl text-green-300" aria-hidden="true"></i><span class="tag">START HERE</span></div><h3 class="text-xl font-bold mb-3">Beginner Guide</h3><p class="text-gray-400 mb-5">Choose one main hero, fill weapon jobs, protect scarce resources and fix the first progression wall.</p><span class="text-green-300 font-bold text-sm">Build the first route →</span>
+                </a>
+                <a href="/tier-list/heroes" class="wiki-card panel p-7 border-t-4 border-purple-500" data-wiki-item="hero heroes character survivor tier list abilities skills investment">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-user-shield text-3xl text-purple-300" aria-hidden="true"></i><span class="tag">HEROES</span></div><h3 class="text-xl font-bold mb-3">Heroes Tier List</h3><p class="text-gray-400 mb-5">Compare general and specialist hero profiles before moving long-term resources to another survivor.</p><span class="text-purple-300 font-bold text-sm">Compare heroes →</span>
+                </a>
+                <a href="/guides/best-weapons" class="wiki-card panel p-7 border-t-4 border-cyan-500" data-wiki-item="weapon weapons tier list plasma beam sniper shuriken blaster crowd boss damage">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-gun text-3xl text-cyan-300" aria-hidden="true"></i><span class="tag">WEAPONS</span></div><h3 class="text-xl font-bold mb-3">Best Weapons</h3><p class="text-gray-400 mb-5">Compare crowd coverage, focused damage, close protection and flexible weapon roles.</p><span class="text-cyan-300 font-bold text-sm">Compare weapon roles →</span>
+                </a>
+                <a href="/guides/weapon-combos" class="wiki-card panel p-7 border-t-4 border-blue-500" data-wiki-item="weapon combo combinations synergy loadout crowd boss flex">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-link text-3xl text-blue-300" aria-hidden="true"></i><span class="tag">COMBOS</span></div><h3 class="text-xl font-bold mb-3">Weapon Combos</h3><p class="text-gray-400 mb-5">Build a three-job package instead of filling every slot with weapons that solve the same problem.</p><span class="text-blue-300 font-bold text-sm">Build a weapon package →</span>
+                </a>
+                <a href="/best-builds/" class="wiki-card panel p-7 border-t-4 border-orange-500" data-wiki-item="build builds loadout hero weapon equipment gear skills map setup">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-cubes-stacked text-3xl text-orange-300" aria-hidden="true"></i><span class="tag">FULL BUILDS</span></div><h3 class="text-xl font-bold mb-3">Best Builds</h3><p class="text-gray-400 mb-5">Coordinate hero, weapons, equipment stats, skill priorities and the map or failure being solved.</p><span class="text-orange-300 font-bold text-sm">Choose a full setup →</span>
+                </a>
+                <a href="/guides/best-gear-set" class="wiki-card panel p-7 border-t-4 border-amber-500" data-wiki-item="gear equipment best set armor dodge shield hp restore attack speed damage crit range">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-shield-halved text-3xl text-amber-300" aria-hidden="true"></i><span class="tag">EQUIPMENT</span></div><h3 class="text-xl font-bold mb-3">Best Gear Set</h3><p class="text-gray-400 mb-5">Choose keeper effects and stats, compare replacement risk and avoid consuming useful duplicates.</p><span class="text-amber-300 font-bold text-sm">Choose keeper gear →</span>
+                </a>
+                <a href="/guides/upgrades" class="wiki-card panel p-7 border-t-4 border-yellow-500" data-wiki-item="upgrade upgrades permanent damage attack speed range crit hp armor dodge shield xp gain luck cost">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-arrow-up-right-dots text-3xl text-yellow-300" aria-hidden="true"></i><span class="tag">PERMANENT POWER</span></div><h3 class="text-xl font-bold mb-3">App Upgrades</h3><p class="text-gray-400 mb-5">Prioritize Damage, Attack Speed, required safety, keeper gear and farming stats by account stage.</p><span class="text-yellow-300 font-bold text-sm">Plan the next upgrade →</span>
+                </a>
+                <a href="/guides/gilded-cores/" class="wiki-card panel p-7 border-t-4 border-yellow-300" data-wiki-item="gilded core cores currency resource farm farming spend reward permanent">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-gem text-3xl text-yellow-200" aria-hidden="true"></i><span class="tag">SCARCE RESOURCE</span></div><h3 class="text-xl font-bold mb-3">Gilded Cores</h3><p class="text-gray-400 mb-5">Check current reward sources, separate one-time and repeatable gains, and spend on durable progression.</p><span class="text-yellow-200 font-bold text-sm">Protect your Cores →</span>
+                </a>
+                <a href="/tier-list/" class="wiki-card panel p-7 border-t-4 border-fuchsia-500" data-wiki-item="tier list ranking priority hero weapon gear stats general specialist">
+                    <div class="flex justify-between items-center gap-3 mb-5"><i class="fas fa-ranking-star text-3xl text-fuchsia-300" aria-hidden="true"></i><span class="tag">PRIORITIES</span></div><h3 class="text-xl font-bold mb-3">App Tier List</h3><p class="text-gray-400 mb-5">Use broad rankings as a starting point, then adjust for current development and the next stage.</p><span class="text-fuchsia-300 font-bold text-sm">Compare priorities →</span>
+                </a>
+            </div>
+            <div id="no-results" class="hidden panel p-8 text-center mt-6"><i class="fas fa-magnifying-glass text-3xl text-gray-500 mb-4" aria-hidden="true"></i><h3 class="text-xl font-bold mb-2">No matching Wiki topic</h3><p class="text-gray-400">Try a broader term such as hero, weapon, gear, build, upgrade or Core.</p></div>
+        </section>
+
+        <section class="bg-gray-950 bg-opacity-65 border-y border-gray-800 px-4 py-16">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-3xl mb-9"><p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Core reference</p><h2 class="text-3xl sm:text-4xl font-bold mb-4">How the App Systems Connect</h2><p class="text-gray-400 text-lg">Use this order when several menus are asking for resources at the same time.</p></div>
+                <div class="table-scroll panel">
+                    <table class="wiki-table">
+                        <thead><tr><th>System</th><th>Main Decision</th><th>Good Default</th><th>Common Mistake</th><th>Open</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Hero</strong></td><td class="text-gray-300">Which developed survivor supports the current job?</td><td class="text-gray-300">Keep one reliable general hero ahead.</td><td class="text-gray-300">Switching only because another hero ranks higher in isolation.</td><td><a href="/tier-list/heroes" class="text-purple-300 font-bold">Heroes →</a></td></tr>
+                            <tr><td><strong>Weapons</strong></td><td class="text-gray-300">Do the slots cover crowds, durable targets and a missing flex role?</td><td class="text-gray-300">Use complementary jobs instead of duplicate weaknesses.</td><td class="text-gray-300">Filling every slot with the same damage shape.</td><td><a href="/guides/weapon-combos" class="text-blue-300 font-bold">Combos →</a></td></tr>
+                            <tr><td><strong>Gear</strong></td><td class="text-gray-300">Does the effect reinforce the same hero and weapon plan?</td><td class="text-gray-300">Enhance a proven keeper after checking the output.</td><td class="text-gray-300">Chasing score or rarity while losing a useful effect.</td><td><a href="/guides/best-gear-set" class="text-amber-300 font-bold">Gear →</a></td></tr>
+                            <tr><td><strong>Permanent upgrades</strong></td><td class="text-gray-300">Which stat fixes the current progression wall?</td><td class="text-gray-300">Damage and Attack Speed first, then required safety or specialist value.</td><td class="text-gray-300">Keeping every stat equal or buying farming stats during a hard push.</td><td><a href="/guides/upgrades" class="text-yellow-300 font-bold">Upgrades →</a></td></tr>
+                            <tr><td><strong>Gilded Cores</strong></td><td class="text-gray-300">Is the result permanent, useful now and clearly shown?</td><td class="text-gray-300">Save until one durable target passes all three checks.</td><td class="text-gray-300">Spending to clear a notification or unfinished second build.</td><td><a href="/guides/gilded-cores/" class="text-yellow-200 font-bold">Cores →</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid lg:grid-cols-[.78fr_1.22fr] gap-9 items-start">
+                <div class="lg:sticky lg:top-24"><p class="text-purple-300 font-bold uppercase tracking-widest text-sm mb-3">Stat glossary</p><h2 class="text-3xl sm:text-4xl font-bold mb-5">Read Stats by Their Job</h2><p class="text-gray-400 text-lg leading-relaxed mb-6">A stat is useful when it fixes the current build or stage. Its position changes between progression pushes, bosses and safe farming.</p><a href="/guides/upgrades" class="inline-flex items-center text-yellow-300 font-bold">Open the upgrade order <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i></a></div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="panel p-6 border-l-4 border-orange-500"><h3 class="text-lg font-bold mb-3">Broad Offense</h3><p class="mb-3"><span class="stat-pill">Damage</span><span class="stat-pill">Attack Speed</span></p><p class="text-gray-400">Raise these early when enemies remain alive or attacks leave unsafe gaps.</p></div>
+                    <div class="panel p-6 border-l-4 border-cyan-500"><h3 class="text-lg font-bold mb-3">Spacing &amp; Uptime</h3><p class="mb-3"><span class="stat-pill">Range</span><span class="stat-pill">Speed</span></p><p class="text-gray-400">Move them up when terrain, projectiles or close pressure prevent safe damage.</p></div>
+                    <div class="panel p-6 border-l-4 border-purple-500"><h3 class="text-lg font-bold mb-3">Focused Damage</h3><p class="mb-3"><span class="stat-pill">Crit Chance</span><span class="stat-pill">Crit Damage</span></p><p class="text-gray-400">Use them when bosses or durable elites remain after normal waves are solved.</p></div>
+                    <div class="panel p-6 border-l-4 border-green-500"><h3 class="text-lg font-bold mb-3">Survival</h3><p class="mb-3"><span class="stat-pill">HP</span><span class="stat-pill">Armor</span><span class="stat-pill">Dodge</span><span class="stat-pill">Shield</span><span class="stat-pill">HP Restore</span></p><p class="text-gray-400">Choose the direction that prevents the repeatable hit pattern ending the run.</p></div>
+                    <div class="panel p-6 border-l-4 border-yellow-500 sm:col-span-2"><h3 class="text-lg font-bold mb-3">Farming &amp; Comfort</h3><p class="mb-3"><span class="stat-pill">XP Gain</span><span class="stat-pill">Pickup Range</span><span class="stat-pill">Luck</span></p><p class="text-gray-400">Raise them after repeatable content is already safe; do not let them replace required combat stats during a difficult push.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-bg border-y border-gray-800 px-4 py-16">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[.9fr_1.1fr] gap-9 items-center">
+                <figure class="glass-panel p-3"><img src="/images/guides/monster-survivors-app-weapons.jpg" alt="Monster Survivors App weapon screen showing Plasma Beam and weapon cards" class="w-full max-h-[550px] object-contain rounded-xl" width="444" height="592"><figcaption class="text-sm text-gray-400 p-3">Weapon Level, Rank and current development matter alongside the role a weapon fills.</figcaption></figure>
+                <div>
+                    <p class="text-orange-300 font-bold uppercase tracking-widest text-sm mb-3">Problem finder</p><h2 class="text-3xl sm:text-4xl font-bold mb-7">Open the Guide That Matches the Failure</h2>
+                    <div class="space-y-4">
+                        <a href="/guides/best-weapons" class="route-card panel p-5 block"><h3 class="font-bold mb-2 text-cyan-200">Crowds or bosses survive too long</h3><p class="text-gray-400">Compare weapon roles and the damage shape the loadout is missing.</p></a>
+                        <a href="/guides/best-gear-set" class="route-card panel p-5 block"><h3 class="font-bold mb-2 text-amber-200">A gear replacement or merge feels risky</h3><p class="text-gray-400">Check keeper effects, stat direction, duplicates and replacement risk.</p></a>
+                        <a href="/guides/upgrades" class="route-card panel p-5 block"><h3 class="font-bold mb-2 text-yellow-200">You have currency but no spending order</h3><p class="text-gray-400">Match Damage, Attack Speed, survival, Crit and farming stats to the current account stage.</p></a>
+                        <a href="/best-builds/" class="route-card panel p-5 block"><h3 class="font-bold mb-2 text-orange-200">Every individual part looks good, but the run still fails</h3><p class="text-gray-400">Rebuild the hero, weapons, gear, skills and map goal as one complete setup.</p></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Main Content -->
-        <section class="py-16 px-4" style="background-color: #1a1a2e;">
-            <div class="max-w-6xl mx-auto">
-                
-                <!-- Weapons Hub -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
-                        <i class="fas fa-crosshairs text-cyan-400 mr-3"></i> Weapons Catalog & Evolutions
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <a href="/weapons-database/plasma-gun/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-raygun text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Plasma Gun</h3>
-                            <p class="text-sm text-gray-400">Ranged / Automated</p>
-                        </a>
-                        <a href="/weapons-database/chain-lightning-ring/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-bolt text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Lightning Ring</h3>
-                            <p class="text-sm text-gray-400">Orbital / Automated</p>
-                        </a>
-                        <a href="/weapons-database/holy-cross/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-cross text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Holy Cross</h3>
-                            <p class="text-sm text-gray-400">Orbital / Defensive</p>
-                        </a>
-                        <a href="/weapons-database/rocket-launcher/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-rocket text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Rocket Launcher</h3>
-                            <p class="text-sm text-gray-400">AoE / Explosive</p>
-                        </a>
-                        <a href="/weapons-database/steel-sword/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-khanda text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Steel Sword</h3>
-                            <p class="text-sm text-gray-400">Melee / Starting</p>
-                        </a>
-                        <a href="/weapons-database/magic-staff/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-magic text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Magic Staff</h3>
-                            <p class="text-sm text-gray-400">Ranged / Magic</p>
-                        </a>
-                        <a href="/weapons-database/wooden-wand/" class="card-hover rounded-xl p-5 flex flex-col items-center text-center">
-                            <i class="fas fa-wand-magic-sparkles text-3xl mb-3 text-cyan-300"></i>
-                            <h3 class="font-bold text-lg mb-1">Wooden Wand</h3>
-                            <p class="text-sm text-gray-400">Ranged / Magic</p>
-                        </a>
-                        <a href="/weapons-database/" class="bg-gray-800 hover:bg-gray-700 transition rounded-xl p-5 flex flex-col items-center justify-center text-center border-2 border-dashed border-gray-600">
-                            <i class="fas fa-ellipsis-h text-2xl mb-2 text-gray-400"></i>
-                            <h3 class="font-bold text-gray-300">View All 13+ Weapons</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Heroes Hub -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
-                        <i class="fas fa-user-ninja text-orange-400 mr-3"></i> Heroes & Characters Index
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        <a href="/heroes/arcanix/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-hat-wizard text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Arcanix</h3>
-                                <p class="text-sm text-gray-400">Early-game Spellcaster</p>
-                            </div>
-                        </a>
-                        
-                        <a href="/heroes/balencio/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-shield-halved text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Balencio</h3>
-                                <p class="text-sm text-gray-400">Balanced / High Defense</p>
-                            </div>
-                        </a>
-
-                        <a href="/heroes/echo/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-wind text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Echo</h3>
-                                <p class="text-sm text-gray-400">Swift Movement</p>
-                            </div>
-                        </a>
-
-                        <a href="/heroes/knight/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-chess-knight text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Knight</h3>
-                                <p class="text-sm text-gray-400">Heavy Melee Base</p>
-                            </div>
-                        </a>
-
-                        <a href="/heroes/mage/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-star text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Mage</h3>
-                                <p class="text-sm text-gray-400">Magic Specialist</p>
-                            </div>
-                        </a>
-
-                        <a href="/heroes/miyu/" class="hero-card-hover rounded-xl p-6 flex items-center">
-                            <div class="w-16 h-16 rounded-full bg-orange-900 bg-opacity-50 flex items-center justify-center mr-4">
-                                <i class="fas fa-cat text-2xl text-orange-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-xl mb-1 text-white">Miyu</h3>
-                                <p class="text-sm text-gray-400">Agile / Fast Attacks</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Guides Hub -->
-                <div class="mb-8">
-                    <h2 class="text-3xl font-bold mb-8 flex items-center border-b border-gray-800 pb-4">
-                        <i class="fas fa-map-location-dot text-gray-300 mr-3"></i> Game Mechanics & Tier Lists
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-700 flex justify-between items-center transition hover:bg-gray-800">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">Builds & Tier List</h3>
-                                <p class="text-gray-400">Discover what dominates the current season's meta.</p>
-                            </div>
-                            <a href="/tier-list/" class="bg-white text-gray-900 font-bold px-4 py-2 rounded">Go &rarr;</a>
-                        </div>
-                        
-                        <div class="bg-gray-900 bg-opacity-50 rounded-xl p-8 border border-gray-700 flex justify-between items-center transition hover:bg-gray-800">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">Beginner Guides</h3>
-                                <p class="text-gray-400">Master kiting, farming, and survival mechanics.</p>
-                            </div>
-                            <a href="/guides/beginner-guide.html" class="bg-white text-gray-900 font-bold px-4 py-2 rounded">Go &rarr;</a>
-                        </div>
-
-                        <div class="bg-yellow-900 bg-opacity-20 rounded-xl p-8 border border-yellow-500 border-opacity-40 flex justify-between items-center transition hover:bg-yellow-900 hover:bg-opacity-30 md:col-span-2">
-                            <div class="pr-6">
-                                <h3 class="text-2xl font-bold mb-2 text-yellow-200">App Gilded Cores Guide</h3>
-                                <p class="text-gray-400">Check current Core rewards, compare repeatable farming routes and protect scarce permanent resources.</p>
-                            </div>
-                            <a href="/guides/gilded-cores/" class="bg-yellow-300 text-gray-950 font-bold px-4 py-2 rounded whitespace-nowrap">Open &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <div class="grid lg:grid-cols-2 gap-6 mb-16">
+                <div class="panel p-7 border-l-4 border-cyan-500"><h2 class="text-2xl font-bold mb-4">What This Wiki Can Answer</h2><ul class="space-y-3 text-gray-300"><li class="check-item">Which guide fits the current hero, weapon, gear or resource decision.</li><li class="check-item">Which stat direction matches a crowd, boss, spacing or survival wall.</li><li class="check-item">When to preserve Gilded Cores, gear materials and useful duplicates.</li><li class="check-item">Whether advice belongs to the VOODOO App or the browser version.</li></ul></div>
+                <div class="panel p-7 border-l-4 border-rose-500"><h2 class="text-2xl font-bold mb-4">Check the Current App Screen For</h2><ul class="space-y-3 text-gray-300"><li class="warn-item">Exact prices, reward quantities and rotating offers.</li><li class="warn-item">The complete output of an enhancement, merge or unlock.</li><li class="warn-item">Patch-sensitive hero, weapon and equipment values.</li><li class="warn-item">Whether a reward is one-time or still appears after repeating content.</li></ul></div>
             </div>
+            <section id="faq">
+                <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3 text-center">FAQ</p><h2 class="text-3xl sm:text-4xl font-bold mb-9 text-center">Monster Survivors Wiki Questions</h2>
+                <div class="max-w-4xl mx-auto space-y-4">
+                    <details class="panel p-6" open><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Which Monster Survivors game does this Wiki cover?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary><p class="text-gray-400 mt-4">It covers the App published by VOODOO under package games.rivvy.monstersurvivors. The site's Play Online page hosts a separate FreezeNova browser game with different progression.</p></details>
+                    <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where should a new player start?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary><p class="text-gray-400 mt-4">Start with the Beginner Guide, keep one developed general hero ahead and use complementary weapon roles. Open upgrades and gear only when those resources become the next real decision.</p></details>
+                    <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Does the Wiki provide exact drop rates and costs?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary><p class="text-gray-400 mt-4">It does not present a fixed public table as universal. Rewards, prices, events and menus can change, so confirm exact quantities and results on the current App screen.</p></details>
+                    <details class="panel p-6"><summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Where can I compare heroes and weapons?<i class="faq-chevron fas fa-chevron-down text-cyan-400 mt-1" aria-hidden="true"></i></summary><p class="text-gray-400 mt-4">Use the Heroes Tier List for long-term hero investment, Best Weapons for individual roles, Weapon Combos for slot balance and Best Builds when every system needs to work together.</p></details>
+                </div>
+            </section>
         </section>
     </main>
 
-    <footer class="bg-gray-900 py-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-500 text-sm">
-                &copy; 2026 MonsterSurvivors.plus. This is a Community-driven comprehensive Wiki and Database.
-            </p>
+    <footer class="bg-gray-950 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div><div class="flex items-center space-x-2 mb-4"><i class="fas fa-skull text-2xl" style="color:var(--accent-orange)" aria-hidden="true"></i><span class="text-lg font-bold">Monster<span style="color:var(--accent-cyan)">Survivors</span></span></div><p class="text-gray-400 text-sm">An App-first Wiki and guide hub for practical progression decisions.</p></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Start Here</h3><ul class="space-y-2 text-gray-400"><li><a href="/wiki/">App Wiki</a></li><li><a href="/guides/beginner-guide">Beginner Guide</a></li><li><a href="/guides/">App Guides</a></li><li><a href="/best-builds/">Best Builds</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">Progression</h3><ul class="space-y-2 text-gray-400"><li><a href="/guides/best-weapons">Best Weapons</a></li><li><a href="/guides/best-gear-set">Best Gear</a></li><li><a href="/guides/upgrades">App Upgrades</a></li><li><a href="/guides/gilded-cores/">Gilded Cores</a></li></ul></div>
+                <div><h3 class="font-bold mb-4 text-orange-400">More</h3><ul class="space-y-2 text-gray-400"><li><a href="/versions/">Version Comparison</a></li><li><a href="/play/">Separate Browser Game</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-4"><p class="text-gray-500 text-sm">© 2026 MonsterSurvivors.plus - All Rights Reserved</p><p class="text-gray-500 text-sm md:text-right"><strong>Disclaimer:</strong> Fan-made guide. Monster Survivors and related assets belong to their respective owners.</p></div>
         </div>
     </footer>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('wikiSearch');
-            // Select all interactive cards inside the grid layouts
-            const items = document.querySelectorAll('.grid > a, .grid > div');
-            
-            searchInput.addEventListener('input', (e) => {
-                const term = e.target.value.toLowerCase().trim();
-                
-                items.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    item.style.display = text.includes(term) ? '' : 'none';
-                });
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
             });
+        }
+
+        const searchInput = document.getElementById('wiki-search');
+        const clearSearch = document.getElementById('clear-search');
+        const searchStatus = document.getElementById('search-status');
+        const noResults = document.getElementById('no-results');
+        const wikiItems = Array.from(document.querySelectorAll('[data-wiki-item]'));
+
+        function filterWiki() {
+            const term = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+            wikiItems.forEach((item) => {
+                const haystack = `${item.dataset.wikiItem} ${item.textContent}`.toLowerCase();
+                const isVisible = !term || haystack.includes(term);
+                item.classList.toggle('hidden', !isVisible);
+                if (isVisible) visibleCount += 1;
+            });
+            clearSearch.classList.toggle('hidden', !term);
+            noResults.classList.toggle('hidden', visibleCount !== 0);
+            searchStatus.textContent = term
+                ? `${visibleCount} Wiki topic${visibleCount === 1 ? '' : 's'} found for “${searchInput.value.trim()}”.`
+                : 'Search the topic cards below.';
+        }
+        searchInput.addEventListener('input', filterWiki);
+        clearSearch.addEventListener('click', () => {
+            searchInput.value = '';
+            filterWiki();
+            searchInput.focus();
         });
     </script>
 </body>
