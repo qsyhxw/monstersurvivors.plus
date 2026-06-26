@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Monster Survivors Weapon Combos Guide (App, 2026)</title>
-    <meta name="description" content="Best Monster Survivors App weapon combos for general runs, bosses, hordes and farming, with role coverage, replacement rules and upgrade tie-breakers.">
-    <meta name="keywords" content="monster survivors weapon combos, best weapon combo, app loadout, plasma beam combo, chain lightning, shotgun, sniper">
+    <meta name="description" content="Best Monster Survivors App weapon combos with ratings, suitable heroes, boss and horde roles, alternative weapons, replacement rules and upgrade tie-breakers.">
+    <meta name="keywords" content="monster survivors weapon combos, best weapon combo, weapon combo tier list, boss weapon combo, horde clear, plasma beam combo, chain lightning, shotgun, sniper">
     <meta name="author" content="MonsterSurvivors.plus">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://monstersurvivors.plus/guides/weapon-combos">
@@ -25,7 +25,7 @@
     <meta property="og:url" content="https://monstersurvivors.plus/guides/weapon-combos">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg">
-    <meta property="article:modified_time" content="2026-06-25T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-06-26T00:00:00+08:00">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Monster Survivors App Weapon Combos">
@@ -136,6 +136,21 @@
             font-weight: 700;
             white-space: nowrap;
         }
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 3.2rem;
+            padding: .38rem .65rem;
+            border-radius: .8rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: .82rem;
+            font-weight: 900;
+            letter-spacing: .02em;
+        }
+        .rating-s { color: #fecdd3; border: 1px solid rgba(251,113,133,.72); background: linear-gradient(135deg, rgba(239,68,68,.22), rgba(249,115,22,.2)); }
+        .rating-a { color: #fde68a; border: 1px solid rgba(247,201,72,.62); background: rgba(247,201,72,.14); }
+        .rating-b { color: #d8b4fe; border: 1px solid rgba(168,85,247,.58); background: rgba(168,85,247,.14); }
         .weapon-chip {
             display: inline-flex;
             align-items: center;
@@ -208,10 +223,10 @@
         "@type": "Article",
         "@id": "https://monstersurvivors.plus/guides/weapon-combos#article",
         "headline": "Monster Survivors Weapon Combos Guide (App, 2026)",
-        "description": "Role-based weapon combinations for progression, bosses, hordes, safety and farming in the VOODOO Monster Survivors App.",
+        "description": "Role-based weapon combinations with ratings, suitable heroes, boss and horde roles, substitutes and replacement rules for the VOODOO Monster Survivors App.",
         "mainEntityOfPage": "https://monstersurvivors.plus/guides/weapon-combos",
         "image": "https://monstersurvivors.plus/images/guides/monster-survivors-app-weapons.jpg",
-        "dateModified": "2026-06-25",
+        "dateModified": "2026-06-26",
         "author": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
         "publisher": {"@type": "Organization", "name": "MonsterSurvivors.plus"},
         "about": {
@@ -228,15 +243,16 @@
     {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Monster Survivors App Weapon Combo Packages",
+        "name": "Monster Survivors App Weapon Combo Ratings",
+        "description": "Rated weapon packages with use cases and replacement logic for App builds.",
         "numberOfItems": 6,
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "General Progression Combo"},
-            {"@type": "ListItem", "position": 2, "name": "Horde Control Combo"},
-            {"@type": "ListItem", "position": 3, "name": "Boss Pressure Combo"},
-            {"@type": "ListItem", "position": 4, "name": "Safe Progression Combo"},
-            {"@type": "ListItem", "position": 5, "name": "Resource Farming Combo"},
-            {"@type": "ListItem", "position": 6, "name": "Close-Pressure Combo"}
+            {"@type": "ListItem", "position": 1, "name": "S Tier General Progression Combo: Plasma Beam, Shotgun, Pistol"},
+            {"@type": "ListItem", "position": 2, "name": "S Tier Horde Control Combo: Plasma Beam, Chain Lightning, Shuriken"},
+            {"@type": "ListItem", "position": 3, "name": "A Tier Boss Pressure Combo: Sniper, Shotgun, Pistol"},
+            {"@type": "ListItem", "position": 4, "name": "A Tier Safe Progression Combo: Plasma Beam, Chain Lightning, Pistol"},
+            {"@type": "ListItem", "position": 5, "name": "B Tier Resource Farming Combo: Chain Lightning, Plasma Beam, Pistol or Shuriken"},
+            {"@type": "ListItem", "position": 6, "name": "A Tier Close-Pressure Combo: Shotgun, coverage weapon, reliable flex"}
         ]
     }
     </script>
@@ -396,61 +412,68 @@
                     <p class="text-cyan-300 font-bold uppercase tracking-widest text-sm mb-3">Quick answer</p>
                     <h2 class="text-2xl sm:text-3xl font-bold mb-5">Best App Weapon Combos at a Glance</h2>
                     <p class="text-gray-300 leading-relaxed mb-7 max-w-4xl">
-                        These are three-weapon cores, not rigid full-slot builds. Keep the core jobs intact and use any remaining choice for the current map, hero card or strongest existing weapon rank.
+                        These are three-weapon cores, not rigid full-slot builds. Use the rating as a starting point, then adjust for your hero, current weapon ranks and the exact problem ending the run.
                     </p>
                     <div class="table-scroll panel">
                         <table class="combo-table">
                             <thead>
                                 <tr>
-                                    <th>Run Goal</th>
+                                    <th>Rating</th>
                                     <th>Recommended Core</th>
-                                    <th>Jobs Covered</th>
-                                    <th>Best Flex</th>
-                                    <th>First Replacement</th>
+                                    <th>Suitable Hero</th>
+                                    <th>Boss Use</th>
+                                    <th>Horde / Clear Use</th>
+                                    <th>Alternative Weapons</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>General progression</strong></td>
-                                    <td>Plasma Beam + Shotgun + Pistol</td>
-                                    <td><span class="role-pill">Coverage</span><span class="role-pill">Close burst</span><span class="role-pill">Reliable damage</span></td>
-                                    <td>Chain Lightning for scattered crowds; Sniper for a boss wall</td>
-                                    <td class="text-gray-300">Replace Pistol only when another weapon has comparable development and fills the missing role better.</td>
+                                    <td><span class="rating-badge rating-s">S</span><br><span class="text-xs text-gray-400">General</span></td>
+                                    <td><strong>Plasma Beam + Shotgun + Pistol</strong><br><span class="text-gray-400">Coverage, close burst and reliable baseline.</span></td>
+                                    <td>Developed general heroes; Balancio-style Speed / Attack Speed profiles.</td>
+                                    <td class="text-gray-300">Good, but swap Pistol to Sniper if bosses are the wall.</td>
+                                    <td class="text-gray-300">Excellent for unknown maps and mixed waves.</td>
+                                    <td>Chain Lightning for scattered crowds; Sniper for boss pressure; Shuriken if it is much higher rank.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Horde control</strong></td>
-                                    <td>Plasma Beam + Chain Lightning + Shuriken</td>
-                                    <td><span class="role-pill">Long lanes</span><span class="role-pill">Scattered cleanup</span><span class="role-pill">Ranged flex</span></td>
-                                    <td>Sniper or Shotgun for the focused slot</td>
-                                    <td class="text-gray-300">Remove Shuriken first when the stage becomes a boss damage check.</td>
+                                    <td><span class="rating-badge rating-s">S</span><br><span class="text-xs text-gray-400">Horde</span></td>
+                                    <td><strong>Plasma Beam + Chain Lightning + Shuriken</strong><br><span class="text-gray-400">Long lanes, scattered cleanup and ranged flex.</span></td>
+                                    <td>Mobile heroes, ranged-safe heroes, or any card that benefits from keeping distance.</td>
+                                    <td class="text-gray-300">Weak if no focused slot is added later.</td>
+                                    <td class="text-gray-300">Excellent against dense, split or multi-direction waves.</td>
+                                    <td>Shotgun for close threats; Sniper for bosses; Pistol if it has the strongest current rank.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Boss pressure</strong></td>
-                                    <td>Sniper + Shotgun + Pistol</td>
-                                    <td><span class="role-pill">Focused damage</span><span class="role-pill">Close burst</span><span class="role-pill">Consistency</span></td>
-                                    <td>Plasma Beam or Chain Lightning is required as coverage</td>
-                                    <td class="text-gray-300">Replace the weaker focused weapon if normal enemies begin blocking movement.</td>
+                                    <td><span class="rating-badge rating-a">A+</span><br><span class="text-xs text-gray-400">Boss</span></td>
+                                    <td><strong>Sniper + Shotgun + Pistol</strong><br><span class="text-gray-400">Focused damage, close burst and consistency.</span></td>
+                                    <td>Boss-focused heroes, Crit profiles, or strong general heroes with enough movement safety.</td>
+                                    <td class="text-gray-300">Excellent focused pressure when a boss or elite survives.</td>
+                                    <td class="text-gray-300">Needs Plasma Beam or Chain Lightning elsewhere to avoid being surrounded.</td>
+                                    <td>Replace Pistol with Plasma Beam for safer waves; replace Shotgun with Chain Lightning if close threats are controlled.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Safe progression</strong></td>
-                                    <td>Plasma Beam + Chain Lightning + Pistol</td>
-                                    <td><span class="role-pill">Wide coverage</span><span class="role-pill">Cleanup</span><span class="role-pill">Low-risk baseline</span></td>
-                                    <td>Shotgun when near threats remain the problem</td>
-                                    <td class="text-gray-300">Remove one coverage weapon when bosses survive but regular waves are already safe.</td>
+                                    <td><span class="rating-badge rating-a">A</span><br><span class="text-xs text-gray-400">Safe</span></td>
+                                    <td><strong>Plasma Beam + Chain Lightning + Pistol</strong><br><span class="text-gray-400">Wide coverage, cleanup and low-risk baseline.</span></td>
+                                    <td>New accounts, under-geared heroes, or survival-oriented cards.</td>
+                                    <td class="text-gray-300">Only moderate unless Pistol is highly developed.</td>
+                                    <td class="text-gray-300">Very strong for first clears where mistakes chain into damage.</td>
+                                    <td>Shotgun for near threats; Sniper for bosses; Shuriken for ranged flex if already developed.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Resource farming</strong></td>
-                                    <td>Chain Lightning + Plasma Beam + Pistol or Shuriken</td>
-                                    <td><span class="role-pill">Fast cleanup</span><span class="role-pill">Low-risk coverage</span><span class="role-pill">Flex</span></td>
-                                    <td>Your highest-rank reliable weapon</td>
-                                    <td class="text-gray-300">Return to a damage-focused package when the farm is no longer comfortable.</td>
+                                    <td><span class="rating-badge rating-b">B→S</span><br><span class="text-xs text-gray-400">Farm</span></td>
+                                    <td><strong>Chain Lightning + Plasma Beam + Pistol / Shuriken</strong><br><span class="text-gray-400">Fast cleanup, low-risk coverage and flex.</span></td>
+                                    <td>Any hero that already clears the route safely; speed and pickup-friendly profiles rise here.</td>
+                                    <td class="text-gray-300">Not for hard boss pushes.</td>
+                                    <td class="text-gray-300">Excellent on repeatable content you already clear.</td>
+                                    <td>Use your highest-rank reliable weapon; add Shotgun only if farming becomes unsafe.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Close pressure</strong></td>
-                                    <td>Shotgun + Plasma Beam or Chain Lightning + Pistol</td>
-                                    <td><span class="role-pill">Near threats</span><span class="role-pill">Coverage</span><span class="role-pill">Consistency</span></td>
-                                    <td>Fist only when the stage and build support point-blank exposure</td>
-                                    <td class="text-gray-300">Remove Fist first when taking contact damage becomes the failure.</td>
+                                    <td><span class="rating-badge rating-a">A</span><br><span class="text-xs text-gray-400">Close</span></td>
+                                    <td><strong>Shotgun + Plasma Beam / Chain Lightning + Pistol</strong><br><span class="text-gray-400">Near threats, coverage and consistency.</span></td>
+                                    <td>Durable heroes, Speed heroes, or accounts with gear that reduces point-blank risk.</td>
+                                    <td class="text-gray-300">Good if the boss enters close range; add Sniper for distant bosses.</td>
+                                    <td class="text-gray-300">Good when waves collapse onto the hero.</td>
+                                    <td>Fist only with enough safety; Sniper if the close problem is solved; Chain Lightning for scattered mobs.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -463,39 +486,45 @@
                     <div class="grid md:grid-cols-2 gap-5">
                         <div class="combo-card panel p-6 border-t-4 border-orange-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Pistol</span></div>
-                            <h3 class="text-xl font-bold mb-3">Balanced Progression Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-s">S</span><h3 class="text-xl font-bold">Balanced Progression Core</h3></div>
                             <p class="text-gray-400 mb-4">Plasma Beam keeps lanes open, Shotgun handles enemies that break through and Pistol supplies stable damage while the map is still unknown.</p>
                             <p class="text-sm text-orange-200"><strong>Use when:</strong> learning a stage or building one dependable account route.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> general progression heroes and Balancio-style Speed / Attack Speed profiles. <strong>Swap:</strong> Sniper for boss walls, Chain Lightning for scattered waves.</p>
                         </div>
                         <div class="combo-card panel p-6 border-t-4 border-cyan-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Shuriken</span></div>
-                            <h3 class="text-xl font-bold mb-3">Horde Coverage Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-s">S</span><h3 class="text-xl font-bold">Horde Coverage Core</h3></div>
                             <p class="text-gray-400 mb-4">The two coverage weapons answer different enemy spacing, while Shuriken provides a ranged flex that can be replaced when a stronger focused need appears.</p>
                             <p class="text-sm text-cyan-200"><strong>Use when:</strong> normal enemies arrive from several directions or remain scattered.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> mobile or ranged-safe heroes. <strong>Swap:</strong> replace Shuriken with Sniper for bosses or Shotgun for near pressure.</p>
                         </div>
                         <div class="combo-card panel p-6 border-t-4 border-red-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Sniper</span><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Pistol</span></div>
-                            <h3 class="text-xl font-bold mb-3">Focused Boss Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-a">A+</span><h3 class="text-xl font-bold">Focused Boss Core</h3></div>
                             <p class="text-gray-400 mb-4">Sniper handles focused range, Shotgun answers close pressure and Pistol preserves consistency. The wider loadout still needs one crowd slot.</p>
                             <p class="text-sm text-red-200"><strong>Use when:</strong> regular waves are comfortable but the boss or elite survives.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> boss, Crit or durable general heroes. <strong>Swap:</strong> add Plasma Beam or Chain Lightning immediately if normal enemies block movement.</p>
                         </div>
                         <div class="combo-card panel p-6 border-t-4 border-green-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Pistol</span></div>
-                            <h3 class="text-xl font-bold mb-3">Safe First-Clear Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-a">A</span><h3 class="text-xl font-bold">Safe First-Clear Core</h3></div>
                             <p class="text-gray-400 mb-4">Heavy coverage reduces the number of enemies reaching the hero, while Pistol avoids relying on a specialist that may not fit the next encounter.</p>
                             <p class="text-sm text-green-200"><strong>Use when:</strong> the map is unfamiliar or mistakes create a damage chain.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> new accounts, under-geared heroes and survival profiles. <strong>Swap:</strong> Shotgun for close pressure, Sniper when bosses survive.</p>
                         </div>
                         <div class="combo-card panel p-6 border-t-4 border-purple-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Chain Lightning</span><span class="weapon-chip">Plasma Beam</span><span class="weapon-chip">Pistol / Shuriken</span></div>
-                            <h3 class="text-xl font-bold mb-3">Resource Farming Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-b">B→S</span><h3 class="text-xl font-bold">Resource Farming Core</h3></div>
                             <p class="text-gray-400 mb-4">Fast low-risk cleanup leaves room for XP Gain, Pickup Range or Luck without sacrificing the entire damage engine.</p>
                             <p class="text-sm text-purple-200"><strong>Use when:</strong> repeating content the account already clears reliably.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> safe clear heroes and speed/pickup farming setups. <strong>Swap:</strong> return to Shotgun, Sniper or Damage investment when the farm becomes unsafe.</p>
                         </div>
                         <div class="combo-card panel p-6 border-t-4 border-yellow-500">
                             <div class="flex flex-wrap gap-2 mb-4"><span class="weapon-chip">Shotgun</span><span class="weapon-chip">Coverage weapon</span><span class="weapon-chip">Reliable flex</span></div>
-                            <h3 class="text-xl font-bold mb-3">Close-Pressure Core</h3>
+                            <div class="flex items-center gap-3 mb-3"><span class="rating-badge rating-a">A</span><h3 class="text-xl font-bold">Close-Pressure Core</h3></div>
                             <p class="text-gray-400 mb-4">Shotgun solves near threats, but it should not be paired with several other exposure-heavy weapons unless the map and hero can support that risk.</p>
                             <p class="text-sm text-yellow-200"><strong>Use when:</strong> enemies repeatedly enter point-blank range before dying.</p>
+                            <p class="text-sm text-gray-400 mt-3"><strong>Hero fit:</strong> durable, mobile or well-geared heroes. <strong>Swap:</strong> avoid Fist unless the account can survive point-blank exposure.</p>
                         </div>
                     </div>
                 </section>
