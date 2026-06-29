@@ -19,6 +19,12 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://monstersurvivors.plus/download/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
     <!-- Hub Pages (Priority: 0.9) -->
     <url>
@@ -135,6 +141,30 @@
     </url>
     <url>
         <loc>https://monstersurvivors.plus/guides/achievements/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/guides/pandoras-box/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/guides/stats/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/guides/bosses/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/guides/levels/</loc>
         <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
