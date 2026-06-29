@@ -13,6 +13,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://monstersurvivors.plus/codes/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
     <!-- Hub Pages (Priority: 0.9) -->
     <url>
@@ -124,6 +130,12 @@
     <url>
         <loc>https://monstersurvivors.plus/guides/tips-and-tricks/</loc>
         <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/guides/achievements/</loc>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
