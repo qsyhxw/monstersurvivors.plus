@@ -222,6 +222,18 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://monstersurvivors.plus/jp/guides/saikyou/</loc>
+        <lastmod>2026-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://monstersurvivors.plus/jp/codes/</loc>
+        <lastmod>2026-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://monstersurvivors.plus/zh/guides/gonglue</loc>
         <lastmod>2026-04-03</lastmod>
         <changefreq>monthly</changefreq>
