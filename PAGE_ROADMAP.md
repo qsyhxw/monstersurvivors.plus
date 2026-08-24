@@ -23,6 +23,7 @@
 | `/jp/guides/kouryaku` | PUBLISHED | 重写日文搜索变体对应的 Title、Description、JSON-LD、H1 和首段，强化武器、ヒーロー、ビルド、初心者向け意图 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和平台边界 |
 | `/guides/weapon-combos` | PUBLISHED | 将页面主旨收敛为 weapon combinations、synergy、upgrade path 和 replacement rules；降低与 best weapons、tier list 的标题和首屏重叠，并补充 Weapons Tier List 分流入口 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；组合内容作为站内策略建议表达 |
 | `/guides/best-starting-weapons/` | PUBLISHED | 将页面 Title、Description、JSON-LD、FAQ 和首屏主旨收敛为 first weapon、new account、what to pick first 和 beginner weapon choice；移除泛化的 best weapons/tier list 表达 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；具体首选属于站内策略建议 |
+| `/guides/upgrades` | PUBLISHED | 将页面 Title、H1、Description、JSON-LD 和首屏主旨收敛为 upgrade priority、resource allocation、Gilded Cores 和 what to upgrade first；将 Build/Gear 入口改为次级资源决策描述 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；具体升级顺序属于站内策略建议 |
 
 ## 下一步
 
