@@ -24,6 +24,8 @@
 | `/guides/weapon-combos` | PUBLISHED | 将页面主旨收敛为 weapon combinations、synergy、upgrade path 和 replacement rules；降低与 best weapons、tier list 的标题和首屏重叠，并补充 Weapons Tier List 分流入口 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；组合内容作为站内策略建议表达 |
 | `/guides/best-starting-weapons/` | PUBLISHED | 将页面 Title、Description、JSON-LD、FAQ 和首屏主旨收敛为 first weapon、new account、what to pick first 和 beginner weapon choice；移除泛化的 best weapons/tier list 表达 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；具体首选属于站内策略建议 |
 | `/guides/upgrades` | PUBLISHED | 将页面 Title、H1、Description、JSON-LD 和首屏主旨收敛为 upgrade priority、resource allocation、Gilded Cores 和 what to upgrade first；将 Build/Gear 入口改为次级资源决策描述 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；具体升级顺序属于站内策略建议 |
+| `/play/` | PUBLISHED | 承接 `monster survivors freezenova`，将 Title、H1、Description、OG/Twitter 和首屏文案统一为 FreezeNova 浏览器游戏入口，并保持与 VOODOO App 指南的版本边界 | 2026-08-24，官方 Google Play 页面确认 VOODOO App 的名称、开发者和 Android/Windows 平台边界；浏览器版内容以站内实际嵌入页面为准 |
+| `/faq/how-to-play-unblocked` | PUBLISHED | 承接 unblocked 相关问题，补充 FreezeNova 与 no-download、允许访问、fullscreen、local saves、loading 的摘要和首屏表达；保留不提供绕过网络规则的安全边界 | 2026-08-24，FAQ 与内部链接静态检查；访问限制说明属于站点安全与合规文案 |
 
 ## 下一步
 
