@@ -1,6 +1,6 @@
 # PAGE_ROADMAP
 
-更新时间：2026-08-24
+更新时间：2026-08-25
 
 ## 已创建页面
 
@@ -8,12 +8,15 @@
 | --- | --- | --- | --- |
 | `/jp/guides/saikyou/` | CREATED_NEEDS_REVIEW | `モンスター サバイバー 最強`、`モンスター サバイバル 最強`、`モンバサ 最強`、最强武器/英雄/装備/Build | 已加入 sitemap、canonical 列表；日文攻略页提供入口 |
 | `/jp/codes/` | CREATED_NEEDS_REVIEW | `モンスター サバイバル コード`、`モンスター サバイバル ギフト コード` | 已加入 sitemap、canonical 列表；日文攻略页提供入口 |
+| `/resources/` | PUBLISHED | `monster survivors resources`；Gilded Cores、Pandora's Box、Gear、Upgrade Materials、Resource Farming | 已加入 sitemap、canonical 列表；`/guides/` 提供资源 Hub 入口；各专题页保留独立搜索意图 |
 
 ## 站内集成
 
 - `/jp/guides/kouryaku.html` 已增加「最強ビルド」和「ギフトコード」导航及首屏入口。
 - `/jp/guides/kouryaku.html` 的 title、description、JSON-LD、H1 和首段已补充「モンスターサバイバーズ攻略」「モンスターサバイバル攻略」及「初心者向け」搜索意图，不再只依赖 meta keywords。
-- 新页面使用日文正文、相对站内链接、独立 canonical，并保留站点 GA 与广告脚本。
+- 新增 `/resources/` 资源 Hub，统一连接 Gilded Cores、Pandora's Box、Gear、Upgrade Materials、Resource Farming 和完整 Build；页面不发布未经当前 App 屏幕确认的固定价格、掉落量或活动规则。
+- `/guides/index.html` 已增加资源 Hub 的上下文入口，避免把资源决策重复塞入某一个专题页。
+- 日文新页面使用日文正文；新增页面均使用相对站内链接、独立 canonical，并保留站点 GA 与广告脚本。
 - 代码页不发布未经官方出典确认的代码；页面当前显示无可验证的有效代码。
 
 ## 已优化页面

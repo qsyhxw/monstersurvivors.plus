@@ -44,6 +44,7 @@
 ### 核心 Hub
 
 - `/guides/`：英文攻略总入口。
+- `/resources/`：资源决策 Hub，统一连接 Gilded Cores、Pandora's Box、Gear、Upgrade Materials 和 Resource Farming。
 - `/tier-list/`：Tier List 总入口。
 - `/best-builds/`：Build 总入口。
 - `/heroes/`：英雄目录及英雄详情。
@@ -72,6 +73,7 @@
 | 主意图 | 首选页面 | 页面必须回答什么 | 不应承担什么 |
 | --- | --- | --- | --- |
 | 综合攻略、`monster survivors guide` | `/guides/` | 从入门到专题的导航和下一步选择 | 不复制每篇专题全文 |
+| 资源导航、`monster survivors resources` | `/resources/` | 根据当前资源问题选择 Gilded Cores、Pandora's Box、Gear、Upgrades 或安全 farming 页面 | 不提供未经验证的固定价格、掉落量或通用 farming 数字 |
 | 最佳武器、按场景选武器 | `/guides/best-weapons` | crowd clear、boss damage、first weapon、按角色/场景的推荐 | 不做完整武器排名榜主页面 |
 | 武器 Tier List | `/tier-list/weapons` | 明确排序标准、梯度、版本判断和武器定位 | 不复制 best weapons 推荐长文 |
 | 武器组合和协同 | `/guides/weapon-combos` | 组合、协同、进化路线、替换规则 | 不使用泛化的 best weapons 标题 |
@@ -158,6 +160,14 @@
 ├── /best-builds/
 ├── /guides/best-gear-set
 └── /guides/upgrades
+
+/resources/
+├── /guides/gilded-cores/
+├── /guides/pandoras-box/
+├── /guides/best-gear-set
+├── /guides/upgrades
+├── /guides/levels/
+└── /best-builds/
 
 /jp/guides/kouryaku
 ├── /jp/guides/saikyou/
