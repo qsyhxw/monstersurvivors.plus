@@ -98,6 +98,12 @@
 
 ## 5. GSC 基线与分析方法
 
+### 项目 GSC 配置
+
+- GSC Property：`sc-domain:monstersurvivors.plus`
+- GSC 数据目录：`D:\Codex\GSC数据\monstersurvivors.plus`
+- 分析时显式把上述 property 作为 `siteUrl` 传给 GSC 工具；不要只依赖全局默认站点。
+
 数据文件位于 `D:\Codex\GSC数据\monstersurvivors.plus`。分析时分清两套数据：
 
 - 日汇总/按月数据用于站点总曝光、点击、CTR、平均排名和生命周期趋势。
