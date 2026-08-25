@@ -39,8 +39,8 @@
 | `/guides/upgrades` | PUBLISHED | 将页面 Title、H1、Description、JSON-LD 和首屏主旨收敛为 upgrade priority、resource allocation、Gilded Cores 和 what to upgrade first；通过 Beginner Guide 入口承接新账号，再将 Build/Gear 入口作为次级资源决策 | 2026-08-24，官方 Google Play 页面确认 App 名称、开发者和 Android/Windows 平台边界；具体升级顺序属于站内策略建议 |
 | `/play/` | PUBLISHED | 承接 `monster survivors freezenova`，将 Title、H1、Description、OG/Twitter 和首屏文案统一为 FreezeNova 浏览器游戏入口，并保持与 VOODOO App 指南的版本边界 | 2026-08-24，官方 Google Play 页面确认 VOODOO App 的名称、开发者和 Android/Windows 平台边界；浏览器版内容以站内实际嵌入页面为准 |
 | `/faq/how-to-play-unblocked` | PUBLISHED | 承接 unblocked 相关问题，补充 FreezeNova 与 no-download、允许访问、fullscreen、local saves、loading 的摘要和首屏表达；保留不提供绕过网络规则的安全边界 | 2026-08-24，FAQ 与内部链接静态检查；访问限制说明属于站点安全与合规文案 |
-| `/weapons-database/holy-cross/` | PUBLISHED | 承接 `holy cross sword`，将 Title、H1、Description、OG/Twitter、首段和正文聚焦 Holy Cross → Holy Sword 的 evolution、build priorities、crowd clear、boss damage 与版本边界 | 2026-08-24，官方 Google Play 确认 App/VOODOO/平台边界；独立攻略页交叉支持旋转覆盖与 Short Sword + Holy Cross 路线；配方和伤害需游戏内复核 |
-| `/weapons-database/monster-survivors-voodoo-weapons-guide.html` | PUBLISHED | 承接 `monster survivors voodoo`，把页面从泛化 Tier/Meta 页收窄为 VOODOO-listed App 的 weapons overview、evolution routes、build 和 damage roles，并链接 Holy Cross、Weapon Tier List 与 Best Weapons | 2026-08-24，官方 Google Play 确认开发者/平台和 App 的角色成长、Boss 战；官方未提供完整武器配方或伤害表，页面已披露限制 |
+| `/weapons-database/holy-cross/` | PUBLISHED | 承接 `holy cross sword`，强化 Holy Cross → Holy Sword 的实体词、evolution、build priorities、crowd clear、boss damage，并增加 Best Weapons、Weapon Tier List、Combos 和 Builds 分流 | 2026-08-25，官方 Google Play 确认 App/VOODOO/平台边界；独立攻略页交叉支持旋转覆盖与 Short Sword + Holy Cross 路线；配方和伤害需游戏内复核 |
+| `/weapons-database/monster-survivors-voodoo-weapons-guide.html` | PUBLISHED | 承接 `monster survivors voodoo`，扩展为 VOODOO-listed App 的 weapon overview、实体武器目录、evolution routes、build 和 damage roles；不新建批量武器页 | 2026-08-25，官方 Google Play 确认开发者/平台和 App 的角色成长、Boss 战；官方未提供完整武器配方或伤害表，页面已披露限制 |
 
 ## 下一步
 

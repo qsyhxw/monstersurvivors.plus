@@ -293,7 +293,7 @@
     <!-- Specific Weapons Database (Priority: 0.6) -->
     <url>
         <loc>https://monstersurvivors.plus/weapons-database/monster-survivors-voodoo-weapons-guide.html</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-08-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -335,7 +335,7 @@
     </url>
     <url>
         <loc>https://monstersurvivors.plus/weapons-database/holy-cross/</loc>
-        <lastmod>2026-04-03</lastmod>
+        <lastmod>2026-08-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
