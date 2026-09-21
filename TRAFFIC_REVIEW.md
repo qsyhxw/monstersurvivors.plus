@@ -52,7 +52,7 @@
 - Content Review：3 组 UPDATE 均通过；CREATE 为 0。
 - 静态检查：13 个改动页面均为单一 title/H1/canonical/robots，JSON-LD 全部可解析；`git diff --check` 通过。
 - 元数据保护：既有赢家页的 title、description、H1、canonical 未改；仅同步 `dateModified` 与正文版本说明。
-- Visual Check：`/versions/`、`/guides/gilded-cores/`、`/jp/guides/saikyou/` 已实查桌面 1440×900 和移动 390×844 的顶部、中段和页尾。其余事实型小改页面完成两种视口渲染检查；均无整页横向溢出。
+- Visual Check：本地最终构建的 `/versions/`、`/guides/gilded-cores/`、`/jp/guides/saikyou/` 已实查桌面 1440×900 和移动 390×844 的顶部、中段和页尾。其余事实型小改页面完成两种视口渲染检查；均无整页横向溢出。生产源站浏览器截图复验因浏览器控制超时记为 NOT_CHECKED；生产 HTML 与状态码已另行核验通过。
 - Link Check：镀金核心 3 个真实外链均有可见 `↗`、`target=_blank`、`rel` 和“opens in a new tab”可访问名称；日文 Google Play 外链同样标识。站内版本链接目标为 `/versions/`。
 - 页面图片：镀金核心页沿用既有、已验证的正文图片；版本和日文页为原组件内事实型补丁，不新增宣传图。
 
@@ -62,7 +62,8 @@
 - `bb3ca8a` 补充镀金核心获取证据与核验步骤
 - `1d29f25` 补充日文最强页版本核验说明
 - `91f21cf` 同步已更新页面站点地图日期
-- 推送与线上检查：待本轮 BATCH_VALIDATED 推送后回填。
+- 推送：`e26eeeb..6363990` 已于 2026-09-21 BATCH_VALIDATED 推送至 `origin/main`。
+- 线上检查：带 no-cache 参数请求 `/versions/`、`/guides/gilded-cores/`、`/jp/guides/saikyou/`、`/sitemap.xml` 均返回 200；源站 HTML 已包含 2026-09-21 日期、2026-09-08 版本说明、镀金核心直接答案和日文版本内链。网页抓取服务仍显示旧缓存，未作为上线判据。
 
 ## 下次复查触发
 
