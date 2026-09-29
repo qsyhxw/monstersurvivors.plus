@@ -1,6 +1,6 @@
 # PAGE_ROADMAP
 
-更新时间：2026-09-21
+更新时间：2026-09-29
 
 ## 已创建页面
 
@@ -46,7 +46,37 @@
 
 ## 下一步
 
-`NONE - WAIT FOR TRAFFIC DATA`
+`MS-2026-09-29-01 - UPDATE /guides/gilded-cores/ BODY ONLY`
+
+## 2026-09-29 成熟站月度 SEO Audit 范围与唯一队列
+
+### 数据范围
+
+- 模式：`ANALYZE_AND_IMPLEMENT`；`WINDOW_MODE=ROLLING_28D`；`REVIEW_DEPTH=OPERATING_REVIEW`。
+- GSC Property：`sc-domain:monstersurvivors.plus`，权限 `siteFullUser`；请求 `dataState=final`，本轮已确认的最新完整日为 2026-09-26（PT 日口径）。
+- 当前窗口：2026-08-30—2026-09-26；对比窗口：2026-08-02—2026-08-29；长期背景：2026-04-01—2026-09-26 日汇总。
+- 日汇总为站点总趋势口径；Page 对比返回 63 个当前/历史 URL 联合行；Query + Page 完整导出当前 322 行、对比 403 行，均未截断。
+- Query + Page 当前窗口含 189 个可见查询/33 个原始页面 URL，对比窗口含 215 个可见查询/38 个原始页面 URL；未发现需要合并的 URL 变体，规范化前后计数不变。
+- 原始导出：`D:\Codex\GSC数据\monstersurvivors.plus\2026-09-29-query-page-current28-final.csv` 与 `2026-09-29-query-page-previous28-final.csv`。Query 视图受匿名/低量过滤影响，不与日汇总相加；无 24 小时数据。
+
+### 月度判断
+
+- 健康状态：`Watch`。日汇总从 2,151 点击/21,523 展示变为 973/12,424（点击 -54.8%，展示 -42.3%，CTR 9.99% → 7.83%，-2.16 个百分点）；加权平均排名 7.52 → 6.47，数值改善 1.05。
+- 下降主要是 2026-08-22—08-29 日文需求峰值消退：`/jp/guides/saikyou/` 为 1,390/12,285 → 349/4,500，但页面平均排名略有改善。该页在 Page 可见子集的点击集中度从约 62.4% 回落到 34.0%，集中风险降低，不属于技术性全站崩落。
+- 2026-04—07 的月点击为 398/437/468/748；2026-09 截至 26 日为 851。长期基线仍高于年中水平，不把事件峰值回落定性为站点长期衰退。
+- 上轮生产部署已重新核对：`/versions/`、`/guides/gilded-cores/`、`/jp/guides/saikyou/` 与 sitemap 均在正式域名返回 200，线上 HTML 包含 2026-09-08 版本边界与 Death Trials 正文；搜索抓取缓存仍可见旧文本，不用它否定源站部署。
+
+### PROTECT / RECOVER / GROW
+
+| Task ID | 分类 | URL / 意图 | 证据与决策 | 本轮实施范围 / 触发 |
+| --- | --- | --- | --- | --- |
+| `MS-2026-09-29-P1` | PROTECT | `/jp/guides/saikyou/` 日文最强 | 28 日需求回落但排名未同比崩落；09-22—09-26 对 09-17—09-21 为 1/52 对 3/55，平均排名 14.78 → 10.25。 | 保留 Title/Description/H1/canonical 和正文结构；不再改 TDK。日文同名游戏事件/实体碰撞只记风险，缺准确市场分解时不改定位。 |
+| `MS-2026-09-29-P2` | PROTECT | `/guides/`、`/guides/best-weapons`、`/guides/best-gear-set`、`/tier-list/weapons` | Guide 点击 +17 且排名改善；Best Weapons 主查询排名保持约 2.2；Best Gear 点击 +6；Weapons Tier List 从 0/68 增至 8/206。 | 保留 TDK 与现有意图分工；本轮不改。 |
+| `MS-2026-09-29-01` | RECOVER | `/guides/gilded-cores/` — `how to consistently get gilded` | 28 日页面展示 199 → 844，目标查询 31 → 672 展示但仍 0 点击；上线后 5 日该查询 135 → 450 展示，平均排名 7.85 → 6.48。新增原始玩家证据指向 Death Trials 第 10/30 级奖励，可与“约每 20 级”线索互证，但仍不足以证明固定永久周期。 | `UPDATE`：仅补 Quick Answer、“Consistently”正文、FAQ/JSON-LD 与去重来源；保留 Title/Description/H1/canonical、布局、图片与广告。 |
+| `MS-2026-09-29-D1` | RECOVER / DEFER | `/jp/guides/kouryaku` 日文综合攻略 | 30/2,015 → 17/613，且平均排名变差；当前 SERP 存在另一个日文同名游戏的持续事件需求，与本站 VOODOO App 实体边界不同。 | 缺少按国家/设备/实体分解后的归属证据；本轮不改 TDK，不启动合并或迁移。 |
+| `MS-2026-09-29-G1` | GROW / MONITOR | `/tier-list/weapons` 与现有英文集群 | 独立 Weapon Tier List 页已获得更多展示、点击和更好排名；新需求仍可由现有页面承接。 | `NONE`：无通过独立成页门槛的新页。`Knight Survivor` 查询属另一游戏，`OUT_OF_SCOPE`。 |
+
+本轮不删除/合并 URL，不做 301、批量 noindex/canonical 迁移，不改首页或广告账户。
 
 ## 2026-09-21 上线后复查与迭代
 
