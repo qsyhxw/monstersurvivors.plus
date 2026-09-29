@@ -46,7 +46,7 @@
 
 ## 下一步
 
-`MS-2026-09-29-01 - UPDATE /guides/gilded-cores/ BODY ONLY`
+`NONE - MONITOR MS-2026-09-29-01 AFTER A COMPLETE 28-DAY WINDOW`
 
 ## 2026-09-29 成熟站月度 SEO Audit 范围与唯一队列
 
@@ -77,6 +77,16 @@
 | `MS-2026-09-29-G1` | GROW / MONITOR | `/tier-list/weapons` 与现有英文集群 | 独立 Weapon Tier List 页已获得更多展示、点击和更好排名；新需求仍可由现有页面承接。 | `NONE`：无通过独立成页门槛的新页。`Knight Survivor` 查询属另一游戏，`OUT_OF_SCOPE`。 |
 
 本轮不删除/合并 URL，不做 301、批量 noindex/canonical 迁移，不改首页或广告账户。
+
+### 实施与上线验收
+
+- `MS-2026-09-29-01`：`PUBLISHED`。正文、可见 FAQ、FAQPage JSON-LD 与验证来源已更新；Title、Description、H1、canonical、robots、现有图片、页面结构和广告加载器保持不变。未创建新页。
+- Content QA：`PASS`。答案先给 Death Trials，再说明玩家报告中的第 10/30 级与约 20 级间隔只是当前线索；同时保留版本变化和游戏内预览优先的事实边界。
+- Technical QA：`PASS`。5 个 JSON-LD 块均可解析；页面仅 1 个 title、H1、canonical、robots 和 AdSense loader；12 个内部链接目标均存在；`git diff --check` 通过（仅 Git 的 LF/CRLF 工作区提示）。
+- Visual QA：`PASS`。在真实浏览器检查默认桌面视口与 390×844 移动视口；首屏、长表格、移动导航和新增 FAQ 展开均正常。控制台仅有仓库既有的 Tailwind CDN 提示，无本次新增错误。Page Image：`ALREADY_PRESENT`，继续使用 `/images/guides/monster-survivors-app-heroes-builds.jpg`，未重复生成图片。
+- Git：范围记录提交 `864ef12`；正文与 sitemap 独立提交 `151a95e`，均已推送 `origin/main`。
+- Production：2026-09-29 源站 `/guides/gilded-cores/` 返回 200，已命中新答案、更新日期和自指 canonical；生产 sitemap 返回 200，目标 URL 的 `lastmod` 为 `2026-09-29`。部署状态 `PUBLISHED`；GSC 重抓取与 28 日效果仍为 `UNKNOWN / MONITOR`。
+- 唯一后续队列：等待一个完整 28 日窗口后复查目标 query→page 的点击、展示、CTR 与排名；期间不再次改 TDK。`MS-2026-09-29-D1` 继续 `DEFER`，具体缺项为日文查询的国家、设备与实体归属证据。
 
 ## 2026-09-21 上线后复查与迭代
 
