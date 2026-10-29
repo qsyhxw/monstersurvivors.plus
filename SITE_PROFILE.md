@@ -1,5 +1,7 @@
 # SITE_PROFILE.md
 
+2026-10-29集成登记：config/integrations.json为唯一机器期望；config/integrations.baseline-2026-10-29.json保留施工前首次盘点。scripts/check_integrations.py扫描根发布目录全部HTML，按PAGE_ROADMAP授权说明比较基线；scripts/test_guard.py为22项反例测试。根目录手写HTML为Git可恢复生成源，无构建器。_worker.js禁止内部MD/config/scripts公开访问。信任页/404不加载广告，保留原有GA统计；日文两页统一现有AdSense加载器及client。无远端强制门禁，不宣称后台采集或真实填充已核实。
+
 > 用途：为后续页面创建、SEO 优化、内部链接和 GSC 分析提供稳定的站点事实、意图分工和编辑边界。最后核对：2026-08-24。
 
 ## 1. 站点定位

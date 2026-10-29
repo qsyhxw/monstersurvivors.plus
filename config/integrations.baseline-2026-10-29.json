@@ -1,0 +1,1120 @@
+{
+  "version": 1,
+  "site": "monstersurvivors.plus",
+  "reviewed": true,
+  "source": "Hand-authored version-controlled HTML; no generator/build.",
+  "integrations": [
+    {
+      "id": "existing-ui-0",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "404.html",
+        "best-builds/index.html",
+        "codes/index.html",
+        "contact/index.html",
+        "download/index.html",
+        "faq/how-to-play-unblocked.html",
+        "faq/is-monster-survivors-offline.html",
+        "faq/monster-survivors-mod-apk.html",
+        "faq/why-monster-survivors-keeps-changing/index.html",
+        "games-like-monster-survivors/index.html",
+        "guides/achievements/index.html",
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html",
+        "guides/best-hero.html",
+        "guides/best-starting-weapons/index.html",
+        "guides/best-weapons.html",
+        "guides/boss-battles.html",
+        "guides/bosses/index.html",
+        "guides/gaid.html",
+        "guides/gilded-cores/index.html",
+        "guides/gongnyak.html",
+        "guides/hunting-wilds-trophy-guide.html",
+        "guides/index.html",
+        "guides/levels/index.html",
+        "guides/maps.html",
+        "guides/monster-survivors-ps5-guide.html",
+        "guides/pandoras-box/index.html",
+        "guides/secret-weapons.html",
+        "guides/stats/index.html",
+        "guides/tips-and-tricks/index.html",
+        "guides/trophy-guide.html",
+        "guides/upgrades.html",
+        "guides/weapon-choice.html",
+        "guides/weapon-combos.html",
+        "guides/weapon-evolution.html",
+        "heroes/arcanix/index.html",
+        "heroes/balencio/index.html",
+        "heroes/echo/index.html",
+        "heroes/index.html",
+        "heroes/knight/index.html",
+        "heroes/mage/index.html",
+        "heroes/miyu/index.html",
+        "index.html",
+        "ios/index.html",
+        "jp/codes/index.html",
+        "jp/guides/kouryaku.html",
+        "jp/guides/saikyou/index.html",
+        "play/index.html",
+        "privacy-policy/index.html",
+        "resources/index.html",
+        "strategies/index.html",
+        "terms/index.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html",
+        "tier-list/weapons.html",
+        "versions/index.html",
+        "weapons-database/axe/index.html",
+        "weapons-database/chain-lightning-ring/index.html",
+        "weapons-database/crossbow-and-throwing-knife/index.html",
+        "weapons-database/fist/index.html",
+        "weapons-database/frostbite/index.html",
+        "weapons-database/holy-book-and-fire-wand/index.html",
+        "weapons-database/holy-cross/index.html",
+        "weapons-database/index.html",
+        "weapons-database/magic-staff/index.html",
+        "weapons-database/monster-survivors-voodoo-weapons-guide.html",
+        "weapons-database/plasma-gun/index.html",
+        "weapons-database/rocket-launcher/index.html",
+        "weapons-database/shotgun/index.html",
+        "weapons-database/steel-sword/index.html",
+        "weapons-database/wooden-wand/index.html",
+        "wiki/index.html",
+        "zh/guides/gonglue.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "src": "https://cdn.tailwindcss.com"
+          },
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "analytics-1",
+      "kind": "analytics",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "404.html",
+        "best-builds/index.html",
+        "codes/index.html",
+        "contact/index.html",
+        "download/index.html",
+        "faq/how-to-play-unblocked.html",
+        "faq/is-monster-survivors-offline.html",
+        "faq/monster-survivors-mod-apk.html",
+        "faq/why-monster-survivors-keeps-changing/index.html",
+        "games-like-monster-survivors/index.html",
+        "guides/achievements/index.html",
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html",
+        "guides/best-hero.html",
+        "guides/best-starting-weapons/index.html",
+        "guides/best-weapons.html",
+        "guides/boss-battles.html",
+        "guides/bosses/index.html",
+        "guides/gaid.html",
+        "guides/gilded-cores/index.html",
+        "guides/gongnyak.html",
+        "guides/hunting-wilds-trophy-guide.html",
+        "guides/index.html",
+        "guides/levels/index.html",
+        "guides/maps.html",
+        "guides/monster-survivors-ps5-guide.html",
+        "guides/pandoras-box/index.html",
+        "guides/secret-weapons.html",
+        "guides/stats/index.html",
+        "guides/tips-and-tricks/index.html",
+        "guides/trophy-guide.html",
+        "guides/upgrades.html",
+        "guides/weapon-choice.html",
+        "guides/weapon-combos.html",
+        "guides/weapon-evolution.html",
+        "heroes/arcanix/index.html",
+        "heroes/balencio/index.html",
+        "heroes/echo/index.html",
+        "heroes/index.html",
+        "heroes/knight/index.html",
+        "heroes/mage/index.html",
+        "heroes/miyu/index.html",
+        "index.html",
+        "ios/index.html",
+        "jp/codes/index.html",
+        "jp/guides/kouryaku.html",
+        "jp/guides/saikyou/index.html",
+        "play/index.html",
+        "privacy-policy/index.html",
+        "resources/index.html",
+        "strategies/index.html",
+        "terms/index.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html",
+        "tier-list/weapons.html",
+        "versions/index.html",
+        "weapons-database/axe/index.html",
+        "weapons-database/chain-lightning-ring/index.html",
+        "weapons-database/crossbow-and-throwing-knife/index.html",
+        "weapons-database/fist/index.html",
+        "weapons-database/frostbite/index.html",
+        "weapons-database/holy-book-and-fire-wand/index.html",
+        "weapons-database/holy-cross/index.html",
+        "weapons-database/index.html",
+        "weapons-database/magic-staff/index.html",
+        "weapons-database/monster-survivors-voodoo-weapons-guide.html",
+        "weapons-database/plasma-gun/index.html",
+        "weapons-database/rocket-launcher/index.html",
+        "weapons-database/shotgun/index.html",
+        "weapons-database/steel-sword/index.html",
+        "weapons-database/wooden-wand/index.html",
+        "wiki/index.html",
+        "zh/guides/gonglue.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-511JG9F2HD"
+          },
+          "boolean_attrs": [
+            "async"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-2",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "404.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "9dcbeea58ba0f19bd1e927e4a310645cb5e1bf0d5d4f83623a553748cddd8d65"
+        }
+      ]
+    },
+    {
+      "id": "adsense-3",
+      "kind": "adsense",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "404.html",
+        "best-builds/index.html",
+        "codes/index.html",
+        "contact/index.html",
+        "download/index.html",
+        "faq/how-to-play-unblocked.html",
+        "faq/is-monster-survivors-offline.html",
+        "faq/monster-survivors-mod-apk.html",
+        "faq/why-monster-survivors-keeps-changing/index.html",
+        "games-like-monster-survivors/index.html",
+        "guides/achievements/index.html",
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html",
+        "guides/best-hero.html",
+        "guides/best-starting-weapons/index.html",
+        "guides/best-weapons.html",
+        "guides/bosses/index.html",
+        "guides/gaid.html",
+        "guides/gilded-cores/index.html",
+        "guides/gongnyak.html",
+        "guides/hunting-wilds-trophy-guide.html",
+        "guides/index.html",
+        "guides/levels/index.html",
+        "guides/monster-survivors-ps5-guide.html",
+        "guides/pandoras-box/index.html",
+        "guides/secret-weapons.html",
+        "guides/stats/index.html",
+        "guides/tips-and-tricks/index.html",
+        "guides/trophy-guide.html",
+        "guides/upgrades.html",
+        "guides/weapon-combos.html",
+        "guides/weapon-evolution.html",
+        "heroes/arcanix/index.html",
+        "heroes/balencio/index.html",
+        "heroes/echo/index.html",
+        "heroes/index.html",
+        "heroes/knight/index.html",
+        "heroes/mage/index.html",
+        "heroes/miyu/index.html",
+        "index.html",
+        "ios/index.html",
+        "jp/guides/kouryaku.html",
+        "play/index.html",
+        "privacy-policy/index.html",
+        "resources/index.html",
+        "terms/index.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html",
+        "tier-list/weapons.html",
+        "versions/index.html",
+        "weapons-database/axe/index.html",
+        "weapons-database/chain-lightning-ring/index.html",
+        "weapons-database/crossbow-and-throwing-knife/index.html",
+        "weapons-database/fist/index.html",
+        "weapons-database/frostbite/index.html",
+        "weapons-database/holy-book-and-fire-wand/index.html",
+        "weapons-database/holy-cross/index.html",
+        "weapons-database/index.html",
+        "weapons-database/magic-staff/index.html",
+        "weapons-database/monster-survivors-voodoo-weapons-guide.html",
+        "weapons-database/plasma-gun/index.html",
+        "weapons-database/rocket-launcher/index.html",
+        "weapons-database/shotgun/index.html",
+        "weapons-database/steel-sword/index.html",
+        "weapons-database/wooden-wand/index.html",
+        "wiki/index.html",
+        "zh/guides/gonglue.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "crossorigin": "anonymous",
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+          },
+          "boolean_attrs": [
+            "async"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-4",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "best-builds/index.html",
+        "faq/is-monster-survivors-offline.html",
+        "games-like-monster-survivors/index.html",
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html",
+        "guides/best-hero.html",
+        "guides/best-starting-weapons/index.html",
+        "guides/best-weapons.html",
+        "guides/boss-battles.html",
+        "guides/gaid.html",
+        "guides/gilded-cores/index.html",
+        "guides/gongnyak.html",
+        "guides/hunting-wilds-trophy-guide.html",
+        "guides/index.html",
+        "guides/maps.html",
+        "guides/monster-survivors-ps5-guide.html",
+        "guides/secret-weapons.html",
+        "guides/trophy-guide.html",
+        "guides/upgrades.html",
+        "guides/weapon-choice.html",
+        "guides/weapon-combos.html",
+        "index.html",
+        "ios/index.html",
+        "jp/codes/index.html",
+        "jp/guides/kouryaku.html",
+        "jp/guides/saikyou/index.html",
+        "play/index.html",
+        "resources/index.html",
+        "strategies/index.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html",
+        "versions/index.html",
+        "weapons-database/axe/index.html",
+        "wiki/index.html",
+        "zh/guides/gonglue.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "599053c0c17dc23082c1c93942435e89d6075cfbc7fdbfa16d11d29d77905a6a"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-5",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "index.html",
+        "versions/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "aec7f7ba43cabe251bfa333df23121e4a12b8cdb64abd9b3688e240be336ad48"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-6",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/best-starting-weapons/index.html",
+        "guides/boss-battles.html",
+        "guides/gilded-cores/index.html",
+        "guides/maps.html",
+        "guides/weapon-choice.html",
+        "index.html",
+        "resources/index.html",
+        "strategies/index.html",
+        "versions/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "8a641a286c0722009f65c2316b5318f193e5cd0c19ee74d5be06befefb7f9d74"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-7",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "best-builds/index.html",
+        "guides/index.html",
+        "guides/weapon-combos.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "859078849d2077b64229f3ea3418f6e44a28f4a98c198dae5c29748614562b42"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-8",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "best-builds/index.html",
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html",
+        "guides/index.html",
+        "guides/weapon-combos.html",
+        "tier-list/heroes.html",
+        "tier-list/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "09b77bd5ac541198dbe891230890f638d56bdad834e3eab8d0456ac87904e9fe"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-9",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "codes/index.html",
+        "download/index.html",
+        "faq/how-to-play-unblocked.html",
+        "faq/monster-survivors-mod-apk.html",
+        "faq/why-monster-survivors-keeps-changing/index.html",
+        "guides/achievements/index.html",
+        "guides/pandoras-box/index.html",
+        "guides/tips-and-tricks/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "74b8737e538cd3a46adc5988b759757eff8302afa862d84e1345e202111f55f0"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-10",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "codes/index.html",
+        "download/index.html",
+        "faq/why-monster-survivors-keeps-changing/index.html",
+        "guides/achievements/index.html",
+        "guides/pandoras-box/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "fb42cb503e427953153166e1916a62bbea0ed689bbd745781cbc9eb5b845dbc9"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-11",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "contact/index.html",
+        "guides/bosses/index.html",
+        "guides/levels/index.html",
+        "guides/stats/index.html",
+        "guides/weapon-evolution.html",
+        "heroes/arcanix/index.html",
+        "heroes/balencio/index.html",
+        "heroes/echo/index.html",
+        "heroes/index.html",
+        "heroes/knight/index.html",
+        "heroes/mage/index.html",
+        "heroes/miyu/index.html",
+        "privacy-policy/index.html",
+        "terms/index.html",
+        "tier-list/weapons.html",
+        "weapons-database/chain-lightning-ring/index.html",
+        "weapons-database/crossbow-and-throwing-knife/index.html",
+        "weapons-database/fist/index.html",
+        "weapons-database/frostbite/index.html",
+        "weapons-database/holy-book-and-fire-wand/index.html",
+        "weapons-database/holy-cross/index.html",
+        "weapons-database/index.html",
+        "weapons-database/magic-staff/index.html",
+        "weapons-database/monster-survivors-voodoo-weapons-guide.html",
+        "weapons-database/plasma-gun/index.html",
+        "weapons-database/rocket-launcher/index.html",
+        "weapons-database/shotgun/index.html",
+        "weapons-database/steel-sword/index.html",
+        "weapons-database/wooden-wand/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "00946f41ecd6c8831729225e037cd0a204be0018ecad307899ef9266f1a3ef18"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-12",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "contact/index.html",
+        "privacy-policy/index.html",
+        "terms/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "51f73b55f2ed7d4d6232e38e1800cc560203fa4af12dea349c372709be22d042"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-13",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "games-like-monster-survivors/index.html",
+        "ios/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "45a7a4c1de76017be6729b1fc56fa5eb383339715dad92e98712b7fc313f10d4"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-14",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/beginner-guide.html",
+        "guides/best-gear-set.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "135526ec11332211552caa851833bc741d980a7497ca214e665841fbd036ad21"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-15",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/best-weapons.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "644be381d943eda1b4d4678fb82d881824d18ef762f68a77cc679e9d1152a931"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-16",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/best-weapons.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "f193c62884c7a5d8074719b6e38ae1624f5c4a965a8930939f60800de614a31b"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-17",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/boss-battles.html",
+        "guides/maps.html",
+        "guides/weapon-choice.html",
+        "play/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "9b0c3f4159f3e7816625763192490ca9e26d200e3ded80fb35fc7414bac8c7c8"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-18",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/gaid.html",
+        "guides/gongnyak.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "796c4309a66e47a6442e9e527b9e4959c8de3920aab0f8b778a6346db58e5dfd"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-19",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/hunting-wilds-trophy-guide.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "94dfce42efaf330aef91eb82ef174dcde3549be825dd9742e010702809f1a4f4"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-20",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/monster-survivors-ps5-guide.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "3a2769fb1c243dad4ad8070318269de3515003762736ade7dd027a3e1e117f54"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-21",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/upgrades.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "dedf9ab7d4c4d8bbdde173d059e4c2854935fd6b28dac8d2cb790ef22ab6d63d"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-22",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/upgrades.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "ac5325f344b13c0fde6b9e2eb7f7d27680ed0e08a648d39386af4064843e2d5f"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-23",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/weapon-evolution.html",
+        "heroes/index.html",
+        "heroes/knight/index.html",
+        "heroes/mage/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "0884f69605d8995e51d61805e71ef7970201d897e414924e98a36db73d36fc2f"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-24",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "play/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "7acb7336f70cdd07cf1a0c33a9d44de6940782296ba1d92a8c98ff52e21787e7"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-25",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/gilded-cores/index.html",
+        "resources/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "0700533776e141666f859f2d9f40624973f478e487dab00c907857206b40aaed"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-26",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "strategies/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "f7aac754a4c1a2dab386cbcaf7cf8450452b8370cff20007c6e427a29e9f4659"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-27",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "tier-list/weapons.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "de52b5689d77b3e5dd948d2554d9bd446f56b2d9d1255c83af6605f59fcaf747"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-28",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "weapons-database/index.html",
+        "weapons-database/monster-survivors-voodoo-weapons-guide.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "fa40ee84219905f76b58b8821d89b7868bca2c5def0b171bfd154744357f5848"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-29",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "wiki/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "96e3380b08b9757748221050bc3d257354cadfb0e866beb65639631d652ef2c3"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-30",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "wiki/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "7b7b7a44978d301cee6dff657599533862a7aa308438b9f98641c2e126bdf890"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-31",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/best-starting-weapons/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "435fc792f214c2986282ae5a3c7c7071fed647e2bd4ec4daba1b89281f23f865"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-32",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/bosses/index.html",
+        "guides/levels/index.html",
+        "guides/stats/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "bf13b7910f01abf5f38116faf0752f2bc76ed2de10f44a18d359506f71373d94"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-33",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "guides/tips-and-tricks/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "0c7d0551251bb904f3241487ffd869b9bbce8dad8056c13da64f708f13325f1e"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-34",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "heroes/arcanix/index.html",
+        "heroes/echo/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "3cac59a09a53d6aafb82fe3a04e20c2139f970e9a310f7d2606f17955710a772"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-35",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "heroes/balencio/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "5e48af3f0693f9dd6fcc028b8f66ea917b8e2dd7747176a48fd77271f656e26d"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-36",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "heroes/miyu/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "7628c51d550864d0dcf288523c2c79592169dd4d4283eb4b0f166c8fd49f61de"
+        }
+      ]
+    },
+    {
+      "id": "adsense-37",
+      "kind": "adsense",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "jp/codes/index.html",
+        "jp/guides/saikyou/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "crossorigin": "anonymous",
+            "src": "https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8830315294299920"
+          },
+          "boolean_attrs": [
+            "async"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "existing-ui-38",
+      "kind": "existing-ui",
+      "enabled": true,
+      "authorization": "2026-10-29 user integration preservation; SITE_PROFILE section 7. Existing inline code reviewed as GA initialization, Tailwind theme or navigation/UI. Exact pre-work paths and fingerprints retained.",
+      "include": [
+        "jp/guides/kouryaku.html",
+        "zh/guides/gonglue.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "d4a46853526ca638e9f7bb2c2a1c7dd7f8ced36606a4f35161af4b711eb97f76"
+        }
+      ]
+    }
+  ]
+}

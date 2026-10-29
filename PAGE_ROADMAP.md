@@ -1,5 +1,12 @@
 # PAGE_ROADMAP
 
+## 2026-10-29 月度复盘
+
+- 本轮5内容页：best-weapons、tier-list、best-gear-set、guides版本事实纠正；knight实体区分与无证数值撤下；推荐页首屏加强武器排序入口。详情及逐页03自查见 TRAFFIC_REVIEW_2026-10.md。标题/H1/URL保持；Knight description/Schema按00 §5A事实纠错例外处理。
+- 73HTML首次盘点、站外施工前基线及Git副本；同client修正日文两页加载路径，依SOP排除信任页/404广告。唯一期望config/integrations.json及检测器入Git；22反例测试通过；全部HTML静态扫描及带授权说明的基线比较通过。手写HTML即生成源，无构建器。Privacy补Cloudflare；_worker.js隔离内部材料。
+- 当前28日620点击/7921展示，对比前28日-26.8%/-27.9%；日文最强是主要跌点。2026-11-29复查日文、Knight错实体曝光和榜单主页面份额。
+- 远端CI/分支保护/部署依赖未设置，后台与真实填充NOT_CHECKED；浏览器/线上结果后补。
+
 更新时间：2026-09-29
 
 ## 已创建页面
