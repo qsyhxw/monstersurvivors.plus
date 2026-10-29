@@ -68,5 +68,7 @@ F1–F4：官方单源SINGLE_SOURCE https://play.google.com/store/apps/details?h
 
 本地CODE：全73HTML扫描+基线对比退出0、22测试通过、git diff --check通过；五内容页唯一title/H1/description/canonical、JSON-LD解析、sitemap归属及本地链接检查通过，title/H1/canonical对比HEAD无漂移。ads.txt标准条目恰好一次。worker路由测试：内部MD/config/scripts/.git=404、正常内容及sitemap透传。
 
+上线结果：PUBLISHED。内容提交462e134、a9a8c2e、29340fd、4b8c3b3、203d6bd；集成提交b6c9533已推送origin/main。等待部署后，五内容页均200且包含本次新增正文；日文两页标准AdSense路径生效；Privacy/Contact/Terms广告脚本为0，Privacy托管说明可见；内部MD/config/scripts与根级/多层随机地址均真实404。ads.txt=200 text/plain且正确记录；sitemap=200 application/xml，干净Chrome原生XML树显示正常。线上Knight手机截图已人工查看，无页面JS错误；采集与真实填充后台仍NOT_CHECKED。PowerShell固定脚本受本机执行策略限制未直接运行，实际逐条执行同等检查并严格判断退出码，均0；未修改机器执行策略。后续运行请使用受允许运行环境或直接执行文档中的Python命令。
+
 浏览器：Chrome无头1440/390尺寸，12代表页共24次渲染、48首屏/中段截图，无页面JS异常及横向溢出；人工查看推荐页桌面及手机拼图、Knight手机正文。发现字符编码问题已用补丁修复并复验。实际线上内容页CSP响应未设置（不放宽策略）。模拟尺寸不等于真机；统计采集请求拦截防QA污染，未声明后台已收到。截图/browser-qa.json留在站外GSC目录。固定门禁scripts/verify-release.ps1显式检查退出码；远端强制门禁未接入。部署状态待线上核对。
 
